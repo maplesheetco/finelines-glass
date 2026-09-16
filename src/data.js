@@ -94,14 +94,19 @@ export const SERVICES = [
   },
 ];
 
-// TODO: replace with real completed-project photos, captioned by
-// neighbourhood only — never a client's exact address (see the website
-// report / discovery checklist for why).
+// Real completed-project photos, shared with the Projects page gallery.
+// Captions describe the work only — never a client's exact address (see the
+// website report / discovery checklist for why).
 export const PROJECTS_PREVIEW = [
-  { caption: 'Kitsilano — Frameless Shower Enclosure' },
-  { caption: 'West Vancouver — Glass Railing' },
-  { caption: 'North Vancouver — Custom Wine Cellar' },
-  { caption: 'Burnaby — Feature Wall Mirror' },
+  { src: '/images/project-1.jpg', caption: 'His-and-Hers Shower & Water Closet Enclosure' },
+  { src: '/images/project-2.jpg', caption: 'Glass Railing — Rooftop Terrace' },
+  { src: '/images/project-3.jpg', caption: 'Frameless Shower Enclosure' },
+  { src: '/images/project-4.jpg', caption: 'Interior Glass Stair Railing' },
+  { src: '/images/project-5.jpg', caption: 'Custom Wine Display Cabinet' },
+  { src: '/images/project-6.jpg', caption: 'Frameless Shower Enclosure' },
+  { src: '/images/project-7.jpg', caption: 'Glass Deck Railing' },
+  { src: '/images/project-8.jpg', caption: 'Custom Wine Display Cabinet' },
+  { src: '/images/project-9.jpg', caption: 'Frameless Shower Enclosure' },
 ];
 
 // Trust signals — pull these out of paragraph text and show them as a strip
