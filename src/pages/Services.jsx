@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { SERVICES, FAQS } from '../data.js';
 import ServiceIcon from '../components/ServiceIcon.jsx';
 
@@ -18,11 +19,16 @@ export default function Services() {
             {SERVICES.map((s, i) => {
               const isOrphan = SERVICES.length % 3 === 1 && i === SERVICES.length - 1;
               return (
-                <div className={`card${isOrphan ? ' card-centered' : ''}`} key={s.title}>
+                <Link
+                  to={`/services/${s.slug}`}
+                  className={`card card-link${isOrphan ? ' card-centered' : ''}`}
+                  key={s.title}
+                >
                   <ServiceIcon name={s.icon} />
                   <h3>{s.title}</h3>
                   <p>{s.blurb}</p>
-                </div>
+                  <span className="card-link-cta">Learn more &rarr;</span>
+                </Link>
               );
             })}
           </div>
