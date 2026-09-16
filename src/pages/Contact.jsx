@@ -1,657 +1,124 @@
-/* Keep these in sync with the `B` object in src/data.js */
-:root {
-  --navy: #1B2A4A;
-  --steel: #3E6B8A;
-  --amber: #C0762A;
-  --glass-tint: #EAF1F6;
-  --ink: #1A1A1A;
-  --gray: #5A5A5A;
-  --white: #FFFFFF;
-  --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  --max-width: 1120px;
-}
+import React, { useState } from 'react';
+import { COMPANY } from '../data.js';
 
-* { box-sizing: border-box; }
+export default function Contact() {
+  const [submitted, setSubmitted] = useState(false);
 
-html, body {
-  margin: 0;
-  padding: 0;
-  font-family: var(--font);
-  color: var(--ink);
-  background: var(--white);
-  scroll-behavior: smooth;
-}
-
-img { max-width: 100%; display: block; }
-a { color: inherit; text-decoration: none; }
-
-/* Headings and the logo wordmark use the heritage serif to echo the real
-   Finelines logo (classic serif "GLASS" script, Est. 1994). Body copy stays
-   on Inter for readability. */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-  font-weight: 700;
-}
-
-.container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* ---------- Header ---------- */
-.site-header {
-  background: var(--navy);
-  color: var(--white);
-  position: sticky;
-  top: 0;
-  z-index: 50;
-}
-.site-header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  order: 1;
-}
-.header-right {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  order: 3;
-}
-.nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  padding: 6px;
-  margin: -6px;
-  cursor: pointer;
-}
-.nav-links {
-  display: flex;
-  gap: 22px;
-  flex-wrap: wrap;
-  order: 2;
-}
-.nav-links a {
-  font-weight: 500;
-  font-size: 0.95rem;
-  opacity: 0.9;
-}
-.nav-links a:hover, .nav-links a.active { opacity: 1; text-decoration: underline; }
-.header-cta {
-  background: var(--amber);
-  color: var(--white);
-  padding: 9px 18px;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  white-space: nowrap;
-}
-.header-cta:hover { filter: brightness(1.08); }
-
-/* Below ~760px, the 7 nav links no longer fit in one row next to the logo
-   and CTA, so they collapse into a hamburger-triggered dropdown instead of
-   wrapping messily across multiple lines in the navy bar. */
-@media (max-width: 760px) {
-  .site-header .container { align-content: flex-start; }
-  .header-right { order: 2; }
-  .nav-toggle { display: flex; align-items: center; justify-content: center; }
-  .nav-links {
-    order: 3;
-    flex: 1 0 100%;
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2px;
-    margin-top: 12px;
-    padding-top: 12px;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  // TODO: this form currently only shows a success message locally — it does not
+  // actually send anywhere yet. The simplest fix (no backend needed) is a free
+  // Formspree endpoint (formspree.io): create a form there, then change the
+  // <form> tag below to action="https://formspree.io/f/yourFormId" method="POST"
+  // and remove the onSubmit handler. See the repo README for the full walkthrough.
+  function handleSubmit(e) {
+    e.preventDefault();
+    setSubmitted(true);
   }
-  .nav-links.open { display: flex; }
-  .nav-links a { width: 100%; padding: 10px 0; }
-}
 
-/* ---------- Hero ---------- */
-.hero {
-  background: var(--navy);
-  color: var(--white);
-  padding: 72px 0;
-}
-.hero .container {
-  display: flex;
-  align-items: center;
-  gap: 48px;
-}
-.hero-copy { flex: 1 1 0; min-width: 0; }
-.hero-graphic {
-  flex: 1 1 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.hero-eyebrow {
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #E7A65C;
-  margin-bottom: 14px;
-}
-.hero h1 {
-  font-size: clamp(1.9rem, 4vw, 2.8rem);
-  line-height: 1.15;
-  margin: 0 0 16px;
-  max-width: 620px;
-}
-.hero p {
-  font-size: 1.1rem;
-  max-width: 520px;
-  opacity: 0.92;
-  margin: 0 0 26px;
-  line-height: 1.6;
-}
-.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
-@media (max-width: 860px) {
-  .hero .container { flex-direction: column; }
-  .hero-graphic { order: -1; }
-}
+  return (
+    <>
+      <section className="page-hero">
+        <div className="container">
+          <h1>Get in Touch</h1>
+          <p>Tell us about your project and we'll get back to you with a straightforward estimate.</p>
+        </div>
+      </section>
 
-.btn {
-  display: inline-block;
-  padding: 13px 26px;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 0.98rem;
-  border: 2px solid transparent;
-  cursor: pointer;
-}
-.btn-primary { background: var(--amber); color: var(--white); }
-.btn-primary:hover { filter: brightness(1.08); }
-.btn-outline { background: transparent; color: var(--white); border-color: rgba(255,255,255,0.6); }
-.btn-outline:hover { background: rgba(255,255,255,0.12); }
+      <section className="block">
+        <div className="container contact-grid">
+          <div>
+            <div className="contact-info-card">
+              <div className="contact-detail">
+                <span className="contact-icon" aria-hidden="true">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none">
+                    <path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.2 1.1L6.6 10.8Z" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </span>
+                <div>
+                  <div className="label">Phone</div>
+                  <a href={COMPANY.phoneHref}>{COMPANY.phone}</a>
+                </div>
+              </div>
 
-/* ---------- Trust badge strip ---------- */
-.trust-strip {
-  background: var(--glass-tint);
-  padding: 18px 0;
-  border-bottom: 1px solid #dde7ee;
-}
-.trust-strip ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px 28px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  justify-content: center;
-}
-.trust-strip li {
-  font-size: 0.88rem;
-  font-weight: 600;
-  color: var(--steel);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.trust-strip li::before { content: '✓'; color: var(--amber); font-weight: 800; }
+              <div className="contact-detail">
+                <span className="contact-icon" aria-hidden="true">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none">
+                    <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.7" />
+                    <path d="M3.5 6.5 12 13l8.5-6.5" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </span>
+                <div>
+                  <div className="label">Email</div>
+                  <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a>
+                </div>
+              </div>
 
-/* ---------- Sections ---------- */
-section.block { padding: 56px 0; }
-section.block.tint { background: var(--glass-tint); }
-.section-heading {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  color: var(--navy);
-  margin: 0 0 10px;
-}
-.section-subheading {
-  color: var(--gray);
-  max-width: 640px;
-  margin: 0 0 32px;
-  line-height: 1.6;
-}
+              <div className="contact-detail">
+                <span className="contact-icon" aria-hidden="true">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" />
+                    <circle cx="12" cy="9.5" r="2.4" stroke="currentColor" strokeWidth="1.7" />
+                  </svg>
+                </span>
+                <div>
+                  <div className="label">Address</div>
+                  <div className="value">{COMPANY.address}</div>
+                </div>
+              </div>
 
-/* ---------- Cards / grid ---------- */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
-}
-.grid-services {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-@media (max-width: 900px) {
-  .grid-services { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-@media (max-width: 600px) {
-  .grid-services { grid-template-columns: 1fr; }
-}
-.card-centered { grid-column: 2; }
-@media (max-width: 900px) {
-  .card-centered { grid-column: auto; }
-}
-.card {
-  background: var(--white);
-  border: 1px solid #e6ecf1;
-  border-radius: 10px;
-  padding: 24px;
-  box-shadow: 0 1px 3px rgba(27,42,74,0.06);
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.card h3 { color: var(--navy); margin: 0; font-size: 1.08rem; }
-.card p { color: var(--gray); margin: 0; line-height: 1.55; font-size: 0.95rem; }
+              <div className="contact-detail">
+                <span className="contact-icon" aria-hidden="true">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="8.5" stroke="currentColor" strokeWidth="1.7" />
+                    <path d="M12 7.5V12l3 2" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </span>
+                <div>
+                  <div className="label">Hours</div>
+                  {COMPANY.hours.map((h) => (
+                    <div className="value" key={h.day}>{h.day}: {h.time}</div>
+                  ))}
+                </div>
+              </div>
+            </div>
 
-/* ---------- Completed Work carousel ---------- */
-.carousel { max-width: 900px; margin: 0 auto; }
-.carousel-frame { position: relative; }
-.carousel-slide {
-  height: 420px;
-  background: var(--glass-tint);
-  border: 1px solid #dde7ee;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--steel);
-}
-.carousel-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--white);
-  box-shadow: 0 2px 8px rgba(27,42,74,0.18);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border: none;
-  padding: 0;
-}
-.carousel-arrow.prev { left: 16px; }
-.carousel-arrow.next { right: 16px; }
-.carousel-caption {
-  margin: 18px 0 0;
-  text-align: center;
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: var(--steel);
-}
-.carousel-dots {
-  display: flex;
-  justify-content: center;
-  gap: 9px;
-  margin-top: 14px;
-}
-.carousel-dots button {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  background: #c7d3dc;
-}
-.carousel-dots button.active { background: var(--amber); }
+            <iframe
+              className="map-embed"
+              title="Finelines Glass location"
+              loading="lazy"
+              src={`https://www.google.com/maps?q=${COMPANY.mapQuery}&output=embed`}
+            />
+          </div>
 
-/* ---------- Testimonials ---------- */
-.testimonial {
-  background: var(--white);
-  border-radius: 10px;
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  box-shadow: 0 1px 3px rgba(27,42,74,0.07);
-}
-.testimonial .quote-icon { color: var(--amber); opacity: 0.85; }
-.testimonial p.quote { font-style: italic; margin: 0; line-height: 1.6; }
-.testimonial p.name { margin: 0; font-weight: 700; color: var(--steel); font-size: 0.88rem; }
-
-/* ---------- FAQ ---------- */
-.faq-item { border-bottom: 1px solid #e6ecf1; padding: 18px 0; }
-.faq-item h3 { color: var(--navy); margin: 0 0 8px; font-size: 1.02rem; }
-.faq-item p { color: var(--gray); margin: 0; line-height: 1.6; }
-
-/* ---------- Contact ---------- */
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 40px;
-}
-@media (max-width: 800px) {
-  .contact-grid { grid-template-columns: 1fr; }
-}
-.contact-info-card {
-  background: var(--white);
-  border: 1px solid #e6ecf1;
-  border-radius: 12px;
-  box-shadow: 0 2px 14px rgba(27,42,74,0.06);
-  padding: 6px 26px;
-  margin-bottom: 24px;
-}
-.contact-detail {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  padding: 20px 0;
-}
-.contact-detail + .contact-detail { border-top: 1px solid #eef2f5; }
-.contact-icon {
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--glass-tint);
-  color: var(--steel);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.contact-detail .label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--steel); font-weight: 700; margin-bottom: 4px; }
-.contact-detail a, .contact-detail div.value { font-size: 1rem; color: var(--ink); line-height: 1.55; }
-.contact-detail a:hover { color: var(--steel); text-decoration: underline; }
-.map-embed {
-  width: 100%;
-  height: 260px;
-  border: 1px solid #e6ecf1;
-  border-radius: 12px;
-  box-shadow: 0 2px 14px rgba(27,42,74,0.06);
-}
-
-form.contact-form { display: flex; flex-direction: column; gap: 14px; }
-form.contact-form label { font-weight: 600; font-size: 0.9rem; color: var(--navy); }
-form.contact-form input, form.contact-form textarea, form.contact-form select {
-  padding: 11px 12px;
-  border: 1px solid #cfd9e2;
-  border-radius: 6px;
-  font-family: var(--font);
-  font-size: 0.95rem;
-  background: var(--white);
-  color: var(--ink);
-}
-form.contact-form textarea { min-height: 120px; resize: vertical; }
-
-/* ---------- Request Estimate wizard ---------- */
-.how-it-works {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-bottom: 36px;
-}
-.how-it-works-item {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-.how-it-works-badge {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background: var(--navy);
-  color: var(--white);
-  font-weight: 700;
-  font-size: 0.95rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.how-it-works-item p { margin: 0; color: var(--gray); font-size: 0.92rem; font-weight: 600; }
-@media (max-width: 700px) {
-  .how-it-works { grid-template-columns: 1fr; gap: 14px; }
-  .how-it-works-item { flex-direction: row; text-align: left; }
-}
-
-.wizard-card {
-  background: var(--white);
-  border: 1px solid #e6ecf1;
-  border-radius: 14px;
-  box-shadow: 0 4px 24px rgba(27,42,74,0.08);
-  padding: 36px;
-}
-@media (max-width: 600px) {
-  .wizard-card { padding: 24px 18px; }
-}
-
-.stepper {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-bottom: 32px;
-  position: relative;
-}
-.stepper::before {
-  content: '';
-  position: absolute;
-  top: 15px;
-  left: 8%;
-  right: 8%;
-  height: 2px;
-  background: #e2e9ef;
-  z-index: 0;
-}
-.stepper-item {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  flex: 1;
-}
-.stepper-dot {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: var(--white);
-  border: 2px solid #cfd9e2;
-  color: var(--gray);
-  font-weight: 700;
-  font-size: 0.9rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.stepper-label { font-size: 0.8rem; font-weight: 600; color: var(--gray); }
-.stepper-item.current .stepper-dot { border-color: var(--amber); color: var(--amber); background: var(--white); }
-.stepper-item.current .stepper-label { color: var(--navy); }
-.stepper-item.done .stepper-dot { border-color: var(--amber); background: var(--amber); color: var(--white); }
-.stepper-item.done .stepper-label { color: var(--navy); }
-
-.option-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  margin: 4px 0;
-}
-@media (max-width: 600px) {
-  .option-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-.option-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  text-align: center;
-  background: var(--white);
-  border: 1.5px solid #dde5eb;
-  border-radius: 10px;
-  padding: 18px 10px;
-  cursor: pointer;
-  font-family: var(--font);
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--ink);
-  min-height: 96px;
-  transition: border-color 0.15s, background 0.15s;
-}
-.option-card:hover { border-color: var(--steel); }
-.option-card.selected { border-color: var(--amber); background: #FBF3EA; color: var(--navy); }
-
-.pill-group { display: flex; gap: 10px; flex-wrap: wrap; margin: 4px 0; }
-.pill {
-  border: 1.5px solid #dde5eb;
-  background: var(--white);
-  border-radius: 999px;
-  padding: 9px 20px;
-  font-family: var(--font);
-  font-size: 0.88rem;
-  font-weight: 600;
-  color: var(--ink);
-  cursor: pointer;
-}
-.pill:hover { border-color: var(--steel); }
-.pill.selected { border-color: var(--amber); background: var(--amber); color: var(--white); }
-
-.wizard-actions {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 28px;
-  padding-top: 20px;
-  border-top: 1px solid #eef2f5;
-}
-.btn-back {
-  background: none;
-  border: none;
-  color: var(--steel);
-  font-weight: 600;
-  font-size: 0.95rem;
-  cursor: pointer;
-  padding: 12px 6px;
-}
-.btn-back:hover { text-decoration: underline; }
-.wizard-actions .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; filter: none; }
-
-/* file attachment */
-.file-upload { display: flex; flex-direction: column; gap: 8px; align-items: flex-start; }
-.file-upload-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--white);
-  border: 1.5px dashed #b9cede;
-  border-radius: 8px;
-  padding: 12px 18px;
-  font-family: var(--font);
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--steel);
-  cursor: pointer;
-}
-.file-upload-btn:hover { border-color: var(--steel); background: var(--glass-tint); }
-.file-upload-hint { margin: 0; font-size: 0.78rem; color: var(--gray); }
-.file-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background: var(--glass-tint);
-  border: 1px solid #dde7ee;
-  border-radius: 8px;
-  padding: 10px 14px;
-  font-size: 0.88rem;
-  font-weight: 600;
-  color: var(--navy);
-  max-width: 100%;
-}
-.file-chip-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 220px; }
-.file-chip-remove {
-  background: none;
-  border: none;
-  color: var(--gray);
-  font-size: 1.1rem;
-  line-height: 1;
-  cursor: pointer;
-  padding: 0 2px;
-}
-.file-chip-remove:hover { color: var(--amber); }
-
-/* success screen */
-.estimate-success { text-align: center; }
-.estimate-success svg { margin: 0 auto 16px; display: block; }
-.estimate-success h2 { color: var(--navy); margin: 0 0 10px; }
-.estimate-summary {
-  text-align: left;
-  max-width: 420px;
-  margin: 0 auto 24px;
-  background: var(--glass-tint);
-  border-radius: 10px;
-  padding: 20px 24px;
-}
-.estimate-summary dt {
-  font-size: 0.76rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--steel);
-  font-weight: 700;
-  margin-top: 12px;
-}
-.estimate-summary dt:first-child { margin-top: 0; }
-.estimate-summary dd { margin: 2px 0 0; color: var(--ink); font-size: 0.95rem; }
-
-/* ---------- Footer ---------- */
-.site-footer {
-  background: var(--navy);
-  color: rgba(255,255,255,0.85);
-  padding: 32px 0;
-  font-size: 0.85rem;
-}
-.site-footer .container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-.site-footer a:hover { text-decoration: underline; }
-.footer-brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-/* ---------- Page hero (interior pages) ---------- */
-.page-hero {
-  background: var(--navy);
-  color: var(--white);
-  padding: 44px 0;
-}
-.page-hero h1 { margin: 0; font-size: clamp(1.6rem, 3.4vw, 2.2rem); }
-.page-hero p { margin: 8px 0 0; opacity: 0.9; max-width: 620px; }
-
-/* ---------- Gallery placeholder ---------- */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
-}
-.gallery-placeholder {
-  aspect-ratio: 4 / 3;
-  background: var(--glass-tint);
-  border: 1px dashed #b9cede;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--steel);
-  font-size: 0.85rem;
-  text-align: center;
-  padding: 12px;
+          <div>
+            {submitted ? (
+              <div className="card">
+                <h3>Thanks — message received!</h3>
+                <p>We'll get back to you shortly. In the meantime, feel free to call {COMPANY.phone}.</p>
+              </div>
+            ) : (
+              <form className="contact-form" onSubmit={handleSubmit}>
+                <div>
+                  <label htmlFor="name">Name</label>
+                  <input id="name" name="name" required />
+                </div>
+                <div>
+                  <label htmlFor="email">Email</label>
+                  <input id="email" name="email" type="email" required />
+                </div>
+                <div>
+                  <label htmlFor="phone">Phone (optional)</label>
+                  <input id="phone" name="phone" type="tel" />
+                </div>
+                <div>
+                  <label htmlFor="message">Tell us about your project</label>
+                  <textarea id="message" name="message" required />
+                </div>
+                <button className="btn btn-primary" type="submit">Send</button>
+              </form>
+            )}
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
