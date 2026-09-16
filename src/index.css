@@ -61,11 +61,27 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   gap: 10px;
+  order: 1;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  order: 3;
+}
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  padding: 6px;
+  margin: -6px;
+  cursor: pointer;
 }
 .nav-links {
   display: flex;
   gap: 22px;
   flex-wrap: wrap;
+  order: 2;
 }
 .nav-links a {
   font-weight: 500;
@@ -83,6 +99,28 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
 }
 .header-cta:hover { filter: brightness(1.08); }
+
+/* Below ~760px, the 7 nav links no longer fit in one row next to the logo
+   and CTA, so they collapse into a hamburger-triggered dropdown instead of
+   wrapping messily across multiple lines in the navy bar. */
+@media (max-width: 760px) {
+  .site-header .container { align-content: flex-start; }
+  .header-right { order: 2; }
+  .nav-toggle { display: flex; align-items: center; justify-content: center; }
+  .nav-links {
+    order: 3;
+    flex: 1 0 100%;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { width: 100%; padding: 10px 0; }
+}
 
 /* ---------- Hero ---------- */
 .hero {
