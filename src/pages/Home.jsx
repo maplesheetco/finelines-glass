@@ -12,14 +12,11 @@ function CompletedWorkCarousel() {
     <div className="carousel">
       <div className="carousel-frame">
         <div className="carousel-slide">
-          {/* TODO: swap this placeholder for the real project photo once you send it over. */}
-          <svg width="120" height="100" viewBox="0 0 120 100" fill="none" aria-hidden="true">
-            <rect x="10" y="8" width="60" height="75" rx="2" fill="none" stroke="#3E6B8A" strokeWidth="1.6" />
-            <rect x="35" y="20" width="60" height="75" rx="2" fill="#FFFFFF" fillOpacity="0.5" stroke="#C0762A" strokeWidth="1.6" />
-            <line x1="35" y1="20" x2="95" y2="20" stroke="#C0762A" strokeWidth="0.8" opacity="0.5" />
-            <line x1="35" y1="57" x2="95" y2="57" stroke="#C0762A" strokeWidth="0.8" opacity="0.5" />
-            <line x1="65" y1="20" x2="65" y2="95" stroke="#C0762A" strokeWidth="0.8" opacity="0.5" />
-          </svg>
+          <img
+            src={PROJECTS_PREVIEW[index].src}
+            alt={PROJECTS_PREVIEW[index].caption}
+            className="carousel-image"
+          />
         </div>
         <button
           type="button"
@@ -120,11 +117,7 @@ export default function Home() {
       <section className="block">
         <div className="container">
           <h2 className="section-heading">Completed Work</h2>
-          <p className="section-subheading">
-            {/* TODO: replace the placeholder above with real project photos — captioned by
-                neighbourhood only, never a client's exact address. */}
-            A look at some of our recent installations.
-          </p>
+          <p className="section-subheading">A look at some of our recent installations.</p>
           <CompletedWorkCarousel />
         </div>
       </section>
