@@ -19,7 +19,7 @@ export default function Articles() {
             We're just getting started here. In the meantime, reach out directly if you have a
             question about your project.
           </p>
-          <a className="btn btn-primary" href="/contact">Request an Estimate</a>
+          <a className="btn btn-primary" href="/request-estimate">Request an Estimate</a>
         </div>
       </section>
     </>
