@@ -109,6 +109,60 @@ export const PROJECTS_PREVIEW = [
   { src: '/images/project-9.jpg', caption: 'West 34th Vancouver - Shower Enclosures' },
 ];
 
+// Projects page gallery, grouped by job instead of one-photo-per-tile. Each
+// project shows as a single card (using its first photo as the cover); the
+// card opens a click-through gallery of every photo for that job.
+//
+// TO ADD MORE PHOTOS TO AN EXISTING JOB (e.g. another Bellevue Dr. shot):
+//   Drop the new image file in public/images/ (e.g. project-10.jpg), then
+//   add a line to that project's `photos` array below:
+//   { src: '/images/project-10.jpg', label: 'Mirror Wall' },
+//
+// TO ADD A BRAND NEW JOB:
+//   Copy one of the { name: ..., photos: [...] } blocks below, give it the
+//   new job's name, and list its photo(s) the same way.
+export const PROJECTS = [
+  {
+    name: 'West Vancouver',
+    photos: [
+      { src: '/images/project-1.jpg', label: 'Frameless Shower' },
+    ],
+  },
+  {
+    name: 'Bellevue Dr.',
+    photos: [
+      { src: '/images/project-2.jpg', label: 'Exterior Glass Railing' },
+      { src: '/images/project-4.jpg', label: 'Interior Railing' },
+      { src: '/images/project-5.jpg', label: 'Wine Cellar' },
+      { src: '/images/project-6.jpg', label: 'Frameless Shower Enclosures' },
+    ],
+  },
+  {
+    name: 'Richmond',
+    photos: [
+      { src: '/images/project-3.jpg', label: 'Shower Enclosure' },
+    ],
+  },
+  {
+    name: 'Pender Island',
+    photos: [
+      { src: '/images/project-7.jpg', label: 'Exterior Railing' },
+    ],
+  },
+  {
+    name: 'Cedarhurst St.',
+    photos: [
+      { src: '/images/project-8.jpg', label: 'Wine Cellar' },
+    ],
+  },
+  {
+    name: 'West 34th Vancouver',
+    photos: [
+      { src: '/images/project-9.jpg', label: 'Shower Enclosures' },
+    ],
+  },
+];
+
 // Trust signals — pull these out of paragraph text and show them as a strip
 // of badges near the top of the homepage.
 export const TRUST_BADGES = [
