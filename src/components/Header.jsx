@@ -29,7 +29,7 @@ export default function Header() {
               )}
             </svg>
           </button>
-          <a className="header-cta" href="/contact">
+          <a className="header-cta" href="/request-estimate">
             Request an Estimate
           </a>
         </div>
