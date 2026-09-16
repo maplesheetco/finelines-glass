@@ -79,14 +79,17 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-graphic">
-            {/* Placeholder graphic — will be replaced once real project photos are in. */}
-            <svg width="100%" height="320" viewBox="0 0 480 400" style={{ maxWidth: 420 }} aria-hidden="true">
-              <rect x="40" y="30" width="240" height="300" rx="4" fill="none" stroke="#3E6B8A" strokeWidth="2" />
-              <rect x="90" y="80" width="240" height="300" rx="4" fill="#EAF1F6" fillOpacity="0.14" stroke="#C0762A" strokeWidth="2" />
-              <line x1="90" y1="80" x2="330" y2="80" stroke="#C0762A" strokeWidth="1" opacity="0.5" />
-              <line x1="90" y1="230" x2="330" y2="230" stroke="#C0762A" strokeWidth="1" opacity="0.5" />
-              <line x1="210" y1="80" x2="210" y2="380" stroke="#C0762A" strokeWidth="1" opacity="0.5" />
-            </svg>
+            <video
+              className="hero-video"
+              autoPlay
+              muted
+              loop
+              playsInline
+              poster="/images/hero-poster.jpg"
+              aria-hidden="true"
+            >
+              <source src="/images/hero-video.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </section>
