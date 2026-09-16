@@ -44,7 +44,7 @@ export default function HardwareFinishes() {
           <p className="section-subheading" style={{ margin: '0 auto 28px' }}>
             Tell us about your project and we'll walk you through the options that work best for it.
           </p>
-          <a className="btn btn-primary" href="/contact">Request an Estimate</a>
+          <a className="btn btn-primary" href="/request-estimate">Request an Estimate</a>
         </div>
       </section>
     </>
