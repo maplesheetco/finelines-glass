@@ -6,15 +6,15 @@ import { COMPANY } from '../data.js';
 // why). Add a new entry here (and drop the matching file in public/images/)
 // whenever you send over more photos.
 const GALLERY = [
-  { src: '/images/project-1.jpg', caption: 'His-and-Hers Shower & Water Closet Enclosure' },
-  { src: '/images/project-2.jpg', caption: 'Glass Railing — Rooftop Terrace' },
-  { src: '/images/project-3.jpg', caption: 'Frameless Shower Enclosure' },
-  { src: '/images/project-4.jpg', caption: 'Interior Glass Stair Railing' },
-  { src: '/images/project-5.jpg', caption: 'Custom Wine Display Cabinet' },
-  { src: '/images/project-6.jpg', caption: 'Frameless Shower Enclosure' },
-  { src: '/images/project-7.jpg', caption: 'Glass Deck Railing' },
-  { src: '/images/project-8.jpg', caption: 'Custom Wine Display Cabinet' },
-  { src: '/images/project-9.jpg', caption: 'Frameless Shower Enclosure' },
+  { src: '/images/project-1.jpg', caption: 'West Vancouver - Frameless Shower' },
+  { src: '/images/project-2.jpg', caption: 'Bellevue Dr. - Exterior Glass Railing' },
+  { src: '/images/project-3.jpg', caption: 'Richmond - Shower Enclosure' },
+  { src: '/images/project-4.jpg', caption: 'Bellevue Dr. - Interior Railing' },
+  { src: '/images/project-5.jpg', caption: 'Bellevue Dr. - Wine Cellar' },
+  { src: '/images/project-6.jpg', caption: 'Bellevue Dr. - Frameless Shower Enclosures' },
+  { src: '/images/project-7.jpg', caption: 'Pender Island - Exterior Railing' },
+  { src: '/images/project-8.jpg', caption: 'Cedarhurst St. - Wine Cellar' },
+  { src: '/images/project-9.jpg', caption: 'West 34th Vancouver - Shower Enclosures' },
 ];
 
 export default function Projects() {
