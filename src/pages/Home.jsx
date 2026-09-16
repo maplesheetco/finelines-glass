@@ -74,7 +74,7 @@ export default function Home() {
               shower enclosure, railing, and mirror at a time.
             </p>
             <div className="hero-actions">
-              <a className="btn btn-primary" href="/contact">Request an Estimate</a>
+              <a className="btn btn-primary" href="/request-estimate">Request an Estimate</a>
               <a className="btn btn-outline" href="/projects">See Our Work</a>
             </div>
           </div>
@@ -154,7 +154,7 @@ export default function Home() {
             Tell us a bit about your project and we'll get back to you with a straightforward estimate —
             no pressure, no surprises.
           </p>
-          <a className="btn btn-primary" href="/contact">Request an Estimate</a>
+          <a className="btn btn-primary" href="/request-estimate">Request an Estimate</a>
         </div>
       </section>
     </>
