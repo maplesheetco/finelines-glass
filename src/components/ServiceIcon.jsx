@@ -60,6 +60,18 @@ const ICONS = {
       strokeLinejoin="round"
     />
   ),
+  skylight: (
+    <>
+      <rect x="4" y="8" width="16" height="13" rx="1" stroke="#3E6B8A" strokeWidth="1.6" />
+      <path d="M12 8 L12 21 M4 14.5 L20 14.5" stroke="#3E6B8A" strokeWidth="1.4" opacity="0.7" />
+      <path
+        d="M12 2 L12 4.5 M7.6 3.3 L8.9 5.4 M16.4 3.3 L15.1 5.4"
+        stroke="#3E6B8A"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+      />
+    </>
+  ),
 };
 
 export default function ServiceIcon({ name, size = 30 }) {
