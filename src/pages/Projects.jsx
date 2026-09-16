@@ -1,4 +1,5 @@
 import React from 'react';
+import { COMPANY } from '../data.js';
 
 // TODO: this whole page is a placeholder gallery. Replace each
 // .gallery-placeholder block below with a real <img src="/images/your-photo.jpg" />
@@ -11,7 +12,7 @@ export default function Projects() {
       <section className="page-hero">
         <div className="container">
           <h1>Our Work</h1>
-          <p>A look at recent installations across Greater Vancouver, Vancouver Island, and the Sunshine Coast.</p>
+          <p>A look at recent installations across {COMPANY.serviceAreas.join(', ')}.</p>
         </div>
       </section>
 
