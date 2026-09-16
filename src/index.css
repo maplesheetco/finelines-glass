@@ -231,6 +231,9 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary:hover { filter: brightness(1.08); }
 .btn-outline { background: transparent; color: var(--white); border-color: rgba(255,255,255,0.6); }
 .btn-outline:hover { background: rgba(255,255,255,0.12); }
+/* Same outline style, but for use on light/white backgrounds instead of the navy hero */
+.btn-outline-navy { background: transparent; color: var(--navy); border-color: var(--navy); }
+.btn-outline-navy:hover { background: var(--glass-tint); }
 
 /* ---------- Trust badge strip ---------- */
 .trust-strip {
@@ -303,6 +306,100 @@ section.block.tint { background: var(--glass-tint); }
 }
 .card h3 { color: var(--navy); margin: 0; font-size: 1.08rem; }
 .card p { color: var(--gray); margin: 0; line-height: 1.55; font-size: 0.95rem; }
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.card-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(27,42,74,0.14);
+}
+.card-link-cta {
+  color: var(--steel);
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-top: auto;
+}
+
+/* ---------- Service detail page ---------- */
+.service-crumb {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin: 0 0 10px;
+}
+.service-crumb a { color: var(--white); text-decoration: underline; }
+.service-detail-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+@media (max-width: 800px) {
+  .service-detail-layout { grid-template-columns: 1fr; }
+}
+.service-detail-copy {
+  color: var(--gray);
+  line-height: 1.7;
+  font-size: 1.02rem;
+  margin: 16px 0 0;
+  max-width: 640px;
+}
+.service-highlights {
+  list-style: none;
+  margin: 22px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  max-width: 640px;
+}
+.service-highlights li {
+  padding-left: 26px;
+  position: relative;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+.service-highlights li::before {
+  content: '\2713';
+  position: absolute;
+  left: 0;
+  top: -1px;
+  color: var(--amber);
+  font-weight: 700;
+}
+.service-detail-aside {
+  background: var(--glass-tint);
+  border-radius: 10px;
+  padding: 24px;
+}
+.service-detail-aside h3 {
+  margin: 0 0 14px;
+  color: var(--navy);
+  font-size: 1rem;
+}
+.service-detail-list {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.service-detail-list a {
+  color: var(--steel);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.92rem;
+}
+.service-detail-list a:hover { text-decoration: underline; }
+.service-detail-areas {
+  color: var(--gray);
+  font-size: 0.85rem;
+  margin: 0;
+  padding-top: 16px;
+  border-top: 1px solid #dbe4ea;
+}
 
 /* ---------- Completed Work carousel ---------- */
 .carousel { max-width: 900px; margin: 0 auto; }
