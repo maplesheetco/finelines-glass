@@ -83,6 +83,11 @@ export const SERVICES = [
     icon: 'film',
   },
   {
+    title: 'Skylights (New or Replacement)',
+    blurb: 'New skylight installations or replacements for aging, leaking, or cloudy units — bringing natural light into kitchens, stairwells, and living spaces.',
+    icon: 'skylight',
+  },
+  {
     title: 'Custom Glass Solutions',
     blurb: "Have something specific in mind? If it's glass, there's a good chance we've already built something like it.",
     icon: 'custom',
