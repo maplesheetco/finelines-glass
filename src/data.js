@@ -34,7 +34,7 @@ export const COMPANY = {
     { day: 'Sunday', time: 'Closed' },
   ],
   yearsExperience: '30+',
-  serviceAreas: ['Greater Vancouver', 'Vancouver Island', 'Sunshine Coast'],
+  serviceAreas: ['Lower Mainland', 'Greater Vancouver', 'Tri-City', 'Fraser Valley'],
   instagramUrl: 'https://www.instagram.com/', // TODO: paste real handle URL
   currentYear: new Date().getFullYear(),
 };
@@ -105,7 +105,7 @@ export const TRUST_BADGES = [
   'BC Building Code Compliant',
   'Warranties on All Railing Products',
   `${COMPANY.yearsExperience} Years in Construction`,
-  'Serving Greater Vancouver & Beyond',
+  `Serving ${COMPANY.serviceAreas[0]} & Beyond`,
 ];
 
 // TODO: replace with real customer quotes (first name + neighbourhood is
@@ -136,6 +136,6 @@ export const FAQS = [
   },
   {
     q: 'Do you handle both residential and builder/commercial projects?',
-    a: 'Yes — we work directly with homeowners as well as builders across Greater Vancouver, Vancouver Island, and the Sunshine Coast.',
+    a: `Yes — we work directly with homeowners as well as builders across ${COMPANY.serviceAreas.join(', ')}.`,
   },
 ];
