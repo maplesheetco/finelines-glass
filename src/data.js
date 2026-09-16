@@ -51,46 +51,116 @@ export const NAV = [
 
 // `icon` keys map to <ServiceIcon /> in components/ServiceIcon.jsx — keep the
 // two in sync if you add or reorder a service.
+// Each service gets its own URL at /services/:slug (see pages/ServiceDetail.jsx)
+// so it can rank and collect backlinks on its own, separate from the general
+// /services overview page. `detail` and `highlights` are the extra, unique
+// copy shown on that dedicated page — keep them different from `blurb` so
+// the homepage/overview card and the service's own page aren't just
+// duplicating the same sentence for Google.
 export const SERVICES = [
   {
     title: 'Frameless Shower Enclosures',
+    slug: 'frameless-shower-enclosures',
     blurb: 'Turn a bathroom into a spa-like retreat with a custom frameless glass shower, cut and installed to fit your space exactly.',
     icon: 'shower',
+    detail: "Frameless glass doesn't just look cleaner — it makes a small bathroom feel bigger and is far easier to keep clean than a framed unit with metal tracks and corners. We template every enclosure on site, so panels are cut to fit your exact walls, tile, and drain slope, then install with hinges and hardware sized for your shower's height and layout.",
+    highlights: [
+      'On-site measuring and templating for a precise fit',
+      'Clear, low-iron, or frosted glass options',
+      'Hardware finishes to match your fixtures',
+      'Hinges and hardware sized for your shower layout',
+    ],
   },
   {
-    title: 'Glass Railings',
+    title: 'Interior & Exterior Glass Railing',
+    slug: 'glass-railings',
     blurb: 'Modern, code-compliant railings for decks, balconies, and staircases that keep your view open instead of blocked.',
     icon: 'railing',
+    detail: 'Glass railings keep a deck, balcony, or staircase feeling open instead of walling off the view, while still meeting BC Building Code requirements. We install both post-and-panel and frameless (glass-only) systems, with base-shoe or standoff mounting depending on the structure.',
+    highlights: [
+      'Post-and-panel and frameless (glass-only) systems',
+      'Base-shoe or standoff mounting to suit your structure',
+      'Built to meet BC Building Code height and load requirements',
+      'Suited to decks, balconies, and interior or exterior stairs',
+    ],
   },
   {
     title: 'Wine Cellars',
+    slug: 'wine-cellars',
     blurb: 'Custom glass-enclosed wine cellars and display rooms built to show off a collection, not hide it.',
     icon: 'wine',
+    detail: 'A glass-enclosed wine cellar turns a collection into a feature of the room instead of something tucked away in a closet. We build both fully custom enclosures and glass-front display walls, sized to fit under stairs, in a dedicated room, or as a built-in cabinet, with racking and lighting coordinated around the glasswork.',
+    highlights: [
+      'Fully custom enclosures or glass-front display walls',
+      'Fits under stairs, in a dedicated room, or as a built-in',
+      'Coordinated with racking, shelving, and lighting',
+      'Insulated glass options for temperature-controlled cellars',
+    ],
   },
   {
     title: 'Glass Backsplashes',
+    slug: 'glass-backsplashes',
     blurb: 'Sleek, easy-to-clean glass backsplashes finished in the color and texture that fits your kitchen.',
     icon: 'backsplash',
+    detail: "A glass backsplash gives a kitchen, bar, or laundry room a seamless, grout-free surface that's simple to wipe down. Panels are cut to fit around outlets, switches, and cabinetry exactly, and are available in a range of finishes and back-painted colors to match your countertop or cabinets.",
+    highlights: [
+      "Grout-free, seamless surface that's easy to clean",
+      'Panels cut around outlets, switches, and cabinetry',
+      'Back-painted color and finish options',
+      'Suited to kitchens, bars, and laundry rooms',
+    ],
   },
   {
     title: 'Mirrors',
+    slug: 'mirrors',
     blurb: 'Custom-cut mirrors for bathrooms, gyms, dance studios, and feature walls, precisely fitted on site.',
     icon: 'mirror',
+    detail: 'Custom-cut mirrors are measured and installed on site, whether that’s a single vanity mirror, a full feature wall, or a dance studio or gym wall system. We work with beveled, frameless, and LED-backlit options, and can cut around outlets, sconces, or trim as needed.',
+    highlights: [
+      'Vanity, feature-wall, and full studio/gym installations',
+      'Beveled, frameless, and LED-backlit options',
+      'Cut on site to fit around outlets, sconces, and trim',
+      'Safety backing applied where required',
+    ],
   },
   {
     title: 'Window & Storefront Film',
+    slug: 'window-storefront-film',
     blurb: 'Solar-control window film for homes and storefronts that cuts glare and UV, keeping spaces cooler in summer and better insulated in winter.',
     icon: 'film',
+    detail: "Solar-control film cuts glare and UV without changing how a window looks from a distance, and can lower how hard your HVAC has to work in both summer and winter. It's applied directly to your existing glass, so there's no need to replace windows to get the benefit.",
+    highlights: [
+      'Cuts glare and UV without replacing existing glass',
+      'Helps regulate indoor temperature year-round',
+      'Applied to residential windows or commercial storefronts',
+      'A range of tint levels and finishes available',
+    ],
   },
   {
     title: 'Skylights (New or Replacement)',
+    slug: 'skylights',
     blurb: 'New skylight installations or replacements for aging, leaking, or cloudy units — bringing natural light into kitchens, stairwells, and living spaces.',
     icon: 'skylight',
+    detail: 'An aging or leaking skylight is often more of a maintenance headache than the natural light is worth. We replace failed units and also install new skylights where a kitchen, stairwell, or living space could use more daylight, with flashing and sealing done as part of the install, not treated as an afterthought.',
+    highlights: [
+      'New skylight installation or replacement of failed units',
+      'Proper flashing and sealing as part of the install',
+      'Fixed and venting options',
+      'A fix for cloudy, leaking, or fogged-up existing skylights',
+    ],
   },
   {
     title: 'Custom Glass Solutions',
+    slug: 'custom-glass-solutions',
     blurb: "Have something specific in mind? If it's glass, there's a good chance we've already built something like it.",
     icon: 'custom',
+    detail: "Not every job fits neatly into a category — tabletops, cabinet inserts, room dividers, glass shelving, and one-off architectural pieces all come through as custom requests. If you have something specific in mind, the best next step is usually just to describe it and we'll tell you if (and how) it's doable.",
+    highlights: [
+      'Tabletops, shelving, and cabinet glass inserts',
+      'Room dividers and interior glass partitions',
+      'One-off or architectural glass pieces',
+      "Not sure if it's possible? Just ask.",
+    ],
   },
 ];
 
