@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { COMPANY, SERVICES, PROJECTS_PREVIEW, TESTIMONIALS } from '../data.js';
 import TrustStrip from '../components/TrustStrip.jsx';
 import ServiceIcon from '../components/ServiceIcon.jsx';
+import Reveal from '../components/Reveal.jsx';
 
 function CompletedWorkCarousel() {
   const [index, setIndex] = useState(0);
@@ -96,24 +97,27 @@ export default function Home() {
 
       <section className="block">
         <div className="container">
-          <h2 className="section-heading">What we do</h2>
-          <p className="section-subheading">
-            From a single custom mirror to a full glass wine cellar, our team handles it start to finish.
-          </p>
+          <Reveal><h2 className="section-heading">What we do</h2></Reveal>
+          <Reveal delay={80}>
+            <p className="section-subheading">
+              From a single custom mirror to a full glass wine cellar, our team handles it start to finish.
+            </p>
+          </Reveal>
           <div className="grid grid-services">
             {SERVICES.map((s, i) => {
               const isOrphan = SERVICES.length % 3 === 1 && i === SERVICES.length - 1;
               return (
-                <Link
-                  to={`/services/${s.slug}`}
-                  className={`card card-link${isOrphan ? ' card-centered' : ''}`}
-                  key={s.title}
-                >
-                  <ServiceIcon name={s.icon} />
-                  <h3>{s.title}</h3>
-                  <p>{s.blurb}</p>
-                  <span className="card-link-cta">Learn more &rarr;</span>
-                </Link>
+                <Reveal delay={(i % 3) * 90} key={s.title}>
+                  <Link
+                    to={`/services/${s.slug}`}
+                    className={`card card-link${isOrphan ? ' card-centered' : ''}`}
+                  >
+                    <ServiceIcon name={s.icon} />
+                    <h3>{s.title}</h3>
+                    <p>{s.blurb}</p>
+                    <span className="card-link-cta">Learn more &rarr;</span>
+                  </Link>
+                </Reveal>
               );
             })}
           </div>
@@ -122,28 +126,34 @@ export default function Home() {
 
       <section className="block">
         <div className="container">
-          <h2 className="section-heading">Completed Work</h2>
-          <p className="section-subheading">A look at some of our recent installations.</p>
-          <CompletedWorkCarousel />
+          <Reveal><h2 className="section-heading">Completed Work</h2></Reveal>
+          <Reveal delay={80}>
+            <p className="section-subheading">A look at some of our recent installations.</p>
+          </Reveal>
+          <Reveal delay={140}><div><CompletedWorkCarousel /></div></Reveal>
         </div>
       </section>
 
       <section className="block tint">
         <div className="container">
-          <h2 className="section-heading">What our customers say</h2>
-          <p className="section-subheading">
-            {/* TODO: replace the two placeholders below with real reviews — see the website report for why this matters. */}
-            A few words from people we've worked with.
-          </p>
+          <Reveal><h2 className="section-heading">What our customers say</h2></Reveal>
+          <Reveal delay={80}>
+            <p className="section-subheading">
+              {/* TODO: replace the two placeholders below with real reviews — see the website report for why this matters. */}
+              A few words from people we've worked with.
+            </p>
+          </Reveal>
           <div className="grid">
             {TESTIMONIALS.map((t, i) => (
-              <div className="testimonial" key={i}>
-                <svg className="quote-icon" width="26" height="20" viewBox="0 0 26 20" fill="currentColor" aria-hidden="true">
-                  <path d="M0 20 V11 C0 4.5 4 0.5 10 0 V4.5 C6.5 5 4.5 7 4.5 11 H10 V20 H0 Z M15 20 V11 C15 4.5 19 0.5 25 0 V4.5 C21.5 5 19.5 7 19.5 11 H25 V20 H15 Z" />
-                </svg>
-                <p className="quote">&ldquo;{t.quote}&rdquo;</p>
-                <p className="name">{t.name}</p>
-              </div>
+              <Reveal delay={(i % 3) * 90} key={i}>
+                <div className="testimonial">
+                  <svg className="quote-icon" width="26" height="20" viewBox="0 0 26 20" fill="currentColor" aria-hidden="true">
+                    <path d="M0 20 V11 C0 4.5 4 0.5 10 0 V4.5 C6.5 5 4.5 7 4.5 11 H10 V20 H0 Z M15 20 V11 C15 4.5 19 0.5 25 0 V4.5 C21.5 5 19.5 7 19.5 11 H25 V20 H15 Z" />
+                  </svg>
+                  <p className="quote">&ldquo;{t.quote}&rdquo;</p>
+                  <p className="name">{t.name}</p>
+                </div>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -151,12 +161,14 @@ export default function Home() {
 
       <section className="block">
         <div className="container">
-          <h2 className="section-heading">Ready to get started?</h2>
-          <p className="section-subheading">
-            Tell us a bit about your project and we'll get back to you with a straightforward estimate —
-            no pressure, no surprises.
-          </p>
-          <a className="btn btn-primary" href="/request-estimate">Request an Estimate</a>
+          <Reveal><h2 className="section-heading">Ready to get started?</h2></Reveal>
+          <Reveal delay={80}>
+            <p className="section-subheading">
+              Tell us a bit about your project and we'll get back to you with a straightforward estimate —
+              no pressure, no surprises.
+            </p>
+          </Reveal>
+          <Reveal delay={140}><a className="btn btn-primary" href="/request-estimate">Request an Estimate</a></Reveal>
         </div>
       </section>
     </>
