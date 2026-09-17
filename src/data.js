@@ -164,38 +164,143 @@ export const SERVICES = [
   },
 ];
 
-// The four typical frameless shower enclosure layouts, shown on the
-// Frameless Shower Enclosures service page (src/pages/ServiceDetail.jsx).
-// Each pairs a real installation photo (with a plan-view diagram baked in)
-// with condensed copy drawn from the Finelines design-reference sheets.
+// The four typical frameless shower enclosure layouts. The summary cards on
+// the Frameless Shower Enclosures service page (src/pages/ServiceDetail.jsx)
+// use `blurb`; each card links to its own page at
+// /services/frameless-shower-enclosures/:slug (src/pages/ShowerDesignDetail.jsx),
+// which renders the fuller `intro`/`whyChoose`/`framelessAdvantage`/`hardware`/
+// `installation` content below. All copy is drawn directly from the Finelines
+// design-reference sheets for each layout.
 export const SHOWER_DESIGNS = [
   {
     number: 1,
+    slug: 'inline',
     title: 'Frameless Inline Shower',
     subtitle: 'Inline',
     image: '/images/shower-design-1-inline.jpg',
     blurb: "A clean single-door, single-panel layout — space-efficient, open in appearance, with easy access through a hinged door and a timeless look that suits most bathrooms. Frameless glass means no bulky metal framing, less soap-scum buildup, and your tile stays fully visible.",
+    intro: [
+      "At Finelines Glass Installations, we believe a frameless shower enclosure is more than simply installing glass — it's about precision, craftsmanship, and flawless application.",
+      'A frameless inline shower is a clean and practical solution for bathrooms with a straight shower opening. The combination of a hinged glass door and fixed panel creates an open, spacious appearance while maintaining a refined, minimalist design.',
+    ],
+    whyChoose: [
+      { title: 'Clean, space-efficient layout', body: 'Ideal for straight shower openings and a wide range of bathroom designs.' },
+      { title: 'Open appearance', body: 'Clear glass keeps the bathroom visually connected and allows the tilework to remain the focal point.' },
+      { title: 'Easy access', body: 'A hinged door provides a convenient and comfortable entry into the shower.' },
+      { title: 'Custom configuration', body: 'Door size, fixed panel dimensions, hardware placement, and glass specifications can be tailored to your space.' },
+      { title: 'Timeless design', body: 'Minimal framing creates a sophisticated look that complements contemporary and traditional bathrooms.' },
+    ],
+    framelessAdvantage: [
+      'Frameless glass eliminates bulky metal framing and channels around the enclosure, creating a minimalist and virtually unobstructed glass design.',
+      'With fewer metal profiles, the enclosure has fewer areas where soap residue and buildup can collect, while the clear glass allows your tile, stone, fixtures, and other bathroom finishes to remain visible.',
+    ],
+    hardware: {
+      type: 'list',
+      intro: 'Your shower hardware is an important part of the overall design. We offer a variety of hardware finish options so your hinges, handles, and other glass hardware can complement your bathroom fixtures and finishes.',
+      items: [
+        { name: 'Chrome', body: 'A classic, bright finish that works with many bathroom styles.' },
+        { name: 'Matte Black', body: 'A bold, contemporary option for modern bathrooms.' },
+        { name: 'Brushed Nickel', body: 'A subtle, versatile finish with a softer metallic appearance.' },
+        { name: 'Brushed Gold / Brass', body: 'Adds warmth and a distinctive decorative accent.' },
+        { name: 'Other finishes', body: 'Finish availability may vary depending on the selected hardware and supplier.' },
+      ],
+    },
+    installation: [
+      'The beauty of a frameless shower depends heavily on how it is installed. Our workmanship and application focus on precision measuring, accurate glass alignment, proper hardware placement, consistent clearances, and meticulous finishing.',
+      'Every panel and door is installed to work together seamlessly, delivering the clean lines and refined appearance expected from a premium frameless shower enclosure. The result is not simply a shower enclosure — it is a carefully executed glass installation designed around your space.',
+    ],
   },
   {
     number: 2,
+    slug: 'return-panel',
     title: 'Frameless Inline with Return Panel',
     subtitle: 'L-Shape',
     image: '/images/shower-design-2-return-panel.jpg',
     blurb: "Adds a perpendicular return panel to the inline layout, closing off the open end for a clearly defined enclosure while keeping the same open, uncluttered feel and easy entry through the hinged door. Configured around your exact walls and layout.",
+    intro: [
+      'Finelines Glass Installations specializes in precision frameless shower enclosures designed to complement the unique layout of your bathroom. A frameless inline with return panel creates an elegant L-shaped configuration using a hinged glass door, an inline fixed panel, and a perpendicular return panel.',
+    ],
+    whyChoose: [
+      { title: 'Efficient use of space', body: 'The L-shaped configuration makes excellent use of a corner while maintaining a comfortable shower area.' },
+      { title: 'Open and spacious appearance', body: 'Clear frameless glass keeps the bathroom visually open and allows your tilework to remain the focal point.' },
+      { title: 'Defined shower enclosure', body: 'The return panel helps contain the shower while maintaining a clean, open design.' },
+      { title: 'Convenient entry', body: 'A hinged glass door provides easy access to the shower.' },
+      { title: 'Custom configuration', body: 'Glass dimensions, door placement, return panel size, hardware, and finishes can be customized to suit your bathroom.' },
+    ],
+    framelessAdvantage: [
+      'Frameless glass eliminates bulky metal framing and channels, creating a clean, minimalist, and virtually unobstructed appearance. With more glass and less metal, your tilework, stone, fixtures, and other bathroom details remain visible while the enclosure blends naturally into the overall design.',
+    ],
+    hardware: {
+      type: 'link',
+      body: 'We offer a variety of hardware finish options to coordinate your shower enclosure with your bathroom fixtures and décor. Available finishes vary by hardware style and supplier.',
+    },
+    installation: [
+      'A frameless shower is only as good as its installation. Finelines Glass Installations brings careful attention to measuring, glass alignment, hinge placement, door clearances, hardware positioning, and finishing details.',
+      'Our goal is to ensure that every glass panel and door works together seamlessly while delivering the clean lines, functionality, and craftsmanship expected from a professionally installed frameless shower enclosure.',
+    ],
   },
   {
     number: 3,
+    slug: 'neo-angle',
     title: 'Neo-Angle Shower',
     subtitle: 'Angled',
     image: '/images/shower-design-3-neo-angle.jpg',
     blurb: "Built into a corner, turning space a standard layout would waste into a comfortable shower area. Open sightlines and a distinctive angled design, fully custom-built to your bathroom's corner and dimensions.",
+    intro: [
+      "At Finelines Glass Installations, we believe a frameless shower enclosure is more than simply installing glass — it's about precision, craftsmanship, and flawless application.",
+      'A neo-angle shower enclosure is an excellent way to maximize a bathroom corner while creating a clean, open, and distinctive look. Its angled configuration provides comfortable shower space while maintaining an efficient footprint, making it especially well suited for bathrooms where every inch matters.',
+    ],
+    whyChoose: [
+      { title: 'Space-efficient design', body: 'Makes smart use of an otherwise underutilized corner.' },
+      { title: 'Comfortable shower area', body: 'Provides generous interior space without requiring a large footprint.' },
+      { title: 'Open and spacious appearance', body: 'Clear glass allows the bathroom to feel brighter and less enclosed.' },
+      { title: 'Distinctive architectural design', body: 'The angled configuration creates a custom, sophisticated appearance.' },
+      { title: 'Custom-built to your bathroom', body: 'Panel sizes, door placement, glass configuration, and hardware can be tailored to the space.' },
+    ],
+    framelessAdvantage: [
+      'Frameless glass removes the bulky metal framing found in traditional shower enclosures, creating a minimalist and virtually unobstructed glass design.',
+      'With fewer metal channels and profiles, the enclosure is easier to maintain while allowing your tilework, stone, fixtures, and bathroom finishes to remain visible.',
+    ],
+    hardware: {
+      type: 'link',
+      body: 'Hinges, handles, and other glass hardware can be finished to complement your bathroom fixtures.',
+    },
+    installation: [
+      'The beauty of a frameless shower depends heavily on how it is installed. This is where Finelines Glass Installations makes the difference.',
+      'Our workmanship and application are centered around precision measuring, accurate glass alignment, proper hardware placement, consistent clearances, and meticulous finishing. Every panel and door must work together seamlessly to achieve the clean lines and refined appearance expected from a premium frameless enclosure. The result is not simply a shower enclosure — it is a carefully executed glass installation designed around your space.',
+    ],
   },
   {
     number: 4,
+    slug: 'serenity-slider',
     title: 'Serenity / Frameless Slider',
     subtitle: 'Slider',
     image: '/images/shower-design-4-serenity-slider.jpg',
     blurb: "A fixed panel paired with a sliding panel — no swing clearance needed, making it the practical choice for wider openings. Clean, minimal-frame look with smooth, quality sliding hardware, tailored to your space.",
+    intro: [
+      'Finelines Glass Installations brings precision workmanship and thoughtful design to frameless sliding shower enclosures. The Serenity / Frameless Slider is a practical and elegant solution for wider shower openings where a sliding door provides convenient access without requiring the floor space needed for a swinging door.',
+      "Designed with a fixed glass panel and a sliding glass panel, this configuration creates a clean, open appearance while providing smooth, practical access to the shower. The frameless glass allows the bathroom's tilework, stone, fixtures, and architectural details to remain visible.",
+    ],
+    whyChoose: [
+      { title: 'Space-saving entry', body: 'The sliding panel moves along the enclosure instead of swinging into the bathroom, making efficient use of available floor space.' },
+      { title: 'Ideal for wider openings', body: 'Sliding configurations can be an effective solution for larger shower openings where a hinged door may require more clearance.' },
+      { title: 'Clean frameless appearance', body: 'Minimal framing keeps the enclosure visually open and contemporary.' },
+      { title: 'Smooth functionality', body: 'Quality sliding hardware is designed to provide controlled movement and dependable operation when properly installed.' },
+      { title: 'Custom-built', body: 'Panel sizes, opening dimensions, glass specifications, hardware, and configuration can be tailored to the bathroom.' },
+    ],
+    framelessAdvantage: [
+      "Frameless glass reduces the amount of visible metal around the enclosure, creating a clean, minimalist appearance and maintaining clear sightlines through the bathroom. It also allows the shower's tilework and interior finishes to remain a prominent part of the overall design.",
+    ],
+    hardware: {
+      type: 'list-inline',
+      intro: 'We offer different hardware styles and finish options to help coordinate your sliding shower enclosure with the rest of your bathroom. Depending on the selected system and supplier, finish options may include:',
+      items: ['Polished chrome', 'Brushed nickel', 'Matte black', 'Satin brass / champagne', 'Gunmetal grey', 'Oil rubbed bronze'],
+    },
+    installation: [
+      'A frameless sliding enclosure requires careful attention to the opening, glass dimensions, alignment, hardware positioning, clearances, and sliding operation. Finelines Glass Installations approaches each installation with precision and attention to detail from measurement through final installation.',
+      'Our goal is to deliver a sliding enclosure that operates properly, looks balanced and refined, and is built around the specific conditions of your bathroom rather than relying on a one-size-fits-all approach.',
+    ],
+    customNote: 'Every bathroom is different. When a standard configuration does not suit the space, we work through the layout and installation requirements to find a practical solution. Our experience with custom glass layouts allows us to explore configurations that work with the existing walls, dimensions, and design of the bathroom.',
   },
 ];
 
