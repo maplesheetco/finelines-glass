@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { COMPANY, PROJECTS } from '../data.js';
+import Reveal from '../components/Reveal.jsx';
 
 function Lightbox({ project, index, onClose, onPrev, onNext }) {
   useEffect(() => {
@@ -77,21 +78,22 @@ export default function Projects() {
         <div className="container">
           <div className="project-grid">
             {PROJECTS.map((p, i) => (
-              <button
-                type="button"
-                className="project-card"
-                key={p.name}
-                onClick={() => openAt(i)}
-                aria-label={`View ${p.photos.length} photo${p.photos.length > 1 ? 's' : ''} from ${p.name}`}
-              >
-                <div className="project-card-image-wrap">
-                  <img src={p.photos[0].src} alt={p.name} loading="lazy" />
-                  {p.photos.length > 1 && (
-                    <span className="project-card-badge">{p.photos.length} photos</span>
-                  )}
-                </div>
-                <div className="project-card-name">{p.name}</div>
-              </button>
+              <Reveal delay={(i % 3) * 90} key={p.name}>
+                <button
+                  type="button"
+                  className="project-card"
+                  onClick={() => openAt(i)}
+                  aria-label={`View ${p.photos.length} photo${p.photos.length > 1 ? 's' : ''} from ${p.name}`}
+                >
+                  <div className="project-card-image-wrap">
+                    <img src={p.photos[0].src} alt={p.name} loading="lazy" />
+                    {p.photos.length > 1 && (
+                      <span className="project-card-badge">{p.photos.length} photos</span>
+                    )}
+                  </div>
+                  <div className="project-card-name">{p.name}</div>
+                </button>
+              </Reveal>
             ))}
           </div>
           <p style={{ marginTop: 28, color: 'var(--gray)' }}>
