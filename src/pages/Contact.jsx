@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { COMPANY } from '../data.js';
+import Reveal from '../components/Reveal.jsx';
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -25,6 +26,7 @@ export default function Contact() {
 
       <section className="block">
         <div className="container contact-grid">
+          <Reveal>
           <div>
             <div className="contact-info-card">
               <div className="contact-detail">
@@ -88,7 +90,9 @@ export default function Contact() {
               src={`https://www.google.com/maps?q=${COMPANY.mapQuery}&output=embed`}
             />
           </div>
+          </Reveal>
 
+          <Reveal delay={100}>
           <div>
             {submitted ? (
               <div className="card">
@@ -117,6 +121,7 @@ export default function Contact() {
               </form>
             )}
           </div>
+          </Reveal>
         </div>
       </section>
     </>
