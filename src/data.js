@@ -258,11 +258,11 @@ export const TESTIMONIALS = [
 export const FAQS = [
   {
     q: 'How much does a project like this usually cost?',
-    a: 'It depends on size and materials, but most homeowners get a clear, no-obligation estimate within a day or two of reaching out. TODO: replace with a real ballpark range once you\'re comfortable sharing one.',
+    a: "It depends on the hardware, glass, and finish choices for your project, so pricing varies from job to job. Reach out and we'll walk you through the options to give you a clear, no-obligation estimate.",
   },
   {
     q: 'How long does an installation take?',
-    a: 'Most residential jobs — shower enclosures, railings, mirrors — are completed in a single visit. Larger projects like wine cellars may take longer. TODO: confirm typical timelines.',
+    a: "It depends on the size of the project. A single shower enclosure or mirror can often be completed in a day, while larger jobs take longer.",
   },
   {
     q: 'Do I need to be home during the installation?',
@@ -270,6 +270,10 @@ export const FAQS = [
   },
   {
     q: 'Do you handle both residential and builder/commercial projects?',
-    a: `Yes — we work directly with homeowners as well as builders across ${COMPANY.serviceAreas.join(', ')}.`,
+    a: `Yes — we handle both residential and commercial projects, mostly working alongside the contractors and designers on those jobs, across ${COMPANY.serviceAreas.join(', ')}.`,
+  },
+  {
+    q: 'What is the lead time?',
+    a: "It depends on the product choices you make — lead time tracks glass and hardware availability, so it varies by project. Standard finishes and glass are usually quick to source, but specialty finishes, colors, or glass types can take noticeably longer to arrive — we'll flag this during your consultation so it doesn't hold up your project timeline.",
   },
 ];
