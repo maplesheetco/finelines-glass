@@ -1,63 +1,63 @@
-import React from 'react';
-import { useParams, Link, Navigate } from 'react-router-dom';
-import { COMPANY, SERVICES } from '../data.js';
-import ServiceIcon from '../components/ServiceIcon.jsx';
+import React, { useEffect, useRef, useState, cloneElement, isValidElement } from 'react';
 
-export default function ServiceDetail() {
-  const { slug } = useParams();
-  const service = SERVICES.find((s) => s.slug === slug);
+/**
+ * Fades + slides an element into view the first time it scrolls into the
+ * viewport (the "text appears as you scroll" effect, like apple.com).
+ *
+ * Usage:
+ *   <Reveal><h2 className="section-heading">Title</h2></Reveal>
+ *   <Reveal delay={120}><p>Some text</p></Reveal>
+ *
+ * If `children` is a single element (the usual case), Reveal attaches the
+ * scroll behavior directly to it instead of wrapping it in an extra <div> —
+ * this keeps CSS grid/flex layouts (e.g. service cards) working exactly as
+ * before, since no wrapper node is inserted between a grid and its items.
+ */
+export default function Reveal({ children, as: Tag = 'div', delay = 0, className = '' }) {
+  const ref = useRef(null);
+  const [visible, setVisible] = useState(false);
 
-  if (!service) {
-    return <Navigate to="/services" replace />;
+  useEffect(() => {
+    const node = ref.current;
+    if (!node) return undefined;
+
+    // If the browser doesn't support IntersectionObserver, just show the
+    // content immediately rather than leaving it invisible.
+    if (typeof IntersectionObserver === 'undefined') {
+      setVisible(true);
+      return undefined;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.unobserve(node);
+          }
+        });
+      },
+      { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+    );
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
+
+  const revealClass = `reveal${visible ? ' is-visible' : ''}`;
+  const style = delay ? { transitionDelay: `${delay}ms` } : undefined;
+
+  if (isValidElement(children)) {
+    return cloneElement(children, {
+      ref,
+      className: [children.props.className, revealClass].filter(Boolean).join(' '),
+      style: { ...(children.props.style || {}), ...style },
+    });
   }
 
-  const otherServices = SERVICES.filter((s) => s.slug !== slug);
-
   return (
-    <>
-      <section className="page-hero">
-        <div className="container">
-          <p className="service-crumb">
-            <Link to="/services">Services</Link> / {service.title}
-          </p>
-          <h1>{service.title}</h1>
-          <p>{service.blurb}</p>
-        </div>
-      </section>
-
-      <section className="block">
-        <div className="container service-detail-layout">
-          <div className="service-detail-main">
-            <ServiceIcon name={service.icon} />
-            <p className="service-detail-copy">{service.detail}</p>
-
-            <ul className="service-highlights">
-              {service.highlights.map((h) => (
-                <li key={h}>{h}</li>
-              ))}
-            </ul>
-
-            <div className="hero-actions" style={{ marginTop: 28 }}>
-              <a className="btn btn-primary" href="/request-estimate">Request an Estimate</a>
-              <a className="btn btn-outline-navy" href="/projects">See Our Work</a>
-            </div>
-          </div>
-
-          <aside className="service-detail-aside">
-            <h3>Other services</h3>
-            <ul className="service-detail-list">
-              {otherServices.map((s) => (
-                <li key={s.slug}>
-                  <Link to={`/services/${s.slug}`}>{s.title}</Link>
-                </li>
-              ))}
-            </ul>
-            <p className="service-detail-areas">
-              Serving {COMPANY.serviceAreas.join(', ')}.
-            </p>
-          </aside>
-        </div>
-      </section>
-    </>
+    <Tag ref={ref} className={[className, revealClass].filter(Boolean).join(' ')} style={style}>
+      {children}
+    </Tag>
   );
 }
