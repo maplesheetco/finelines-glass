@@ -164,6 +164,48 @@ export const SERVICES = [
   },
 ];
 
+// The four typical frameless shower enclosure layouts, shown on the
+// Frameless Shower Enclosures service page (src/pages/ServiceDetail.jsx).
+// Each pairs a real installation photo (with a plan-view diagram baked in)
+// with condensed copy drawn from the Finelines design-reference sheets.
+export const SHOWER_DESIGNS = [
+  {
+    number: 1,
+    title: 'Frameless Inline Shower',
+    subtitle: 'Inline',
+    image: '/images/shower-design-1-inline.jpg',
+    blurb: "A clean single-door, single-panel layout — space-efficient, open in appearance, with easy access through a hinged door and a timeless look that suits most bathrooms. Frameless glass means no bulky metal framing, less soap-scum buildup, and your tile stays fully visible.",
+  },
+  {
+    number: 2,
+    title: 'Frameless Inline with Return Panel',
+    subtitle: 'L-Shape',
+    image: '/images/shower-design-2-return-panel.jpg',
+    blurb: "Adds a perpendicular return panel to the inline layout, closing off the open end for a clearly defined enclosure while keeping the same open, uncluttered feel and easy entry through the hinged door. Configured around your exact walls and layout.",
+  },
+  {
+    number: 3,
+    title: 'Neo-Angle Shower',
+    subtitle: 'Angled',
+    image: '/images/shower-design-3-neo-angle.jpg',
+    blurb: "Built into a corner, turning space a standard layout would waste into a comfortable shower area. Open sightlines and a distinctive angled design, fully custom-built to your bathroom's corner and dimensions.",
+  },
+  {
+    number: 4,
+    title: 'Serenity / Frameless Slider',
+    subtitle: 'Slider',
+    image: '/images/shower-design-4-serenity-slider.jpg',
+    blurb: "A fixed panel paired with a sliding panel — no swing clearance needed, making it the practical choice for wider openings. Clean, minimal-frame look with smooth, quality sliding hardware, tailored to your space.",
+  },
+];
+
+// Closing panel shown after the four typical designs above, for bathrooms
+// that don't fit a standard layout.
+export const SHOWER_CUSTOM_LAYOUT = {
+  heading: 'Have an unusual layout in mind?',
+  body: "Not every bathroom fits one of the four layouts above. Where unusual walls, narrow openings, windows, or fixtures need extra thought, we work through your space and your vision to develop a configuration built specifically around it — bring us a sketch, a photo, or just an idea, and we'll find the solution.",
+};
+
 // Real completed-project photos, shared with the Projects page gallery.
 // Captions describe the work only — never a client's exact address (see the
 // website report / discovery checklist for why).
