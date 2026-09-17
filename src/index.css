@@ -981,3 +981,53 @@ form.contact-form textarea { min-height: 120px; resize: vertical; }
     transition: none;
   }
 }
+
+/* ---------- Hardware finish swatches (grouped by color family) ---------- */
+.finish-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.finish-group-title {
+  color: var(--navy);
+  font-size: 1.05rem;
+  margin: 0 0 16px;
+}
+.finish-swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 18px;
+}
+.finish-swatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+.finish-swatch-color {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(27,42,74,0.18), inset 0 0 0 1px rgba(0,0,0,0.06);
+  position: relative;
+}
+.finish-swatch-new-badge {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: var(--amber);
+  color: var(--white);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 999px;
+}
+.finish-swatch-name {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.3;
+}
