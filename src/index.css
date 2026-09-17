@@ -1098,3 +1098,158 @@ form.contact-form textarea { min-height: 120px; resize: vertical; }
   background: var(--glass-tint);
   border-radius: 10px;
 }
+
+/* ---------- Typical shower designs (service detail page) ---------- */
+.shower-design-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 26px;
+  margin-top: 8px;
+}
+.shower-design-card {
+  background: var(--white);
+  border: 1px solid #e6ecf1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(27,42,74,0.06);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.shower-design-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #e6ecf1;
+}
+.shower-design-card-body {
+  padding: 18px 20px 22px;
+}
+.shower-design-card-body h3 {
+  margin: 0 0 2px;
+  color: var(--navy);
+  font-size: 1.05rem;
+}
+.shower-design-subtitle {
+  margin: 0 0 10px;
+  color: var(--amber);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.shower-design-card-body p:not(.shower-design-subtitle) {
+  margin: 0;
+  color: var(--gray);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+/* ---------- Configuration diagrams (top view / 3D) ---------- */
+.diagram-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.diagram-figure {
+  margin: 0;
+  background: var(--white);
+  border: 1px solid #e6ecf1;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 1px 4px rgba(27,42,74,0.06);
+}
+.diagram-figure svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.diagram-figcaption {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: var(--gray);
+  text-align: center;
+}
+.diagram-label {
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: 700;
+  fill: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.diagram-label-sm {
+  font-size: 10px;
+  font-weight: 600;
+  fill: var(--gray);
+  text-transform: none;
+  letter-spacing: 0;
+}
+.diagram-label-italic {
+  font-style: italic;
+}
+
+/* ---------- Numbered shower-design cards (photo + blueprint plan view) ---------- */
+.design-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+.design-card {
+  background: var(--white);
+  border: 1px solid #e6ecf1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(27,42,74,0.06);
+  padding-bottom: 18px;
+}
+.design-card-title {
+  margin: 18px 20px 2px;
+  color: var(--navy);
+  font-size: 1.15rem;
+  text-align: center;
+}
+.design-card-subtitle {
+  margin: 0 0 14px;
+  color: var(--navy);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: center;
+  opacity: 0.75;
+}
+.design-card-photo-placeholder {
+  aspect-ratio: 4 / 3.2;
+  margin: 0 20px 16px;
+  background: var(--glass-tint);
+  border: 1px dashed #b9cede;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--steel);
+  font-size: 0.85rem;
+  text-align: center;
+}
+.design-card-planlabel {
+  margin: 0 0 6px;
+  text-align: center;
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.design-card-diagram {
+  padding: 0 12px;
+}
+.design-card-diagram svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.planv2-label {
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: 600;
+  fill: var(--ink);
+}
