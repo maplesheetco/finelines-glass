@@ -81,14 +81,15 @@ export default function ServiceDetail() {
             <div className="shower-design-grid">
               {SHOWER_DESIGNS.map((d, i) => (
                 <Reveal key={d.number} delay={i * 60}>
-                  <div className="shower-design-card">
+                  <Link to={`/services/frameless-shower-enclosures/${d.slug}`} className="shower-design-card card-link">
                     <img src={d.image} alt={`${d.title} (${d.subtitle}) — installed enclosure photo and plan-view diagram`} loading="lazy" />
                     <div className="shower-design-card-body">
                       <h3>{d.number}. {d.title}</h3>
                       <p className="shower-design-subtitle">{d.subtitle}</p>
                       <p>{d.blurb}</p>
+                      <p className="card-link-cta">See the full design details &rarr;</p>
                     </div>
-                  </div>
+                  </Link>
                 </Reveal>
               ))}
             </div>
