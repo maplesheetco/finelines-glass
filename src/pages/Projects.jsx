@@ -69,6 +69,7 @@ export default function Projects() {
     <>
       <section className="page-hero">
         <div className="container">
+          <p className="hero-eyebrow">{COMPANY.shortName}</p>
           <h1>Our Work</h1>
           <p>A look at recent installations across {COMPANY.serviceAreas.join(', ')}.</p>
         </div>
