@@ -484,6 +484,10 @@ export const PROJECTS = [
     name: 'Pender Island',
     photos: [
       { src: '/images/project-7.jpg', label: 'Exterior Railing' },
+      { src: '/images/project-10.jpg', label: 'Exterior Glass Railing' },
+      { src: '/images/project-11.jpg', label: 'Deck Railing - Marina View' },
+      { src: '/images/project-12.jpg', label: 'Railing Detail' },
+      { src: '/images/project-13.jpg', label: 'Railing - Roofline Detail' },
     ],
   },
   {
