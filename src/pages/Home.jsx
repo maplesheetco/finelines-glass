@@ -65,12 +65,12 @@ export default function Home() {
       <section className="hero">
         <div className="container">
           <div className="hero-copy">
-            <div className="hero-eyebrow">Vancouver, BC &middot; {COMPANY.yearsExperience} Years in Business</div>
+            <div className="hero-eyebrow">{COMPANY.shortName} &middot; Vancouver, BC &middot; {COMPANY.yearsExperience} Years in Business</div>
             <h1>Custom glass, railings &amp; mirrors, built to last.</h1>
             <p>
-              We're a Vancouver-based team of glass installers turning homes and builds across{' '}
-              {COMPANY.serviceAreas.join(', ')} into something a little more beautiful — one
-              shower enclosure, railing, and mirror at a time.
+              {COMPANY.shortName} is a Vancouver-based team of glass installers turning homes and
+              builds across {COMPANY.serviceAreas.join(', ')} into something a little more
+              beautiful — one shower enclosure, railing, and mirror at a time.
             </p>
             <div className="hero-actions">
               <a className="btn btn-primary" href="/request-estimate">Request an Estimate</a>
