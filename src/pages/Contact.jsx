@@ -19,6 +19,7 @@ export default function Contact() {
     <>
       <section className="page-hero">
         <div className="container">
+          <p className="hero-eyebrow">{COMPANY.shortName}</p>
           <h1>Get in Touch</h1>
           <p>Tell us about your project and we'll get back to you with a straightforward estimate.</p>
         </div>
