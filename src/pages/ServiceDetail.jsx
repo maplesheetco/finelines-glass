@@ -20,7 +20,7 @@ export default function ServiceDetail() {
       <section className="page-hero">
         <div className="container">
           <p className="service-crumb">
-            <Link to="/services">Services</Link> / {service.title}
+            {COMPANY.shortName} / <Link to="/services">Services</Link> / {service.title}
           </p>
           <h1>{service.title}</h1>
           <p>{service.blurb}</p>
