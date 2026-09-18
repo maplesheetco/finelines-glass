@@ -10,7 +10,7 @@ export default function Header() {
     <header className="site-header">
       <div className="container">
         <NavLink className="brand" to="/" end aria-label="Finelines home" onClick={() => setOpen(false)}>
-          <Logo variant="onDark" height={38} />
+          <Logo variant="onDark" height={48} />
         </NavLink>
 
         <div className="header-right">
