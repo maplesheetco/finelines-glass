@@ -41,12 +41,12 @@ export default function Logo({ variant = 'onDark', height = 40, className }) {
       </text>
       <text
         x="300"
-        y="108"
+        y="40"
         textAnchor="middle"
         fontFamily={fontStack}
-        fontSize="19"
+        fontSize="27"
         fontWeight="700"
-        letterSpacing="2.5"
+        letterSpacing="1.4"
         fill={ink}
       >
         FINELINES INSTALLATIONS LTD
