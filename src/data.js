@@ -311,6 +311,126 @@ export const SHOWER_CUSTOM_LAYOUT = {
   body: "Not every bathroom fits one of the four layouts above. Where unusual walls, narrow openings, windows, or fixtures need extra thought, we work through your space and your vision to develop a configuration built specifically around it — bring us a sketch, a photo, or just an idea, and we'll find the solution.",
 };
 
+// The two typical glass railing systems. Base Shoe covers Top Mount and Side
+// Mount as two applications of the same product (per the Finelines
+// reference sheet's own "Two Applications — One Clean Design" framing), and
+// Standoff is the second system. The summary cards on the Interior &
+// Exterior Glass Railing service page (src/pages/ServiceDetail.jsx) use
+// `blurb`; each card links to its own page at /services/glass-railings/:slug
+// (src/pages/RailingDesignDetail.jsx), which renders the fuller
+// `intro`/`applications`/`safetyCode`/`coordination`/`hardware`/`approach`
+// content below. All copy is drawn directly from the Finelines
+// design-reference sheets for each system, including the safety/building
+// code language, which should not be reworded without checking the source.
+export const RAILING_DESIGNS = [
+  {
+    number: 1,
+    slug: 'base-shoe',
+    title: 'Base Shoe Glass Railing',
+    subtitle: 'Top Mount & Side Mount Applications',
+    image: '/images/project-4.jpg',
+    blurb: 'A continuous aluminum or metal channel secures the glass along its lower edge, creating one uninterrupted architectural line instead of individual point fittings — installed as a top-mount or side-mount system depending on the structure.',
+    intro: [
+      'Finelines Glass Installations provides modern base shoe glass railing systems designed to create a clean, contemporary architectural appearance while providing a practical solution for balconies, decks, stairs, landings, terraces, and other railing applications.',
+      'A base shoe system uses a continuous structural aluminum or metal channel to secure the glass along its lower edge. Unlike individual point-supported hardware, the continuous base shoe creates a strong visual line and allows the glass to appear as one uninterrupted architectural element.',
+      'The result is a sleek, streamlined look that works particularly well with modern residential and commercial architecture. The minimal visual interruption of the glass helps preserve views while allowing the railing to integrate naturally with the surrounding design.',
+    ],
+    applicationsHeading: 'Two Applications — One Clean Design',
+    applications: [
+      { title: 'Top Mount Base Shoe Railing', body: 'The continuous base shoe is installed directly on top of the structural surface, such as a concrete slab, curb, balcony edge, stair structure, or other suitable supporting surface. This configuration provides a clean, straightforward installation where the structural surface allows the shoe to be mounted from above.' },
+      { title: 'Side Mount Base Shoe Railing', body: 'The continuous base shoe is mounted to the side or face of the supporting structure. This application can be useful where the top of the slab or wall needs to remain clear, where the architectural design calls for a more concealed edge condition, or where site conditions make a side-mounted configuration appropriate.' },
+    ],
+    applicationsNote: 'Although the mounting method is different, both systems are designed around the same principle: large areas of clear glass, minimal visual obstruction, and a refined architectural finish.',
+    safetyCode: [
+      'A glass railing is a life-safety guard system. Its design cannot be based on appearance alone. Guard height, loading, glass specification, structural support, anchorage, base shoe selection, fastening, and the supporting structure must be appropriate for the specific project.',
+      'Applicable requirements can vary according to the building type, occupancy, interior or exterior location, height above grade, and jurisdiction. Vancouver, for example, operates under its own Vancouver Building By-law rather than the provincial BC Building Code.',
+      "Where engineering is required, Finelines Glass Installations works with the project's Structural Engineer and other design professionals to coordinate an appropriate railing system for the actual site conditions.",
+    ],
+    coordinationHeading: 'Designed Around Your Project',
+    coordination: [
+      'Finelines Glass Installations works closely with designers, architects, general contractors, builders, and other project professionals to coordinate the railing system with the overall design and construction of the project.',
+      'Early coordination can help address railing locations, structural conditions, finished elevations, waterproofing considerations, glass dimensions, attachment locations, transitions, stairs, corners, and other details before fabrication and installation.',
+      'Whether the project is a new build, renovation, or custom architectural application, our goal is to make the glass railing look like it was intentionally designed as part of the building — not added as an afterthought.',
+    ],
+    coordinationPointsHeading: 'Structural & Installation Coordination',
+    coordinationPoints: [
+      'Base shoe size and system selection',
+      'Glass type, thickness, and safety-glazing requirements',
+      'Top-mount or side-mount attachment conditions',
+      'Structural substrate and anchorage',
+      'Concrete, steel, wood, or other supporting structures',
+      'Guard height and required loading',
+      'Waterproofing and finished-surface conditions',
+      'Stairs, corners, transitions, and custom layouts',
+      'Coordination with architectural and construction details',
+      'Field measurements and accurate glass fabrication',
+    ],
+    coordinationNote: 'Our objective is to coordinate the glass, base shoe, fasteners, anchorage, supporting structure, and surrounding construction as one integrated system.',
+    hardware: {
+      type: 'link',
+      body: 'Base shoe systems and related components are available in different profiles, sizes, and finish options depending on the selected system, application, and project requirements.',
+    },
+    approach: [
+      'At Finelines Glass Installations, we understand that successful architectural glass work requires more than installing glass. It requires careful coordination between the design, structural requirements, site conditions, and construction sequence.',
+      'We work with designers and contractors to help develop practical glass railing solutions, coordinate details, and deliver a finished installation that complements the project while respecting the applicable structural and building-code requirements.',
+      'Whether you need a clean top-mounted railing or a streamlined side-mounted solution, Finelines Glass Installations can work with your project team to develop the right approach for the space.',
+    ],
+    codeDisclaimer: "Building-code and engineering requirements vary by project and jurisdiction. Final compliance is determined by the applicable authority having jurisdiction and, where required, the project's qualified design professional or Structural Engineer.",
+  },
+  {
+    number: 2,
+    slug: 'standoff',
+    title: 'Standoff Glass Railing',
+    subtitle: 'Modern · Clean · Unobstructed Views',
+    image: '/images/project-2.jpg',
+    blurb: 'Individual metal standoffs secure the glass to the structural surface, creating a clean, open appearance with minimal visible hardware — well suited to balconies, decks, and stairs where the view matters most.',
+    intro: [
+      'Finelines Glass Installations specializes in modern standoff glass railing systems that combine clean architectural design with careful attention to structural requirements, safety, and professional installation.',
+      'A standoff glass railing uses individual metal standoffs to secure the glass to the structural surface, creating a clean, open appearance with minimal visible hardware. This system is particularly well suited for balconies, decks, stairs, landings, terraces, and other elevated areas where maintaining an unobstructed view is important.',
+    ],
+    safetyCode: [
+      'Glass railings are not simply a matter of choosing glass thickness and hardware. A guard is a life-safety component, and its height, loading, glass specification, attachment method, anchorage, and overall configuration need to be appropriate for the specific application.',
+      'Under the applicable BC Building Code provisions, guard requirements include provisions for when guards are required, guard heights, loading, openings, climbing considerations, and glass used in guards. Glass used in guards is subject to applicable safety-glazing requirements.',
+      'Guard height and other requirements can vary depending on the building type, occupancy, location, and application. Interior and exterior applications may have different requirements, and specific residential, multi-family, commercial, or elevated applications can require different design considerations.',
+      'Although the BC Building Code applies across much of British Columbia, the applicable building regulations and their administration depend on the jurisdiction. For example, the City of Vancouver operates under its own Vancouver Building By-law. Permit requirements and project-specific interpretations should therefore be confirmed with the applicable authority having jurisdiction.',
+    ],
+    coordinationHeading: 'Working With Structural Engineers',
+    coordination: [
+      'For projects where engineering is required, Finelines Glass Installations works with the Structural Engineer to help establish an appropriate railing design and attachment system for the specific project.',
+    ],
+    coordinationPointsHeading: null,
+    coordinationPoints: [
+      'Glass type and thickness',
+      'Tempered or laminated glass requirements',
+      'Standoff spacing and configuration',
+      'Structural substrate and anchorage',
+      'Concrete, steel, wood, or other supporting conditions',
+      'Guard height and loading requirements',
+      'Top-cap or handrail requirements',
+      'Edge distances and fastener locations',
+      'Interior versus exterior application',
+    ],
+    coordinationNote: 'The objective is to ensure that the glass, hardware, anchorage, supporting structure, and installation work together as one system, rather than treating the glass railing as simply a cosmetic addition.',
+    hardware: {
+      type: 'link',
+      body: 'Standoff hardware is available in different sizes, styles, and finishes depending on the selected system and supplier.',
+    },
+    customNote: 'Not every project has standard conditions. Finelines Glass Installations works with the actual site conditions and project design to develop practical solutions for unusual layouts, difficult attachment locations, angled conditions, stairs, balconies, and other custom applications. Where engineering is required, we coordinate with the appropriate structural professional so the proposed system can be reviewed and designed for the specific project.',
+    approach: [
+      "At Finelines Glass Installations, we believe a beautiful railing should also be properly designed, properly supported, and properly installed. Our workmanship focuses on accurate layout, glass alignment, hardware placement, secure attachment, clean finishing, and coordination with the project's structural requirements.",
+      "Bring us your space, your design, or your challenge. We'll work with the appropriate professionals to find a safe, practical, and beautiful glass railing solution.",
+    ],
+    codeDisclaimer: "Building-code requirements can vary by project and jurisdiction. Final compliance is determined by the applicable authority having jurisdiction and, where required, the project's qualified design professional or Structural Engineer.",
+  },
+];
+
+// Closing panel shown after the two railing systems above, for projects with
+// unusual structural conditions.
+export const RAILING_CUSTOM_NOTE = {
+  heading: 'Have a project with unusual conditions?',
+  body: "Not every deck, balcony, or stair fits a standard railing condition. Where structural conditions, waterproofing, or an unusual layout need extra coordination, we work with your design and construction team — and a Structural Engineer where required — to develop the right railing system for the space. Bring us your plans, your site conditions, or just an idea.",
+};
+
 // Real completed-project photos, shared with the Projects page gallery.
 // Captions describe the work only — never a client's exact address (see the
 // website report / discovery checklist for why).
