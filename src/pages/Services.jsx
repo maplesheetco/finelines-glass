@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { SERVICES, FAQS } from '../data.js';
+import { COMPANY, SERVICES, FAQS } from '../data.js';
 import ServiceIcon from '../components/ServiceIcon.jsx';
 import Reveal from '../components/Reveal.jsx';
 
@@ -9,6 +9,7 @@ export default function Services() {
     <>
       <section className="page-hero">
         <div className="container">
+          <p className="hero-eyebrow">{COMPANY.shortName}</p>
           <h1>Services</h1>
           <p>Custom glass work for homeowners and builders — measured, cut, and installed on site.</p>
         </div>
