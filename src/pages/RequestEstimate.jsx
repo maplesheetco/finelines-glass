@@ -87,7 +87,8 @@ export default function RequestEstimate() {
       <>
         <section className="page-hero">
           <div className="container">
-            <h1>Request an Estimate</h1>
+            <p className="hero-eyebrow">{COMPANY.shortName}</p>
+          <h1>Request an Estimate</h1>
             <p>Tell us about your project and we'll follow up with a straightforward estimate.</p>
           </div>
         </section>
@@ -127,6 +128,7 @@ export default function RequestEstimate() {
     <>
       <section className="page-hero">
         <div className="container">
+          <p className="hero-eyebrow">{COMPANY.shortName}</p>
           <h1>Request an Estimate</h1>
           <p>A few quick questions so we can give you an accurate, no-obligation estimate.</p>
         </div>
