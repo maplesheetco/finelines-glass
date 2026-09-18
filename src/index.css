@@ -1106,7 +1106,7 @@ form.contact-form textarea { min-height: 120px; resize: vertical; }
   border-radius: 10px;
 }
 
-/* ---------- Typical shower designs (service detail page) ---------- */
+/* ---------- Typical shower designs / railing systems (service detail page) ---------- */
 .shower-design-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -1152,7 +1152,7 @@ form.contact-form textarea { min-height: 120px; resize: vertical; }
   line-height: 1.6;
 }
 
-/* ---------- Individual shower design detail page ---------- */
+/* ---------- Individual shower design / railing system detail page ---------- */
 .shower-detail-image {
   display: block;
   width: 100%;
@@ -1166,6 +1166,22 @@ form.contact-form textarea { min-height: 120px; resize: vertical; }
   font-size: 1.2rem;
   color: var(--navy);
   margin: 30px 0 12px;
+}
+
+/* Safety & Building Code Considerations callout (glass railing detail pages) */
+.safety-note {
+  background: #FBF3E8;
+  border-left: 4px solid var(--amber);
+  border-radius: 8px;
+  padding: 4px 20px;
+  margin: 16px 0 0;
+  max-width: 640px;
+}
+.safety-note p {
+  color: var(--ink);
+  line-height: 1.7;
+  font-size: 1.02rem;
+  margin: 16px 0;
 }
 
 /* ---------- Configuration diagrams (top view / 3D) ---------- */
