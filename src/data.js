@@ -328,7 +328,7 @@ export const RAILING_DESIGNS = [
     slug: 'base-shoe',
     title: 'Base Shoe Glass Railing',
     subtitle: 'Top Mount & Side Mount Applications',
-    image: '/images/project-4.jpg',
+    image: '/images/railing-design-1-base-shoe.jpg',
     blurb: 'A continuous aluminum or metal channel secures the glass along its lower edge, creating one uninterrupted architectural line instead of individual point fittings — installed as a top-mount or side-mount system depending on the structure.',
     intro: [
       'Finelines Glass Installations provides modern base shoe glass railing systems designed to create a clean, contemporary architectural appearance while providing a practical solution for balconies, decks, stairs, landings, terraces, and other railing applications.',
@@ -382,7 +382,7 @@ export const RAILING_DESIGNS = [
     slug: 'standoff',
     title: 'Standoff Glass Railing',
     subtitle: 'Modern · Clean · Unobstructed Views',
-    image: '/images/project-2.jpg',
+    image: '/images/railing-design-2-standoff.jpg',
     blurb: 'Individual metal standoffs secure the glass to the structural surface, creating a clean, open appearance with minimal visible hardware — well suited to balconies, decks, and stairs where the view matters most.',
     intro: [
       'Finelines Glass Installations specializes in modern standoff glass railing systems that combine clean architectural design with careful attention to structural requirements, safety, and professional installation.',
