@@ -1,4 +1,5 @@
 import React from 'react';
+import { COMPANY } from '../data.js';
 import Reveal from '../components/Reveal.jsx';
 
 // Confirmed against our supplier's (CRL) actual shower hardware finish
@@ -120,6 +121,7 @@ export default function HardwareFinishes() {
     <>
       <section className="page-hero">
         <div className="container">
+          <p className="hero-eyebrow">{COMPANY.shortName}</p>
           <h1>Hardware &amp; Finishes</h1>
           <p>A quick reference for the glass, mirror, and hardware options available on your installation.</p>
         </div>
