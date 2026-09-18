@@ -1,4 +1,5 @@
 import React from 'react';
+import { COMPANY } from '../data.js';
 
 // TODO: this is a placeholder until the weekly articles/blog content plan
 // kicks off — see the SEO site structure & ranking plan for the rollout.
@@ -7,6 +8,7 @@ export default function Articles() {
     <>
       <section className="page-hero">
         <div className="container">
+          <p className="hero-eyebrow">{COMPANY.shortName}</p>
           <h1>Articles</h1>
           <p>Tips, project stories, and glass know-how from the Finelines team.</p>
         </div>
