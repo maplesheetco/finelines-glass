@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { SHOWER_DESIGNS } from '../data.js';
+import { COMPANY, SHOWER_DESIGNS } from '../data.js';
 import Reveal from '../components/Reveal.jsx';
 
 // Individual page for one of the four typical shower designs, e.g.
@@ -27,7 +27,7 @@ export default function ShowerDesignDetail() {
       <section className="page-hero">
         <div className="container">
           <p className="service-crumb">
-            <Link to="/services">Services</Link> /{' '}
+            {COMPANY.shortName} / <Link to="/services">Services</Link> /{' '}
             <Link to="/services/frameless-shower-enclosures">Frameless Shower Enclosures</Link> / {design.title}
           </p>
           <h1>{design.number}. {design.title}</h1>
