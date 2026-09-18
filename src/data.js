@@ -413,7 +413,7 @@ export const FAQS = [
   },
   {
     q: 'Do I need to be home during the installation?',
-    a: "We'll work with your schedule. TODO: confirm your actual policy here.",
+    a: "Not necessarily. As long as we have a way in — a key, an entry code, or someone to let us in when we arrive — and the work area is clear, you don't need to stay on-site for the installation.",
   },
   {
     q: 'Do you handle both residential and builder/commercial projects?',
