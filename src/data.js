@@ -502,6 +502,16 @@ export const PROJECTS = [
       { src: '/images/project-9.jpg', label: 'Shower Enclosures' },
     ],
   },
+  {
+    name: 'Marine Drive - Skybar',
+    photos: [
+      { src: '/images/project-14.jpg', label: 'Backlit Onyx Feature Wall' },
+      { src: '/images/project-15.jpg', label: 'Outdoor Kitchen & Bar' },
+      { src: '/images/project-16.jpg', label: 'Glass Shelving - Installation' },
+      { src: '/images/project-17.jpg', label: 'Stone & Glass Detail' },
+      { src: '/images/project-18.jpg', label: 'On-Site Installation' },
+    ],
+  },
 ];
 
 // Trust signals — pull these out of paragraph text and show them as a strip
