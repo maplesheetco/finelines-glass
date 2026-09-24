@@ -588,6 +588,181 @@ export const RAILING_CUSTOM_NOTE = {
   body: "Not every deck, balcony, or stair fits a standard railing condition. Where structural conditions, waterproofing, or an unusual layout need extra coordination, we work with your design and construction team — and a Structural Engineer where required — to develop the right railing system for the space. Bring us your plans, your site conditions, or just an idea.",
 };
 
+// Wine cellar enclosure types, shown on the Wine Cellars service page and
+// each with its own dedicated detail page at /services/wine-cellars/:slug.
+// Content drawn from the Finelines design-reference sheets for each system —
+// see WineDesignDetail.jsx for how each field renders.
+export const WINE_DESIGNS = [
+  {
+    number: 1,
+    slug: 'wood-framed',
+    title: 'Wood-Framed Glass Wine Cellar Enclosures',
+    subtitle: 'Natural Materials, Architectural Glass',
+    image: '/images/wine-design-1-wood-framed.jpg',
+    blurb: "A custom wood frame combines the warmth of natural wood with the transparency of architectural glass, integrating the wine cellar directly into the home's millwork, stairs, and finishes.",
+    intro: [
+      'Finelines Glass Installations provides custom wood-framed glass wine cellar enclosures that combine the warmth of natural wood with the transparency of architectural glass. This design creates a distinctive feature within a high-end residential or commercial interior while keeping the wine collection visually connected to the surrounding space.',
+      'The wood framing can be designed as part of the architectural millwork, creating a cohesive transition between the wine cellar, stairways, living areas, dining spaces, and other finished elements of the home.',
+    ],
+    philosophyHeading: 'Designed as Part of the Home',
+    philosophy: [
+      "Rather than treating the wine cellar as an isolated room, this application integrates the enclosure directly into the architecture. A custom wood frame can coordinate with the home's flooring, stairs, cabinetry, wall finishes, ceiling details, and other millwork.",
+      'The result is a wine display that feels intentionally designed into the home — combining glass transparency with the warmth and character of natural wood.',
+    ],
+    coordinationHeading: "Working From the Designer's & Contractor's Scope",
+    coordination: [
+      'Finelines Glass Installations works with interior designers, architects, contractors, builders, and project teams to achieve the approved design intent and project standards.',
+      'We work from architectural drawings, interior design concepts, construction details, specifications, and actual site conditions. Frame dimensions, door locations, glass panel sizes, hardware, wood profiles, and transitions can be coordinated with the overall design.',
+      'Our role is to coordinate the glass portion of the installation with the surrounding construction so the finished enclosure looks like an integrated part of the home.',
+    ],
+    applicationsHeading: 'Glass Selection Based on the Scope of Work',
+    applications: [
+      { title: 'Regular Clear Glass', body: 'Provides transparency and an open visual connection to the wine collection.' },
+      { title: 'Starphire® / Low-Iron Glass', body: 'Offers enhanced clarity and a more neutral appearance when high visual transparency is desired.' },
+      { title: 'Laminated Colored or Specialty Glass', body: 'Can be incorporated when the design calls for color, privacy, decorative effects, or other specified characteristics.' },
+    ],
+    applicationsNote: 'Glass thickness, safety glazing, heat treatment, lamination, color, and other specifications are selected according to the project requirements — Finelines Glass Installations works according to the approved scope rather than applying one standard glass specification to every project.',
+    materialHeading: 'Wood & Glass: A Refined Combination',
+    material: [
+      'The combination of wood and glass provides a balance between warmth and openness. The wood frame establishes a strong architectural boundary, while the glass allows the wine collection, lighting, and interior finishes to remain visible.',
+      'Wood species, stain, finish, frame profile, and surrounding millwork can be coordinated with the interior design. The glass can be detailed with fixed panels and custom doors to suit the configuration.',
+    ],
+    customHeading: 'Custom Configurations',
+    customNote: [
+      'Every home has different architectural conditions. Finelines Glass Installations can coordinate custom wine cellar enclosures around corners, stairways, wall openings, floor transitions, ceiling conditions, large glass panels, and custom entry doors.',
+      'This makes the system suitable for wine cellars incorporated into feature walls, stair areas, living spaces, dining areas, or other high-end architectural interiors.',
+    ],
+    tradesHeading: 'Coordination With Other Trades',
+    trades: [
+      'A custom wine cellar can involve several trades, including millwork, flooring, electrical, lighting, HVAC, cabinetry, wine-rack fabrication, and general construction. Finelines Glass Installations works with the designer and contractor to coordinate our installation with the overall construction sequence.',
+      'Accurate measurements, site verification, and communication with the project team help ensure that the finished glass and wood-framed system fits the actual conditions.',
+    ],
+    hardware: {
+      body: 'Wine cellar doors and hardware can be selected to complement the wood framing and surrounding architecture. Hinges, pulls, locks, channels, fittings, and related components can be coordinated with the approved design and available finish options.',
+    },
+    approach: [
+      'Finelines Glass Installations can make it happen with quality assurance. Our process focuses on accurate field measurements, careful glass specification, precise fabrication, proper glass handling, frame and glass alignment, hardware placement, clean joints, and professional finishing.',
+      'Because this type of wine cellar is highly visible within the home, we pay particular attention to the relationship between the glass, frame, doors, hardware, and surrounding architectural finishes.',
+      "At Finelines Glass Installations, we believe custom glass should become part of the architecture. Our wood-framed wine cellar enclosures are developed around the project's design, materials, dimensions, and construction requirements.",
+      "From the designer's concept and contractor's scope to field measurements, glass selection, fabrication, and installation, we work with the project team to bring the approved design into the finished space.",
+    ],
+    codeDisclaimer: "Glass, engineering, building-code, permit, and project requirements vary according to the application and jurisdiction. Final specifications and compliance are determined by the applicable project requirements, authority having jurisdiction, and qualified design professionals where required.",
+  },
+  {
+    number: 2,
+    slug: 'black-framed',
+    title: 'Black-Framed Glass Wine Cellar Enclosures',
+    subtitle: 'Contemporary Architectural Glass, Refined Details',
+    image: '/images/wine-design-2-black-framed.jpg',
+    blurb: 'A modern black frame system provides structure and visual definition, turning an underused corner or wall into a defined architectural feature that shows off the collection.',
+    intro: [
+      'Finelines Glass Installations provides custom black-framed glass wine cellar enclosures that combine the transparency of architectural glass with the strong, refined appearance of a modern black frame system.',
+      'This design creates a defined architectural feature while allowing the wine collection, lighting, millwork, and interior finishes to remain visible from the surrounding living space. The black framing provides structure and visual definition, making the wine cellar an intentional part of the interior architecture.',
+    ],
+    philosophyHeading: 'A Statement Piece Within the Architecture',
+    philosophy: [
+      'A black-framed wine cellar can transform an otherwise unused or underutilized area into a dedicated display and storage feature. The combination of clear glass, dark framing, warm lighting, wood finishes, stone surfaces, and custom wine storage can create a sophisticated focal point within a residence or commercial environment.',
+      'The system can be designed as a full room, corner enclosure, wall-mounted display, under-stair installation, or another configuration based on the available space and approved architectural design.',
+    ],
+    coordinationHeading: "Working From the Designer's & Contractor's Design",
+    coordination: [
+      'Finelines Glass Installations works closely with interior designers, architects, contractors, builders, and project teams to build the glass enclosure around the approved design and scope of work.',
+      "Frame profiles, door locations, panel sizes, ceiling conditions, floor transitions, hardware, finishes, and surrounding millwork can all be coordinated with the project's architectural details. Our goal is to make the glass enclosure integrate naturally with the rest of the space.",
+      "We work from the project's drawings, specifications, dimensions, and field conditions to determine the practical glass and framing approach for fabrication and installation.",
+    ],
+    applicationsHeading: 'Glass Selection Based on the Scope of Work',
+    applications: [
+      { title: 'Regular Clear Glass', body: 'Provides transparency and a clean visual connection to the wine collection.' },
+      { title: 'Starphire® / Low-Iron Glass', body: 'Provides enhanced clarity and a more neutral appearance where high visual clarity is desired.' },
+      { title: 'Laminated Colored or Specialty Glass', body: 'Can be incorporated when the design calls for color, privacy, decorative effects, or other specified characteristics.' },
+    ],
+    applicationsNote: 'Glass thickness, safety glazing, heat treatment, lamination, color, and other specifications are determined according to the applicable project requirements — Finelines Glass Installations does not use a one-size-fits-all glass specification.',
+    materialHeading: 'Custom Framing & Architectural Details',
+    material: [
+      'Black-framed wine cellar systems can be customized to accommodate different room dimensions, corners, ceiling heights, sloped conditions, doors, fixed panels, and interior layouts.',
+      'The frame can be coordinated with other black architectural elements within the space, including stair components, lighting details, cabinetry, hardware, and interior finishes.',
+    ],
+    customHeading: 'Custom Solutions for Your Space',
+    customNote: [
+      'No two wine cellars have to look the same. Finelines Glass Installations can work with custom room shapes, corners, angled conditions, large openings, floor-to-ceiling glazing, under-stair spaces, and other architectural configurations.',
+      "Whether the project begins with a designer's concept, an architect's drawing, or a contractor's scope of work, we work with the project team to develop the glass and framing solution around the design.",
+    ],
+    tradesHeading: 'Coordination With the Project Team',
+    trades: [
+      'Wine cellar installations often require coordination with flooring, millwork, electrical, lighting, HVAC, wine-rack fabrication, cabinetry, and other trades. Finelines Glass Installations works with designers and contractors to coordinate our portion of the project with the overall construction sequence.',
+      'Accurate site measurements and communication with the project team help ensure that the finished glass and framing system fits the actual conditions and supports the intended design.',
+    ],
+    hardware: {
+      body: 'Wine cellar doors can be designed with hinged or other project-appropriate configurations, depending on the approved design and system requirements. Pull handles, hinges, locks, clamps, framing components, and related hardware can be selected to complement the overall architectural style.',
+    },
+    approach: [
+      'Finelines Glass Installations can make it happen with quality assurance. Our process focuses on accurate measurements, proper frame layout, precise fabrication, careful glass handling, correct hardware placement, alignment, clean finishing, and professional installation.',
+      'We understand that a wine cellar is a highly visible architectural feature. Small details in frame alignment, glass joints, door operation, hardware placement, and finishing can have a significant effect on the completed appearance.',
+      'At Finelines Glass Installations, we believe a wine cellar enclosure should be both functional and architectural. The glass, framing, hardware, lighting, wine storage, and surrounding finishes should work together as one cohesive design.',
+      'From design coordination and glass selection to field measurements, fabrication, and installation, Finelines Glass Installations works with the project team to bring the approved design to life.',
+    ],
+    codeDisclaimer: "Glass specifications, safety glazing, engineering, building-code, permit, and municipal requirements vary according to the application and jurisdiction. Final specifications and compliance are determined by the applicable project requirements, authority having jurisdiction, and qualified design professionals where required.",
+  },
+  {
+    number: 3,
+    slug: 'frameless',
+    title: 'Frameless Wine Cellar Enclosures',
+    subtitle: 'Architectural Glass, Showcase Your Collection',
+    image: '/images/wine-design-3-frameless.jpg',
+    blurb: 'Large panels of glass with minimal visible framing let the wine collection and surrounding architecture take center stage — well suited to under-stair spaces and floor-to-ceiling displays.',
+    intro: [
+      'Finelines Glass Installations provides custom frameless glass wine cellar enclosures designed to showcase wine collections while integrating seamlessly with the surrounding architecture.',
+      'Using large areas of glass with minimal visible framing, a frameless wine cellar enclosure can create a sophisticated architectural feature while maintaining visual connection between the wine cellar and the surrounding living space.',
+      "Whether the wine cellar is located beneath a staircase, within a dedicated room, beside a dining area, or integrated into a larger interior design, Finelines Glass Installations works according to the project's design and scope of work.",
+    ],
+    coordinationHeading: 'Working From the Design',
+    coordination: [
+      'Finelines Glass Installations works closely with the designs and specifications provided by interior designers, architects, contractors, builders, and project teams.',
+      "We understand that the glass enclosure is one part of a larger architectural project. Door locations, glass panel sizes, ceiling conditions, floor transitions, wall finishes, hardware, and surrounding millwork may all be established by the project's design.",
+      'Our role is to translate the approved design and project scope into a carefully measured and professionally installed glass enclosure while coordinating with the other trades involved in the project.',
+    ],
+    applicationsHeading: 'Glass Selection Based on the Project Requirements',
+    applications: [
+      { title: 'Regular Clear Glass', body: 'A clean and transparent option for projects where standard clarity and visual openness are desired.' },
+      { title: 'Starphire® / Low-Iron Glass', body: 'Provides enhanced clarity with reduced green edge appearance, making it suitable when a more neutral, high-clarity appearance is desired.' },
+      { title: 'Laminated Colored or Specialty Glass', body: 'Can be incorporated where the project design calls for color, privacy, decorative effects, or other specified performance characteristics.' },
+    ],
+    applicationsNote: 'Glass thickness, safety glazing, heat treatment, lamination, color, and other specifications are selected according to the applicable project requirements and scope of work — Finelines Glass Installations does not assume that one glass specification is appropriate for every project.',
+    materialHeading: 'Frameless Design & Architectural Integration',
+    material: [
+      'A frameless wine cellar enclosure is designed to minimize visual obstruction and allow the wine collection, interior finishes, and architectural lighting to remain the focus.',
+      'Large glass panels can be coordinated with fixed panels, glass doors, corners, angled walls, sloped ceilings, and other custom conditions. Minimal hardware and carefully selected finishes can help maintain the clean appearance of the overall design.',
+    ],
+    customHeading: 'Custom Applications',
+    customNote: [
+      'Wine cellars are often located in spaces with challenging architectural conditions. Finelines Glass Installations can work with custom layouts such as under-stair wine cellars, floor-to-ceiling enclosures, corner configurations, angled ceilings, custom openings, and large glass entry systems.',
+      'We coordinate the glass installation with the surrounding flooring, ceilings, walls, millwork, lighting, and other construction elements wherever possible.',
+    ],
+    tradesHeading: 'Coordination With Designers & Contractors',
+    trades: [
+      'Successful wine cellar glass installation requires coordination between multiple trades. Finelines Glass Installations works with designers and contractors to understand the project scope, approved details, dimensions, finishes, and installation sequence.',
+      'This collaborative approach helps ensure that the finished glass enclosure supports the design intent and integrates properly with the completed space.',
+    ],
+    hardware: {
+      body: 'Wine cellar hardware can be selected in different styles and finishes depending on the design and project specifications. Hinges, pulls, clamps, channels, and other components can be coordinated with the overall interior design.',
+    },
+    approach: [
+      'Finelines Glass Installations can make it happen with quality assurance. Our process focuses on accurate field measurements, careful glass specification, precise fabrication, professional handling, accurate hardware placement, proper alignment, and clean finishing.',
+      'Every glass enclosure is treated according to its specific scope rather than as a one-size-fits-all installation.',
+      'At Finelines Glass Installations, we understand that a wine cellar enclosure is more than a glass wall or door. It is part of the architecture and should be coordinated with the complete design.',
+      "From the designer's concept and contractor's scope to field measurements, glass selection, fabrication, and installation, we work with the project team to deliver a frameless glass wine cellar enclosure that reflects the intended design.",
+    ],
+    codeDisclaimer: "Glass specifications, safety glazing, engineering, building-code, permit, and project requirements vary according to the application and jurisdiction. Final glass selection and compliance are determined by the applicable project specifications, authority having jurisdiction, and qualified design professionals where required.",
+  },
+];
+
+// Closing panel shown after the three wine cellar systems above, for
+// projects with unusual or challenging spaces.
+export const WINE_CUSTOM_NOTE = {
+  heading: "Have a space that doesn't fit a standard wine cellar?",
+  body: "Under a staircase, in an awkward corner, or built into an already-finished room — most wine cellars start with a space that wasn't designed for one. We work with your designer or contractor to fit the glass, framing, and doors to the actual conditions, whatever shape the space is in. Bring us your plans, your site conditions, or just an idea.",
+};
+
 // Real completed-project photos, shared with the Projects page gallery.
 // Captions describe the work only — never a client's exact address (see the
 // website report / discovery checklist for why).
