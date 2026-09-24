@@ -124,7 +124,7 @@ export default function ServiceDetail() {
             <Reveal>
               <h2 className="section-heading">Typical Glass Railing Systems</h2>
               <p className="section-subheading">
-                Two proven systems cover most projects. Each is engineered and fabricated around your
+                Five proven systems cover most projects. Each is engineered and fabricated around your
                 specific structure — these are a starting point for the conversation, not a fixed menu.
               </p>
             </Reveal>
@@ -147,7 +147,7 @@ export default function ServiceDetail() {
 
             <Reveal delay={100}>
               <p className="spec-note" style={{ maxWidth: 720 }}>
-                Hardware and finish options for either system — chrome, matte black, brushed nickel,
+                Hardware and finish options for each system — chrome, matte black, brushed nickel,
                 brushed gold/brass, and more — are shown in our{' '}
                 <Link to="/hardware-finishes">Hardware &amp; Finishes</Link> section.
               </p>
