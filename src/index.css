@@ -368,6 +368,16 @@ section.block.tint { background: var(--glass-tint); }
   color: var(--amber);
   font-weight: 700;
 }
+/* Nested bullet sub-list under one application item (e.g. the 3 custom
+   railing applications, each with its own short feature list). */
+.service-highlights-nested {
+  margin: 10px 0 2px;
+  gap: 6px;
+}
+.service-highlights-nested li {
+  font-size: 0.88rem;
+  color: var(--gray);
+}
 .service-detail-aside {
   background: var(--glass-tint);
   border-radius: 10px;
