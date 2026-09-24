@@ -23,15 +23,12 @@ const ICONS = {
       <path d="M12 18 L12 21 M9 21 L15 21" stroke="#3E6B8A" strokeWidth="1.6" />
     </>
   ),
-  backsplash: (
+  partition: (
     <>
-      <rect x="3.5" y="3.5" width="17" height="17" rx="1" stroke="#3E6B8A" strokeWidth="1.6" />
-      <path
-        d="M3.5 9.5 L20.5 9.5 M3.5 15 L20.5 15 M9.5 3.5 L9.5 20.5 M15 3.5 L15 20.5"
-        stroke="#3E6B8A"
-        strokeWidth="1.2"
-        opacity="0.7"
-      />
+      <rect x="3.5" y="4" width="17" height="16" rx="0.5" stroke="#3E6B8A" strokeWidth="1.6" />
+      <path d="M3.5 8 L20.5 8" stroke="#3E6B8A" strokeWidth="1.4" opacity="0.7" />
+      <path d="M9 8 L9 20 M15 8 L15 20" stroke="#3E6B8A" strokeWidth="1.4" opacity="0.7" />
+      <circle cx="16.3" cy="14" r="0.7" fill="#3E6B8A" />
     </>
   ),
   mirror: (
