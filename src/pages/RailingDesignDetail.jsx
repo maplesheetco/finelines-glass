@@ -62,7 +62,16 @@ export default function RailingDesignDetail() {
                 <Reveal delay={40}>
                   <ul className="service-highlights">
                     {design.applications.map((item) => (
-                      <li key={item.title}><strong>{item.title}</strong> — {item.body}</li>
+                      <li key={item.title}>
+                        <strong>{item.title}</strong> — {item.body}
+                        {item.bullets && (
+                          <ul className="service-highlights service-highlights-nested">
+                            {item.bullets.map((b) => (
+                              <li key={b}>{b}</li>
+                            ))}
+                          </ul>
+                        )}
+                      </li>
                     ))}
                   </ul>
                 </Reveal>
