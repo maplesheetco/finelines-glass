@@ -422,6 +422,163 @@ export const RAILING_DESIGNS = [
     ],
     codeDisclaimer: "Building-code requirements can vary by project and jurisdiction. Final compliance is determined by the applicable authority having jurisdiction and, where required, the project's qualified design professional or Structural Engineer.",
   },
+  {
+    number: 3,
+    slug: 'post',
+    title: 'Post Glass Railing System',
+    subtitle: 'Clean Architectural Design',
+    image: '/images/railing-design-3-post.jpg',
+    blurb: 'Engineered metal posts combine strength and visual definition with the openness of architectural glass — a versatile choice for stairways, balconies, decks, and interior guardrails.',
+    intro: [
+      'Finelines Glass Installations provides post glass railing systems that combine the strength and visual definition of metal posts with the openness and transparency of architectural glass. This system is a versatile choice for stairways, balconies, decks, landings, terraces, interior guardrails, and other residential or commercial applications.',
+      'The system uses engineered posts, glass panels, glass clamps or fittings, and a handrail or top rail where required by the project design and applicable requirements. The result is a refined railing system that provides a strong architectural presence while maintaining clear sightlines and allowing natural light to move through the space.',
+    ],
+    applicationsHeading: 'Interior & Exterior Applications',
+    applications: [
+      { title: 'Interior Applications', body: 'Post glass railings can be used for stairways, open-riser stairs, interior landings, mezzanines, lofts, and open-plan spaces where the goal is to maintain visibility and an open architectural feel.' },
+      { title: 'Exterior Applications', body: 'The system can be used for balconies, decks, terraces, exterior stairs, elevated walkways, and other outdoor areas, subject to applicable project requirements, environmental conditions, and structural design. Material selection, drainage, exposure, corrosion resistance, anchorage, and the supporting structure are important considerations.' },
+    ],
+    applicationsNote: 'The final system is selected and detailed according to the specific project.',
+    safetyCode: [
+      'A glass railing is a life-safety guard system. Its design must consider more than appearance. Guard height, loading, glass type, glass thickness, openings, handrail requirements, post spacing, anchorage, supporting structure, and the installation method all need to be appropriate for the intended application.',
+      "Finelines Glass Installations works with the applicable BC Building Code requirements and local building regulations/bylaws, together with the project's structural design and site conditions. Requirements can vary depending on the jurisdiction, building type, occupancy, location, and application.",
+      'Where engineering is required, Finelines coordinates with the appropriate Structural Engineer and project design professionals so that the railing system can be reviewed as part of the overall structural design.',
+    ],
+    coordinationHeading: 'Designed Around Your Vision',
+    coordination: [
+      'Finelines Glass Installations works closely with interior designers, architects, contractors, builders, and project teams to help achieve the design intent and quality standards established for each client and project.',
+      'From contemporary residential interiors to sophisticated exterior decks and terraces, we coordinate the glass, posts, hardware, dimensions, finishes, and installation details with the surrounding architecture. Our goal is to make the railing feel like an intentional part of the design rather than a separate component added after construction.',
+      'When a project has specific design standards, finish requirements, or architectural details, we work with the project team to develop a practical glass railing solution that respects those requirements while accounting for actual site conditions.',
+    ],
+    coordinationPointsHeading: 'Quality Assurance & Installation',
+    coordinationPoints: [
+      'Accurate field measurements and site verification',
+      'Coordination with designers and contractors',
+      'Glass and hardware selection appropriate to the project',
+      'Post layout, spacing, and alignment',
+      'Structural anchorage and supporting conditions',
+      'Interior and exterior installation considerations',
+      'Clean, precise glass and hardware installation',
+      'Final alignment, finishing, and quality checks',
+    ],
+    hardware: {
+      type: 'link',
+      body: 'Post systems, handrails, clamps, fittings, and related components are available in different sizes, profiles, styles, and finishes depending on the selected system and project requirements.',
+    },
+    customNote: 'Every project has its own conditions. Finelines Glass Installations can work with straight runs, stair angles, corners, transitions, different floor conditions, custom post layouts, and other architectural requirements. Whether the project begins with an architectural drawing, interior design concept, contractor specification, or an existing site condition, we work with the project team to turn the design intent into a practical glass railing installation.',
+    approach: [
+      'At Finelines Glass Installations, we believe quality architectural glass is the result of good design coordination, proper structural planning, precision fabrication, and professional installation.',
+      "We work with interior designers, architects, contractors, builders, and Structural Engineers to help deliver a railing system that meets the project's design intent and applicable requirements — while maintaining the clean, refined appearance our clients expect. From concept to installation, Finelines Glass Installations can make it happen.",
+    ],
+    codeDisclaimer: "Building-code, engineering, and permit requirements vary by project and jurisdiction. Final compliance is determined by the applicable authority having jurisdiction and, where required, the project's qualified design professional or Structural Engineer.",
+  },
+  {
+    number: 4,
+    slug: 'spigot',
+    title: 'Spigot Glass Railing System',
+    subtitle: 'Sleek Design, Minimal Visual Obstruction',
+    image: '/images/railing-design-4-spigot.jpg',
+    blurb: 'Individual spigots support clear glass panels with minimal visual obstruction, letting the surrounding architecture, landscape, and views remain the focus — ideal for luxury decks, patios, and pool areas.',
+    intro: [
+      'Finelines Glass Installations offers modern Spigot Glass Railing Systems designed to provide a clean, open architectural appearance while maintaining the strength, safety, and structural coordination required for residential and commercial projects.',
+      'The system uses individual spigots to support clear glass panels, creating minimal visual obstruction while allowing the glass to become an integral part of the architecture. A continuous top cap or handrail can be incorporated into the system to provide a refined finished appearance and satisfy project-specific design and safety requirements.',
+      'Spigot glass railings are an excellent choice when the goal is to maximize views while keeping the railing visually light — well suited to modern residential homes, luxury decks and patios, balconies and terraces, pool and recreational areas, exterior walkways, interior stairways and landings, and commercial and architectural projects.',
+    ],
+    applicationsHeading: 'Interior & Exterior Applications',
+    applications: [
+      { title: 'Interior Applications', body: 'Interior applications can provide a contemporary solution for stairways, landings, mezzanines, and other areas where transparency and an open feeling are important.' },
+      { title: 'Exterior Applications', body: 'Exterior installations require particular attention to the supporting structure, anchorage, weather exposure, drainage, material selection, and long-term durability, depending on the project requirements, structural conditions, environmental exposure, and applicable building regulations.' },
+    ],
+    safetyCode: [
+      'At Finelines Glass Installations, engineering is an important part of our railing process. Engineering approval is required for every project before installation, in accordance with the requirements established for the project and applicable authority having jurisdiction.',
+      'We do not treat a glass railing as simply a glass-and-hardware installation. The complete system needs to be considered, including glass type and thickness, guard height, top cap or handrail requirements, spigot design and spacing, spigot anchorage, structural substrate, concrete, steel, wood, or other supporting conditions, required guard loading, edge distances and fastener locations, interior or exterior exposure, and project-specific structural requirements.',
+      'Where required, the Structural Engineer reviews and approves the railing system and its attachment to the supporting structure before installation proceeds.',
+    ],
+    coordinationHeading: 'Working With Designers & Contractors',
+    coordination: [
+      "Finelines Glass Installations works closely with interior designers, architects, contractors, builders, and Structural Engineers to achieve the project's design intent while addressing the technical requirements of the installation.",
+      'We understand that every project has its own architectural standards, finishes, dimensions, construction details, and client expectations. Our role is to work with the project team to coordinate the glass railing with the overall design — not simply install a standard system.',
+      'From architectural drawings and construction details to field conditions and final installation, we coordinate the railing system with the project wherever possible.',
+    ],
+    coordinationNote: 'Our installation process focuses on accurate measurements, proper layout, precise spigot positioning, secure anchorage, correct glass alignment, clean top-cap installation, and careful finishing — small installation details can have a major impact on the final appearance of architectural glass.',
+    hardware: {
+      type: 'link',
+      body: 'Spigots, top caps, handrails, fittings, and related components are available in different styles and finishes depending on the selected system and project requirements.',
+    },
+    customNote: 'Not every railing follows a straight line. Finelines Glass Installations can work with stairs, angles, corners, transitions, changing elevations, balconies, terraces, and custom architectural layouts. Whether the project requires a simple straight run or a more complex configuration, we work with the designer, contractor, and Structural Engineer to develop a practical solution based on the actual site conditions.',
+    approach: [
+      'At Finelines Glass Installations, we believe exceptional architectural glass requires more than beautiful materials. It requires design coordination, engineering, accurate fabrication, quality materials, and professional installation.',
+      "We work with the project's designers, contractors, and Structural Engineers to help transform the design concept into a finished glass railing system that meets the project's requirements. From design coordination to engineering approval and final installation, Finelines Glass Installations can make it happen.",
+    ],
+    codeDisclaimer: "Engineering, building-code, permit, and municipal requirements vary by project and jurisdiction. Final approval and compliance are determined by the applicable authority having jurisdiction and the project's qualified Structural Engineer/design professionals.",
+  },
+  {
+    number: 5,
+    slug: 'custom-applications',
+    title: 'Custom Glass Railing Applications',
+    subtitle: 'Designed Around Your Architecture',
+    image: '/images/railing-design-5-custom-applications.jpg',
+    blurb: 'Not every project calls for the same system — from a nearly seamless embedded glass channel to a warm wood frame or a bold black aluminum frame, we adapt the application to the architecture.',
+    intro: [
+      'Finelines Glass Installations provides custom glass railing solutions designed around the architecture, materials, and requirements of each project. We work according to the design intent and coordinate with designers, architects, contractors, builders, and Structural Engineers to develop the appropriate glass railing application for the space.',
+      'Not every project requires the same railing system. A modern architectural home may call for a nearly seamless embedded glass channel, while another project may be better suited to a warm wood frame or a contemporary black aluminum frame. Finelines Glass Installations works with different applications to achieve the desired appearance and project requirements.',
+    ],
+    applicationsHeading: 'Three Custom Applications',
+    applications: [
+      {
+        title: 'Embedded Floor Glass Railing',
+        body: 'The glass is installed into a recessed channel or structural floor-mounted system, allowing the supporting hardware to be integrated into the finished floor or structural edge. This creates a clean, minimal appearance with very little visible hardware — particularly effective for modern architecture where maintaining uninterrupted sightlines is important. It can be considered for interior and exterior applications, subject to the project design, structural conditions, waterproofing requirements, and applicable engineering and building-code requirements.',
+        bullets: [
+          'Minimal visual obstruction',
+          'Clean architectural appearance',
+          'Suitable for selected interior and exterior applications',
+          'Can be coordinated with finished flooring and structural edges',
+          'Custom detailing based on project requirements',
+        ],
+      },
+      {
+        title: 'Wood Frame Glass Railing',
+        body: 'A wood frame glass railing combines the natural character of wood with the openness of clear glass. Glass panels are incorporated into a wood-framed railing system, creating a warmer architectural expression while maintaining visibility and natural light — well suited to residential decks, patios, stairs, balconies, and homes where the railing needs to complement wood decking, timber construction, or other natural finishes.',
+        bullets: [
+          'Natural and architectural appearance',
+          'Complements wood decks and timber construction',
+          'Clear glass maintains views and openness',
+          'Custom wood profiles and finishes can be coordinated with the design',
+          'Suitable for selected interior and exterior applications',
+        ],
+      },
+      {
+        title: 'Black Aluminum Frame Glass Railing',
+        body: 'The black aluminum frame glass railing combines clear glass with a strong contemporary frame. The dark aluminum creates a defined architectural outline around the glass while providing a modern visual contrast against concrete, wood, stone, or other building materials — well suited to contemporary residential and commercial architecture where the railing is intended to become a deliberate design feature rather than disappear into the background.',
+        bullets: [
+          'Bold contemporary appearance',
+          'Strong visual definition around the glass',
+          'Works with modern residential and commercial architecture',
+          'Available in different configurations and finish options',
+          'Can be coordinated with other black architectural elements',
+        ],
+      },
+    ],
+    safetyCode: [
+      'Glass railings are life-safety guard systems. The appropriate glass, framing, anchorage, guard height, loading, connections, and supporting structure must be determined for the specific project and jurisdiction.',
+      "Finelines Glass Installations works with the applicable BC Building Code requirements, local building regulations, and project structural design. Where engineering approval is required, the railing system is coordinated with the project's qualified Structural Engineer before installation.",
+    ],
+    coordinationHeading: 'Designed According to the Project',
+    coordination: [
+      'At Finelines Glass Installations, we understand that architectural glass needs to work with the building — not against it. We review the design intent, site conditions, supporting structure, finished elevations, surrounding materials, and installation requirements when determining the appropriate railing approach.',
+      'We work with interior designers, architects, contractors, builders, and Structural Engineers to coordinate the railing with the overall project. This collaborative approach helps ensure that the finished system reflects the intended design while addressing the technical requirements of the installation.',
+    ],
+    coordinationNote: 'Our work focuses on accurate measurements, proper layout, quality materials, precise fabrication, secure installation, clean finishing, and coordination with the construction sequence. Whether the project calls for a minimal embedded system, a warm wood-framed railing, or a bold black aluminum frame, Finelines Glass Installations can adapt the glass railing application to the design.',
+    hardware: {
+      type: 'link',
+      body: 'Glass railing systems, framing components, channels, handrails, fittings, and related hardware are available in different styles and finishes depending on the selected application and project requirements.',
+    },
+    approach: [
+      "From a designer's concept to a contractor's construction plan, Finelines Glass Installations works with the project team to make the glass railing design work in the real-world conditions of the site.",
+      'Different materials. Different applications. One commitment to quality.',
+    ],
+    codeDisclaimer: "Engineering, building-code, permit, and municipal requirements vary by project and jurisdiction. Final approval and compliance are determined by the applicable authority having jurisdiction and, where required, the project's qualified design professional or Structural Engineer.",
+  },
 ];
 
 // Closing panel shown after the two railing systems above, for projects with
