@@ -415,7 +415,15 @@ section.block.tint { background: var(--glass-tint); }
 .carousel { max-width: 900px; margin: 0 auto; }
 .carousel-frame { position: relative; }
 .carousel-slide {
-  height: 420px;
+  /* 4:3 matches most of our landscape project photos almost exactly, so
+     those fill the frame with little to no letterboxing. Portrait phone
+     shots (common for bathroom/closet photos) get letterboxed left/right
+     instead of cropped — the point is the full photo is always visible
+     here, not just a cropped slice of it (see the full photo on the
+     Projects page for the uncropped original either way). Height follows
+     width via aspect-ratio, so this scales properly on mobile instead of
+     using a fixed pixel height. */
+  aspect-ratio: 4 / 3;
   background: var(--glass-tint);
   border: 1px solid #dde7ee;
   border-radius: 10px;
@@ -428,7 +436,7 @@ section.block.tint { background: var(--glass-tint); }
 .carousel-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .carousel-arrow {
   position: absolute;
