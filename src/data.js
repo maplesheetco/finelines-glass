@@ -1229,6 +1229,7 @@ export const MIRROR_CUSTOM_NOTE = {
 // Captions describe the work only — never a client's exact address (see the
 // website report / discovery checklist for why).
 export const PROJECTS_PREVIEW = [
+  { src: '/images/project-25.jpg', caption: 'Marine Drive - Skybar - Backlit Onyx Bar & Wine Storage' },
   { src: '/images/project-1.jpg', caption: 'West Vancouver - Frameless Shower' },
   { src: '/images/project-2.jpg', caption: 'Bellevue Dr. - Exterior Glass Railing' },
   { src: '/images/project-3.jpg', caption: 'Richmond - Shower Enclosure' },
@@ -1304,6 +1305,7 @@ export const PROJECTS = [
   {
     name: 'Marine Drive - Skybar',
     photos: [
+      { src: '/images/project-25.jpg', label: 'Backlit Onyx Bar & Wine Storage' },
       { src: '/images/project-14.jpg', label: 'Backlit Onyx Feature Wall' },
       { src: '/images/project-15.jpg', label: 'Outdoor Kitchen & Bar' },
       { src: '/images/project-16.jpg', label: 'Glass Shelving - Installation' },
