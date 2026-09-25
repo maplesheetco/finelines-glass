@@ -1238,6 +1238,11 @@ export const PROJECTS_PREVIEW = [
   { src: '/images/project-7.jpg', caption: 'Pender Island - Exterior Railing' },
   { src: '/images/project-8.jpg', caption: 'Cedarhurst St. - Wine Cellar' },
   { src: '/images/project-9.jpg', caption: 'West 34th Vancouver - Shower Enclosures' },
+  { src: '/images/project-14.jpg', caption: 'Marine Drive - Skybar - Backlit Onyx Feature Wall' },
+  { src: '/images/project-15.jpg', caption: 'Marine Drive - Skybar - Outdoor Kitchen & Bar' },
+  { src: '/images/project-19.jpg', caption: 'West Cordova - Vancouver - Frameless Shower Enclosure' },
+  { src: '/images/project-21.jpg', caption: 'West Cordova - Vancouver - Ensuite Shower & Freestanding Tub' },
+  { src: '/images/project-22.jpg', caption: 'West Cordova - Vancouver - Walk-In Closet Feature Mirror' },
 ];
 
 // Projects page gallery, grouped by job instead of one-photo-per-tile. Each
