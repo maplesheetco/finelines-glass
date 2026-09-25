@@ -105,7 +105,13 @@ h1, h2, h3, h4, h5, h6 {
    wrapping messily across multiple lines in the navy bar. */
 @media (max-width: 760px) {
   .site-header .container { align-content: flex-start; }
-  .header-right { order: 2; }
+  /* The logo is wide enough that it wraps onto its own line on phones,
+     which leaves header-right alone on the next line — and a lone flex
+     item under `justify-content: space-between` sits at the start (left)
+     of that line, not the end. margin-left: auto pushes it flush right
+     regardless of whether it ends up sharing its line with the logo or
+     not. */
+  .header-right { order: 2; margin-left: auto; }
   .nav-toggle { display: flex; align-items: center; justify-content: center; }
   .nav-links {
     order: 3;
