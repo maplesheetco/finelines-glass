@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { COMPANY, SERVICES, SHOWER_DESIGNS, SHOWER_CUSTOM_LAYOUT, RAILING_DESIGNS, RAILING_CUSTOM_NOTE, WINE_DESIGNS, WINE_CUSTOM_NOTE, PARTITION_DESIGNS, PARTITION_CUSTOM_NOTE } from '../data.js';
+import { COMPANY, SERVICES, SHOWER_DESIGNS, SHOWER_CUSTOM_LAYOUT, RAILING_DESIGNS, RAILING_CUSTOM_NOTE, WINE_DESIGNS, WINE_CUSTOM_NOTE, PARTITION_DESIGNS, PARTITION_CUSTOM_NOTE, MIRROR_DESIGNS, MIRROR_CUSTOM_NOTE } from '../data.js';
 import ServiceIcon from '../components/ServiceIcon.jsx';
 import Reveal from '../components/Reveal.jsx';
 
@@ -17,6 +17,7 @@ export default function ServiceDetail() {
   const isGlassRailings = slug === 'glass-railings';
   const isWineCellars = slug === 'wine-cellars';
   const isCommercialGlazing = slug === 'commercial-glazing-office-partitions';
+  const isMirrors = slug === 'mirrors';
 
   return (
     <>
@@ -265,6 +266,56 @@ export default function ServiceDetail() {
             <h2 className="section-heading">{PARTITION_CUSTOM_NOTE.heading}</h2>
             <p className="section-subheading" style={{ margin: '0 auto 28px' }}>
               {PARTITION_CUSTOM_NOTE.body}
+            </p>
+            <a className="btn btn-primary" href="/request-estimate">Request an Estimate</a>
+          </div>
+        </section>
+      )}
+
+      {isMirrors && (
+        <section className="block tint">
+          <div className="container">
+            <Reveal>
+              <h2 className="section-heading">Typical Mirror Finishes</h2>
+              <p className="section-subheading">
+                Three popular finishes cover most spaces. Each is custom-cut and fabricated to fit
+                your exact room — these are a starting point for the conversation, not a fixed menu.
+              </p>
+            </Reveal>
+
+            <div className="shower-design-grid">
+              {MIRROR_DESIGNS.map((d, i) => (
+                <Reveal key={d.number} delay={i * 60}>
+                  <Link to={`/services/mirrors/${d.slug}`} className="shower-design-card card-link">
+                    <img src={d.image} alt={`${d.title} (${d.subtitle}) — mirror installation`} loading="lazy" />
+                    <div className="shower-design-card-body">
+                      <h3>{d.number}. {d.title}</h3>
+                      <p className="shower-design-subtitle">{d.subtitle}</p>
+                      <p>{d.blurb}</p>
+                      <p className="card-link-cta">See the full design details &rarr;</p>
+                    </div>
+                  </Link>
+                </Reveal>
+              ))}
+            </div>
+
+            <Reveal delay={100}>
+              <p className="spec-note" style={{ maxWidth: 720 }}>
+                Where a mirror installation incorporates related glass hardware, available styles and
+                finishes are shown in our{' '}
+                <Link to="/hardware-finishes">Hardware &amp; Finishes</Link> section.
+              </p>
+            </Reveal>
+          </div>
+        </section>
+      )}
+
+      {isMirrors && (
+        <section className="block" style={{ textAlign: 'center' }}>
+          <div className="container">
+            <h2 className="section-heading">{MIRROR_CUSTOM_NOTE.heading}</h2>
+            <p className="section-subheading" style={{ margin: '0 auto 28px' }}>
+              {MIRROR_CUSTOM_NOTE.body}
             </p>
             <a className="btn btn-primary" href="/request-estimate">Request an Estimate</a>
           </div>
