@@ -844,6 +844,17 @@ export const PROJECTS = [
       { src: '/images/project-18.jpg', label: 'On-Site Installation' },
     ],
   },
+  {
+    name: 'West Cordova - Vancouver',
+    photos: [
+      { src: '/images/project-19.jpg', label: 'Frameless Shower Enclosure' },
+      { src: '/images/project-20.jpg', label: 'Walk-In Closet - Glass Wardrobe Doors' },
+      { src: '/images/project-21.jpg', label: 'Ensuite - Frameless Shower & Freestanding Tub' },
+      { src: '/images/project-22.jpg', label: 'Walk-In Closet - Feature Mirror' },
+      { src: '/images/project-23.jpg', label: 'Vanity Mirror' },
+      { src: '/images/project-24.jpg', label: 'Frameless Shower Enclosure - Bench Seat' },
+    ],
+  },
 ];
 
 // Trust signals — pull these out of paragraph text and show them as a strip
