@@ -1,17 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { COMPANY, SERVICES, PROJECTS_PREVIEW, TESTIMONIALS } from '../data.js';
 import TrustStrip from '../components/TrustStrip.jsx';
 import ServiceIcon from '../components/ServiceIcon.jsx';
 import Reveal from '../components/Reveal.jsx';
 
+// Auto-advances every 5s. The effect re-arms on every index change, so a
+// manual arrow/dot click resets the countdown instead of fighting with the
+// next scheduled auto-advance. Hovering (desktop) or touching (mobile) the
+// carousel pauses it so a visitor reading a caption doesn't get skipped past.
 function CompletedWorkCarousel() {
   const [index, setIndex] = useState(0);
+  const [paused, setPaused] = useState(false);
   const count = PROJECTS_PREVIEW.length;
   const goTo = (i) => setIndex((i + count) % count);
 
+  useEffect(() => {
+    if (paused) return undefined;
+    const timer = setInterval(() => {
+      setIndex((i) => (i + 1) % count);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [count, paused, index]);
+
   return (
-    <div className="carousel">
+    <div
+      className="carousel"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+      onTouchStart={() => setPaused(true)}
+    >
       <div className="carousel-frame">
         <div className="carousel-slide">
           <img
