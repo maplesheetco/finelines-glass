@@ -14,6 +14,9 @@ export default function Header() {
         </NavLink>
 
         <div className="header-right">
+          <a className="header-cta" href="/request-estimate">
+            Request an Estimate
+          </a>
           <button
             type="button"
             className="nav-toggle"
@@ -29,9 +32,6 @@ export default function Header() {
               )}
             </svg>
           </button>
-          <a className="header-cta" href="/request-estimate">
-            Request an Estimate
-          </a>
         </div>
 
         <nav className={`nav-links${open ? ' open' : ''}`}>
