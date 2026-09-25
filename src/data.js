@@ -763,6 +763,244 @@ export const WINE_CUSTOM_NOTE = {
   body: "Under a staircase, in an awkward corner, or built into an already-finished room — most wine cellars start with a space that wasn't designed for one. We work with your designer or contractor to fit the glass, framing, and doors to the actual conditions, whatever shape the space is in. Bring us your plans, your site conditions, or just an idea.",
 };
 
+// The three commercial glazing / office partition systems, shown on the
+// Commercial Glazing & Office Partition service page and each with its own
+// dedicated detail page at /services/commercial-glazing-office-partitions/:slug.
+// Content drawn from the Finelines commercial glazing design-reference sheets.
+// Unlike SHOWER_DESIGNS/RAILING_DESIGNS/WINE_DESIGNS (fixed fields), these use
+// a flexible `blocks` array since the three source sheets each have a
+// different structure — see PartitionDesignDetail.jsx for how each block
+// shape (`paragraphs`, `bullets`, `items`) renders.
+export const PARTITION_DESIGNS = [
+  {
+    number: 1,
+    slug: 'storefront-glazing',
+    title: 'Commercial Storefront Glazing',
+    subtitle: 'Architectural Glass, Commercial Entrances',
+    image: '/images/partition-design-1-storefront.jpg',
+    blurb: "Storefront framing, entrance doors, and glazing systems for retail, office, and commercial buildings, coordinated with the building design from the ground up.",
+    intro: [
+      'Finelines Glass Installations provides commercial storefront glazing solutions for retail spaces, offices, professional buildings, restaurants, showrooms, and other commercial environments.',
+      "Commercial storefront glazing is more than installing glass into an opening. The complete system must be coordinated with the building design, structural conditions, entrance requirements, framing system, glass specification, hardware, finishes, weather exposure, and the project's overall scope of work.",
+      "Our approach is to work with the designer, architect, contractor, builder, and project team to understand the approved design and deliver the glazing system according to the project's requirements.",
+    ],
+    blocks: [
+      {
+        heading: 'Working With Designers & Contractors',
+        paragraphs: [
+          "Finelines Glass Installations works directly with contractors and designers based on the project's scope of work, drawings, specifications, and site conditions.",
+          'We understand that commercial glazing is one component of a larger construction project. Coordination may be required with exterior cladding, concrete, structural openings, doors, electrical systems, interior finishes, flooring, millwork, security systems, accessibility requirements, and other trades.',
+          'Our goal is to make the glass and framing system integrate properly with the overall architectural design and construction sequence.',
+        ],
+      },
+      {
+        heading: 'Commercial Storefront Systems Require Planning',
+        intro: 'A commercial storefront project can involve many technical and design considerations. Depending on the application, the project may require decisions regarding:',
+        bullets: [
+          'Storefront framing profile and system configuration',
+          'Glass type, thickness, safety glazing, and performance requirements',
+          'Entrance doors, door hardware, closers, pivots, and access-control coordination',
+          'Structural openings and attachment conditions',
+          'Interior and exterior conditions',
+          'Weather exposure and appropriate perimeter sealing',
+          'Thermal and energy-performance requirements where applicable',
+          'Acoustic, privacy, or specialty-glass requirements where specified',
+          'Accessibility and building-code requirements',
+          'Finish, colour, and architectural appearance',
+          'Field measurements, fabrication dimensions, and installation sequencing',
+          'Coordination with other trades and the authority having jurisdiction where required',
+        ],
+      },
+      {
+        heading: 'Framing & Finish Options',
+        items: [
+          { title: 'Anodized Finishes', body: 'A clean architectural option commonly used for commercial storefront applications.' },
+          { title: 'Bronze Finishes', body: 'Provides a warmer architectural appearance and can complement a wide range of exterior and interior materials.' },
+          { title: 'Matte Black', body: 'Creates a strong contemporary appearance and coordinates well with modern architectural elements.' },
+          { title: 'Customized Colours', body: 'Project-specific colour requirements can be explored when the design calls for a particular architectural finish.' },
+        ],
+        note: 'Available finishes, colour matching, and system options depend on the selected manufacturer and project requirements. Finelines Glass Installations can help identify the appropriate system and finish based on the scope of work.',
+      },
+      {
+        heading: 'Multiple Supplier Options',
+        paragraphs: [
+          'Finelines Glass Installations works with multiple suppliers for commercial storefront systems. This allows us to consider different system configurations, profiles, finishes, performance requirements, availability, and project specifications rather than limiting every project to a single storefront system.',
+          "The appropriate supplier and system are selected according to the project's requirements, approved design, technical specifications, availability, and compatibility with the building conditions.",
+        ],
+      },
+      {
+        heading: 'Glass Selection',
+        paragraphs: [
+          "The glass used in a commercial storefront is selected according to the project's scope and specifications. Depending on the application, options may include clear architectural glass, low-iron glass, tinted glass, laminated glass, insulated glazing, or other specialty products where appropriate.",
+          'Glass performance requirements can include safety, thermal performance, solar control, privacy, acoustic performance, security, appearance, and other project-specific criteria. Finelines Glass Installations works from the project specifications rather than applying one standard glass package to every commercial installation.',
+        ],
+      },
+      {
+        heading: 'Custom Commercial Applications',
+        paragraphs: [
+          'Commercial glazing projects can include storefront entrances, fixed glazing, large glazed openings, corner conditions, interior storefront systems, reception areas, office fronts, retail displays, and custom architectural glazing.',
+          'Where the architectural design requires a non-standard configuration, we work with the project team to determine a practical glazing solution that fits the available space and project requirements.',
+        ],
+      },
+    ],
+    approach: [
+      'Finelines Glass Installations can make it happen with quality assurance. Our installation process focuses on accurate field measurements, coordination of fabrication dimensions, proper handling of glass and framing components, accurate layout, secure installation, clean joints, appropriate sealing, door alignment, hardware installation, and professional finishing.',
+      'Commercial storefront glazing is highly visible and often forms the first impression of a business. We understand the importance of clean lines, consistent framing, accurate glass alignment, properly operating doors, and a finished appearance that reflects the quality of the project.',
+      "At Finelines Glass Installations, we don't treat commercial storefront glazing as a one-size-fits-all product. We evaluate the project's design, scope, site conditions, system requirements, finish expectations, and construction coordination.",
+      "From the designer's concept and contractor's drawings to supplier coordination, fabrication, and installation, we work with the project team to bring the approved commercial glazing design to life.",
+    ],
+    codeDisclaimer: "Commercial glazing requirements vary by project, building type, application, and jurisdiction. Final glass, framing, engineering, code, permit, accessibility, energy-performance, and other project requirements are determined by the approved project documents, applicable authority having jurisdiction, and qualified design professionals where required.",
+  },
+  {
+    number: 2,
+    slug: 'frameless-office-partitions',
+    title: 'Frameless Office Glass Partitions',
+    subtitle: 'Modern Workplace Design, Architectural Glass',
+    image: '/images/partition-design-2-frameless-office.jpg',
+    blurb: 'Large clear glass panels with minimal visible framing divide and define private offices, meeting rooms, and boardrooms without sacrificing natural light.',
+    intro: [
+      'Finelines Glass Installations provides custom frameless office glass partition systems designed to divide and define commercial spaces while maintaining an open, bright, and contemporary environment.',
+      'Using large clear glass panels with minimal visible framing, frameless partitions can create private offices, meeting rooms, boardrooms, reception areas, and collaborative spaces without sacrificing natural light or visual connection throughout the workplace.',
+    ],
+    blocks: [
+      {
+        heading: 'Working With Designers & Contractors',
+        paragraphs: [
+          'Finelines Glass Installations works closely with interior designers, architects, contractors, builders, and commercial project teams to achieve the approved design and project standards.',
+          "Every commercial project has different requirements. We work from the project's drawings, specifications, scope of work, field conditions, and installation details to determine the appropriate glass, hardware, layout, and installation approach.",
+          "Our goal is to make the glass partition system work as part of the complete building design — not as a separate element added after the fact.",
+        ],
+      },
+      {
+        heading: 'Open Design With Defined Spaces',
+        paragraphs: [
+          'Frameless glass partitions provide a balance between openness and separation. They allow offices and meeting spaces to be clearly defined while preserving natural light and maintaining visual continuity throughout the workplace.',
+          'This approach is particularly effective for executive offices, conference rooms, boardrooms, private workspaces, reception areas, and collaborative environments where the design calls for transparency and a clean architectural appearance.',
+        ],
+      },
+      {
+        heading: 'Custom Configurations',
+        intro: 'Commercial interiors rarely have identical layouts. Finelines Glass Installations can work with custom configurations including floor-to-ceiling glass, straight partitions, corner conditions, glass doors, meeting-room enclosures, and other architectural layouts.',
+        items: [
+          { title: 'Private Offices', body: 'Create enclosed workspaces while maintaining visual connection.' },
+          { title: 'Meeting & Conference Rooms', body: 'Provide defined meeting areas with an open architectural appearance.' },
+          { title: 'Boardrooms', body: 'Large glass enclosures that complement premium commercial interiors.' },
+          { title: 'Reception & Waiting Areas', body: 'Separate spaces without creating a visually heavy barrier.' },
+          { title: 'Collaborative Work Areas', body: 'Organize open-plan workplaces while maintaining natural light.' },
+        ],
+      },
+      {
+        heading: 'Glass Selection',
+        intro: 'Glass specifications are selected according to the project requirements, design intent, application, performance criteria, and scope of work.',
+        items: [
+          { title: 'Clear Glass', body: 'Provides maximum transparency and an open visual connection.' },
+          { title: 'Low-Iron / High-Clarity Glass', body: 'Provides a more neutral appearance where enhanced clarity is desired.' },
+          { title: 'Frosted or Privacy Glass', body: 'Can provide visual separation for offices, meeting rooms, and areas requiring additional privacy.' },
+          { title: 'Tinted or Specialty Glass', body: 'Can be incorporated when specified by the designer or project requirements.' },
+          { title: 'Laminated Glass', body: 'Can be specified where the project requires particular safety, acoustic, privacy, or other performance characteristics.' },
+        ],
+      },
+      {
+        heading: 'Commercial Project Coordination',
+        paragraphs: [
+          'Office glass partitions often require coordination with flooring, ceilings, millwork, electrical systems, lighting, HVAC, security/access-control systems, doors, and other trades.',
+          'Finelines Glass Installations works with the contractor and design team to coordinate our portion of the installation with the overall construction sequence.',
+          'Accurate field measurements and communication with the project team help ensure that glass panels, doors, hardware, and connections are properly coordinated with the completed space.',
+        ],
+      },
+    ],
+    hardware: {
+      body: 'Frameless office systems can be coordinated with a variety of architectural hardware and finish selections. Hinges, pulls, patch fittings, channels, locks, and other components can be selected to complement the overall design.',
+    },
+    approach: [
+      'Finelines Glass Installations can make it happen with quality assurance. Our installation process focuses on accurate measurements, proper glass specification, precise fabrication, careful handling, accurate layout, hardware alignment, secure installation, clean joints, and professional finishing.',
+      'Because frameless glass partitions are highly visible architectural elements, we pay close attention to glass alignment, consistent joints, hardware placement, door operation, and the finished appearance of the entire system.',
+      "No two commercial interiors are exactly the same. Finelines Glass Installations works according to the project's approved design, scope, dimensions, site conditions, and technical requirements.",
+      'Whether the project is a small private office or a large corporate workplace, we collaborate with designers and contractors to develop and install a glass partition system that supports the intended architectural design.',
+    ],
+    codeDisclaimer: "Glass specifications, safety glazing, engineering, acoustic performance, accessibility, building-code, permit, and other requirements vary by project and jurisdiction. Final specifications and compliance are determined by the approved project documents, applicable authority having jurisdiction, and qualified design professionals where required.",
+  },
+  {
+    number: 3,
+    slug: 'privacy-boardroom-black-framed',
+    title: 'Privacy Glass, Boardroom Enclosures & Black-Framed Partitions',
+    subtitle: 'Commercial Architectural Glass, Custom Workplace Solutions',
+    image: '/images/partition-design-3-privacy-boardroom-black-framed.jpg',
+    blurb: 'From frosted privacy glass to frameless boardrooms and contemporary black-framed partitions — three ways to define a workspace without closing it in.',
+    intro: [
+      'Finelines Glass Installations provides custom commercial glass partition solutions designed to create functional, sophisticated, and visually connected work environments.',
+      'From privacy and specialty glass to frameless meeting rooms and contemporary black-framed office partitions, we work with interior designers, architects, contractors, builders, and project teams to bring the approved design and scope of work to life.',
+    ],
+    blocks: [
+      {
+        heading: 'Privacy Glass & Specialty Glass',
+        intro: "Privacy and specialty glass can provide visual separation while maintaining the benefits of natural light. The appropriate glass is selected according to the project's design, application, performance requirements, and scope of work.",
+        items: [
+          { title: 'Frosted or Privacy Glass', body: 'Provides visual separation for offices, meeting rooms, and sensitive areas.' },
+          { title: 'Tinted Glass', body: 'Adds a controlled level of colour and visual character.' },
+          { title: 'Textured Glass', body: 'Provides privacy while introducing a distinct architectural surface.' },
+          { title: 'Decorative Glass', body: 'Allows patterns, graphics, or other design elements to become part of the partition.' },
+          { title: 'Laminated or Specialty Glass', body: 'Can be specified when particular safety, acoustic, privacy, or other performance characteristics are required.' },
+        ],
+      },
+      {
+        heading: 'Glass Meeting & Boardroom Enclosures',
+        paragraphs: [
+          'Frameless glass meeting and boardroom enclosures provide a sophisticated way to define collaborative spaces without making the workplace feel closed in. Large glass panels maintain visibility, natural light, and visual connection while establishing a dedicated meeting environment.',
+        ],
+        bullets: [
+          'Meeting rooms',
+          'Boardrooms',
+          'Executive offices',
+          'Conference spaces',
+          'Collaborative work areas',
+          'Reception and feature areas',
+        ],
+        note: 'Door locations, glass configuration, hardware, privacy requirements, and specialty glass can be coordinated with the approved architectural design.',
+      },
+      {
+        heading: 'Black-Framed Office Partitions',
+        paragraphs: [
+          'Black-framed glass partitions provide a strong contemporary architectural appearance while creating clearly defined offices and workspaces. The contrast between dark framing and glass creates clean visual lines while preserving daylight and openness.',
+          "This system can be used for private offices, conference rooms, reception areas, corridors, and larger commercial layouts. Framing profiles, door configurations, glass selection, and finish can be coordinated with the project's overall architectural language.",
+        ],
+      },
+      {
+        heading: 'Working With Designers & Contractors',
+        paragraphs: [
+          "Finelines Glass Installations works according to the project's drawings, specifications, scope of work, and site conditions.",
+          'Every commercial interior has different requirements. We coordinate with the designer and contractor to determine the appropriate glass, hardware, layout, dimensions, finishes, doors, and installation approach for the project.',
+          'Our objective is to make the glass installation work as part of the complete building design, not as a separate element added after construction.',
+        ],
+      },
+      {
+        heading: 'Glass Selection Based on the Project',
+        paragraphs: [
+          'Glass specifications are selected according to the application and project requirements. Depending on the scope, options may include clear, low-iron, frosted, tinted, textured, decorative, laminated, or other specialty glass products.',
+          'Where enhanced privacy, acoustics, safety, solar control, or other performance characteristics are required, the glass specification can be tailored to the project in coordination with the design and construction team.',
+        ],
+      },
+    ],
+    hardware: {
+      body: 'Office glass systems can be coordinated with different hinges, pulls, patch fittings, channels, locks, handles, and other architectural hardware depending on the selected system and project requirements.',
+    },
+    approach: [
+      'Finelines Glass Installations can make it happen with quality assurance. Our process focuses on accurate field measurements, proper glass specification, precise fabrication, careful handling, accurate layout, hardware alignment, secure installation, clean joints, and professional finishing.',
+      'Because office glass partitions are highly visible architectural elements, we pay close attention to consistent glass joints, alignment, door operation, hardware placement, and the finished appearance of the complete system.',
+      "No two commercial interiors are exactly the same. Finelines Glass Installations works with the project team to adapt the glass solution to the approved design, scope, dimensions, site conditions, and technical requirements.",
+      'Whether the project calls for privacy glass, a sophisticated boardroom enclosure, or a contemporary black-framed office system, we work with designers and contractors to deliver a finished installation that reflects the intended design.',
+    ],
+    codeDisclaimer: "Glass specifications, safety glazing, engineering, acoustic performance, accessibility, building-code, permit, and other requirements vary by project and jurisdiction. Final specifications and compliance are determined by the approved project documents, applicable authority having jurisdiction, and qualified design professionals where required.",
+  },
+];
+
+// Closing panel shown after the three commercial glazing / office partition
+// systems above, for projects with non-standard layouts or requirements.
+export const PARTITION_CUSTOM_NOTE = {
+  heading: "Have a commercial space with its own requirements?",
+  body: "Every building, floor plate, and tenant improvement comes with its own structural conditions, code requirements, and design intent. We work with your designer, architect, or contractor to fit the glazing system to the actual project — bring us your drawings, specifications, or scope of work.",
+};
+
 // Real completed-project photos, shared with the Projects page gallery.
 // Captions describe the work only — never a client's exact address (see the
 // website report / discovery checklist for why).
