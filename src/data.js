@@ -1001,6 +1001,230 @@ export const PARTITION_CUSTOM_NOTE = {
   body: "Every building, floor plate, and tenant improvement comes with its own structural conditions, code requirements, and design intent. We work with your designer, architect, or contractor to fit the glazing system to the actual project — bring us your drawings, specifications, or scope of work.",
 };
 
+// The three mirror finishes, shown on the Mirrors service page and each with
+// its own dedicated detail page at /services/mirrors/:slug. Content drawn
+// from the Finelines mirror design-reference sheets. Uses the same flexible
+// `blocks` array as PARTITION_DESIGNS since the three source sheets don't
+// share one fixed section structure — see MirrorDesignDetail.jsx.
+export const MIRROR_DESIGNS = [
+  {
+    number: 1,
+    slug: 'bronze',
+    title: 'Bronze Mirror',
+    subtitle: 'Warm Architectural Reflection, Hospitality & High-End Interiors',
+    image: '/images/mirror-design-1-bronze.jpg',
+    blurb: 'A warm, elegant reflective finish that works especially well in hotel lobbies, restaurants, and high-end interiors alongside stone, wood, and warm lighting.',
+    intro: [
+      'Finelines Glass Installations provides custom bronze mirror installations for residential, hospitality, commercial, and high-end architectural interiors. Bronze mirror adds a warm, elegant reflective quality that works particularly well with stone, wood, brass, bronze, and warm architectural lighting.',
+    ],
+    blocks: [
+      {
+        heading: 'Hospitality & Hotel Applications',
+        paragraphs: [
+          'Bronze mirror is especially effective in hotel lobbies, reception areas, lounges, restaurants, bars, elevators, corridors, and feature walls. Its warm tone can enhance ambient lighting and create a sophisticated sense of depth without the brighter appearance of traditional clear mirror.',
+          'Large-format bronze mirror can be used to create dramatic architectural walls, reception backdrops, decorative panels, and feature installations.',
+        ],
+      },
+      {
+        heading: 'Custom Mirror Designs',
+        paragraphs: [
+          'Finelines Glass Installations can work with different custom mirror designs and configurations depending on the requirements of the project.',
+        ],
+        bullets: [
+          'Full-height feature walls',
+          'Wall-to-wall mirror installations',
+          'Reception and lobby feature walls',
+          'Hotel and hospitality interiors',
+          'Restaurant and bar feature walls',
+          'Decorative columns and architectural details',
+          'Elevator interiors',
+          'Custom-shaped mirror panels',
+          'Multiple-panel layouts with coordinated joints',
+          'Mirror integrated with wood, stone, metal, and millwork',
+        ],
+      },
+      {
+        heading: 'Working With Designers & Contractors',
+        paragraphs: [
+          "Finelines Glass Installations works closely with interior designers, architects, contractors, and builders to understand the project's design intent and installation requirements.",
+          'The configuration of the mirror installation can be coordinated with the overall architectural design, including:',
+        ],
+        bullets: [
+          'Panel sizes and layout',
+          'Joint locations',
+          'Wall conditions',
+          'Corners and transitions',
+          'Lighting',
+          'Millwork and cabinetry',
+          'Electrical components',
+          'Surrounding stone and other finishes',
+          'Hardware and installation requirements',
+        ],
+        note: 'Our goal is to ensure the mirror installation becomes an integrated part of the design rather than simply being placed onto the finished wall.',
+      },
+      {
+        heading: 'Precision & Custom Fabrication',
+        paragraphs: [
+          'Most of our mirror projects are custom-cut to size. Accurate field measurements are an important part of the process, particularly for large feature walls and complex architectural configurations.',
+          'We carefully consider finished dimensions and surrounding conditions before fabrication so the panels can be installed with clean lines, consistent joints, and a professional finished appearance.',
+        ],
+      },
+    ],
+    approach: [
+      'Finelines Glass Installations focuses on precise measurements, careful fabrication coordination, proper glass handling, accurate installation, clean seams, and quality finishing.',
+      'Whether the project calls for a dramatic bronze-mirror hotel lobby, an elegant restaurant feature wall, or a custom residential installation, we work with the project team to achieve the intended design.',
+    ],
+    codeDisclaimer: "Mirror specifications, safety considerations, substrate conditions, installation methods, and other requirements vary by application. Final product selection and installation details are determined by the project scope, site conditions, applicable requirements, and qualified professionals where required.",
+  },
+  {
+    number: 2,
+    slug: 'gray',
+    title: 'Gray Mirror',
+    subtitle: 'Contemporary Smoked Reflection, Sophisticated Interior Applications',
+    image: '/images/mirror-design-2-gray.jpg',
+    blurb: 'A softer, smoked-toned reflection that adds depth and a contemporary edge to home bars, dining areas, powder rooms, and feature walls.',
+    intro: [
+      'Finelines Glass Installations provides custom gray mirror installations for residential and commercial interiors where a darker, more sophisticated reflective finish is desired.',
+      'Gray mirror, sometimes referred to as smoked or gray-toned mirror, provides a softer and more contemporary reflection than traditional clear mirror. Its darker tone can add depth, contrast, and a refined architectural character to an interior.',
+    ],
+    blocks: [
+      {
+        heading: 'Where Gray Mirror Works Best',
+        paragraphs: [
+          'Gray mirror is particularly effective in spaces where the design calls for a sophisticated feature rather than the bright, highly reflective appearance of a traditional clear mirror.',
+        ],
+        items: [
+          { title: 'Home Bars & Entertainment Areas', body: 'Creates an elegant backdrop behind bar counters, bottle displays, shelving, and cabinetry.' },
+          { title: 'Dining Areas', body: 'Adds depth and reflection while complementing wood, stone, metal, and decorative lighting.' },
+          { title: 'Powder Rooms', body: 'Provides a dramatic alternative to traditional clear vanity mirrors.' },
+          { title: 'Luxury Bathrooms', body: 'Works well with contemporary stone, dark cabinetry, black hardware, and warm lighting.' },
+          { title: 'Feature Walls', body: 'Can visually expand an interior while creating a strong architectural focal point.' },
+          { title: 'Commercial & Hospitality Interiors', body: 'Suitable for restaurants, lounges, offices, reception areas, hotels, and other designed spaces.' },
+          { title: 'Retail & Showroom Interiors', body: 'Can provide a premium backdrop for displays and architectural features.' },
+        ],
+      },
+      {
+        heading: 'Custom-Sized Gray Mirror',
+        paragraphs: [
+          'Most Finelines Glass Installations mirror projects are custom-cut to the dimensions required by the space. Gray mirror can be fabricated for wall-to-wall applications, feature walls, vanity areas, bar backs, columns, niches, and other architectural conditions.',
+          'Custom fabrication allows the mirror layout to be coordinated with corners, cabinetry, countertops, lighting, electrical outlets, wall features, and other elements within the design.',
+        ],
+      },
+      {
+        heading: 'Precise Measurements',
+        paragraphs: [
+          'Finelines Glass Installations takes precise field measurements before fabrication to help achieve an accurate installation.',
+          'For large or detailed mirror installations, measurement accuracy is particularly important. We consider finished wall dimensions, corners, reveals, cabinetry, millwork, lighting, outlets, countertops, trim, and other site conditions that may affect the final fit.',
+        ],
+      },
+      {
+        heading: 'Designed With Your Interior',
+        paragraphs: [
+          'Finelines Glass Installations works with interior designers, architects, contractors, builders, and homeowners to coordinate the mirror installation with the overall design.',
+          'Gray mirror can be used as a feature material alongside wood, natural stone, marble, metal, black finishes, warm lighting, and contemporary cabinetry. The result can be subtle and elegant or become a major architectural focal point depending on the design.',
+        ],
+      },
+      {
+        heading: 'Installation & Finishing',
+        paragraphs: [
+          'Our installation process focuses on accurate layout, proper handling, clean edges, consistent joints, secure installation, and careful finishing. Where multiple mirror panels are required, we pay close attention to panel alignment and seam consistency.',
+          'Custom openings or cutouts can also be coordinated where required for outlets, switches, lighting, faucets, mounting hardware, or other architectural components.',
+        ],
+      },
+      {
+        heading: 'Mirror Selection',
+        paragraphs: [
+          "Gray mirror is one of the three popular mirror options offered by Finelines Glass Installations, alongside clear mirror and bronze mirror. The appropriate mirror colour is selected according to the project's design intent, surrounding materials, lighting, and scope of work.",
+        ],
+      },
+    ],
+    hardware: {
+      body: 'Where mirror installations incorporate related glass hardware or architectural components, available styles and finishes can be coordinated with the overall interior design.',
+    },
+    approach: [
+      'Finelines Glass Installations can make it happen with quality assurance. From field measurement and fabrication coordination through final installation, our focus is on precision, clean detailing, and a finished result that complements the surrounding architecture.',
+    ],
+    codeDisclaimer: "Mirror specifications, safety considerations, substrate conditions, installation methods, and other requirements vary by application. Final product selection and installation details are determined by the project scope, site conditions, applicable requirements, and qualified professionals where required.",
+  },
+  {
+    number: 3,
+    slug: 'clear',
+    title: 'Clear Mirror',
+    subtitle: 'Custom-Cut Architectural Mirrors, Precise Measurements',
+    image: '/images/mirror-design-3-clear.jpg',
+    blurb: 'A clean, bright, and highly reflective finish — the most popular choice for bathrooms, vanities, gyms, and home gyms.',
+    intro: [
+      'Finelines Glass Installations provides custom clear mirror installations for residential and commercial spaces where a clean, bright, and highly reflective finish is desired.',
+      'Clear mirror is one of the most commonly used mirror products and is especially popular for bathrooms, vanity areas, gyms, and home gyms. It can also be incorporated into bedrooms, dressing areas, commercial facilities, hospitality spaces, feature walls, and other interior applications.',
+    ],
+    blocks: [
+      {
+        heading: 'Custom Sizes & Cut-to-Size Mirrors',
+        paragraphs: [
+          "Most Finelines Glass Installations mirror projects are fabricated to the dimensions required for the specific space. Rather than relying on standard off-the-shelf mirror sizes, we work with the project's actual measurements and design requirements.",
+          'Custom sizing is particularly important for wall-to-wall installations, vanity mirrors, large gym mirrors, full-height mirrors, feature walls, and spaces with architectural details that require precise fitting.',
+        ],
+      },
+      {
+        heading: 'Precise Measurement Matters',
+        paragraphs: [
+          'Finelines Glass Installations takes precise field measurements to establish the required dimensions before fabrication and installation.',
+          'We consider wall dimensions, corners, finished surfaces, cabinetry, countertops, electrical outlets, lighting, faucets, backsplashes, trim, and other conditions that can affect the final fit. The objective is a clean, accurately fitted installation with consistent lines and properly coordinated edges throughout the finished space.',
+        ],
+      },
+      {
+        heading: 'Popular Applications',
+        items: [
+          { title: 'Bathrooms & Vanities', body: 'Custom mirrors provide a clean finished appearance and can visually expand the room.' },
+          { title: 'Gyms', body: 'Expansive mirrors allow users to monitor form and movement while making the fitness space feel larger and brighter.' },
+          { title: 'Home Gyms', body: 'Custom-sized mirrors can be fitted around equipment, walls, outlets, and other room conditions.' },
+          { title: 'Bedrooms & Dressing Areas', body: 'Full-height or custom wall mirrors provide functional dressing and reflection areas.' },
+          { title: 'Commercial Interiors', body: 'Mirrors can be used in fitness facilities, salons, hospitality spaces, retail environments, and other commercial applications.' },
+        ],
+      },
+      {
+        heading: 'Designed Around the Project',
+        paragraphs: [
+          'Finelines Glass Installations works with interior designers, architects, contractors, builders, and homeowners to achieve the intended design and installation requirements.',
+          'For projects involving designers and contractors, we work from the drawings, specifications, scope of work, and actual site conditions. Mirror dimensions, locations, cutouts, edges, and installation methods can be coordinated with the surrounding construction.',
+        ],
+      },
+      {
+        heading: 'Custom Cutouts & Coordination',
+        paragraphs: [
+          'Where required, mirrors can be fabricated with carefully coordinated openings or cutouts for electrical outlets, switches, faucets, lighting, mounting hardware, and other architectural components.',
+          'These details make accurate field measurement especially important because the finished mirror needs to coordinate with the elements already installed or planned within the space.',
+        ],
+      },
+      {
+        heading: 'Professional Installation',
+        paragraphs: [
+          'Our installation process focuses on accurate layout, proper glass handling, correct positioning, clean edges, consistent alignment, secure installation, and careful finishing.',
+          'For large mirror installations, proper planning and handling are particularly important. Our team works to achieve a finished result that looks intentional, precise, and integrated with the surrounding architecture.',
+        ],
+      },
+      {
+        heading: 'Mirror Options',
+        paragraphs: [
+          'Clear mirror is one of the primary mirror options offered by Finelines Glass Installations. Depending on the design, we can also work with other popular mirror selections such as gray mirror and bronze mirror, along with specialty options when required by the project.',
+        ],
+      },
+    ],
+    approach: [
+      'Finelines Glass Installations can make it happen with quality assurance. From precise field measurements through fabrication and installation, our focus is on accuracy and a clean finished appearance.',
+      'Most importantly, we understand that custom mirror work is measured and fabricated for a specific space. Precision at the measurement stage helps establish the foundation for a successful installation.',
+    ],
+    codeDisclaimer: "Mirror specifications, safety considerations, substrate conditions, installation methods, and other requirements vary by application. Final product selection and installation details are determined by the project scope, site conditions, applicable requirements, and qualified professionals where required.",
+  },
+];
+
+// Closing panel shown after the three mirror finishes above, for projects
+// that don't fit neatly into one finish or need help deciding.
+export const MIRROR_CUSTOM_NOTE = {
+  heading: "Not sure which mirror finish is right for your space?",
+  body: "Bronze, gray, and clear mirror all suit different lighting, materials, and moods — and most of our mirror work is custom-cut to the exact space regardless of which one you choose. Bring us your room, your finishes, or just a photo of what you're going for.",
+};
+
 // Real completed-project photos, shared with the Projects page gallery.
 // Captions describe the work only — never a client's exact address (see the
 // website report / discovery checklist for why).
