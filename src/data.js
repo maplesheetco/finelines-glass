@@ -1391,6 +1391,146 @@ export const WINDOW_CUSTOM_NOTE = {
   body: "If the glass itself is broken, fogged, or the frame has failed, that's a replacement. If the glass is fine but the sun, glare, or privacy isn't, film is usually the faster and less invasive fix. Tell us what's going on with the window and we'll point you to the right one.",
 };
 
+// The two Skylights (New or Replacement) services, drawn from the Finelines
+// New Skylight Installation and Skylight Replacement design-reference sheets.
+// Same "two services under one heading" shape as WINDOW_DESIGNS above, using
+// the same flexible `blocks` schema:
+//   - paragraphs: string[]        -> plain paragraphs
+//   - bullets: string[]           -> a plain bulleted list
+//   - items: { title, body }[]    -> a bulleted list with bold lead-ins
+//   - intro / note: string        -> an optional lead-in / trailing paragraph
+export const SKYLIGHT_DESIGNS = [
+  {
+    number: 1,
+    slug: 'new-skylight-installation',
+    title: 'New Skylight Installation',
+    subtitle: 'Dome & Flat Skylight Systems, Residential & Commercial',
+    image: '/images/skylight-design-1-new-installation.jpg',
+    blurb: 'Bringing natural light into a kitchen, stairwell, or living space with a dome or flat skylight system, matched to your roof and architectural design.',
+    intro: [
+      'Finelines Glass Installations provides new skylight installation solutions for residential and commercial projects where natural light, architectural design, and the existing building conditions need to work together.',
+      'We work hand in hand with homeowners and contractors to understand the project requirements, approved design, opening conditions, and intended skylight application before selecting the appropriate system.',
+    ],
+    blocks: [
+      {
+        heading: 'Dome & Flat Skylight Applications',
+        intro: 'Skylights can be configured in different forms depending on the project. Common applications include domed skylights with a raised curved profile and flat skylight systems using flat glazing. Flat systems may also be configured with multiple glass panels where the opening or architectural design calls for a larger installation.',
+        bullets: [
+          'Dome skylight systems',
+          'Flat skylight systems',
+          'Multiple-panel flat skylight configurations',
+          'Custom skylight openings',
+          'Residential skylight installations',
+          'Commercial and architectural skylight applications',
+        ],
+      },
+      {
+        heading: 'Working With Homeowners & Contractors',
+        paragraphs: [
+          'Finelines Glass Installations works closely with the homeowner and contractor to determine what type of skylight is appropriate for the project.',
+          'The selection can depend on the approved architectural design, existing or proposed opening, dimensions, roof configuration, desired appearance, glazing requirements, and the overall scope of work.',
+          'Where designers, architects, builders, or other professionals are involved, we coordinate the skylight glass and system requirements with the broader project design.',
+        ],
+      },
+      {
+        heading: 'Multiple Suppliers & System Options',
+        paragraphs: [
+          'Finelines Glass Installations works with different suppliers to help meet the requirements of each project. Different manufacturers and systems may provide different configurations, glazing options, dimensions, performance characteristics, and installation details.',
+          "Our goal is to identify a suitable system based on the project's approved design, technical requirements, availability, and applicable installation conditions rather than assuming one skylight system will work for every application.",
+        ],
+      },
+      {
+        heading: 'City & Building-Code Requirements',
+        paragraphs: [
+          'Skylight installations can be subject to building-code, safety, structural, glazing, roofing, and permit requirements. These requirements can vary according to the jurisdiction, building type, location, and specific application.',
+          'Finelines Glass Installations works with the project team to coordinate the skylight requirements with the applicable city or authority having jurisdiction. Where the project requires qualified professionals, engineering, permits, or other technical review, those requirements should be addressed as part of the project.',
+        ],
+      },
+      {
+        heading: 'Safety & Proper Coordination',
+        paragraphs: [
+          'A skylight is an important building component and should be selected and installed with the surrounding roof, structure, glazing, and safety requirements in mind. Proper coordination is essential before fabrication and installation.',
+          'We focus on confirming the required dimensions, system configuration, glazing requirements, and installation conditions so the skylight can be integrated properly into the project.',
+        ],
+      },
+    ],
+    approach: [
+      'Finelines Glass Installations is committed to coordinating each skylight project carefully from selection through installation. We work with homeowners, contractors, designers, suppliers, and qualified professionals as required to help keep the project requirements aligned.',
+      'From a single residential skylight to a multi-panel architectural installation, we work to deliver a clean, properly coordinated result that follows the approved design and applicable project requirements.',
+    ],
+    codeDisclaimer: 'Skylight requirements vary by project, jurisdiction, building type, roof construction, glazing system, and intended use. Applicable building-code, safety, structural, roofing, waterproofing, permit, and manufacturer requirements should be confirmed for each project with the contractor, qualified professionals, manufacturer, and authority having jurisdiction as applicable.',
+  },
+  {
+    number: 2,
+    slug: 'skylight-replacement',
+    title: 'Skylight Replacement',
+    subtitle: 'Insulated Sealed Units, Residential & Commercial',
+    image: '/images/skylight-design-2-replacement.jpg',
+    blurb: 'Replacing a fogged, failed, or damaged skylight with a properly coordinated insulated sealed unit, matched to your existing frame and opening.',
+    intro: [
+      'Finelines Glass Installations provides skylight replacement and new skylight glass services for residential and commercial projects. Skylights can bring valuable natural light into a space, but they also require careful consideration because they are installed in an exposed and safety-sensitive part of a building.',
+      'We work closely with the homeowner, contractor, designer, and project team to understand why the skylight is being replaced and to determine the appropriate replacement solution for the existing opening and project requirements.',
+    ],
+    blocks: [
+      {
+        heading: 'Skylight Replacement',
+        paragraphs: [
+          'Existing skylights may require replacement because of age, failed insulated sealed units, condensation or fogging between panes, damaged glass, deterioration, water-related concerns, or changes to the building design.',
+          'For replacement projects, we review the existing condition and coordinate the required glass or skylight configuration with the contractor or homeowner before proceeding.',
+        ],
+      },
+      {
+        heading: 'Choosing the Right Skylight',
+        intro: 'Not every skylight application is the same. The appropriate replacement can depend on the existing frame or skylight system, opening dimensions, glazing requirements, location, exposure, design intent, and applicable project requirements.',
+        bullets: [
+          'Existing skylight and frame configuration',
+          'Accurate opening dimensions',
+          'Insulated sealed glass unit requirements',
+          'Glass type and safety-glazing considerations',
+          'Thermal and solar-performance requirements',
+          'Interior and exterior appearance',
+          'Roof and building conditions',
+          'Manufacturer and system requirements',
+          'Applicable building and safety requirements',
+        ],
+      },
+      {
+        heading: 'Safety & Building-Code Considerations',
+        paragraphs: [
+          'Skylights are a critical building component and should not be treated simply as a standard piece of glass. The appropriate glazing, installation method, fall-protection considerations, and surrounding construction need to be evaluated for the specific application.',
+          'Finelines Glass Installations works with the contractor or homeowner to identify the appropriate skylight solution while taking safety requirements into consideration.',
+          'Depending on the project and jurisdiction, building-code requirements, permits, safety glazing requirements, or other professional review may apply. Requirements can vary by city and by the specific building and application.',
+        ],
+      },
+      {
+        heading: 'Working With Contractors & Homeowners',
+        paragraphs: [
+          'We coordinate with contractors and homeowners to understand the project scope, existing conditions, approved design, and required skylight configuration. Where designers or other professionals are involved, we can coordinate the glass component with the overall project design.',
+          'Our objective is to make sure the selected skylight or insulated sealed unit is appropriate for the opening and is coordinated with the project before fabrication and installation.',
+        ],
+      },
+      {
+        heading: 'Precise Measurement & Fabrication',
+        paragraphs: [
+          'Accurate measurements are essential for skylight replacement. Our team works from the existing opening and project requirements to establish the dimensions needed for fabrication or ordering.',
+          'We pay attention to the existing frame, glazing pocket, edge conditions, surrounding finishes, and installation requirements so the replacement can be properly coordinated with the existing construction.',
+        ],
+      },
+    ],
+    approach: [
+      'Skylight work requires careful handling, preparation, installation, and finishing. Finelines Glass Installations focuses on accurate measurements, proper glass selection, careful installation, and coordination with the contractor or homeowner throughout the project.',
+      'Whether replacing a failed insulated sealed unit or installing a new skylight solution, we work toward a clean, durable, and properly coordinated finished installation.',
+    ],
+    codeDisclaimer: 'Skylight requirements vary according to the building, location, glazing system, roof configuration, jurisdiction, and project scope. Applicable safety glazing, building-code, permit, structural, waterproofing, and installation requirements should be confirmed for each project with the contractor, qualified professionals, manufacturer, and authority having jurisdiction as applicable.',
+  },
+];
+
+// Closing panel shown after the two skylight services above.
+export const SKYLIGHT_CUSTOM_NOTE = {
+  heading: 'Not sure if your skylight needs replacing or you’re starting from scratch?',
+  body: "If there's an existing skylight that's fogged, leaking, or damaged, that's a replacement. If you're bringing light into a space for the first time, that's a new installation. Either way, tell us about the space and we'll help you work out the right system.",
+};
+
 // Real completed-project photos, shared with the Projects page gallery.
 // Captions describe the work only — never a client's exact address (see the
 // website report / discovery checklist for why).
