@@ -1531,6 +1531,218 @@ export const SKYLIGHT_CUSTOM_NOTE = {
   body: "If there's an existing skylight that's fogged, leaking, or damaged, that's a replacement. If you're bringing light into a space for the first time, that's a new installation. Either way, tell us about the space and we'll help you work out the right system.",
 };
 
+// The six Custom Glass Solutions categories, drawn from the Finelines Custom
+// Glass Solutions design-reference sheet. Unlike the other *_DESIGNS arrays
+// above (2-3 designs that are variants or sub-services of ONE thing), this
+// service is a set of six distinct, unrelated custom-glass categories, so
+// there's no single "which one fits" closing note — instead every category
+// shares the same three closing sections from the source sheet (Working
+// With Designers & Contractors, Glass & Finish Options, Our Approach) since
+// those apply to custom work in general rather than to any one category.
+// Those shared blocks/approach/disclaimer are defined once below and reused
+// across all six designs via the same flexible `blocks` schema used
+// elsewhere:
+//   - paragraphs: string[]        -> plain paragraphs
+//   - bullets: string[]           -> a plain bulleted list
+//   - intro / note: string        -> an optional lead-in / trailing paragraph
+const CUSTOM_GLASS_WORKING_WITH_BLOCK = {
+  heading: 'Working With Designers & Contractors',
+  paragraphs: [
+    'Finelines Glass Installations works closely with designers and contractors to follow the approved scope of work and project configuration. Custom glass often requires coordination with other trades, so dimensions, interfaces, hardware, finishes, and installation conditions are reviewed before fabrication.',
+    'Where a project requires engineering, specialized fabrication, safety glazing, permits, or other professional review, those requirements should be addressed according to the project and applicable jurisdiction.',
+  ],
+};
+const CUSTOM_GLASS_FINISH_BLOCK = {
+  heading: 'Glass & Finish Options',
+  paragraphs: [
+    'Custom projects can use different glass types, thicknesses, colours, textures, mirror finishes, edge profiles, and hardware depending on the application and approved design.',
+    'Available options can vary by product and supplier. Please contact Finelines Glass Installations to discuss the glass type, colour, finish, hardware, and fabrication options available for your project.',
+  ],
+};
+const CUSTOM_GLASS_APPROACH = [
+  'Our goal is simple: bring us your idea, design, drawing, or challenge, and we will work with you to determine how the glass can be incorporated into the project.',
+  'From a custom tabletop to a specialty mirror wall or a unique architectural glass component, Finelines Glass Installations focuses on accurate measurement, careful coordination, quality fabrication, and professional installation.',
+];
+const CUSTOM_GLASS_DISCLAIMER = 'Custom glass applications are subject to project-specific glass, safety, structural, fabrication, installation, and jurisdictional requirements. Final specifications should be confirmed with the approved project documents, applicable professionals, manufacturers, and authority having jurisdiction where required.';
+
+export const CUSTOM_GLASS_DESIGNS = [
+  {
+    number: 1,
+    slug: 'custom-tabletops',
+    title: 'Custom Tabletops',
+    subtitle: 'Dining, Desk & Furniture Glass, Residential & Commercial',
+    image: '/images/custom-tabletop.jpg',
+    blurb: 'Custom-cut glass tabletops for dining tables, desks, counters, and display surfaces, sized and finished to fit.',
+    intro: [
+      'Finelines Glass Installations fabricates and installs custom glass tabletops for residential and commercial spaces. Glass can be used to protect and enhance dining tables, desks, counters, display surfaces, and other furniture or architectural applications.',
+    ],
+    blocks: [
+      {
+        heading: 'Custom Tabletops',
+        paragraphs: [
+          'Tabletops can be produced to custom dimensions and coordinated with the shape and design of the supporting surface. Depending on the project, considerations can include glass thickness, edgework, corners, shape, finish, and the required support or mounting method.',
+        ],
+        bullets: [
+          'Dining and conference tables',
+          'Desk and office surfaces',
+          'Custom furniture glass',
+          'Protective glass tops',
+          'Specialty shapes and sizes',
+        ],
+      },
+      CUSTOM_GLASS_WORKING_WITH_BLOCK,
+      CUSTOM_GLASS_FINISH_BLOCK,
+    ],
+    approach: CUSTOM_GLASS_APPROACH,
+    codeDisclaimer: CUSTOM_GLASS_DISCLAIMER,
+  },
+  {
+    number: 2,
+    slug: 'cabinet-glass-inserts',
+    title: 'Cabinet Glass Inserts',
+    subtitle: 'Kitchen, Bar & Built-In Cabinetry',
+    image: '/images/custom-cabinet-glass-inserts.jpg',
+    blurb: 'Clear, tinted, textured, or specialty glass panels sized to fit your cabinetry, from kitchens to built-in bars.',
+    intro: [
+      'Custom glass cabinet inserts can transform standard cabinetry into a more open and architectural feature. Finelines Glass Installations works with cabinetmakers, designers, contractors, and homeowners to provide glass panels sized for the cabinet configuration.',
+    ],
+    blocks: [
+      {
+        heading: 'Cabinet Glass Inserts',
+        paragraphs: [
+          'Depending on the approved design, cabinet glass may include clear, tinted, textured, patterned, or other specialty glass options. Precise measurements are important to achieve a clean fit within the cabinet frame.',
+        ],
+        bullets: [
+          'Kitchen cabinets',
+          'Display cabinets',
+          'Bar and beverage cabinets',
+          'Built-in cabinetry',
+          'Custom furniture and millwork',
+        ],
+      },
+      CUSTOM_GLASS_WORKING_WITH_BLOCK,
+      CUSTOM_GLASS_FINISH_BLOCK,
+    ],
+    approach: CUSTOM_GLASS_APPROACH,
+    codeDisclaimer: CUSTOM_GLASS_DISCLAIMER,
+  },
+  {
+    number: 3,
+    slug: 'glass-shelving',
+    title: 'Glass Shelving',
+    subtitle: 'Display, Storage & Decorative Shelving',
+    image: '/images/custom-glass-shelving.jpg',
+    blurb: 'Custom glass shelving for display, storage, or decorative use — built into niches, cabinets, and wall systems.',
+    intro: [
+      'Finelines Glass Installations provides custom glass shelving for residential and commercial interiors. Shelving can be designed for display, storage, or decorative purposes and can be integrated into niches, cabinets, wall systems, and built-in features.',
+    ],
+    blocks: [
+      {
+        heading: 'Glass Shelving',
+        paragraphs: [
+          'Shelf dimensions, glass thickness, edge finishing, supports, brackets, and spacing can be coordinated with the overall design and intended load requirements.',
+        ],
+        bullets: [
+          'Display shelving',
+          'Bathroom and vanity shelving',
+          'Bar and liquor shelving',
+          'Retail and commercial displays',
+          'Built-in and recessed shelving',
+        ],
+      },
+      CUSTOM_GLASS_WORKING_WITH_BLOCK,
+      CUSTOM_GLASS_FINISH_BLOCK,
+    ],
+    approach: CUSTOM_GLASS_APPROACH,
+    codeDisclaimer: CUSTOM_GLASS_DISCLAIMER,
+  },
+  {
+    number: 4,
+    slug: 'urinal-privacy-partitions',
+    title: 'Urinal Privacy Partitions',
+    subtitle: 'Commercial Washroom Privacy Glass',
+    image: '/images/custom-urinal-privacy-partitions.jpg',
+    blurb: 'Durable, modern glass privacy partitions for commercial washrooms, coordinated with your hardware and layout.',
+    intro: [
+      'Finelines Glass Installations provides custom glass privacy partitions for commercial washrooms and other facilities where durable, clean, and modern privacy solutions are required.',
+    ],
+    blocks: [
+      {
+        heading: 'Urinal Privacy Partitions',
+        paragraphs: [
+          'Privacy panels can be configured around the washroom layout and coordinated with the selected hardware, mounting locations, and approved design. Depending on the project requirements, privacy glass may be selected for its level of translucency, appearance, and durability.',
+          'These applications require accurate measurements and proper coordination with the surrounding walls, plumbing fixtures, hardware, and building conditions.',
+        ],
+      },
+      CUSTOM_GLASS_WORKING_WITH_BLOCK,
+      CUSTOM_GLASS_FINISH_BLOCK,
+    ],
+    approach: CUSTOM_GLASS_APPROACH,
+    codeDisclaimer: CUSTOM_GLASS_DISCLAIMER,
+  },
+  {
+    number: 5,
+    slug: 'antique-mirror-wall-designs',
+    title: 'Antique Mirror Wall Designs',
+    subtitle: 'Feature Walls, Residential & Hospitality',
+    image: '/images/custom-antique-mirror-wall.jpg',
+    blurb: 'Antique mirror feature walls that bring depth and character to residential, hospitality, and retail interiors.',
+    intro: [
+      'Finelines Glass Installations also works with specialty mirror applications, including antique mirror wall designs. Antique mirror can add depth, character, and a distinctive decorative finish to high-end residential, hospitality, retail, and commercial interiors.',
+    ],
+    blocks: [
+      {
+        heading: 'Antique Mirror Wall Designs',
+        paragraphs: [
+          'Large feature walls can be designed using individual mirror panels with carefully coordinated joints, layouts, and edge conditions. The mirror pattern and panel configuration can be developed around the architectural design and interior finish package.',
+        ],
+        bullets: [
+          'Feature walls',
+          'Luxury residential interiors',
+          'Hotel and hospitality spaces',
+          'Restaurants and bars',
+          'Retail and commercial interiors',
+          'Decorative wall installations',
+        ],
+      },
+      CUSTOM_GLASS_WORKING_WITH_BLOCK,
+      CUSTOM_GLASS_FINISH_BLOCK,
+    ],
+    approach: CUSTOM_GLASS_APPROACH,
+    codeDisclaimer: CUSTOM_GLASS_DISCLAIMER,
+  },
+  {
+    number: 6,
+    slug: 'custom-requests',
+    title: 'Custom Requests',
+    subtitle: 'One-of-a-Kind & Architectural Glass',
+    image: '/images/custom-requests.jpg',
+    blurb: "Have something one-of-a-kind in mind? Bring us the idea and we'll help work out how the glass fits.",
+    intro: [
+      'Some glass projects are completely unique. Finelines Glass Installations welcomes custom requests involving unusual dimensions, specialty shapes, unique mounting conditions, custom glass components, or one-off architectural applications.',
+    ],
+    blocks: [
+      {
+        heading: 'Custom Requests',
+        paragraphs: [
+          'If you have a drawing, rendering, photograph, sample, concept, or simply an idea, we can review the proposed application and determine what may be possible based on the glass, fabrication, installation, and project requirements.',
+          'Custom requests may involve coordination with designers, architects, contractors, fabricators, cabinetmakers, or other trades to make sure the glass component works with the complete installation.',
+        ],
+      },
+      CUSTOM_GLASS_WORKING_WITH_BLOCK,
+      CUSTOM_GLASS_FINISH_BLOCK,
+    ],
+    approach: CUSTOM_GLASS_APPROACH,
+    codeDisclaimer: CUSTOM_GLASS_DISCLAIMER,
+  },
+];
+
+// Closing panel shown after the six custom-glass categories above.
+export const CUSTOM_GLASS_NOTE = {
+  heading: "Have something else in mind?",
+  body: "These six cover the requests we see most often, but they're a starting point, not a limit. If it's glass and you can describe it, tell us about it and we'll tell you if — and how — it's doable.",
+};
+
 // Real completed-project photos, shared with the Projects page gallery.
 // Captions describe the work only — never a client's exact address (see the
 // website report / discovery checklist for why).
