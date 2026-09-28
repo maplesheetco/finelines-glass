@@ -5,6 +5,7 @@ import RailingDesignDetail from './RailingDesignDetail.jsx';
 import WineDesignDetail from './WineDesignDetail.jsx';
 import PartitionDesignDetail from './PartitionDesignDetail.jsx';
 import MirrorDesignDetail from './MirrorDesignDetail.jsx';
+import WindowDesignDetail from './WindowDesignDetail.jsx';
 
 // Single route target for /services/:slug/:designSlug. Different services
 // have their own "typical designs" detail page component (each with its own
@@ -28,6 +29,9 @@ export default function ServiceDesignDetail() {
   }
   if (slug === 'mirrors') {
     return <MirrorDesignDetail />;
+  }
+  if (slug === 'window-replacement-film') {
+    return <WindowDesignDetail />;
   }
   return <Navigate to="/services" replace />;
 }
