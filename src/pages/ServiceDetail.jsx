@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { COMPANY, SERVICES, SHOWER_DESIGNS, SHOWER_CUSTOM_LAYOUT, RAILING_DESIGNS, RAILING_CUSTOM_NOTE, WINE_DESIGNS, WINE_CUSTOM_NOTE, PARTITION_DESIGNS, PARTITION_CUSTOM_NOTE, MIRROR_DESIGNS, MIRROR_CUSTOM_NOTE, WINDOW_DESIGNS, WINDOW_CUSTOM_NOTE, SKYLIGHT_DESIGNS, SKYLIGHT_CUSTOM_NOTE } from '../data.js';
+import { COMPANY, SERVICES, SHOWER_DESIGNS, SHOWER_CUSTOM_LAYOUT, RAILING_DESIGNS, RAILING_CUSTOM_NOTE, WINE_DESIGNS, WINE_CUSTOM_NOTE, PARTITION_DESIGNS, PARTITION_CUSTOM_NOTE, MIRROR_DESIGNS, MIRROR_CUSTOM_NOTE, WINDOW_DESIGNS, WINDOW_CUSTOM_NOTE, SKYLIGHT_DESIGNS, SKYLIGHT_CUSTOM_NOTE, CUSTOM_GLASS_DESIGNS, CUSTOM_GLASS_NOTE } from '../data.js';
 import ServiceIcon from '../components/ServiceIcon.jsx';
 import Reveal from '../components/Reveal.jsx';
 
@@ -20,6 +20,7 @@ export default function ServiceDetail() {
   const isMirrors = slug === 'mirrors';
   const isWindow = slug === 'window-replacement-film';
   const isSkylights = slug === 'skylights';
+  const isCustomGlass = slug === 'custom-glass-solutions';
 
   return (
     <>
@@ -404,6 +405,49 @@ export default function ServiceDetail() {
             <h2 className="section-heading">{SKYLIGHT_CUSTOM_NOTE.heading}</h2>
             <p className="section-subheading" style={{ margin: '0 auto 28px' }}>
               {SKYLIGHT_CUSTOM_NOTE.body}
+            </p>
+            <a className="btn btn-primary" href="/request-estimate">Request an Estimate</a>
+          </div>
+        </section>
+      )}
+
+      {isCustomGlass && (
+        <section className="block tint">
+          <div className="container">
+            <Reveal>
+              <h2 className="section-heading">Custom Glass Categories</h2>
+              <p className="section-subheading">
+                Six of the custom requests we see most often. Each is fully custom-measured and
+                fabricated around your project — these are a starting point for the conversation,
+                not a fixed menu.
+              </p>
+            </Reveal>
+
+            <div className="shower-design-grid">
+              {CUSTOM_GLASS_DESIGNS.map((d, i) => (
+                <Reveal key={d.number} delay={i * 60}>
+                  <Link to={`/services/custom-glass-solutions/${d.slug}`} className="shower-design-card card-link">
+                    <img src={d.image} alt={`${d.title} (${d.subtitle})`} loading="lazy" />
+                    <div className="shower-design-card-body">
+                      <h3>{d.number}. {d.title}</h3>
+                      <p className="shower-design-subtitle">{d.subtitle}</p>
+                      <p>{d.blurb}</p>
+                      <p className="card-link-cta">See the full details &rarr;</p>
+                    </div>
+                  </Link>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {isCustomGlass && (
+        <section className="block" style={{ textAlign: 'center' }}>
+          <div className="container">
+            <h2 className="section-heading">{CUSTOM_GLASS_NOTE.heading}</h2>
+            <p className="section-subheading" style={{ margin: '0 auto 28px' }}>
+              {CUSTOM_GLASS_NOTE.body}
             </p>
             <a className="btn btn-primary" href="/request-estimate">Request an Estimate</a>
           </div>
