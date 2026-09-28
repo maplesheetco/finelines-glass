@@ -124,16 +124,16 @@ export const SERVICES = [
     ],
   },
   {
-    title: 'Window & Storefront Film',
-    slug: 'window-storefront-film',
-    blurb: 'Solar-control window film for homes and storefronts that cuts glare and UV, keeping spaces cooler in summer and better insulated in winter.',
+    title: 'Window Replacement & Window Film Application',
+    slug: 'window-replacement-film',
+    blurb: 'Replacing damaged, fogged, or aging windows, or applying solar-control window film to your existing glass — two different ways to solve two different window problems.',
     icon: 'film',
-    detail: "Solar-control film cuts glare and UV without changing how a window looks from a distance, and can lower how hard your HVAC has to work in both summer and winter. It's applied directly to your existing glass, so there's no need to replace windows to get the benefit.",
+    detail: "Whether your window itself has failed — broken glass, a fogged sealed unit, an old frame — or the glass is fine but the sun, glare, or privacy isn't, we have a solution that fits the actual problem. Window replacement swaps out the window system entirely; window film changes how existing glass performs without touching the window assembly.",
     highlights: [
-      'Cuts glare and UV without replacing existing glass',
-      'Helps regulate indoor temperature year-round',
-      'Applied to residential windows or commercial storefronts',
-      'A range of tint levels and finishes available',
+      'Window replacement for broken, fogged, or deteriorated windows',
+      'LLumar® solar-control, glare-reduction, and privacy window film',
+      'Residential and commercial, including storefronts',
+      'We help you work out which of the two actually fits your problem',
     ],
   },
   {
@@ -1223,6 +1223,172 @@ export const MIRROR_DESIGNS = [
 export const MIRROR_CUSTOM_NOTE = {
   heading: "Not sure which mirror finish is right for your space?",
   body: "Bronze, gray, and clear mirror all suit different lighting, materials, and moods — and most of our mirror work is custom-cut to the exact space regardless of which one you choose. Bring us your room, your finishes, or just a photo of what you're going for.",
+};
+
+// The two Window Replacement & Window Film Application services, drawn from
+// the Finelines Window Replacement and Window Film Application design-
+// reference sheets. These solve different problems (a failed window system
+// vs. existing glass that needs different performance/appearance), so unlike
+// the shower/railing/wine designs this pair is closer to "two services under
+// one heading" than "two finishes of one thing" — the ServiceDetail grid and
+// WindowDesignDetail page treat them the same way regardless.
+//
+// Uses the same flexible `blocks` schema as PARTITION_DESIGNS/MIRROR_DESIGNS:
+//   - paragraphs: string[]        -> plain paragraphs
+//   - bullets: string[]           -> a plain bulleted list
+//   - items: { title, body }[]    -> a bulleted list with bold lead-ins
+//   - intro / note: string        -> an optional lead-in / trailing paragraph
+export const WINDOW_DESIGNS = [
+  {
+    number: 1,
+    slug: 'window-replacement',
+    title: 'Window Replacement',
+    subtitle: 'Residential & Commercial, Custom Glass Options',
+    image: '/images/window-design-1-replacement.jpg',
+    blurb: 'Replacing broken, fogged, or aging windows with a new system that matches your home or building’s approved design, rather than just swapping glass.',
+    intro: [
+      "Finelines Glass Installations provides residential and commercial window replacement services for homeowners, contractors, and property managers looking to replace aging, damaged, or failed windows with a new system that fits the project's design and performance requirements.",
+      'Whether the project involves broken glass, failed or fogged insulating glass units, damaged windows, or older windows requiring replacement, we work closely with the homeowner and contractor to determine the appropriate replacement solution.',
+    ],
+    blocks: [
+      {
+        heading: 'Residential & Commercial Window Replacement',
+        intro: 'Our window replacement services can be used for a variety of applications, including:',
+        bullets: [
+          'Broken or damaged windows',
+          'Older or deteriorated windows',
+          'Fogged or failed sealed glass units',
+          'Residential window upgrades',
+          'Commercial window replacement',
+          'Individual window replacement',
+          'Multiple-window replacement projects',
+          'Custom replacement requirements',
+        ],
+      },
+      {
+        heading: 'Working With Homeowners & Contractors',
+        paragraphs: [
+          'Finelines Glass Installations works closely with homeowners and contractors throughout the replacement process.',
+          'The existing window condition, opening, measurements, design, and project scope are reviewed to determine the appropriate replacement approach. We coordinate with the contractor and homeowner to make sure the selected window and glass configuration meets the approved design and project requirements.',
+        ],
+      },
+      {
+        heading: 'Glass Options & Window Configuration',
+        intro: 'There can be different glass and window options depending on the project. Finelines Glass Installations works with the contractor and homeowner to determine the type of glass and window configuration based on the approved look and project requirements. Depending on the application, considerations may include:',
+        bullets: [
+          'Clear or specialty glass',
+          'Energy-performance requirements',
+          'Privacy requirements',
+          'Tinted or coated glass',
+          'Insulating glass units',
+          'Window style and operation',
+          'Frame colour and finish',
+          'Existing opening dimensions',
+          'Interior and exterior appearance',
+        ],
+        note: 'The final selection is based on the approved design, project scope, existing conditions, and applicable requirements.',
+      },
+      {
+        heading: 'Matching the Approved Design',
+        paragraphs: [
+          'Window replacement is not always simply a matter of removing an old window and installing a new one. The replacement needs to work with the architectural appearance of the property.',
+          'Finelines Glass Installations works with the contractor and homeowner to achieve the approved appearance, coordinating the window style, frame, glass, configuration, and installation details with the surrounding building.',
+        ],
+      },
+      {
+        heading: 'Residential & Commercial Solutions',
+        paragraphs: [
+          'For residential projects, replacement windows can help restore the appearance and functionality of an existing home while providing an updated window system.',
+          'For commercial projects, we coordinate with the contractor and project team to accommodate the requirements of the building, approved drawings, specifications, and installation schedule.',
+        ],
+      },
+    ],
+    approach: [
+      'Accurate measurements and proper coordination are important to a successful window replacement. Our team focuses on measuring the existing opening, confirming the required dimensions, coordinating the selected glass and window system, and completing the installation with attention to fit and finish.',
+      'Finelines Glass Installations understands that every replacement project can be different. We work with the homeowner and contractor to find the appropriate solution for the specific opening and project requirements.',
+    ],
+    codeDisclaimer: 'Window and glass specifications, energy performance, safety glazing, structural requirements, permits, and other requirements vary by project and jurisdiction. Final product selection and compliance are determined by the approved project documents, applicable authority having jurisdiction, and qualified professionals where required.',
+  },
+  {
+    number: 2,
+    slug: 'window-film-application',
+    title: 'Window Film Application',
+    subtitle: 'Residential & Commercial, Interior & Exterior Applications',
+    image: '/images/window-design-2-film-application.jpg',
+    blurb: 'Solar-control, glare-reduction, and privacy window film applied to your existing glass — changing how a window performs without replacing the window itself.',
+    intro: [
+      'Finelines Glass Installations provides professional window film application for residential and commercial properties. Window film can be used to modify the appearance and performance characteristics of existing glass while maintaining the existing window system.',
+      'Our team works with homeowners, designers, contractors, and project teams to determine the appropriate film type and application method based on the glass, location, design intent, and project requirements.',
+    ],
+    blocks: [
+      {
+        heading: 'Interior & Exterior Applications',
+        intro: 'Window film may be applied to the interior or exterior surface of the glass, depending on the selected film, existing glazing system, site conditions, and manufacturer’s application requirements. Finelines Glass Installations coordinates carefully where the film will be applied so the selected product and installation method are appropriate for the specific window and project.',
+        items: [
+          { title: 'Interior application', body: 'Commonly selected where the glass and film specification calls for installation from inside the building.' },
+          { title: 'Exterior application', body: 'Available for applications where the selected film is designed and specified for exterior installation.' },
+          { title: 'Project-specific application', body: 'The final installation location is determined according to the selected film, glazing system, site conditions, and project requirements.' },
+        ],
+      },
+      {
+        heading: 'Different Film Options',
+        intro: 'Window film is available in a variety of types, shades, colours, and performance characteristics. The appropriate product depends on what the homeowner or project team wants to achieve.',
+        bullets: [
+          'Solar-control and heat-reduction films',
+          'Glare-reduction films',
+          'Privacy and decorative films',
+          'Tinted films',
+          'Neutral and reflective appearance options',
+          'Specialty films for specific design or performance requirements',
+        ],
+        note: 'Because different films are designed for different applications, Finelines Glass Installations will review the project requirements before recommending the appropriate film type and application.',
+      },
+      {
+        heading: 'LLumar® Film Products',
+        paragraphs: [
+          'Finelines Glass Installations uses LLumar® window film products as part of our window film offering, helping us provide a recognized film product line for residential and commercial applications.',
+          'The specific LLumar® film series and specification can vary according to the project requirements, existing glazing, desired appearance, and intended application.',
+        ],
+      },
+      {
+        heading: 'Residential Applications',
+        bullets: [
+          'Living rooms and large residential windows',
+          'Bedrooms and private spaces',
+          'Home offices',
+          'Patio and exterior-facing glass',
+          'Privacy applications',
+          'Areas exposed to strong sunlight or glare',
+        ],
+      },
+      {
+        heading: 'Commercial Applications',
+        paragraphs: [
+          'For commercial properties, window film can be incorporated into offices, retail spaces, restaurants, hospitality environments, storefronts, and other buildings where the existing glazing needs a specific appearance or film treatment.',
+          'Finelines Glass Installations works with contractors and designers to coordinate film selection and application with the overall project scope and approved design.',
+        ],
+      },
+      {
+        heading: 'Colour & Specialty Film Options',
+        paragraphs: [
+          'Film appearance can vary considerably between products. If you are looking for a different colour, shade, privacy level, or specialty appearance, please contact us to discuss other film type options available for your project.',
+          'The final film selection should be based on the existing glass, application location, desired appearance, and applicable manufacturer requirements.',
+        ],
+      },
+    ],
+    approach: [
+      'Proper film installation begins with evaluating the glass and determining the correct application method. Our process focuses on appropriate surface preparation, accurate film placement, clean edges, consistent installation, and professional finishing.',
+      'Every window film project is different. Finelines Glass Installations works with homeowners, designers, contractors, and commercial project teams to determine the appropriate product and application for the project, whether the goal is solar control, glare reduction, privacy, decorative appearance, or another specified film application.',
+    ],
+    codeDisclaimer: 'Window film compatibility, application location, performance, warranty, and installation requirements vary by film product, existing glazing system, and project conditions. Final product selection and application should be confirmed with the applicable manufacturer requirements and project specifications.',
+  },
+];
+
+// Closing panel shown after the two window services above, for projects that
+// don't fit neatly into either one or need help deciding which one applies.
+export const WINDOW_CUSTOM_NOTE = {
+  heading: 'Not sure if you need a new window or just a film?',
+  body: "If the glass itself is broken, fogged, or the frame has failed, that's a replacement. If the glass is fine but the sun, glare, or privacy isn't, film is usually the faster and less invasive fix. Tell us what's going on with the window and we'll point you to the right one.",
 };
 
 // Real completed-project photos, shared with the Projects page gallery.
