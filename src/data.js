@@ -1888,3 +1888,130 @@ export const FAQS = [
     a: "It depends on the product choices you make — lead time tracks glass and hardware availability, so it varies by project. Standard finishes and glass are usually quick to source, but specialty finishes, colors, or glass types can take noticeably longer to arrive — we'll flag this during your consultation so it doesn't hold up your project timeline.",
   },
 ];
+
+// ---------------------------------------------------------------------------
+// ARTICLES
+// Blog/resources content, shown at /articles (listing) and /articles/:slug
+// (full post). Add a new article by pushing another object onto this array —
+// ArticleDetail.jsx and Articles.jsx are both driven entirely from here, no
+// other code changes needed for a new post.
+//
+// Each article's `blocks` array uses the same flexible block schema as the
+// service design-detail pages, plus one addition specific to articles:
+//   - heading: string              -> section heading
+//   - intro / note: string         -> optional lead-in / trailing paragraph
+//   - paragraphs: string[]         -> plain paragraphs
+//   - bullets: string[]            -> a plain bulleted list
+//   - items: { title, body }[]     -> a bulleted list with bold lead-ins
+//   - flow: string[]               -> a horizontal step-flow row (e.g.
+//                                      Measure -> Plan -> Install -> Finish)
+// ---------------------------------------------------------------------------
+export const ARTICLES = [
+  {
+    slug: 'frameless-shower-enclosures-jobsite-to-finished-product',
+    title: 'Frameless Shower Enclosures: From Jobsite to a Beautiful Finished Product',
+    seoTitle: 'Frameless Shower Enclosures: From Jobsite to Finished Product | Finelines Glass Installations',
+    metaDescription: 'Discover how a frameless shower enclosure goes from jobsite measurements and installation to a beautiful finished product. Explore glass design, door placement, hardware, and installation considerations.',
+    keywords: ['frameless shower enclosures', 'frameless shower glass', 'custom shower glass', 'glass shower doors', 'frameless glass shower doors', 'custom glass shower enclosure', 'shower glass installation', 'glass shower enclosure Vancouver', 'glass shower enclosure Surrey', 'custom glass installation', 'bathroom glass installation'],
+    publishDate: 'October 5, 2026',
+    heroImage: '/images/articles/frameless-shower-jobsite-to-finished.jpg',
+    heroImageAlt: 'A Finelines Glass installer fitting a frameless glass shower panel on the jobsite, next to a photo of the same enclosure fully finished',
+    excerpt: "A frameless glass shower can completely change the appearance of a bathroom — but that clean look doesn't happen by simply installing a piece of glass. Here's what actually happens between the jobsite and the finished enclosure.",
+    intro: [
+      "A frameless glass shower can completely change the appearance of a bathroom. Instead of heavy frames and bulky profiles, clear glass creates a clean, open look that allows the tile, fixtures, lighting, and overall bathroom design to remain visible.",
+      "But achieving that clean appearance doesn't happen by simply installing a piece of glass. Behind every successful frameless shower enclosure is careful site preparation, accurate measurements, glass planning, hardware placement, installation, and final adjustment.",
+      "At Finelines Glass Installations, we approach every project as a complete glass installation — not simply a piece of glass placed into an opening.",
+    ],
+    blocks: [
+      {
+        heading: 'From the Jobsite to the Finished Shower',
+        intro: "One of the best ways to understand professional glass installation is to look at what happens on the jobsite. Before the finished enclosure looks clean and almost invisible, the installer has to work around the realities of the construction site. Walls may still require finishing, floors and shower bases need to be properly prepared, plumbing fixtures have to be considered, and niches, corners, ceiling conditions, and surrounding surfaces all affect how the glass should be installed.",
+      },
+      {
+        heading: '1. Understanding the Shower Layout',
+        paragraphs: [
+          "Every bathroom is different. A frameless enclosure might include a fixed glass panel, a hinged glass door, multiple fixed panels, return panels, corner configurations, floor-to-ceiling glass, custom hardware, or specialty glass. The first step is understanding how the enclosure will work within the space. For the featured installation, the design includes a large fixed glass panel extending close to the ceiling, paired with a separate hinged door. The door is intentionally positioned lower than the fixed panel, creating a distinctive stepped glass profile while maintaining the open appearance of a frameless enclosure.",
+        ],
+      },
+      {
+        heading: '2. Accurate Measuring Is Critical',
+        paragraphs: [
+          "Glass is not a material that can simply be trimmed on site like drywall or lumber. Once the glass has been fabricated, the dimensions are essentially fixed. That makes accurate field measurements extremely important. Our installation process considers opening width and height, wall conditions, out-of-level or out-of-plumb surfaces, floor or shower-base conditions, glass-to-wall clearances, door swing, hinge locations, hardware placement, finished tile or wall surfaces, and ceiling conditions. Good glass installation starts with good information.",
+        ],
+      },
+      {
+        heading: '3. Planning the Fixed Glass Panel',
+        paragraphs: [
+          "The fixed panel is one of the most visually important components of a frameless shower. Because there is little or no framing surrounding the glass, the panel itself becomes part of the architectural design. In the featured installation, the fixed glass panel reaches nearly to the ceiling, creating a strong vertical line and giving the enclosure a custom-built appearance. This requires careful consideration of panel dimensions, wall conditions, ceiling clearance, glass specification, hardware location, support requirements, silicone joints, finishing, and the relationship to the shower door.",
+        ],
+      },
+      {
+        heading: '4. Installing the Frameless Shower Door',
+        paragraphs: [
+          "The shower door is where precision becomes particularly important. A hinged glass door needs to operate smoothly while maintaining the correct clearances from the surrounding glass, walls, floor, and shower fixtures. The hinges must be accurately positioned and securely installed, and the door needs to be aligned correctly with the fixed panel. In our featured project, the door is intentionally lower than the adjacent fixed panel by approximately one foot, creating a clean transition between the two pieces of glass. That difference is an important part of the design and should not be mistaken for an installation error.",
+        ],
+      },
+      {
+        heading: '5. Hardware Matters More Than You Think',
+        paragraphs: [
+          "With frameless glass, there is nowhere for poor hardware placement to hide. Because the design uses minimal framing, hinges and other hardware become part of the visual composition. Hardware needs to be positioned carefully so that it supports the door properly, allows correct operation, maintains appropriate clearances, works with the surrounding glass, and complements the bathroom fixtures. In the featured installation, the visible hardware is kept minimal, allowing the glass to remain the dominant visual element.",
+        ],
+      },
+      {
+        heading: '6. Installation Is About More Than Making the Glass Fit',
+        paragraphs: [
+          "A professional glass installer has to work with the existing construction. That can mean adjusting to slightly uneven walls, tile variations, floor transitions, existing plumbing, recessed shower niches, ceiling conditions, limited working space, and existing bathroom fixtures. The jobsite photos tell an important part of the story: what eventually becomes a clean, almost invisible glass enclosure begins as a real construction environment — with tools, protective materials, measurements, hardware, and an installer carefully making the necessary adjustments.",
+        ],
+      },
+      {
+        heading: '7. The Finished Product',
+        paragraphs: [
+          "Once installation is complete, the goal is for the glass enclosure to become almost invisible. The eye should notice the bathroom — not a bulky frame. Clear frameless glass allows the shower tile, fixtures, lighting, niche, floor, and architectural details to remain visible. This can make the bathroom feel more open, brighter, and less visually crowded. The finished enclosure shown in our project photos demonstrates this approach: large areas of clear glass provide separation while maintaining visual continuity throughout the shower.",
+        ],
+      },
+      {
+        heading: 'Why Choose a Frameless Shower Enclosure?',
+        items: [
+          { title: 'A cleaner architectural appearance', body: 'Minimal framing creates a contemporary appearance that works particularly well with modern bathrooms.' },
+          { title: 'More visual openness', body: 'Clear glass allows the entire shower design to remain visible.' },
+          { title: 'Custom configurations', body: 'Frameless glass can be designed around different bathroom layouts rather than forcing the space into a standard enclosure configuration.' },
+          { title: 'Works with different design styles', body: 'Depending on the glass, hardware, and surrounding finishes, a frameless enclosure can complement modern, minimalist, transitional, or luxury bathroom designs.' },
+          { title: 'Easy to coordinate with other finishes', body: 'Hardware can be selected to work with faucets, shower fixtures, cabinetry, lighting, and other bathroom elements.' },
+        ],
+      },
+      {
+        heading: 'What Homeowners Should Consider Before Ordering Shower Glass',
+        items: [
+          { title: 'Where will the fixed panels go?', body: 'The panel layout affects the appearance and functionality of the enclosure.' },
+          { title: 'Where should the door be located?', body: 'Door position can affect access, swing clearance, plumbing fixtures, and the overall balance of the design.' },
+          { title: 'How high should the glass be?', body: 'A standard-height enclosure and a near-ceiling or floor-to-ceiling installation create very different visual effects.' },
+          { title: 'What hardware finish should be used?', body: 'The hardware should coordinate with the rest of the bathroom.' },
+          { title: 'Are the walls and floor ready for glass installation?', body: 'Properly finished surfaces help ensure the glass can be measured and installed accurately.' },
+          { title: 'Has the glass installer been involved early enough?', body: 'Early coordination can help prevent costly changes later in the renovation.' },
+        ],
+      },
+      {
+        heading: 'Working With Designers and Contractors',
+        paragraphs: [
+          "A successful glass installation is often a collaboration. At Finelines Glass Installations, we can work with homeowners, designers, builders, renovation contractors, and other trades to coordinate the glass portion of a project. Early communication can help address glass layout, measurements, hardware selection, door swing, finished wall conditions, installation sequence, access requirements, and coordination with other trades.",
+        ],
+      },
+      {
+        heading: 'From Jobsite to Finished Product',
+        paragraphs: [
+          "The finished shower may look simple: a few large sheets of clear glass, a couple of hinges, clean lines, and minimal hardware. But that simplicity is intentional. The finished appearance depends on the work that happens behind the scenes:",
+        ],
+        flow: ['Measure', 'Plan', 'Fabricate', 'Prepare', 'Install', 'Adjust', 'Finish'],
+      },
+      {
+        heading: 'Thinking About a Frameless Shower Enclosure?',
+        paragraphs: [
+          "Whether you're building a new bathroom, renovating an existing space, or working with a designer or contractor on a custom project, the glass enclosure should be considered as part of the overall design. From the first measurement at the jobsite to the final adjustment of the door, every detail contributes to the finished result.",
+          "Finelines Glass Installations provides custom glass installation solutions for residential and commercial projects, including frameless shower enclosures, glass railings, custom mirrors, office partitions, specialty glass, and other architectural glass applications.",
+        ],
+      },
+    ],
+    ctaNote: "If you're planning a shower renovation and want a clean, custom glass enclosure, contact Finelines Glass Installations to discuss your project.",
+    tagline: 'Finelines Glass Installations — Where precision meets the finished product.',
+  },
+];
