@@ -29,7 +29,7 @@ export const COMPANY = {
   address: '1509 East Kent Ave N, Vancouver, BC V5P 4Y7',
   mapQuery: '1509+East+Kent+Ave+N+Vancouver+BC+V5P+4Y7',
   hours: [
-    { day: 'Monday – Friday', time: '8:00 AM – 5:00 PM' }, // TODO: confirm real hours
+    { day: 'Monday – Friday', time: '7:00 AM – 3:30 PM' },
     { day: 'Saturday', time: 'By appointment' },
     { day: 'Sunday', time: 'Closed' },
   ],
