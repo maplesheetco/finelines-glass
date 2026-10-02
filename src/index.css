@@ -328,6 +328,57 @@ section.block.tint { background: var(--glass-tint); }
   margin-top: auto;
 }
 
+/* ---------- Articles (listing cards + post page) ---------- */
+.article-card-image-wrap {
+  margin: -24px -24px 4px;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+.article-card-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.article-card-date {
+  color: var(--steel);
+  font-weight: 600;
+  font-size: 0.82rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.article-meta {
+  color: var(--gray);
+  font-size: 0.95rem;
+}
+.article-tagline {
+  color: var(--steel);
+  font-style: italic;
+  margin: 12px 0 0;
+}
+.article-process-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0 20px;
+}
+.article-process-step {
+  background: var(--glassTint);
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #d7e3ec;
+}
+.article-process-arrow {
+  color: var(--steel);
+  font-weight: 700;
+}
+
 /* ---------- Service detail page ---------- */
 .service-crumb {
   font-size: 0.85rem;
