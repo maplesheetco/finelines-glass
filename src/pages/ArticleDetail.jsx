@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { COMPANY, ARTICLES } from '../data.js';
+import { COMPANY, getPublishedArticles } from '../data.js';
 import Reveal from '../components/Reveal.jsx';
 
 // Full post page for a single article, e.g. /articles/frameless-shower-
@@ -10,8 +10,13 @@ import Reveal from '../components/Reveal.jsx';
 // no changes needed in this file. Same flexible `blocks` engine as the
 // service design-detail pages, plus an optional `flow` field for a
 // horizontal step row (see the comment above ARTICLES in data.js).
+//
+// Uses getPublishedArticles() rather than ARTICLES directly, so a
+// not-yet-scheduled post 404s (redirects to /articles) even if someone
+// guesses or bookmarks its URL early — see the SCHEDULING note in data.js.
 export default function ArticleDetail() {
   const { slug } = useParams();
+  const ARTICLES = getPublishedArticles();
 
   const article = ARTICLES.find((a) => a.slug === slug);
   if (!article) {
