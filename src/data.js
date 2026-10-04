@@ -1896,6 +1896,18 @@ export const FAQS = [
 // ArticleDetail.jsx and Articles.jsx are both driven entirely from here, no
 // other code changes needed for a new post.
 //
+// SCHEDULING: each article has a `publishAt` ISO timestamp (Vancouver time)
+// alongside the pretty `publishDate` string shown on the page. An article
+// whose `publishAt` is still in the future is excluded from both the
+// /articles listing and direct /articles/:slug access (see getPublishedArticles()
+// below, used by Articles.jsx and ArticleDetail.jsx) — it simply doesn't
+// exist on the live site yet. This means you can paste a finished article
+// into data.js and push it to GitHub whenever it's convenient, days ahead of
+// time even, and it will stay invisible until the moment `publishAt` passes —
+// no extra step needed on publish day. This check runs in the visitor's
+// browser against the real current time, so it takes effect automatically,
+// without a new deploy, the instant the date/time arrives.
+//
 // Each article's `blocks` array uses the same flexible block schema as the
 // service design-detail pages, plus one addition specific to articles:
 //   - heading: string              -> section heading
@@ -1914,6 +1926,7 @@ export const ARTICLES = [
     metaDescription: 'Discover how a frameless shower enclosure goes from jobsite measurements and installation to a beautiful finished product. Explore glass design, door placement, hardware, and installation considerations.',
     keywords: ['frameless shower enclosures', 'frameless shower glass', 'custom shower glass', 'glass shower doors', 'frameless glass shower doors', 'custom glass shower enclosure', 'shower glass installation', 'glass shower enclosure Vancouver', 'glass shower enclosure Surrey', 'custom glass installation', 'bathroom glass installation'],
     publishDate: 'October 5, 2026',
+    publishAt: '2026-10-05T00:00:00-07:00', // Vancouver time (PDT) — article goes live at midnight on this date
     heroImage: '/images/articles/frameless-shower-jobsite-to-finished.jpg',
     heroImageAlt: 'A Finelines Glass installer fitting a frameless glass shower panel on the jobsite, next to a photo of the same enclosure fully finished',
     excerpt: "A frameless glass shower can completely change the appearance of a bathroom — but that clean look doesn't happen by simply installing a piece of glass. Here's what actually happens between the jobsite and the finished enclosure.",
@@ -2014,4 +2027,404 @@ export const ARTICLES = [
     ctaNote: "If you're planning a shower renovation and want a clean, custom glass enclosure, contact Finelines Glass Installations to discuss your project.",
     tagline: 'Finelines Glass Installations — Where precision meets the finished product.',
   },
+  {
+    slug: 'how-to-clean-glass-shower-doors',
+    title: 'How to Clean Glass Shower Doors and Prevent Water Spots',
+    seoTitle: 'How to Clean Glass Shower Doors and Prevent Water Spots',
+    metaDescription: 'Learn how to clean glass shower doors, prevent water spots, remove soap scum, and maintain a clear frameless shower enclosure with practical tips from Finelines Glass Installations.',
+    keywords: ['how to clean glass shower doors', 'prevent water spots on shower glass', 'remove hard-water stains from glass', 'frameless shower enclosure maintenance', 'clean frameless glass shower doors', 'glass shower door cleaning tips'],
+    publishDate: 'October 5, 2026',
+    publishAt: '2026-10-05T06:00:00-07:00',
+    heroImage: '/images/articles/how-to-clean-glass-shower-doors.jpg',
+    heroImageAlt: 'Cleaning a glass shower door to prevent water spots beside a clear frameless shower enclosure',
+    excerpt: 'Keep your frameless glass shower enclosure looking clear, spotless, and beautiful with the right cleaning routine — what causes water spots, how to remove them, and how to prevent them from coming back.',
+    intro: [
+      "A frameless glass shower enclosure can make a bathroom feel brighter, more spacious, and more modern. However, regular exposure to water, soap, shampoo, and body-care products can leave glass doors looking cloudy or covered in spots.",
+      "The good news is that proper maintenance can help keep your shower glass looking its best. With a few simple habits and the right cleaning products, homeowners can reduce water spots, minimize soap scum, and protect the appearance of their glass shower enclosure.",
+      "At Finelines Glass Installations, we understand that a beautiful glass shower is an investment in your home. Knowing how to care for it properly helps preserve its appearance long after installation.",
+    ],
+    blocks: [
+      {
+        heading: 'Why Do Glass Shower Doors Get Water Spots?',
+        intro: 'Water spots commonly develop when water droplets dry on the glass and leave behind dissolved minerals, particularly calcium and magnesium. This is often called hard-water staining.',
+        items: [
+          { title: 'Soap scum', body: 'Soap residue combines with minerals and body oils, leaving a cloudy film.' },
+          { title: 'Shampoo and conditioner residue', body: 'These products can create streaks and buildup on glass.' },
+          { title: 'Standing water', body: 'Droplets left to dry naturally can contribute to visible spots.' },
+          { title: 'Infrequent cleaning', body: 'Mineral deposits and residue become more difficult to remove when they accumulate over time.' },
+        ],
+        note: 'Regular cleaning helps prevent these deposits from building up and keeps your shower enclosure looking clearer.',
+      },
+      {
+        heading: 'How to Clean Glass Shower Doors Step by Step',
+        items: [
+          { title: '1. Rinse the Glass', body: 'Rinse the shower glass with clean, lukewarm water to loosen soap residue and surface dirt. Avoid using extremely hot water, which is unnecessary for routine cleaning.' },
+          { title: '2. Use a Gentle Glass Cleaner', body: 'Apply a cleaner specifically suitable for shower glass, following the product instructions. A mild, non-abrasive cleaning solution is generally preferable. Avoid abrasive powders, scouring pads, and harsh cleaning tools that could scratch the glass or damage nearby finishes.' },
+          { title: '3. Wipe With a Microfiber Cloth', body: 'Use a clean, soft microfiber cloth to wipe the glass. Work from top to bottom, paying attention to corners and areas where water tends to collect. For stubborn mineral deposits, use a product specifically designed for hard-water stains and confirmed as compatible with your glass, coatings, and hardware.' },
+          { title: '4. Rinse Away Cleaning Residue', body: 'If the cleaner requires rinsing, rinse thoroughly with clean water. Leaving cleaning products on the glass can result in streaks or residue.' },
+          { title: '5. Dry the Glass', body: 'Use a dry microfiber cloth to remove remaining moisture. Drying the glass helps reduce visible water marks and leaves the surface looking clearer.' },
+        ],
+      },
+      {
+        heading: 'How to Prevent Water Spots on Glass Shower Doors',
+        intro: 'Prevention is easier than removing heavy mineral buildup. A simple daily routine can make a noticeable difference.',
+        items: [
+          { title: 'Use a shower squeegee after each shower', body: 'Starting at the top, draw the squeegee down the glass in overlapping passes. Wipe the blade between passes if needed.' },
+          { title: 'Keep a microfiber cloth nearby', body: 'Drying remaining droplets around the edges and lower sections can help reduce spotting.' },
+          { title: 'Improve bathroom ventilation', body: 'Use your bathroom exhaust fan as recommended to help manage humidity and moisture.' },
+          { title: 'Clean regularly', body: 'Do not wait until the glass looks cloudy. Frequent, gentle cleaning helps prevent soap scum and mineral deposits from accumulating.' },
+          { title: 'Check your water conditions', body: 'If mineral spots repeatedly appear, hard water may be contributing to the problem. Appropriate cleaning and maintenance can help manage the buildup.' },
+        ],
+      },
+      {
+        heading: 'What Should You Avoid When Cleaning Shower Glass?',
+        intro: 'The wrong cleaning method can damage more than just the glass surface. It may also affect metal hardware, seals, nearby tile, or specialized glass coatings. Avoid the following unless the manufacturer specifically confirms compatibility:',
+        bullets: [
+          'Steel wool, abrasive pads, and gritty cleaning powders.',
+          'Strong acidic or alkaline cleaners that may damage finishes or coatings.',
+          'Scraping tools used without appropriate guidance.',
+          'Mixing cleaning chemicals, especially products containing bleach with acidic cleaners.',
+          'Spraying harsh cleaners directly onto hinges or other hardware.',
+        ],
+        note: 'Always follow the glass, coating, hardware, and cleaning-product manufacturers’ care instructions. If your shower glass has a protective treatment, use only cleaning methods approved for that treatment.',
+      },
+      {
+        heading: 'Can You Remove Existing Hard-Water Stains?',
+        paragraphs: [
+          "Light water spots and fresh soap residue can often be removed with an appropriate glass cleaner and a soft cloth. However, heavy mineral buildup may require a specialized hard-water stain remover. Test the product in a small, inconspicuous area first and confirm that it is safe for your particular glass and hardware.",
+          "If the glass remains cloudy after careful cleaning, the marks may be more than surface residue. In some cases, prolonged mineral exposure can cause permanent etching or damage to the glass surface. Aggressive scrubbing may make the condition worse. When in doubt, seek professional advice before attempting restoration.",
+        ],
+      },
+      {
+        heading: 'Does a Frameless Glass Shower Enclosure Require Special Care?',
+        paragraphs: [
+          "Frameless shower enclosures are designed to provide a clean, open appearance with minimal framing. Because the glass is a prominent feature, streaks and water spots can be especially noticeable.",
+          "Routine care should include more than the glass itself. Check the hinges, seals, and other hardware periodically for residue, looseness, or signs of wear. Clean these components using products suitable for their finish, and never use the glass door as a support.",
+          "If a hinge becomes loose, the door starts to sag, or the glass appears damaged, stop using the enclosure if there is a safety concern and arrange for qualified professional inspection.",
+        ],
+      },
+      {
+        heading: 'Why Professional Glass Installation Matters',
+        paragraphs: [
+          "Proper installation is an important part of a shower enclosure's long-term performance. Accurate measurements, suitable hardware, correct door alignment, and careful installation all contribute to a finished enclosure that functions as intended.",
+          "At Finelines Glass Installations, we provide custom glass installation solutions designed around each project's layout and requirements. We work with homeowners, designers, and contractors to help bring bathroom renovation plans to life.",
+          "Whether you are planning a new frameless shower enclosure or upgrading an existing bathroom, our team can help you explore glass options that suit your space and design goals.",
+        ],
+      },
+      {
+        heading: 'Frequently Asked Questions',
+        items: [
+          { title: 'How often should I clean my glass shower doors?', body: 'A quick squeegee after each shower is a useful habit. Wipe down the glass as needed and use a suitable glass cleaner regularly to prevent soap scum and mineral buildup.' },
+          { title: 'Does vinegar remove water spots from shower glass?', body: 'Vinegar can help loosen some mineral deposits, but it is not suitable for every glass treatment, metal finish, seal, or surrounding material. Check manufacturer instructions before using it, and never mix vinegar with bleach or other cleaning chemicals.' },
+          { title: 'Can water spots permanently damage shower glass?', body: 'Yes. If mineral deposits remain on the surface for a prolonged period, they may contribute to etching that ordinary cleaning cannot remove. Early and consistent maintenance helps reduce this risk.' },
+          { title: 'Should I use a razor blade to remove stubborn stains?', body: 'Do not use a razor blade unless the glass manufacturer or a qualified professional confirms that the method is appropriate. Incorrect scraping can scratch the glass or damage coatings.' },
+          { title: 'Can Finelines Glass Installations help with a new shower enclosure?', body: 'Yes. Finelines Glass Installations provides custom glass installation services, including frameless shower enclosures. Contact us to discuss your bathroom project and installation requirements.' },
+        ],
+      },
+      {
+        heading: 'Keep Your Shower Glass Looking Its Best',
+        paragraphs: [
+          "A clear glass shower enclosure can enhance the appearance of a bathroom for years. The key is consistent care: rinse away residue, use a squeegee, clean with suitable products, and address mineral buildup before it becomes difficult to remove.",
+          "If you are planning a bathroom renovation or considering a custom frameless shower enclosure, Finelines Glass Installations can help you explore a solution tailored to your space.",
+        ],
+      },
+    ],
+    ctaNote: 'Contact Finelines Glass Installations to discuss your custom glass shower project and bring a clean, modern finish to your bathroom.',
+    tagline: 'Care note: Cleaning guidance is general. For coated glass, specialized finishes, and hardware, follow the relevant manufacturers’ instructions.',
+  },
+  {
+    slug: 'glass-railing-for-modern-homes',
+    title: 'Glass Railing for Modern Homes',
+    seoTitle: 'Glass Railing for Modern Homes: Design, Safety & Installation Considerations | Finelines Glass Installations',
+    metaDescription: 'Explore how glass railings bring an open, modern look to balconies, decks, and stairways, and what homeowners, designers, and contractors should consider before installation.',
+    keywords: ['glass railing', 'glass railing for modern homes', 'frameless glass railing', 'glass balcony railing', 'glass deck railing', 'glass stair railing', 'glass railing installation Vancouver', 'glass railing installation Surrey'],
+    publishDate: 'October 12, 2026',
+    publishAt: '2026-10-12T06:00:00-07:00',
+    heroImage: '/images/articles/glass-railing-for-modern-homes.jpg',
+    heroImageAlt: 'A glass railing installation in progress on a rooftop deck, next to the same glass railing fully finished on a modern home',
+    excerpt: 'Glass railings create an open architectural look on balconies, decks, terraces, and stairways — here’s what homeowners, designers, and contractors should consider before installation.',
+    intro: [
+      "This article introduces homeowners, designers, builders, and contractors to modern glass railing systems and the key considerations that should be addressed before installation. The goal is to show how glass railings can provide an open architectural look while emphasizing proper design, site conditions, material selection, and professional installation.",
+    ],
+    blocks: [
+      {
+        heading: 'Why Glass Railings Are Popular in Modern Homes',
+        paragraphs: [
+          "Glass railings are increasingly used on balconies, decks, terraces, stairways, and rooftop spaces because they create a visually open barrier without interrupting the surrounding view. Clear glass can allow more natural light through a space and complement contemporary and transitional architecture.",
+        ],
+      },
+      {
+        heading: '1. Choosing the Right Glass Railing Design',
+        paragraphs: [
+          "The first step is determining how the railing should look and how it will interact with the structure. Depending on the project, glass railings may use minimal visible framing, discreet hardware, or a more defined support system. The appropriate configuration depends on the application, structure, design intent, and project requirements.",
+        ],
+      },
+      {
+        heading: '2. Frameless vs. Framed Appearance',
+        paragraphs: [
+          "Frameless-style glass railings are often selected for their minimalist appearance and uninterrupted sightlines. Other projects may benefit from posts, rails, channels, or other visible components. The right choice depends on the property, mounting conditions, design goals, and project specifications.",
+        ],
+      },
+      {
+        heading: '3. Mounting and Site Conditions Matter',
+        paragraphs: [
+          "Glass railing installation begins with understanding what the system will be attached to. Concrete, steel, wood, membrane-covered decks, tiled surfaces, and other substrates can require different approaches. Existing construction, waterproofing, finished surfaces, drainage, and access should be reviewed before fabrication and installation.",
+        ],
+      },
+      {
+        heading: '4. Safety Should Be Part of the Design From the Beginning',
+        paragraphs: [
+          "A glass railing must be designed and installed for its intended application. Glass type, thickness, support method, hardware, dimensions, attachment details, and applicable requirements all need to be considered. Because requirements can vary by application and jurisdiction, project-specific details should be confirmed with the appropriate professionals before fabrication and installation.",
+        ],
+      },
+      {
+        heading: '5. Glass Railings and Modern Outdoor Living',
+        paragraphs: [
+          "One of the biggest advantages of a glass railing is how naturally it fits into outdoor living spaces. On a balcony, terrace, deck, or rooftop, transparent glazing can help maintain a strong connection to the surrounding environment. This is particularly valuable where the view is a major part of the home's design.",
+        ],
+      },
+      {
+        heading: '6. Working With Designers and Contractors',
+        paragraphs: [
+          "Glass railings are often one part of a larger renovation or construction project. Finelines Glass Installations can work with homeowners, designers, builders, and contractors to coordinate the glass scope with the overall project. Early communication can help coordinate measurements, fabrication, finishes, site readiness, and installation scheduling.",
+        ],
+      },
+      {
+        heading: 'What Homeowners Should Ask Before Choosing a Glass Railing',
+        bullets: [
+          'Where will the railing be installed, and what is the existing or planned substrate?',
+          'What railing appearance best suits the architecture and surrounding finishes?',
+          'What glass and hardware options are appropriate for the application?',
+          'How will the railing interface with waterproofing, flooring, or other finished surfaces?',
+          'Who is responsible for site preparation, measurements, fabrication, and installation?',
+          'What project-specific requirements should be confirmed before fabrication?',
+        ],
+      },
+      {
+        heading: 'Professional Glass Installation Makes a Difference',
+        paragraphs: [
+          "A glass railing can look simple when it is finished, but achieving a clean result requires careful planning and installation. Accurate measurements, appropriate hardware, proper handling of glass, attention to finished surfaces, and coordination with other trades all contribute to the final result.",
+          "Finelines Glass Installations provides custom glass railing solutions and professional installation for residential, renovation, and construction projects. Contact Finelines Glass Installations to discuss your project.",
+        ],
+      },
+    ],
+    ctaNote: 'Ready to explore a glass railing for your home or renovation project? Finelines Glass Installations works with homeowners, designers, builders, and contractors on custom glass railing projects. Contact us to discuss your project, design goals, site conditions, and installation requirements.',
+  },
+  {
+    slug: 'custom-mirrors-that-make-small-spaces-feel-bigger',
+    title: 'Custom Mirrors That Make Small Spaces Feel Bigger',
+    seoTitle: 'Custom Mirrors That Make Small Spaces Feel Bigger: Design, Placement & Installation Ideas | Finelines Glass Installations',
+    metaDescription: 'Discover how custom mirrors can make bathrooms, entryways, gyms, and other interiors feel brighter and more spacious, with design and placement ideas from Finelines Glass Installations.',
+    keywords: ['custom mirrors', 'custom mirror installation', 'bathroom mirrors', 'full-wall mirrors', 'gym mirrors', 'custom mirror Vancouver', 'custom mirror Surrey', 'mirrors for small spaces'],
+    publishDate: 'October 19, 2026',
+    publishAt: '2026-10-19T06:00:00-07:00',
+    heroImage: '/images/articles/custom-mirrors-small-spaces.jpg',
+    heroImageAlt: 'A custom bathroom vanity mirror alongside full-wall mirror installations in a home gym and living space',
+    excerpt: 'Custom mirrors can do much more than provide a place to check your reflection — the right size, placement, shape, and installation can make an interior feel brighter, more open, and more finished.',
+    intro: [
+      "Custom mirrors can do much more than provide a place to check your reflection. The right size, placement, shape, and installation can make an interior feel brighter, more open, and more finished. This article explains how custom mirrors can be used in bathrooms, entryways, gyms, living areas, offices, and other spaces.",
+    ],
+    blocks: [
+      {
+        heading: 'Why Custom Mirrors Make a Difference',
+        paragraphs: [
+          "Standard-size mirrors can leave awkward gaps or fail to take advantage of the available wall area. A custom mirror can be planned around the dimensions of the room, cabinetry, lighting, fixtures, and surrounding finishes. This creates a more integrated result and can make the mirror feel like part of the architecture rather than an afterthought.",
+        ],
+      },
+      {
+        heading: '1. Make Small Bathrooms Feel More Spacious',
+        paragraphs: [
+          "A large bathroom mirror can visually expand the room by reflecting light and surrounding surfaces. Wall-to-wall or carefully sized mirrors can work particularly well above vanities. The final design should account for faucets, lighting, outlets, backsplash details, cabinets, and other elements that meet the mirror.",
+        ],
+      },
+      {
+        heading: '2. Use Mirrors to Increase the Sense of Light',
+        paragraphs: [
+          "Mirrors reflect both natural and artificial light. When positioned thoughtfully opposite or near a light source, they can help distribute brightness through a room. This can be especially useful in bathrooms, hallways, entry areas, and interiors with limited natural light.",
+        ],
+      },
+      {
+        heading: '3. Full-Wall and Oversized Mirror Applications',
+        paragraphs: [
+          "An oversized mirror can become a strong architectural feature. Full-wall mirrors are popular in fitness rooms, studios, commercial spaces, dressing areas, and contemporary interiors. Larger installations require careful planning of panel sizes, access, seams, and the finished wall condition.",
+        ],
+      },
+      {
+        heading: '4. Custom Bathroom Mirrors',
+        paragraphs: [
+          "Bathroom mirrors can be designed around the vanity and the overall style of the room. Options can include simple rectangular designs, oversized installations, specialty shapes, and coordinated mirror layouts. The goal is to create a clean relationship between the mirror, countertop, cabinetry, lighting, and plumbing fixtures.",
+        ],
+      },
+      {
+        heading: '5. Mirrors for Home Gyms and Commercial Spaces',
+        paragraphs: [
+          "Large mirrors are valuable in gyms and fitness rooms because they improve visibility and can make the space feel larger. They are also commonly used in dance studios, salons, retail environments, offices, and other commercial interiors. Commercial projects benefit from early coordination between the glass installer, designer, and contractor.",
+        ],
+      },
+      {
+        heading: '6. Mirror Edges, Shapes and Finishing Details',
+        paragraphs: [
+          "Small finishing details can have a major effect on the final appearance. Depending on the application, a project may call for clean polished edges, specific shapes, multiple panels, or carefully planned seams. The surrounding materials and the intended visual style should guide these decisions.",
+        ],
+      },
+      {
+        heading: '7. Why Accurate Measurement Matters',
+        paragraphs: [
+          "Custom mirrors are fabricated to suit a specific space, so accurate measurements and site conditions are important. Wall irregularities, finished surfaces, electrical locations, cabinetry, tile, and other obstacles should be considered before fabrication. Early site coordination can help prevent surprises during installation.",
+        ],
+      },
+      {
+        heading: '8. Working With Designers and Contractors',
+        paragraphs: [
+          "Custom mirrors are often part of a larger renovation or construction project. Finelines Glass Installations can work with homeowners, interior designers, builders, and contractors to coordinate dimensions, finishes, access, scheduling, and installation requirements. Bringing the glass installer into the project at the right stage can help the finished result come together smoothly.",
+        ],
+      },
+      {
+        heading: 'Where Can Custom Mirrors Be Used?',
+        bullets: [
+          'Bathroom vanities and full-wall bathroom applications',
+          'Entryways, foyers, and hallways',
+          'Home gyms and fitness rooms',
+          'Dance studios and commercial fitness facilities',
+          'Bedrooms and dressing areas',
+          'Living and dining spaces',
+          'Salons, retail spaces, offices, and other commercial interiors',
+        ],
+      },
+      {
+        heading: 'Questions to Ask Before Ordering a Custom Mirror',
+        bullets: [
+          'What size and shape will best suit the room?',
+          'Where should the mirror be positioned to maximize light and visual space?',
+          'How will it coordinate with cabinetry, tile, lighting, outlets, and fixtures?',
+          'Are multiple panels or a large single installation more appropriate?',
+          'What edge and finishing details are suitable for the application?',
+          'Is the wall ready and accessible for accurate measuring and installation?',
+        ],
+      },
+      {
+        heading: 'Professional Installation Completes the Design',
+        paragraphs: [
+          "A custom mirror can be one of the most visually effective upgrades in an interior, but the installation needs to be planned carefully. Accurate measurements, proper handling, suitable installation methods, and attention to finished surfaces all contribute to a clean final result.",
+          "Finelines Glass Installations provides custom mirrors and professional glass installation for residential, renovation, and commercial projects. Contact Finelines Glass Installations to discuss your project.",
+        ],
+      },
+    ],
+    ctaNote: 'Looking for a custom mirror for your home or business? Finelines Glass Installations works with homeowners, designers, builders, and contractors on custom mirror projects. Contact us to discuss your space, design goals, dimensions, and installation requirements.',
+  },
+  {
+    slug: 'choosing-shower-glass-hardware-finishes',
+    title: 'Choosing Shower Glass Hardware Finishes for Your Bathroom',
+    seoTitle: 'Choosing Shower Glass Hardware Finishes for Your Bathroom: How to Match Shower Hardware With Your Bathroom Design | Finelines Glass Installations',
+    metaDescription: 'A guide to choosing shower glass hardware finishes — hinges, handles, and clamps — that coordinate with your bathroom’s faucets, cabinetry, and lighting, from Finelines Glass Installations.',
+    keywords: ['shower glass hardware finishes', 'shower hinge finishes', 'shower door hardware', 'matte black shower hardware', 'brushed nickel shower hardware', 'shower glass hardware Vancouver', 'shower glass hardware Surrey', 'CRL shower hardware'],
+    publishDate: 'October 26, 2026',
+    publishAt: '2026-10-26T06:00:00-07:00',
+    heroImage: '/images/articles/choosing-shower-glass-hardware-finishes.jpg',
+    heroImageAlt: 'A shower enclosure with matte black hardware next to a chart of shower glass hinge finish families, from polished chrome to modern gold',
+    excerpt: 'Shower hardware is a small part of a bathroom renovation, but it can have a major visual impact — here’s how to choose a hinge and handle finish that belongs with the rest of your bathroom design.',
+    intro: [
+      "Shower hardware is a small part of a bathroom renovation, but it can have a major visual impact. The hinge, pull handle, clamps and other visible components become design details that should work with the faucet, shower system, cabinet hardware, lighting and other metal accents. This guide explains the main finish families and the practical decisions to consider before ordering a custom shower enclosure.",
+    ],
+    blocks: [
+      {
+        heading: '1. Start With the Overall Bathroom Design',
+        intro: 'Before selecting a hinge finish, look at the bathroom as one composition. Identify the dominant metal finishes already being used and decide whether the shower hardware should match them, complement them, or deliberately create contrast. A consistent finish usually produces a calm, coordinated appearance, while a controlled contrast can create a stronger contemporary look.',
+        bullets: [
+          'Faucet and shower-system finish',
+          'Cabinet knobs and pulls',
+          'Towel bars and bathroom accessories',
+          'Lighting trim and visible metal accents',
+          'Door, mirror and other interior hardware',
+        ],
+      },
+      {
+        heading: '2. Understand the Finish Families',
+        intro: "CRL's shower hardware collection organizes finishes across several visual families. Exact finish availability depends on the specific hardware series, so the finish should be selected together with the hinge or handle model rather than treated as a separate decision.",
+        items: [
+          { title: 'Cool Metals', body: 'Polished Chrome, Brushed Chrome, Matte Black' },
+          { title: 'Neutral Metals', body: 'Polished Stainless Steel, Brushed Stainless Steel' },
+          { title: 'Warm White Metals', body: 'Brushed Nickel, Polished Nickel, Satin Nickel, Gunmetal, Matte Gunmetal, Oil Rubbed Bronze' },
+          { title: 'Warm Yellow Metals', body: 'Polished Brass, Satin Brass, Vintage Brass, Brushed Bronze, Dark Brushed Bronze, French Gold, Modern Gold' },
+          { title: 'Pink Toned', body: 'Rose Gold' },
+          { title: 'Unlacquered / Living Finish', body: 'Unlacquered Brass' },
+        ],
+      },
+      {
+        heading: '3. Match, Coordinate or Contrast?',
+        items: [
+          { title: 'Match', body: 'Use the same finish across the shower and other major bathroom hardware. This is the safest choice for a clean, unified design.' },
+          { title: 'Coordinate', body: 'Use finishes that belong to the same visual temperature — for example, different brushed or warm-metal treatments — while keeping the overall palette controlled.' },
+          { title: 'Contrast', body: 'Use a deliberately different finish as a design statement. Matte black hardware against a light stone bathroom is a common example, but the contrast works best when it is repeated elsewhere in the room.' },
+        ],
+      },
+      {
+        heading: '4. Why the Hinge Model Matters',
+        intro: 'Finish is only one part of the selection. The hinge geometry, mounting configuration, door size, glass thickness and enclosure layout also need to be considered. A beautiful finish cannot compensate for hardware that is not appropriate for the door configuration or site conditions.',
+        bullets: [
+          'Wall-to-glass versus glass-to-glass mounting',
+          'Door dimensions and weight',
+          'Tempered glass thickness and configuration',
+          'Required hinge swing and door clearance',
+          'Placement of handles, seals and other hardware',
+          'Wall structure and finished tile conditions',
+        ],
+      },
+      {
+        heading: '5. Think About Maintenance',
+        paragraphs: [
+          'Different finishes can show water spots, fingerprints and mineral deposits differently. A bathroom with hard water may require more frequent cleaning regardless of the finish selected. The best approach is to choose a finish that fits both the design and the maintenance expectations of the homeowner.',
+        ],
+      },
+      {
+        heading: '6. Coordinate the Hardware Before the Glass Is Ordered',
+        paragraphs: [
+          'Hardware decisions should be made early enough that the glass layout, door location and mounting requirements can be reviewed together. This is especially important when a designer or contractor has already specified faucets, cabinetry, tile and other finishes.',
+        ],
+        note: 'For designers and contractors: Early coordination helps reduce last-minute finish changes, avoids conflicts between hardware and the enclosure layout, and gives the homeowner a clearer picture of the completed bathroom.',
+      },
+      {
+        heading: '7. Questions to Ask Before Selecting a Finish',
+        bullets: [
+          'What finish is being used on the faucet and shower system?',
+          'Are the cabinet pulls and bathroom accessories matching or intentionally different?',
+          'Will the shower hardware be a visual feature or a subtle detail?',
+          'Which hinge style fits the glass configuration?',
+          'Is the selected finish available for the required hardware series?',
+          'How will the finish look with the tile, stone, lighting and mirror?',
+          'Who will confirm the final hardware specification before fabrication?',
+        ],
+      },
+      {
+        heading: '8. The Finelines Approach',
+        paragraphs: [
+          'A custom glass enclosure should be treated as part of the bathroom design — not simply as a piece of glass installed at the end of the renovation. Finelines Glass Installations can work with homeowners, interior designers and contractors to review the enclosure configuration, hardware style and finish selection before installation.',
+          'The goal is a finished shower that combines clean glass lines, properly selected hardware and a finish that belongs naturally in the space.',
+        ],
+      },
+      {
+        heading: 'Recommended Applications',
+        bullets: [
+          'Frameless shower enclosures',
+          'Custom glass shower doors',
+          'Glass-to-glass shower configurations',
+          'Wall-mounted shower door systems',
+          'Custom shower hardware coordination',
+          'Renovation and new-build bathroom projects',
+        ],
+      },
+    ],
+    ctaNote: 'Ready to plan your shower enclosure? Bring your bathroom finish selections, renovation plans or design drawings to the conversation early. The right hardware finish is easier to achieve when the glass, hardware and surrounding finishes are coordinated from the beginning.',
+    tagline: 'Supplier reference: CRL Canada shower hardware finish collection and finish guide. Finish names and availability may vary by hardware series and product selection.',
+  },
 ];
+
+// Articles whose publishAt has already passed, oldest first for lookups and
+// newest-first for display — see the SCHEDULING note above ARTICLES. Pages
+// should use this (not ARTICLES directly) for anything a site visitor sees.
+export function getPublishedArticles() {
+  const now = new Date();
+  return ARTICLES
+    .filter((a) => !a.publishAt || new Date(a.publishAt) <= now)
+    .sort((a, b) => new Date(b.publishAt) - new Date(a.publishAt));
+}
