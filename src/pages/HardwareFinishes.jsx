@@ -130,10 +130,12 @@ export default function HardwareFinishes() {
       <section className="block tint">
         <div className="container" style={{ maxWidth: 760 }}>
           <p style={{ lineHeight: 1.7, color: 'var(--gray)', margin: 0 }}>
-            Our hardware is sourced through CRL, one of the industry's leading shower hardware
-            suppliers — we don't sell hardware separately. The finish families below reflect
-            their current collection; exact availability per hardware piece, and unlacquered
-            brass's natural aging, are confirmed together during your consultation.
+            We source our hardware through a range of trusted suppliers rather than one single
+            brand, so we can match the right hinge, handle, and finish to each project instead of
+            being limited to one supplier's lineup — we don't sell hardware separately. The finish
+            families below reflect a representative collection; exact availability per hardware
+            piece, and unlacquered brass's natural aging, are confirmed together during your
+            consultation.
           </p>
           <p style={{ lineHeight: 1.7, color: 'var(--gray)', margin: '14px 0 0' }}>
             Note: lead times vary by finish. Standard finishes (chrome, stainless, black) are
