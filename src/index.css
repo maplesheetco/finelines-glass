@@ -864,6 +864,25 @@ form.contact-form textarea { min-height: 120px; resize: vertical; }
 .footer-contact {
   margin: 10px 0 0;
 }
+.footer-credit {
+  margin: 14px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.footer-credit a {
+  color: rgba(255,255,255,0.65);
+}
+.footer-credit svg {
+  width: 14px;
+  height: 11px;
+  flex-shrink: 0;
+}
 
 /* ---------- Page hero (interior pages) ---------- */
 .page-hero {
