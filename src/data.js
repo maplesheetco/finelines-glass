@@ -1762,6 +1762,7 @@ export const PROJECTS_PREVIEW = [
   { src: '/images/project-19.jpg', caption: 'West Cordova - Vancouver - Frameless Shower Enclosure' },
   { src: '/images/project-21.jpg', caption: 'West Cordova - Vancouver - Ensuite Shower & Freestanding Tub' },
   { src: '/images/project-22.jpg', caption: 'West Cordova - Vancouver - Walk-In Closet Feature Mirror' },
+  { src: '/images/project-27.jpg', caption: 'Lions Bay - Skylight Replacement & Window Film Application' },
 ];
 
 // Projects page gallery, grouped by job instead of one-photo-per-tile. Each
@@ -1840,6 +1841,16 @@ export const PROJECTS = [
       { src: '/images/project-22.jpg', label: 'Walk-In Closet - Feature Mirror' },
       { src: '/images/project-23.jpg', label: 'Vanity Mirror' },
       { src: '/images/project-24.jpg', label: 'Frameless Shower Enclosure - Bench Seat' },
+    ],
+  },
+  {
+    name: 'Lions Bay',
+    photos: [
+      { src: '/images/project-26.jpg', label: 'Skylight Glass Panel - Installation' },
+      { src: '/images/project-27.jpg', label: 'Finished Skylight Ridge' },
+      { src: '/images/project-28.jpg', label: 'Window Film Application - Interior' },
+      { src: '/images/project-29.jpg', label: 'Window Film Application - Detail' },
+      { src: '/images/project-30.jpg', label: 'Skylight Glass - Exterior Detail' },
     ],
   },
 ];
