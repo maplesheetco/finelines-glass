@@ -1763,6 +1763,7 @@ export const PROJECTS_PREVIEW = [
   { src: '/images/project-21.jpg', caption: 'West Cordova - Vancouver - Ensuite Shower & Freestanding Tub' },
   { src: '/images/project-22.jpg', caption: 'West Cordova - Vancouver - Walk-In Closet Feature Mirror' },
   { src: '/images/project-27.jpg', caption: 'Lions Bay - Skylight Replacement & Window Film Application' },
+  { src: '/images/project-33.jpg', caption: 'Coquitlam - Storefront Glass & Window Installation' },
 ];
 
 // Projects page gallery, grouped by job instead of one-photo-per-tile. Each
@@ -1851,6 +1852,16 @@ export const PROJECTS = [
       { src: '/images/project-28.jpg', label: 'Window Film Application - Interior' },
       { src: '/images/project-29.jpg', label: 'Window Film Application - Detail' },
       { src: '/images/project-30.jpg', label: 'Skylight Glass - Exterior Detail' },
+    ],
+  },
+  {
+    name: 'Coquitlam Storefront',
+    photos: [
+      { src: '/images/project-31.jpg', label: 'Storefront Unit - Front View' },
+      { src: '/images/project-32.jpg', label: 'Storefront Window - Close-Up' },
+      { src: '/images/project-33.jpg', label: 'Storefront Unit - Side Angle' },
+      { src: '/images/project-34.jpg', label: 'Storefront Corner - Installation Site' },
+      { src: '/images/project-35.jpg', label: 'Storefront Window - Corner Detail' },
     ],
   },
 ];
