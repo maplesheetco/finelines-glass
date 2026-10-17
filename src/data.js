@@ -24,8 +24,8 @@ export const COMPANY = {
   shortName: 'Finelines Glass',
   phone: '604-789-5154',
   phoneHref: 'tel:+16047895154',
-  email: 'info@finelinesglass.ca', // TODO: set up forwarding to finelinesglass@gmail.com, then use this everywhere
-  emailFallback: 'finelinesglass@gmail.com',
+  email: 'finelinesglass@gmail.com', // Using Gmail for now — owner is still deciding on a professional email
+  emailFallback: 'info@finelinesglass.ca', // switch `email` back to this once the professional address is set up
   address: '1509 East Kent Ave N, Vancouver, BC V5P 4Y7',
   mapQuery: '1509+East+Kent+Ave+N+Vancouver+BC+V5P+4Y7',
   hours: [
