@@ -203,7 +203,7 @@ export const SHOWER_DESIGNS = [
     slug: 'inline',
     title: 'Frameless Inline Shower',
     subtitle: 'Inline',
-    image: '/images/shower-design-1-inline.jpg',
+    image: '/images/shower-design-1-inline.webp',
     blurb: "A clean single-door, single-panel layout — space-efficient, open in appearance, with easy access through a hinged door and a timeless look that suits most bathrooms. Frameless glass means no bulky metal framing, less soap-scum buildup, and your tile stays fully visible.",
     intro: [
       "At Finelines Glass Installations, we believe a frameless shower enclosure is more than simply installing glass — it's about precision, craftsmanship, and flawless application.",
@@ -241,7 +241,7 @@ export const SHOWER_DESIGNS = [
     slug: 'return-panel',
     title: 'Frameless Inline with Return Panel',
     subtitle: 'L-Shape',
-    image: '/images/shower-design-2-return-panel.jpg',
+    image: '/images/shower-design-2-return-panel.webp',
     blurb: "Adds a perpendicular return panel to the inline layout, closing off the open end for a clearly defined enclosure while keeping the same open, uncluttered feel and easy entry through the hinged door. Configured around your exact walls and layout.",
     intro: [
       'Finelines Glass Installations specializes in precision frameless shower enclosures designed to complement the unique layout of your bathroom. A frameless inline with return panel creates an elegant L-shaped configuration using a hinged glass door, an inline fixed panel, and a perpendicular return panel.',
@@ -270,7 +270,7 @@ export const SHOWER_DESIGNS = [
     slug: 'neo-angle',
     title: 'Neo-Angle Shower',
     subtitle: 'Angled',
-    image: '/images/shower-design-3-neo-angle.jpg',
+    image: '/images/shower-design-3-neo-angle.webp',
     blurb: "Built into a corner, turning space a standard layout would waste into a comfortable shower area. Open sightlines and a distinctive angled design, fully custom-built to your bathroom's corner and dimensions.",
     intro: [
       "At Finelines Glass Installations, we believe a frameless shower enclosure is more than simply installing glass — it's about precision, craftsmanship, and flawless application.",
@@ -301,7 +301,7 @@ export const SHOWER_DESIGNS = [
     slug: 'serenity-slider',
     title: 'Serenity / Frameless Slider',
     subtitle: 'Slider',
-    image: '/images/shower-design-4-serenity-slider.jpg',
+    image: '/images/shower-design-4-serenity-slider.webp',
     blurb: "A fixed panel paired with a sliding panel — no swing clearance needed, making it the practical choice for wider openings. Clean, minimal-frame look with smooth, quality sliding hardware, tailored to your space.",
     intro: [
       'Finelines Glass Installations brings precision workmanship and thoughtful design to frameless sliding shower enclosures. The Serenity / Frameless Slider is a practical and elegant solution for wider shower openings where a sliding door provides convenient access without requiring the floor space needed for a swinging door.',
@@ -354,7 +354,7 @@ export const RAILING_DESIGNS = [
     slug: 'base-shoe',
     title: 'Base Shoe Glass Railing',
     subtitle: 'Top Mount & Side Mount Applications',
-    image: '/images/railing-design-1-base-shoe.jpg',
+    image: '/images/railing-design-1-base-shoe.webp',
     blurb: 'A continuous aluminum or metal channel secures the glass along its lower edge, creating one uninterrupted architectural line instead of individual point fittings — installed as a top-mount or side-mount system depending on the structure.',
     intro: [
       'Finelines Glass Installations provides modern base shoe glass railing systems designed to create a clean, contemporary architectural appearance while providing a practical solution for balconies, decks, stairs, landings, terraces, and other railing applications.',
@@ -408,7 +408,7 @@ export const RAILING_DESIGNS = [
     slug: 'standoff',
     title: 'Standoff Glass Railing',
     subtitle: 'Modern · Clean · Unobstructed Views',
-    image: '/images/railing-design-2-standoff.jpg',
+    image: '/images/railing-design-2-standoff.webp',
     blurb: 'Individual metal standoffs secure the glass to the structural surface, creating a clean, open appearance with minimal visible hardware — well suited to balconies, decks, and stairs where the view matters most.',
     intro: [
       'Finelines Glass Installations specializes in modern standoff glass railing systems that combine clean architectural design with careful attention to structural requirements, safety, and professional installation.',
@@ -453,7 +453,7 @@ export const RAILING_DESIGNS = [
     slug: 'post',
     title: 'Post Glass Railing System',
     subtitle: 'Clean Architectural Design',
-    image: '/images/railing-design-3-post.jpg',
+    image: '/images/railing-design-3-post.webp',
     blurb: 'Engineered metal posts combine strength and visual definition with the openness of architectural glass — a versatile choice for stairways, balconies, decks, and interior guardrails.',
     intro: [
       'Finelines Glass Installations provides post glass railing systems that combine the strength and visual definition of metal posts with the openness and transparency of architectural glass. This system is a versatile choice for stairways, balconies, decks, landings, terraces, interior guardrails, and other residential or commercial applications.',
@@ -503,7 +503,7 @@ export const RAILING_DESIGNS = [
     slug: 'spigot',
     title: 'Spigot Glass Railing System',
     subtitle: 'Sleek Design, Minimal Visual Obstruction',
-    image: '/images/railing-design-4-spigot.jpg',
+    image: '/images/railing-design-4-spigot.webp',
     blurb: 'Individual spigots support clear glass panels with minimal visual obstruction, letting the surrounding architecture, landscape, and views remain the focus — ideal for luxury decks, patios, and pool areas.',
     intro: [
       'Finelines Glass Installations offers modern Spigot Glass Railing Systems designed to provide a clean, open architectural appearance while maintaining the strength, safety, and structural coordination required for residential and commercial projects.',
@@ -543,7 +543,7 @@ export const RAILING_DESIGNS = [
     slug: 'custom-applications',
     title: 'Custom Glass Railing Applications',
     subtitle: 'Designed Around Your Architecture',
-    image: '/images/railing-design-5-custom-applications.jpg',
+    image: '/images/railing-design-5-custom-applications.webp',
     blurb: 'Not every project calls for the same system — from a nearly seamless embedded glass channel to a warm wood frame or a bold black aluminum frame, we adapt the application to the architecture.',
     intro: [
       'Finelines Glass Installations provides custom glass railing solutions designed around the architecture, materials, and requirements of each project. We work according to the design intent and coordinate with designers, architects, contractors, builders, and Structural Engineers to develop the appropriate glass railing application for the space.',
@@ -624,7 +624,7 @@ export const WINE_DESIGNS = [
     slug: 'wood-framed',
     title: 'Wood-Framed Glass Wine Cellar Enclosures',
     subtitle: 'Natural Materials, Architectural Glass',
-    image: '/images/wine-design-1-wood-framed.jpg',
+    image: '/images/wine-design-1-wood-framed.webp',
     blurb: "A custom wood frame combines the warmth of natural wood with the transparency of architectural glass, integrating the wine cellar directly into the home's millwork, stairs, and finishes.",
     intro: [
       'Finelines Glass Installations provides custom wood-framed glass wine cellar enclosures that combine the warmth of natural wood with the transparency of architectural glass. This design creates a distinctive feature within a high-end residential or commercial interior while keeping the wine collection visually connected to the surrounding space.',
@@ -679,7 +679,7 @@ export const WINE_DESIGNS = [
     slug: 'black-framed',
     title: 'Black-Framed Glass Wine Cellar Enclosures',
     subtitle: 'Contemporary Architectural Glass, Refined Details',
-    image: '/images/wine-design-2-black-framed.jpg',
+    image: '/images/wine-design-2-black-framed.webp',
     blurb: 'A modern black frame system provides structure and visual definition, turning an underused corner or wall into a defined architectural feature that shows off the collection.',
     intro: [
       'Finelines Glass Installations provides custom black-framed glass wine cellar enclosures that combine the transparency of architectural glass with the strong, refined appearance of a modern black frame system.',
@@ -734,7 +734,7 @@ export const WINE_DESIGNS = [
     slug: 'frameless',
     title: 'Frameless Wine Cellar Enclosures',
     subtitle: 'Architectural Glass, Showcase Your Collection',
-    image: '/images/wine-design-3-frameless.jpg',
+    image: '/images/wine-design-3-frameless.webp',
     blurb: 'Large panels of glass with minimal visible framing let the wine collection and surrounding architecture take center stage — well suited to under-stair spaces and floor-to-ceiling displays.',
     intro: [
       'Finelines Glass Installations provides custom frameless glass wine cellar enclosures designed to showcase wine collections while integrating seamlessly with the surrounding architecture.',
@@ -803,7 +803,7 @@ export const PARTITION_DESIGNS = [
     slug: 'storefront-glazing',
     title: 'Commercial Storefront Glazing',
     subtitle: 'Architectural Glass, Commercial Entrances',
-    image: '/images/partition-design-1-storefront.jpg',
+    image: '/images/partition-design-1-storefront.webp',
     blurb: "Storefront framing, entrance doors, and glazing systems for retail, office, and commercial buildings, coordinated with the building design from the ground up.",
     intro: [
       'Finelines Glass Installations provides commercial storefront glazing solutions for retail spaces, offices, professional buildings, restaurants, showrooms, and other commercial environments.',
@@ -882,7 +882,7 @@ export const PARTITION_DESIGNS = [
     slug: 'frameless-office-partitions',
     title: 'Frameless Office Glass Partitions',
     subtitle: 'Modern Workplace Design, Architectural Glass',
-    image: '/images/partition-design-2-frameless-office.jpg',
+    image: '/images/partition-design-2-frameless-office.webp',
     blurb: 'Large clear glass panels with minimal visible framing divide and define private offices, meeting rooms, and boardrooms without sacrificing natural light.',
     intro: [
       'Finelines Glass Installations provides custom frameless office glass partition systems designed to divide and define commercial spaces while maintaining an open, bright, and contemporary environment.',
@@ -951,7 +951,7 @@ export const PARTITION_DESIGNS = [
     slug: 'privacy-boardroom-black-framed',
     title: 'Privacy Glass, Boardroom Enclosures & Black-Framed Partitions',
     subtitle: 'Commercial Architectural Glass, Custom Workplace Solutions',
-    image: '/images/partition-design-3-privacy-boardroom-black-framed.jpg',
+    image: '/images/partition-design-3-privacy-boardroom-black-framed.webp',
     blurb: 'From frosted privacy glass to frameless boardrooms and contemporary black-framed partitions — three ways to define a workspace without closing it in.',
     intro: [
       'Finelines Glass Installations provides custom commercial glass partition solutions designed to create functional, sophisticated, and visually connected work environments.',
@@ -1038,7 +1038,7 @@ export const MIRROR_DESIGNS = [
     slug: 'bronze',
     title: 'Bronze Mirror',
     subtitle: 'Warm Architectural Reflection, Hospitality & High-End Interiors',
-    image: '/images/mirror-design-1-bronze.jpg',
+    image: '/images/mirror-design-1-bronze.webp',
     blurb: 'A warm, elegant reflective finish that works especially well in hotel lobbies, restaurants, and high-end interiors alongside stone, wood, and warm lighting.',
     intro: [
       'Finelines Glass Installations provides custom bronze mirror installations for residential, hospitality, commercial, and high-end architectural interiors. Bronze mirror adds a warm, elegant reflective quality that works particularly well with stone, wood, brass, bronze, and warm architectural lighting.',
@@ -1107,7 +1107,7 @@ export const MIRROR_DESIGNS = [
     slug: 'gray',
     title: 'Gray Mirror',
     subtitle: 'Contemporary Smoked Reflection, Sophisticated Interior Applications',
-    image: '/images/mirror-design-2-gray.jpg',
+    image: '/images/mirror-design-2-gray.webp',
     blurb: 'A softer, smoked-toned reflection that adds depth and a contemporary edge to home bars, dining areas, powder rooms, and feature walls.',
     intro: [
       'Finelines Glass Installations provides custom gray mirror installations for residential and commercial interiors where a darker, more sophisticated reflective finish is desired.',
@@ -1177,7 +1177,7 @@ export const MIRROR_DESIGNS = [
     slug: 'clear',
     title: 'Clear Mirror',
     subtitle: 'Custom-Cut Architectural Mirrors, Precise Measurements',
-    image: '/images/mirror-design-3-clear.jpg',
+    image: '/images/mirror-design-3-clear.webp',
     blurb: 'A clean, bright, and highly reflective finish — the most popular choice for bathrooms, vanities, gyms, and home gyms.',
     intro: [
       'Finelines Glass Installations provides custom clear mirror installations for residential and commercial spaces where a clean, bright, and highly reflective finish is desired.',
@@ -1270,7 +1270,7 @@ export const WINDOW_DESIGNS = [
     slug: 'window-replacement',
     title: 'Window Replacement',
     subtitle: 'Residential & Commercial, Custom Glass Options',
-    image: '/images/window-design-1-replacement.jpg',
+    image: '/images/window-design-1-replacement.webp',
     blurb: 'Replacing broken, fogged, or aging windows with a new system that matches your home or building’s approved design, rather than just swapping glass.',
     intro: [
       "Finelines Glass Installations provides residential and commercial window replacement services for homeowners, contractors, and property managers looking to replace aging, damaged, or failed windows with a new system that fits the project's design and performance requirements.",
@@ -1340,7 +1340,7 @@ export const WINDOW_DESIGNS = [
     slug: 'window-film-application',
     title: 'Window Film Application',
     subtitle: 'Residential & Commercial, Interior & Exterior Applications',
-    image: '/images/window-design-2-film-application.jpg',
+    image: '/images/window-design-2-film-application.webp',
     blurb: 'Solar-control, glare-reduction, and privacy window film applied to your existing glass — changing how a window performs without replacing the window itself.',
     intro: [
       'Finelines Glass Installations provides professional window film application for residential and commercial properties. Window film can be used to modify the appearance and performance characteristics of existing glass while maintaining the existing window system.',
@@ -1431,7 +1431,7 @@ export const SKYLIGHT_DESIGNS = [
     slug: 'new-skylight-installation',
     title: 'New Skylight Installation',
     subtitle: 'Dome & Flat Skylight Systems, Residential & Commercial',
-    image: '/images/skylight-design-1-new-installation.jpg',
+    image: '/images/skylight-design-1-new-installation.webp',
     blurb: 'Bringing natural light into a kitchen, stairwell, or living space with a dome or flat skylight system, matched to your roof and architectural design.',
     intro: [
       'Finelines Glass Installations provides new skylight installation solutions for residential and commercial projects where natural light, architectural design, and the existing building conditions need to work together.',
@@ -1491,7 +1491,7 @@ export const SKYLIGHT_DESIGNS = [
     slug: 'skylight-replacement',
     title: 'Skylight Replacement',
     subtitle: 'Insulated Sealed Units, Residential & Commercial',
-    image: '/images/skylight-design-2-replacement.jpg',
+    image: '/images/skylight-design-2-replacement.webp',
     blurb: 'Replacing a fogged, failed, or damaged skylight with a properly coordinated insulated sealed unit, matched to your existing frame and opening.',
     intro: [
       'Finelines Glass Installations provides skylight replacement and new skylight glass services for residential and commercial projects. Skylights can bring valuable natural light into a space, but they also require careful consideration because they are installed in an exposed and safety-sensitive part of a building.',
@@ -1597,7 +1597,7 @@ export const CUSTOM_GLASS_DESIGNS = [
     slug: 'custom-tabletops',
     title: 'Custom Tabletops',
     subtitle: 'Dining, Desk & Furniture Glass, Residential & Commercial',
-    image: '/images/custom-tabletop.jpg',
+    image: '/images/custom-tabletop.webp',
     blurb: 'Custom-cut glass tabletops for dining tables, desks, counters, and display surfaces, sized and finished to fit.',
     intro: [
       'Finelines Glass Installations fabricates and installs custom glass tabletops for residential and commercial spaces. Glass can be used to protect and enhance dining tables, desks, counters, display surfaces, and other furniture or architectural applications.',
@@ -1627,7 +1627,7 @@ export const CUSTOM_GLASS_DESIGNS = [
     slug: 'cabinet-glass-inserts',
     title: 'Cabinet Glass Inserts',
     subtitle: 'Kitchen, Bar & Built-In Cabinetry',
-    image: '/images/custom-cabinet-glass-inserts.jpg',
+    image: '/images/custom-cabinet-glass-inserts.webp',
     blurb: 'Clear, tinted, textured, or specialty glass panels sized to fit your cabinetry, from kitchens to built-in bars.',
     intro: [
       'Custom glass cabinet inserts can transform standard cabinetry into a more open and architectural feature. Finelines Glass Installations works with cabinetmakers, designers, contractors, and homeowners to provide glass panels sized for the cabinet configuration.',
@@ -1657,7 +1657,7 @@ export const CUSTOM_GLASS_DESIGNS = [
     slug: 'glass-shelving',
     title: 'Glass Shelving',
     subtitle: 'Display, Storage & Decorative Shelving',
-    image: '/images/custom-glass-shelving.jpg',
+    image: '/images/custom-glass-shelving.webp',
     blurb: 'Custom glass shelving for display, storage, or decorative use — built into niches, cabinets, and wall systems.',
     intro: [
       'Finelines Glass Installations provides custom glass shelving for residential and commercial interiors. Shelving can be designed for display, storage, or decorative purposes and can be integrated into niches, cabinets, wall systems, and built-in features.',
@@ -1687,7 +1687,7 @@ export const CUSTOM_GLASS_DESIGNS = [
     slug: 'urinal-privacy-partitions',
     title: 'Urinal Privacy Partitions',
     subtitle: 'Commercial Washroom Privacy Glass',
-    image: '/images/custom-urinal-privacy-partitions.jpg',
+    image: '/images/custom-urinal-privacy-partitions.webp',
     blurb: 'Durable, modern glass privacy partitions for commercial washrooms, coordinated with your hardware and layout.',
     intro: [
       'Finelines Glass Installations provides custom glass privacy partitions for commercial washrooms and other facilities where durable, clean, and modern privacy solutions are required.',
@@ -1711,7 +1711,7 @@ export const CUSTOM_GLASS_DESIGNS = [
     slug: 'antique-mirror-wall-designs',
     title: 'Antique Mirror Wall Designs',
     subtitle: 'Feature Walls, Residential & Hospitality',
-    image: '/images/custom-antique-mirror-wall.jpg',
+    image: '/images/custom-antique-mirror-wall.webp',
     blurb: 'Antique mirror feature walls that bring depth and character to residential, hospitality, and retail interiors.',
     intro: [
       'Finelines Glass Installations also works with specialty mirror applications, including antique mirror wall designs. Antique mirror can add depth, character, and a distinctive decorative finish to high-end residential, hospitality, retail, and commercial interiors.',
@@ -1742,7 +1742,7 @@ export const CUSTOM_GLASS_DESIGNS = [
     slug: 'custom-requests',
     title: 'Custom Requests',
     subtitle: 'One-of-a-Kind & Architectural Glass',
-    image: '/images/custom-requests.jpg',
+    image: '/images/custom-requests.webp',
     blurb: "Have something one-of-a-kind in mind? Bring us the idea and we'll help work out how the glass fits.",
     intro: [
       'Some glass projects are completely unique. Finelines Glass Installations welcomes custom requests involving unusual dimensions, specialty shapes, unique mounting conditions, custom glass components, or one-off architectural applications.',
@@ -1773,23 +1773,23 @@ export const CUSTOM_GLASS_NOTE = {
 // Captions describe the work only — never a client's exact address (see the
 // website report / discovery checklist for why).
 export const PROJECTS_PREVIEW = [
-  { src: '/images/project-25.jpg', caption: 'Marine Drive - Skybar - Backlit Onyx Bar & Wine Storage' },
-  { src: '/images/project-1.jpg', caption: 'West Vancouver - Frameless Shower' },
-  { src: '/images/project-2.jpg', caption: 'Bellevue Dr. - Exterior Glass Railing' },
-  { src: '/images/project-3.jpg', caption: 'Richmond - Shower Enclosure' },
-  { src: '/images/project-4.jpg', caption: 'Bellevue Dr. - Interior Railing' },
-  { src: '/images/project-5.jpg', caption: 'Bellevue Dr. - Wine Cellar' },
-  { src: '/images/project-6.jpg', caption: 'Bellevue Dr. - Frameless Shower Enclosures' },
-  { src: '/images/project-7.jpg', caption: 'Pender Island - Exterior Railing' },
-  { src: '/images/project-8.jpg', caption: 'Cedarhurst St. - Wine Cellar' },
-  { src: '/images/project-9.jpg', caption: 'West 34th Vancouver - Shower Enclosures' },
-  { src: '/images/project-14.jpg', caption: 'Marine Drive - Skybar - Backlit Onyx Feature Wall' },
-  { src: '/images/project-15.jpg', caption: 'Marine Drive - Skybar - Outdoor Kitchen & Bar' },
-  { src: '/images/project-19.jpg', caption: 'West Cordova - Vancouver - Frameless Shower Enclosure' },
-  { src: '/images/project-21.jpg', caption: 'West Cordova - Vancouver - Ensuite Shower & Freestanding Tub' },
-  { src: '/images/project-22.jpg', caption: 'West Cordova - Vancouver - Walk-In Closet Feature Mirror' },
-  { src: '/images/project-27.jpg', caption: 'Lions Bay - Skylight Replacement & Window Film Application' },
-  { src: '/images/project-33.jpg', caption: 'Coquitlam - Storefront Glass & Window Installation' },
+  { src: '/images/project-25.webp', caption: 'Marine Drive - Skybar - Backlit Onyx Bar & Wine Storage' },
+  { src: '/images/project-1.webp', caption: 'West Vancouver - Frameless Shower' },
+  { src: '/images/project-2.webp', caption: 'Bellevue Dr. - Exterior Glass Railing' },
+  { src: '/images/project-3.webp', caption: 'Richmond - Shower Enclosure' },
+  { src: '/images/project-4.webp', caption: 'Bellevue Dr. - Interior Railing' },
+  { src: '/images/project-5.webp', caption: 'Bellevue Dr. - Wine Cellar' },
+  { src: '/images/project-6.webp', caption: 'Bellevue Dr. - Frameless Shower Enclosures' },
+  { src: '/images/project-7.webp', caption: 'Pender Island - Exterior Railing' },
+  { src: '/images/project-8.webp', caption: 'Cedarhurst St. - Wine Cellar' },
+  { src: '/images/project-9.webp', caption: 'West 34th Vancouver - Shower Enclosures' },
+  { src: '/images/project-14.webp', caption: 'Marine Drive - Skybar - Backlit Onyx Feature Wall' },
+  { src: '/images/project-15.webp', caption: 'Marine Drive - Skybar - Outdoor Kitchen & Bar' },
+  { src: '/images/project-19.webp', caption: 'West Cordova - Vancouver - Frameless Shower Enclosure' },
+  { src: '/images/project-21.webp', caption: 'West Cordova - Vancouver - Ensuite Shower & Freestanding Tub' },
+  { src: '/images/project-22.webp', caption: 'West Cordova - Vancouver - Walk-In Closet Feature Mirror' },
+  { src: '/images/project-27.webp', caption: 'Lions Bay - Skylight Replacement & Window Film Application' },
+  { src: '/images/project-33.webp', caption: 'Coquitlam - Storefront Glass & Window Installation' },
 ];
 
 // Projects page gallery, grouped by job instead of one-photo-per-tile. Each
@@ -1797,9 +1797,12 @@ export const PROJECTS_PREVIEW = [
 // card opens a click-through gallery of every photo for that job.
 //
 // TO ADD MORE PHOTOS TO AN EXISTING JOB (e.g. another Bellevue Dr. shot):
-//   Drop the new image file in public/images/ (e.g. project-10.jpg), then
-//   add a line to that project's `photos` array below:
-//   { src: '/images/project-10.jpg', label: 'Mirror Wall' },
+//   Drop the new photo in public/images/ as a .jpg (e.g. project-10.jpg) plus
+//   a .webp copy of it (project-10.webp, smaller and faster to load; any
+//   free JPG-to-WebP converter works), then add a line to that project's
+//   `photos` array below:
+//   { src: '/images/project-10.webp', label: 'Mirror Wall' },
+//   Keep the .jpg as well: link previews on Facebook, iMessage etc. use it.
 //
 // TO ADD A BRAND NEW JOB:
 //   Copy one of the { name: ..., photos: [...] } blocks below, give it the
@@ -1808,86 +1811,86 @@ export const PROJECTS = [
   {
     name: 'West Vancouver',
     photos: [
-      { src: '/images/project-1.jpg', label: 'Frameless Shower' },
+      { src: '/images/project-1.webp', label: 'Frameless Shower' },
     ],
   },
   {
     name: 'Bellevue Dr.',
     photos: [
-      { src: '/images/project-2.jpg', label: 'Exterior Glass Railing' },
-      { src: '/images/project-4.jpg', label: 'Interior Railing' },
-      { src: '/images/project-5.jpg', label: 'Wine Cellar' },
-      { src: '/images/project-6.jpg', label: 'Frameless Shower Enclosures' },
+      { src: '/images/project-2.webp', label: 'Exterior Glass Railing' },
+      { src: '/images/project-4.webp', label: 'Interior Railing' },
+      { src: '/images/project-5.webp', label: 'Wine Cellar' },
+      { src: '/images/project-6.webp', label: 'Frameless Shower Enclosures' },
     ],
   },
   {
     name: 'Richmond',
     photos: [
-      { src: '/images/project-3.jpg', label: 'Shower Enclosure' },
+      { src: '/images/project-3.webp', label: 'Shower Enclosure' },
     ],
   },
   {
     name: 'Pender Island',
     photos: [
-      { src: '/images/project-7.jpg', label: 'Exterior Railing' },
-      { src: '/images/project-10.jpg', label: 'Exterior Glass Railing' },
-      { src: '/images/project-11.jpg', label: 'Deck Railing - Marina View' },
-      { src: '/images/project-12.jpg', label: 'Railing Detail' },
-      { src: '/images/project-13.jpg', label: 'Railing - Roofline Detail' },
+      { src: '/images/project-7.webp', label: 'Exterior Railing' },
+      { src: '/images/project-10.webp', label: 'Exterior Glass Railing' },
+      { src: '/images/project-11.webp', label: 'Deck Railing - Marina View' },
+      { src: '/images/project-12.webp', label: 'Railing Detail' },
+      { src: '/images/project-13.webp', label: 'Railing - Roofline Detail' },
     ],
   },
   {
     name: 'Cedarhurst St.',
     photos: [
-      { src: '/images/project-8.jpg', label: 'Wine Cellar' },
+      { src: '/images/project-8.webp', label: 'Wine Cellar' },
     ],
   },
   {
     name: 'West 34th Vancouver',
     photos: [
-      { src: '/images/project-9.jpg', label: 'Shower Enclosures' },
+      { src: '/images/project-9.webp', label: 'Shower Enclosures' },
     ],
   },
   {
     name: 'Marine Drive - Skybar',
     photos: [
-      { src: '/images/project-25.jpg', label: 'Backlit Onyx Bar & Wine Storage' },
-      { src: '/images/project-14.jpg', label: 'Backlit Onyx Feature Wall' },
-      { src: '/images/project-15.jpg', label: 'Outdoor Kitchen & Bar' },
-      { src: '/images/project-16.jpg', label: 'Glass Shelving - Installation' },
-      { src: '/images/project-17.jpg', label: 'Stone & Glass Detail' },
-      { src: '/images/project-18.jpg', label: 'On-Site Installation' },
+      { src: '/images/project-25.webp', label: 'Backlit Onyx Bar & Wine Storage' },
+      { src: '/images/project-14.webp', label: 'Backlit Onyx Feature Wall' },
+      { src: '/images/project-15.webp', label: 'Outdoor Kitchen & Bar' },
+      { src: '/images/project-16.webp', label: 'Glass Shelving - Installation' },
+      { src: '/images/project-17.webp', label: 'Stone & Glass Detail' },
+      { src: '/images/project-18.webp', label: 'On-Site Installation' },
     ],
   },
   {
     name: 'West Cordova - Vancouver',
     photos: [
-      { src: '/images/project-19.jpg', label: 'Frameless Shower Enclosure' },
-      { src: '/images/project-20.jpg', label: 'Walk-In Closet - Glass Wardrobe Doors' },
-      { src: '/images/project-21.jpg', label: 'Ensuite - Frameless Shower & Freestanding Tub' },
-      { src: '/images/project-22.jpg', label: 'Walk-In Closet - Feature Mirror' },
-      { src: '/images/project-23.jpg', label: 'Vanity Mirror' },
-      { src: '/images/project-24.jpg', label: 'Frameless Shower Enclosure - Bench Seat' },
+      { src: '/images/project-19.webp', label: 'Frameless Shower Enclosure' },
+      { src: '/images/project-20.webp', label: 'Walk-In Closet - Glass Wardrobe Doors' },
+      { src: '/images/project-21.webp', label: 'Ensuite - Frameless Shower & Freestanding Tub' },
+      { src: '/images/project-22.webp', label: 'Walk-In Closet - Feature Mirror' },
+      { src: '/images/project-23.webp', label: 'Vanity Mirror' },
+      { src: '/images/project-24.webp', label: 'Frameless Shower Enclosure - Bench Seat' },
     ],
   },
   {
     name: 'Lions Bay',
     photos: [
-      { src: '/images/project-26.jpg', label: 'Skylight Glass Panel - Installation' },
-      { src: '/images/project-27.jpg', label: 'Finished Skylight Ridge' },
-      { src: '/images/project-28.jpg', label: 'Window Film Application - Interior' },
-      { src: '/images/project-29.jpg', label: 'Window Film Application - Detail' },
-      { src: '/images/project-30.jpg', label: 'Skylight Glass - Exterior Detail' },
+      { src: '/images/project-26.webp', label: 'Skylight Glass Panel - Installation' },
+      { src: '/images/project-27.webp', label: 'Finished Skylight Ridge' },
+      { src: '/images/project-28.webp', label: 'Window Film Application - Interior' },
+      { src: '/images/project-29.webp', label: 'Window Film Application - Detail' },
+      { src: '/images/project-30.webp', label: 'Skylight Glass - Exterior Detail' },
     ],
   },
   {
     name: 'Coquitlam Storefront',
     photos: [
-      { src: '/images/project-31.jpg', label: 'Storefront Unit - Front View' },
-      { src: '/images/project-32.jpg', label: 'Storefront Window - Close-Up' },
-      { src: '/images/project-33.jpg', label: 'Storefront Unit - Side Angle' },
-      { src: '/images/project-34.jpg', label: 'Storefront Corner - Installation Site' },
-      { src: '/images/project-35.jpg', label: 'Storefront Window - Corner Detail' },
+      { src: '/images/project-31.webp', label: 'Storefront Unit - Front View' },
+      { src: '/images/project-32.webp', label: 'Storefront Window - Close-Up' },
+      { src: '/images/project-33.webp', label: 'Storefront Unit - Side Angle' },
+      { src: '/images/project-34.webp', label: 'Storefront Corner - Installation Site' },
+      { src: '/images/project-35.webp', label: 'Storefront Window - Corner Detail' },
     ],
   },
 ];
@@ -1975,7 +1978,7 @@ export const ARTICLES = [
     keywords: ['frameless shower enclosures', 'frameless shower glass', 'custom shower glass', 'glass shower doors', 'frameless glass shower doors', 'custom glass shower enclosure', 'shower glass installation', 'glass shower enclosure Vancouver', 'glass shower enclosure Surrey', 'custom glass installation', 'bathroom glass installation'],
     publishDate: 'October 5, 2026',
     publishAt: '2026-10-05T00:00:00-07:00', // Vancouver time (PDT) — article goes live at midnight on this date
-    heroImage: '/images/articles/frameless-shower-jobsite-to-finished.jpg',
+    heroImage: '/images/articles/frameless-shower-jobsite-to-finished.webp',
     heroImageAlt: 'A Finelines Glass installer fitting a frameless glass shower panel on the jobsite, next to a photo of the same enclosure fully finished',
     excerpt: "A frameless glass shower can completely change the appearance of a bathroom — but that clean look doesn't happen by simply installing a piece of glass. Here's what actually happens between the jobsite and the finished enclosure.",
     intro: [
@@ -2083,7 +2086,7 @@ export const ARTICLES = [
     keywords: ['how to clean glass shower doors', 'prevent water spots on shower glass', 'remove hard-water stains from glass', 'frameless shower enclosure maintenance', 'clean frameless glass shower doors', 'glass shower door cleaning tips'],
     publishDate: 'October 5, 2026',
     publishAt: '2026-10-05T06:00:00-07:00',
-    heroImage: '/images/articles/how-to-clean-glass-shower-doors.jpg',
+    heroImage: '/images/articles/how-to-clean-glass-shower-doors.webp',
     heroImageAlt: 'Cleaning a glass shower door to prevent water spots beside a clear frameless shower enclosure',
     excerpt: 'Keep your frameless glass shower enclosure looking clear, spotless, and beautiful with the right cleaning routine — what causes water spots, how to remove them, and how to prevent them from coming back.',
     intro: [
@@ -2188,7 +2191,7 @@ export const ARTICLES = [
     keywords: ['glass railing', 'glass railing for modern homes', 'frameless glass railing', 'glass balcony railing', 'glass deck railing', 'glass stair railing', 'glass railing installation Vancouver', 'glass railing installation Surrey'],
     publishDate: 'October 12, 2026',
     publishAt: '2026-10-12T06:00:00-07:00',
-    heroImage: '/images/articles/glass-railing-for-modern-homes.jpg',
+    heroImage: '/images/articles/glass-railing-for-modern-homes.webp',
     heroImageAlt: 'A glass railing installation in progress on a rooftop deck, next to the same glass railing fully finished on a modern home',
     excerpt: 'Glass railings create an open architectural look on balconies, decks, terraces, and stairways — here’s what homeowners, designers, and contractors should consider before installation.',
     intro: [
@@ -2266,7 +2269,7 @@ export const ARTICLES = [
     keywords: ['custom mirrors', 'custom mirror installation', 'bathroom mirrors', 'full-wall mirrors', 'gym mirrors', 'custom mirror Vancouver', 'custom mirror Surrey', 'mirrors for small spaces'],
     publishDate: 'October 19, 2026',
     publishAt: '2026-10-19T06:00:00-07:00',
-    heroImage: '/images/articles/custom-mirrors-small-spaces.jpg',
+    heroImage: '/images/articles/custom-mirrors-small-spaces.webp',
     heroImageAlt: 'A custom bathroom vanity mirror alongside full-wall mirror installations in a home gym and living space',
     excerpt: 'Custom mirrors can do much more than provide a place to check your reflection — the right size, placement, shape, and installation can make an interior feel brighter, more open, and more finished.',
     intro: [
@@ -2368,7 +2371,7 @@ export const ARTICLES = [
     keywords: ['shower glass hardware finishes', 'shower hinge finishes', 'shower door hardware', 'matte black shower hardware', 'brushed nickel shower hardware', 'shower glass hardware Vancouver', 'shower glass hardware Surrey', 'CRL shower hardware'],
     publishDate: 'October 26, 2026',
     publishAt: '2026-10-26T06:00:00-07:00',
-    heroImage: '/images/articles/choosing-shower-glass-hardware-finishes.jpg',
+    heroImage: '/images/articles/choosing-shower-glass-hardware-finishes.webp',
     heroImageAlt: 'A shower enclosure with matte black hardware next to a chart of shower glass hinge finish families, from polished chrome to modern gold',
     excerpt: 'Shower hardware is a small part of a bathroom renovation, but it can have a major visual impact — here’s how to choose a hinge and handle finish that belongs with the rest of your bathroom design.',
     intro: [
@@ -2473,7 +2476,7 @@ export const ARTICLES = [
     keywords: ['glass shower cost Vancouver', 'glass railing cost Vancouver', 'frameless shower price', 'custom glass quote', 'glass installation estimate', 'what affects glass installation cost'],
     publishDate: 'November 2, 2026',
     publishAt: '2026-11-02T06:00:00-08:00', // PST: daylight saving ends Nov 1
-    heroImage: '/images/project-1.jpg',
+    heroImage: '/images/project-1.webp',
     heroImageAlt: 'A finished frameless glass shower enclosure in a West Vancouver bathroom',
     excerpt: "\"How much does it cost?\" is the first question almost everyone asks. The honest answer is that it depends on the site and the job, and here's what actually moves the number.",
     intro: [
