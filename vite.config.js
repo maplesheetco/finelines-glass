@@ -1,6 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
-import { defineConfig } from 'vite'
+import { pathToFileURL } from 'node:url'
+import { build, defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { getPageMeta, getSitemapPaths, absoluteUrl } from './src/seo.js'
 
@@ -8,22 +9,41 @@ const escapeHtml = (s) =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 
 // After each build, writes a copy of index.html for every page with that
-// page's own title, description, share tags and canonical URL (so search
-// engines and link previews see them without running JavaScript), plus
-// sitemap.xml. Page wording lives in src/seo.js. Articles scheduled for
-// later are left out until a build runs after their publish time.
+// page's own title, description, share tags, canonical URL and fully
+// rendered content (so search engines and link previews see them without
+// running JavaScript), plus sitemap.xml. Page wording lives in src/seo.js.
+// Articles scheduled for later are left out until a build runs after their
+// publish time.
 function seoPages() {
   let outDir
+  let isSsrBuild
   return {
     name: 'seo-pages',
     apply: 'build',
     configResolved(config) {
       outDir = path.resolve(config.root, config.build.outDir)
+      isSsrBuild = Boolean(config.build.ssr)
     },
-    closeBundle() {
+    async closeBundle() {
+      if (isSsrBuild) return
+
+      // Build a server-side copy of the app that can render a page to HTML.
+      const ssrOutDir = path.resolve(outDir, '..', 'dist-ssr')
+      await build({
+        configFile: false,
+        logLevel: 'warn',
+        plugins: [react()],
+        build: { ssr: 'src/entry-server.jsx', outDir: ssrOutDir, emptyOutDir: true },
+      })
+      const { render } = await import(pathToFileURL(path.join(ssrOutDir, 'entry-server.js')).href)
+
       const template = fs.readFileSync(path.join(outDir, 'index.html'), 'utf8')
       const block = /<!-- page-meta[\s\S]*?<!-- \/page-meta -->/
       if (!block.test(template)) throw new Error('index.html is missing the page-meta markers')
+
+      // Empty copy for any URL without a page file of its own (unknown URLs,
+      // articles published since the last build). vercel.json sends those here.
+      fs.writeFileSync(path.join(outDir, 'app-shell.html'), template)
 
       const now = new Date()
       const paths = getSitemapPaths(now)
@@ -41,7 +61,10 @@ function seoPages() {
         ].join('\n    ')
         const file = path.join(outDir, pagePath, 'index.html')
         fs.mkdirSync(path.dirname(file), { recursive: true })
-        fs.writeFileSync(file, template.replace(block, tags))
+        const html = template
+          .replace(block, tags)
+          .replace('<div id="root"></div>', () => `<div id="root">${render(pagePath)}</div>`)
+        fs.writeFileSync(file, html)
       }
 
       const urls = paths
