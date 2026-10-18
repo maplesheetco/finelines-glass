@@ -1,8 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { COMPANY, SERVICES, FAQS } from '../data.js';
-import ServiceIcon from '../components/ServiceIcon.jsx';
+import { COMPANY, FAQS } from '../data.js';
+import ServiceGrid from '../components/ServiceGrid.jsx';
 import Reveal from '../components/Reveal.jsx';
+
+// FAQPage structured data, so Google can show these questions in search
+// results. Built from the same FAQS list that renders below.
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
 
 export default function Services() {
   return (
@@ -10,31 +22,23 @@ export default function Services() {
       <section className="page-hero">
         <div className="container">
           <p className="hero-eyebrow">{COMPANY.shortName}</p>
-          <h1>Services</h1>
+          <h1>Glass Installation Services in Vancouver &amp; the Lower Mainland</h1>
           <p>Custom glass work for homeowners and builders — measured, cut, and installed on site.</p>
         </div>
       </section>
 
       <section className="block">
         <div className="container">
-          <div className="grid grid-services">
-            {SERVICES.map((s, i) => {
-              const isOrphan = SERVICES.length % 3 === 1 && i === SERVICES.length - 1;
-              return (
-                <Reveal delay={(i % 3) * 90} key={s.title}>
-                  <Link
-                    to={`/services/${s.slug}`}
-                    className={`card card-link${isOrphan ? ' card-centered' : ''}`}
-                  >
-                    <ServiceIcon name={s.icon} />
-                    <h3>{s.title}</h3>
-                    <p>{s.blurb}</p>
-                    <span className="card-link-cta">Learn more &rarr;</span>
-                  </Link>
-                </Reveal>
-              );
-            })}
-          </div>
+          <Reveal>
+            <p className="section-subheading">
+              We work with homeowners, builders, contractors and designers across the Lower
+              Mainland, Greater Vancouver, the Tri-City area and the Fraser Valley. Every job is
+              measured on site, planned with you, and installed by our own team. Pick a service
+              below to see typical designs, options and photos of past work, or
+              check our <Link to="/service-areas">service areas</Link> for the cities we cover.
+            </p>
+          </Reveal>
+          <ServiceGrid />
         </div>
       </section>
 
@@ -49,6 +53,23 @@ export default function Services() {
               </div>
             </Reveal>
           ))}
+        </div>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      </section>
+
+      <section className="block" style={{ textAlign: 'center' }}>
+        <div className="container">
+          <h2 className="section-heading">Have a project in mind?</h2>
+          <p className="section-subheading" style={{ margin: '0 auto 28px' }}>
+            Tell us what you're planning and we'll come back with a clear, no-obligation estimate.
+          </p>
+          <a className="btn btn-primary" href="/request-estimate">Request an Estimate</a>
+          <p className="cta-contact">
+            Or call <a href={COMPANY.phoneHref}>{COMPANY.phone}</a>
+          </p>
         </div>
       </section>
     </>

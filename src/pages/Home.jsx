@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { COMPANY, SERVICES, PROJECTS_PREVIEW, TESTIMONIALS } from '../data.js';
+import { COMPANY, PROJECTS_PREVIEW, TESTIMONIALS } from '../data.js';
 import TrustStrip from '../components/TrustStrip.jsx';
-import ServiceIcon from '../components/ServiceIcon.jsx';
+import ServiceGrid from '../components/ServiceGrid.jsx';
+import ProcessSteps from '../components/ProcessSteps.jsx';
 import Reveal from '../components/Reveal.jsx';
 
 // Auto-advances every 5s. The effect re-arms on every index change, so a
@@ -77,7 +78,27 @@ function CompletedWorkCarousel() {
   );
 }
 
+// The hero video (2.4 MB) only loads and plays on desktop-width screens, and
+// not for visitors who ask for reduced motion or data saving. Everyone else
+// sees the poster image, which is what the boxed phone layout shows anyway.
+function useDesktopHeroVideo() {
+  const ref = useRef(null);
+  useEffect(() => {
+    const video = ref.current;
+    if (!video) return;
+    const wide = window.matchMedia('(min-width: 861px)').matches;
+    const calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const saveData = navigator.connection && navigator.connection.saveData;
+    if (wide && !calm && !saveData) {
+      video.preload = 'auto';
+      video.play().catch(() => {});
+    }
+  }, []);
+  return ref;
+}
+
 export default function Home() {
+  const heroVideo = useDesktopHeroVideo();
   return (
     <>
       <section className="hero">
@@ -86,19 +107,24 @@ export default function Home() {
             <div className="hero-eyebrow">{COMPANY.shortName} &middot; Vancouver, BC &middot; {COMPANY.yearsExperience} Years in Business</div>
             <h1>Custom glass, railings &amp; mirrors, built to last.</h1>
             <p>
-              {COMPANY.shortName} is a Vancouver-based team of glass installers turning homes and
-              builds across {COMPANY.serviceAreas.join(', ')} into something a little more
-              beautiful — one shower enclosure, railing, and mirror at a time.
+              {COMPANY.shortName} is a Vancouver-based team of glass installers serving homes and
+              builds across the Lower Mainland, Greater Vancouver, the Tri-City area and the Fraser
+              Valley, making each space a little more beautiful — one shower enclosure, railing, and
+              mirror at a time.
             </p>
             <div className="hero-actions">
               <a className="btn btn-primary" href="/request-estimate">Request an Estimate</a>
               <a className="btn btn-outline" href="/projects">See Our Work</a>
             </div>
+            <p className="hero-call">
+              Prefer to talk? Call <a href={COMPANY.phoneHref}>{COMPANY.phone}</a>
+            </p>
           </div>
           <div className="hero-graphic">
             <video
+              ref={heroVideo}
               className="hero-video"
-              autoPlay
+              preload="none"
               muted
               loop
               playsInline
@@ -121,24 +147,7 @@ export default function Home() {
               From a single custom mirror to a full glass wine cellar, our team handles it start to finish.
             </p>
           </Reveal>
-          <div className="grid grid-services">
-            {SERVICES.map((s, i) => {
-              const isOrphan = SERVICES.length % 3 === 1 && i === SERVICES.length - 1;
-              return (
-                <Reveal delay={(i % 3) * 90} key={s.title}>
-                  <Link
-                    to={`/services/${s.slug}`}
-                    className={`card card-link${isOrphan ? ' card-centered' : ''}`}
-                  >
-                    <ServiceIcon name={s.icon} />
-                    <h3>{s.title}</h3>
-                    <p>{s.blurb}</p>
-                    <span className="card-link-cta">Learn more &rarr;</span>
-                  </Link>
-                </Reveal>
-              );
-            })}
-          </div>
+          <ServiceGrid />
         </div>
       </section>
 
@@ -149,33 +158,53 @@ export default function Home() {
             <p className="section-subheading">A look at some of our recent installations.</p>
           </Reveal>
           <Reveal delay={140}><div><CompletedWorkCarousel /></div></Reveal>
+          <p className="section-more-link">
+            <Link to="/projects">See all projects &rarr;</Link>
+          </p>
         </div>
       </section>
 
       <section className="block tint">
         <div className="container">
-          <Reveal><h2 className="section-heading">What our customers say</h2></Reveal>
+          <Reveal><h2 className="section-heading">How it works</h2></Reveal>
           <Reveal delay={80}>
             <p className="section-subheading">
-              {/* TODO: replace the two placeholders below with real reviews — see the website report for why this matters. */}
-              A few words from people we've worked with.
+              Every installation follows the same four steps, whether it's one mirror or a full
+              commercial fit-out.
             </p>
           </Reveal>
-          <div className="grid">
-            {TESTIMONIALS.map((t, i) => (
-              <Reveal delay={(i % 3) * 90} key={i}>
-                <div className="testimonial">
-                  <svg className="quote-icon" width="26" height="20" viewBox="0 0 26 20" fill="currentColor" aria-hidden="true">
-                    <path d="M0 20 V11 C0 4.5 4 0.5 10 0 V4.5 C6.5 5 4.5 7 4.5 11 H10 V20 H0 Z M15 20 V11 C15 4.5 19 0.5 25 0 V4.5 C21.5 5 19.5 7 19.5 11 H25 V20 H15 Z" />
-                  </svg>
-                  <p className="quote">&ldquo;{t.quote}&rdquo;</p>
-                  <p className="name">{t.name}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
+          <ProcessSteps />
+          <p className="section-more-link">
+            <Link to="/about">More about our team &rarr;</Link>
+          </p>
         </div>
       </section>
+
+      {TESTIMONIALS.length > 0 && (
+        <section className="block">
+          <div className="container">
+            <Reveal><h2 className="section-heading">What our customers say</h2></Reveal>
+            <Reveal delay={80}>
+              <p className="section-subheading">
+                A few words from people we've worked with.
+              </p>
+            </Reveal>
+            <div className="grid">
+              {TESTIMONIALS.map((t, i) => (
+                <Reveal delay={(i % 3) * 90} key={i}>
+                  <div className="testimonial">
+                    <svg className="quote-icon" width="26" height="20" viewBox="0 0 26 20" fill="currentColor" aria-hidden="true">
+                      <path d="M0 20 V11 C0 4.5 4 0.5 10 0 V4.5 C6.5 5 4.5 7 4.5 11 H10 V20 H0 Z M15 20 V11 C15 4.5 19 0.5 25 0 V4.5 C21.5 5 19.5 7 19.5 11 H25 V20 H15 Z" />
+                    </svg>
+                    <p className="quote">&ldquo;{t.quote}&rdquo;</p>
+                    <p className="name">{t.name}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="block">
         <div className="container">
@@ -187,6 +216,10 @@ export default function Home() {
             </p>
           </Reveal>
           <Reveal delay={140}><a className="btn btn-primary" href="/request-estimate">Request an Estimate</a></Reveal>
+          <p className="cta-contact">
+            Or call <a href={COMPANY.phoneHref}>{COMPANY.phone}</a>, {COMPANY.hours[0].day},{' '}
+            {COMPANY.hours[0].time}.
+          </p>
         </div>
       </section>
     </>

@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .nav-links {
   display: flex;
-  gap: 22px;
+  gap: 18px;
   flex-wrap: wrap;
   order: 2;
 }
@@ -99,11 +99,23 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
 }
 .header-cta:hover { filter: brightness(1.08); }
+/* Tap-to-call button. Shown with the hamburger menu (phones and tablets);
+   desktop visitors get the number in the hero and footer instead. */
+.header-call {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+.header-call:hover { background: rgba(255, 255, 255, 0.12); }
 
-/* Below ~760px, the 7 nav links no longer fit in one row next to the logo
+/* Below ~1120px, the 7 nav links no longer fit in one row next to the logo
    and CTA, so they collapse into a hamburger-triggered dropdown instead of
    wrapping messily across multiple lines in the navy bar. */
-@media (max-width: 760px) {
+@media (max-width: 1120px) {
   .site-header .container { align-content: flex-start; }
   /* The logo is wide enough that it wraps onto its own line on phones,
      which leaves header-right alone on the next line — and a lone flex
@@ -113,6 +125,7 @@ h1, h2, h3, h4, h5, h6 {
      not. */
   .header-right { order: 2; margin-left: auto; }
   .nav-toggle { display: flex; align-items: center; justify-content: center; }
+  .header-call { display: flex; }
   .nav-links {
     order: 3;
     flex: 1 0 100%;
@@ -177,6 +190,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
 }
 .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+.hero .hero-call { font-size: 0.95rem; margin: 18px 0 0; }
+.hero-call a { color: var(--white); font-weight: 600; text-decoration: underline; }
+
+.section-more-link { margin: 24px 0 0; text-align: center; font-weight: 600; }
+.section-more-link a { color: var(--navy); }
+.section-more-link a:hover { text-decoration: underline; }
+.cta-contact { margin: 18px 0 0; color: var(--gray); }
+.cta-contact a { color: var(--navy); font-weight: 600; }
 
 /* On wider screens, the video becomes a full-bleed hero background with the
    headline overlaid on top of it (a dark scrim keeps the text readable).
@@ -296,9 +317,14 @@ section.block.tint { background: var(--glass-tint); }
 @media (max-width: 600px) {
   .grid-services { grid-template-columns: 1fr; }
 }
-.card-centered { grid-column: 2; }
-@media (max-width: 900px) {
-  .card-centered { grid-column: auto; }
+/* Service cards (components/ServiceGrid.jsx): on the 3-column layout, run
+   the grid on 6 half-columns so a last row of one or two cards can sit
+   centred instead of leaving an empty slot on the right. */
+@media (min-width: 901px) {
+  .service-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .service-grid > * { grid-column: span 2; }
+  .service-grid.leftover-1 > :last-child { grid-column: 3 / span 2; }
+  .service-grid.leftover-2 > :nth-last-child(2) { grid-column: 2 / span 2; }
 }
 .card {
   background: var(--white);
@@ -1168,7 +1194,6 @@ form.contact-form textarea { min-height: 120px; resize: vertical; }
   margin: 0 0 8px;
   color: var(--navy);
   font-size: 1rem;
-  padding-right: 70px;
 }
 .spec-type-card p {
   margin: 0;
@@ -1177,9 +1202,8 @@ form.contact-form textarea { min-height: 120px; resize: vertical; }
   line-height: 1.55;
 }
 .spec-type-badge {
-  position: absolute;
-  top: 18px;
-  right: 18px;
+  display: inline-block;
+  margin-bottom: 8px;
   background: var(--amber);
   color: var(--white);
   font-size: 0.62rem;
@@ -1199,6 +1223,11 @@ form.contact-form textarea { min-height: 120px; resize: vertical; }
   background: var(--glass-tint);
   border-radius: 10px;
 }
+/* On tinted sections the note would vanish into the background. */
+section.tint .spec-note { background: var(--white); }
+.spec-related { margin: 16px 0 0; font-weight: 600; font-size: 0.92rem; }
+.spec-related a { color: var(--navy); }
+.spec-related a:hover { text-decoration: underline; }
 
 /* ---------- Typical shower designs / railing systems (service detail page) ---------- */
 .shower-design-grid {

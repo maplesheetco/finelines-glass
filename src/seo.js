@@ -51,7 +51,7 @@ const STATIC_PAGES = {
   },
   '/hardware-finishes': {
     title: `Shower & Glass Hardware Finishes | ${BRAND}`,
-    description: 'Hinge, handle and clamp finish options for frameless showers and glass installations, sourced through multiple suppliers to match your fixtures.',
+    description: 'Hardware finishes, shower and railing glass types and thicknesses, and mirror colors and edges, sourced through multiple suppliers to suit your project.',
   },
   '/projects': {
     title: `Completed Glass Projects in Vancouver | ${BRAND}`,
