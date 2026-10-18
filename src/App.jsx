@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
+import PageMeta from './components/PageMeta.jsx';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Services from './pages/Services.jsx';
@@ -18,6 +19,7 @@ import NotFound from './pages/NotFound.jsx';
 export default function App() {
   return (
     <>
+      <PageMeta />
       <Header />
       <main>
         <Routes>
