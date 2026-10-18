@@ -102,7 +102,7 @@ export default function Home() {
               muted
               loop
               playsInline
-              poster="/images/hero-poster.jpg"
+              poster="/images/hero-poster.webp"
               aria-hidden="true"
             >
               <source src="/images/hero-video.mp4" type="video/mp4" />

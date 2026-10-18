@@ -157,13 +157,16 @@ export function getPageMeta(pathname, now = new Date()) {
     }
   }
 
-  return {
+  const page = {
     path,
     image: DEFAULT_IMAGE,
     type: 'website',
     noindex: false,
     ...(meta || NOT_FOUND),
   };
+  // The site shows .webp photos, but some link previews (LinkedIn, older
+  // apps) only accept JPEG, so shares point at the .jpg copy of each photo.
+  return { ...page, image: page.image.replace(/\.webp$/, '.jpg') };
 }
 
 // Every page that should be in Google, for the sitemap and the build step.
