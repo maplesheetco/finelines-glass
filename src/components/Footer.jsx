@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { COMPANY } from '../data.js';
 import Logo from './Logo.jsx';
 
@@ -12,6 +13,10 @@ export default function Footer() {
         <p className="footer-contact">
           <a href={COMPANY.phoneHref}>{COMPANY.phone}</a> &nbsp;·&nbsp;
           <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a>
+        </p>
+        <p className="footer-contact">
+          <Link to="/service-areas">Service Areas</Link> &nbsp;·&nbsp;
+          <Link to="/request-estimate">Request an Estimate</Link>
         </p>
         <p className="footer-credit">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 24" fill="none" aria-hidden="true">

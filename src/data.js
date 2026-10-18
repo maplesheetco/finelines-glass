@@ -39,6 +39,32 @@ export const COMPANY = {
   currentYear: new Date().getFullYear(),
 };
 
+// Service Areas page (/service-areas). One section per region in
+// COMPANY.serviceAreas, with the main cities in each. Keep region names
+// identical to COMPANY.serviceAreas so the two lists stay in step.
+export const SERVICE_AREA_DETAILS = [
+  {
+    region: 'Lower Mainland',
+    summary: "Our home base. We work right across the Lower Mainland, from the North Shore to the Fraser Valley, on homes, new builds, and commercial spaces.",
+    cities: ['Vancouver', 'Burnaby', 'Richmond', 'Surrey', 'Delta', 'Langley', 'North Vancouver', 'West Vancouver', 'Coquitlam', 'Abbotsford'],
+  },
+  {
+    region: 'Greater Vancouver',
+    summary: 'Shower enclosures, glass railings, mirrors, wine cellars, and commercial glazing for homeowners, builders, and businesses throughout Metro Vancouver.',
+    cities: ['Vancouver', 'Burnaby', 'New Westminster', 'Richmond', 'North Vancouver', 'West Vancouver', 'Lions Bay', 'Delta', 'Surrey', 'White Rock', 'Langley', 'Maple Ridge', 'Pitt Meadows'],
+  },
+  {
+    region: 'Tri-City',
+    summary: 'Regular work across the Tri-Cities, including residential renovations and commercial storefront and window installations.',
+    cities: ['Coquitlam', 'Port Coquitlam', 'Port Moody', 'Anmore', 'Belcarra'],
+  },
+  {
+    region: 'Fraser Valley',
+    summary: 'We travel out to the Fraser Valley for showers, railings, mirrors, windows, and custom glass projects.',
+    cities: ['Abbotsford', 'Mission', 'Chilliwack'],
+  },
+];
+
 export const NAV = [
   { label: 'Home', path: '/' },
   { label: 'Services', path: '/services' },
@@ -2438,6 +2464,83 @@ export const ARTICLES = [
     ],
     ctaNote: 'Ready to plan your shower enclosure? Bring your bathroom finish selections, renovation plans or design drawings to the conversation early. The right hardware finish is easier to achieve when the glass, hardware and surrounding finishes are coordinated from the beginning.',
     tagline: 'Supplier reference: CRL Canada shower hardware finish collection and finish guide. Finish names and availability may vary by hardware series and product selection.',
+  },
+  {
+    slug: 'what-affects-the-cost-of-a-glass-project',
+    title: 'What Affects the Cost of a Glass Shower, Railing, or Custom Glass Project?',
+    seoTitle: 'What Affects the Cost of a Glass Project? | Finelines Glass',
+    metaDescription: 'Why glass showers, railings, and custom glass are quoted after a site visit: the site conditions, glass, hardware, and job complexity that shape the final price.',
+    keywords: ['glass shower cost Vancouver', 'glass railing cost Vancouver', 'frameless shower price', 'custom glass quote', 'glass installation estimate', 'what affects glass installation cost'],
+    publishDate: 'November 2, 2026',
+    publishAt: '2026-11-02T06:00:00-08:00', // PST: daylight saving ends Nov 1
+    heroImage: '/images/project-1.jpg',
+    heroImageAlt: 'A finished frameless glass shower enclosure in a West Vancouver bathroom',
+    excerpt: "\"How much does it cost?\" is the first question almost everyone asks. The honest answer is that it depends on the site and the job, and here's what actually moves the number.",
+    intro: [
+      '"How much will it cost?" is usually the first question people ask about a glass shower, a railing, or a custom glass piece, and it is a fair one. The honest answer is that it depends on what we find on site and how involved the job is.',
+      'Two showers that look similar in a photo can be very different jobs once we see the walls, the floor, and the access. That is why Finelines Glass Installations quotes every project after looking at the actual space, rather than giving a price list that would not hold up.',
+      'This guide explains what shapes the cost of a glass project, so you know what to expect and how to get an accurate estimate quickly.',
+    ],
+    blocks: [
+      {
+        heading: 'The Site Itself',
+        intro: 'Conditions on site are the biggest reason prices vary from job to job.',
+        items: [
+          { title: 'Walls, floors, and openings', body: 'Walls that are out of plumb, floors that slope, or openings that are not square all change how the glass has to be measured, cut, and fitted.' },
+          { title: 'What the glass attaches to', body: 'Tile, stone, drywall, concrete, and wood framing each need different fixing methods. Railings also depend on the structure underneath the deck, balcony, or stair.' },
+          { title: 'Access', body: 'Stairs, narrow hallways, elevators, upper floors, and how close we can park all affect how large panels are carried in and how many people the job needs.' },
+          { title: 'Existing glass or fixtures', body: 'Removing an old shower door, railing, mirror, or window adds work compared with installing into a clean, ready opening.' },
+        ],
+      },
+      {
+        heading: 'How Complex the Job Is',
+        items: [
+          { title: 'Size and number of panels', body: 'More glass and more panels mean more material, more hardware, and more installation time.' },
+          { title: 'Layout and angles', body: 'A straight inline shower is simpler than a neo-angle or a return panel. Stairs and curved or stepped railings take more planning than a straight run.' },
+          { title: 'Cut-outs and custom shapes', body: 'Notches around tile, sloped ceilings, outlets, or trim, and one-off shapes all add fabrication work.' },
+          { title: 'Coordination with other trades', body: 'On renovations and new builds, timing the install around tile, plumbing, framing, and finishing can affect the schedule and the number of visits.' },
+        ],
+      },
+      {
+        heading: 'Glass and Hardware Choices',
+        items: [
+          { title: 'Glass type and thickness', body: 'Clear, low-iron, frosted, tinted, and mirrored glass, along with the thickness the design calls for, all carry different costs.' },
+          { title: 'Hardware and finish', body: 'Hinges, handles, clamps, standoffs, and railing systems come in many finishes. Standard finishes are usually quicker to source, while specialty finishes can cost more and take longer to arrive.' },
+          { title: 'Safety and code requirements', body: 'Tempered safety glass, railing heights, and load requirements are set by the application and the BC Building Code. Some projects also need engineering or a permit, which we flag early.' },
+        ],
+      },
+      {
+        heading: 'Why We Quote After Seeing the Space',
+        flow: ['Tell us about the project', 'Site visit & measure', 'Written estimate', 'Install'],
+        paragraphs: [
+          'Every frameless enclosure, railing, and custom piece is measured and templated on site, because the glass has to fit the real walls and floors, not an ideal drawing. Seeing the space first is what lets us give you a price that will not change once the work starts.',
+          'A quote given without that visit has to either guess high to cover surprises, or guess low and change later. Neither is fair to you.',
+        ],
+      },
+      {
+        heading: 'How to Get an Accurate Estimate Faster',
+        intro: 'You can help us scope the job before the site visit by sending:',
+        bullets: [
+          'A few photos of the space, including the walls, floor, and any existing glass.',
+          'Rough dimensions, if you have them.',
+          'Your location and when you would like the work done.',
+          'Any design ideas, such as glass type, hardware finish, or inspiration photos.',
+          'Plans or drawings from your designer or contractor, for renovations and new builds.',
+        ],
+        note: 'Our estimate request form lets you attach a photo or PDF, which is often the quickest way to get started.',
+      },
+      {
+        heading: 'Frequently Asked Questions',
+        items: [
+          { title: 'Can you give me a price over the phone?', body: 'We are happy to talk through your project and what will affect the cost, but a firm price comes after we have seen and measured the space.' },
+          { title: 'Is the estimate free?', body: 'Requesting an estimate carries no obligation. Tell us about your project and we will walk you through the options.' },
+          { title: 'Will the price change after the quote?', body: 'Measuring on site before quoting is how we avoid surprises. If you change the design, glass, or hardware after the quote, we will update it with you before going ahead.' },
+          { title: 'Why do two similar-looking projects cost different amounts?', body: 'Site conditions, access, layout, and the glass and hardware chosen often differ more than photos suggest. Those details are what the price is built on.' },
+        ],
+      },
+    ],
+    ctaNote: "Ready to find out what your project involves? Request an estimate and tell us about the space, and we'll take it from there.",
+    tagline: 'Every project is different. Final pricing is confirmed after a site visit and measurement.',
   },
 ];
 
