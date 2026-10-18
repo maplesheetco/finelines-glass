@@ -1904,16 +1904,31 @@ export const TRUST_BADGES = [
   `Serving ${COMPANY.serviceAreas[0]} & Beyond`,
 ];
 
-// TODO: replace with real customer quotes (first name + neighbourhood is
-// plenty — see the earlier website report for why this matters).
-export const TESTIMONIALS = [
+// Real customer quotes only (first name + neighbourhood is plenty). The
+// "What our customers say" section on the homepage stays hidden while this
+// list is empty, so nothing fake is ever shown. Add entries like:
+//   { quote: 'A couple of sentences from a past email or text.', name: 'Sarah, Burnaby' },
+export const TESTIMONIALS = [];
+
+// How a typical job runs, drawn from the process described on the service
+// pages and articles (on-site templating, coordination, install, adjustment).
+// Shown on the About page and the homepage.
+export const PROCESS_STEPS = [
   {
-    quote: 'Placeholder — swap in a real customer quote here once you have one on file.',
-    name: 'Customer Name, Neighbourhood',
+    title: 'Measure on site',
+    body: 'We measure and template every job in person, so the glass is cut to fit your actual walls, floors, tile and openings rather than a drawing.',
   },
   {
-    quote: 'Placeholder — a couple of sentences pulled from a past email or text works great.',
-    name: 'Customer Name, Neighbourhood',
+    title: 'Plan the details',
+    body: 'Glass type, thickness, hardware and finish are confirmed with you, or with your designer or contractor, before anything is ordered.',
+  },
+  {
+    title: 'Install',
+    body: 'Our installers set the glass, hardware and seals, with railings built to meet BC Building Code height and load requirements.',
+  },
+  {
+    title: 'Adjust & walk through',
+    body: 'Doors, hinges and panels are adjusted once everything is in, and we walk through the finished work with you before we leave.',
   },
 ];
 

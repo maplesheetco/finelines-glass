@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { COMPANY } from '../data.js';
 import Reveal from '../components/Reveal.jsx';
 
@@ -130,23 +131,12 @@ export default function HardwareFinishes() {
       <section className="block tint">
         <div className="container" style={{ maxWidth: 760 }}>
           <p style={{ lineHeight: 1.7, color: 'var(--gray)', margin: 0 }}>
-            We source our hardware through a range of trusted suppliers rather than one single
-            brand, so we can match the right hinge, handle, and finish to each project instead of
-            being limited to one supplier's lineup — we don't sell hardware separately. The finish
-            families below reflect a representative collection; exact availability per hardware
-            piece, and unlacquered brass's natural aging, are confirmed together during your
-            consultation.
-          </p>
-          <p style={{ lineHeight: 1.7, color: 'var(--gray)', margin: '14px 0 0' }}>
-            Note: lead times vary by finish. Standard finishes (chrome, stainless, black) are
-            usually quick to source, but specialty or newer colors — golds, brass tones, and other
-            special-order finishes — can take noticeably longer to arrive. We'll flag this during
-            your consultation so it doesn't hold up your project timeline.
-          </p>
-          <p style={{ lineHeight: 1.7, color: 'var(--gray)', margin: '14px 0 0' }}>
-            The glass and mirror options below are our standard offering. If your project calls for
-            something outside these — a specialized glass design or a less common spec — we work
-            directly with designers and contractors to research and source it.
+            We don't sell hardware separately. We source it through a range of trusted suppliers,
+            so we can match the right hinge, handle and finish to each project instead of being
+            limited to one brand's lineup. The glass and mirror options below are our standard
+            offering; if your project calls for a less common spec, we work with your designer or
+            contractor to research and source it. Exact availability and lead time for each piece
+            are confirmed during your consultation.
           </p>
         </div>
       </section>
@@ -220,6 +210,9 @@ export default function HardwareFinishes() {
               research and source the right specialty glass for the project.
             </p>
           </Reveal>
+          <p className="spec-related">
+            <Link to="/services/frameless-shower-enclosures">See our frameless shower enclosures &rarr;</Link>
+          </p>
         </div>
       </section>
 
@@ -259,6 +252,9 @@ export default function HardwareFinishes() {
               Building Code before it's installed.
             </p>
           </Reveal>
+          <p className="spec-related">
+            <Link to="/services/glass-railings">See our interior &amp; exterior glass railings &rarr;</Link>
+          </p>
         </div>
       </section>
 
@@ -268,7 +264,8 @@ export default function HardwareFinishes() {
           <Reveal delay={80}>
             <p className="section-subheading">
               Standard 5mm thickness; 6mm is available depending on supplier stock. Colors below,
-              plus a choice of polished or beveled edge.
+              plus a choice of polished or beveled edge. Starfire, marked <strong>Premium</strong>, is
+              a super-clear low-iron mirror.
             </p>
           </Reveal>
 
@@ -310,6 +307,9 @@ export default function HardwareFinishes() {
               confirm what's available for your project during your consultation.
             </p>
           </Reveal>
+          <p className="spec-related">
+            <Link to="/services/mirrors">See our custom mirrors &rarr;</Link>
+          </p>
         </div>
       </section>
 

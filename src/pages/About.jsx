@@ -1,33 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { COMPANY, SERVICES, TRUST_BADGES } from '../data.js';
-import ServiceIcon from '../components/ServiceIcon.jsx';
+import { COMPANY, TRUST_BADGES } from '../data.js';
+import ServiceGrid from '../components/ServiceGrid.jsx';
+import ProcessSteps from '../components/ProcessSteps.jsx';
 import Reveal from '../components/Reveal.jsx';
 
 const copy = { lineHeight: 1.7, color: 'var(--gray)' };
 // Four cards fit one row on desktop and stack two-by-two, then one, on smaller screens.
 const fourUp = { gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))' };
-
-// How a typical job runs, drawn from the process described on the service
-// pages and articles (on-site templating, coordination, install, adjustment).
-const PROCESS = [
-  {
-    title: 'Measure on site',
-    body: 'We measure and template every job in person, so the glass is cut to fit your actual walls, floors, tile and openings rather than a drawing.',
-  },
-  {
-    title: 'Plan the details',
-    body: 'Glass type, thickness, hardware and finish are confirmed with you, or with your designer or contractor, before anything is ordered.',
-  },
-  {
-    title: 'Install',
-    body: 'Our installers set the glass, hardware and seals, with railings built to meet BC Building Code height and load requirements.',
-  },
-  {
-    title: 'Adjust & walk through',
-    body: 'Doors, hinges and panels are adjusted once everything is in, and we walk through the finished work with you before we leave.',
-  },
-];
 
 const WHO_WE_WORK_WITH = [
   { title: 'Homeowners', body: 'Bathroom renovations, new railings, mirrors, skylights and window repairs, from a single piece of glass to a whole-house project.' },
@@ -82,19 +62,7 @@ export default function About() {
               fit-out.
             </p>
           </Reveal>
-          <div className="grid" style={fourUp}>
-            {PROCESS.map((step, i) => (
-              <Reveal delay={(i % 4) * 90} key={step.title}>
-                <div className="card">
-                  <span className="article-process-step" style={{ alignSelf: 'flex-start' }}>
-                    Step {i + 1}
-                  </span>
-                  <h3>{step.title}</h3>
-                  <p>{step.body}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
+          <ProcessSteps />
         </div>
       </section>
 
@@ -106,23 +74,7 @@ export default function About() {
               Glass work for homes and businesses, all measured, supplied and installed by our team.
             </p>
           </Reveal>
-          <div className="grid grid-services">
-            {SERVICES.map((s, i) => {
-              const isOrphan = SERVICES.length % 3 === 1 && i === SERVICES.length - 1;
-              return (
-                <Reveal delay={(i % 3) * 90} key={s.slug}>
-                  <Link
-                    to={`/services/${s.slug}`}
-                    className={`card card-link${isOrphan ? ' card-centered' : ''}`}
-                  >
-                    <ServiceIcon name={s.icon} />
-                    <h3>{s.title}</h3>
-                    <span className="card-link-cta">Learn more &rarr;</span>
-                  </Link>
-                </Reveal>
-              );
-            })}
-          </div>
+          <ServiceGrid showBlurbs={false} />
         </div>
       </section>
 

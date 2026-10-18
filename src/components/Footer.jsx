@@ -14,6 +14,10 @@ export default function Footer() {
           <a href={COMPANY.phoneHref}>{COMPANY.phone}</a> &nbsp;·&nbsp;
           <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a>
         </p>
+        <p className="footer-contact">{COMPANY.address}</p>
+        <p className="footer-contact">
+          {COMPANY.hours.map((h) => `${h.day}: ${h.time}`).join(' · ')}
+        </p>
         <p className="footer-contact">
           <Link to="/service-areas">Service Areas</Link> &nbsp;·&nbsp;
           <Link to="/request-estimate">Request an Estimate</Link>
