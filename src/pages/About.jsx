@@ -148,7 +148,7 @@ export default function About() {
           <Reveal delay={80}>
             <p style={copy}>
               Based in Vancouver at {COMPANY.address}, we install across{' '}
-              {COMPANY.serviceAreas.join(', ')}. Not sure if you're in our area? Call us at{' '}
+              {COMPANY.serviceAreas.join(', ')}. See our <Link to="/service-areas">service areas</Link> for the cities we cover, or call us at{' '}
               <a href={COMPANY.phoneHref}>{COMPANY.phone}</a> and we'll let you know.
             </p>
           </Reveal>

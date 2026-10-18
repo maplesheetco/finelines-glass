@@ -65,6 +65,10 @@ const STATIC_PAGES = {
     title: `Contact ${BRAND} | ${COMPANY.phone}`,
     description: `Call ${COMPANY.phone} or email Finelines Glass. Mon–Fri 7:00 AM–3:30 PM, Saturday by appointment. Serving the Lower Mainland and Fraser Valley.`,
   },
+  '/service-areas': {
+    title: `Glass Installation Service Areas | ${BRAND}`,
+    description: 'Finelines Glass installs showers, railings, mirrors and custom glass across Greater Vancouver, the Tri-Cities, the Fraser Valley and the Lower Mainland.',
+  },
   '/request-estimate': {
     title: `Request a Free Estimate | ${BRAND}`,
     description: 'Tell us about your shower, railing, mirror, window or custom glass project and Finelines Glass will get back to you with an estimate.',
