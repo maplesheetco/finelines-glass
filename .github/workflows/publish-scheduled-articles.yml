@@ -1,0 +1,36 @@
+# Rebuilds the site soon after a scheduled article goes live (see
+# scripts/published-articles.mjs). Commits only when the list of published
+# articles changes, so most runs do nothing.
+name: Publish scheduled articles
+
+on:
+  schedule:
+    - cron: '20 */3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-scheduled-articles
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/published-articles.mjs
+      - name: Commit if a new article went live
+        run: |
+          if git diff --quiet -- published-articles.txt; then
+            echo "No newly published articles."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add published-articles.txt
+          git commit -m "Publish scheduled article: rebuild sitemap and article pages"
+          git push
