@@ -1983,6 +1983,9 @@ export const FAQS = [
 //   - items: { title, body }[]     -> a bulleted list with bold lead-ins
 //   - flow: string[]               -> a horizontal step-flow row (e.g.
 //                                      Measure -> Plan -> Install -> Finish)
+//
+// Optional `heroImagePosition` (CSS object-position, e.g. 'left center') sets
+// which part of a wide banner stays visible in the 16:9 listing card.
 // ---------------------------------------------------------------------------
 export const ARTICLES = [
   {
@@ -2559,6 +2562,419 @@ export const ARTICLES = [
     ],
     ctaNote: "Ready to find out what your project involves? Request an estimate and tell us about the space, and we'll take it from there.",
     tagline: 'Every project is different. Final pricing is confirmed after a site visit and measurement.',
+  },
+  {
+    slug: 'glass-shower-enclosures-for-small-bathrooms',
+    title: 'Glass Shower Enclosures for Small Bathrooms',
+    seoTitle: 'Glass Shower Enclosures for Small Bathrooms | Finelines Glass',
+    metaDescription: 'Space-saving glass shower enclosure ideas for small bathrooms: door layout, light, hardware finishes, site conditions and cleaning, from Finelines Glass Installations.',
+    keywords: ['glass shower enclosures for small bathrooms', 'small bathroom shower glass', 'frameless shower small bathroom', 'shower door clearance', 'glass shower enclosure Vancouver', 'custom shower glass Lower Mainland'],
+    publishDate: 'November 2, 2026',
+    publishAt: '2026-11-02T00:00:00-08:00', // PST: daylight saving ends Nov 1
+    heroImage: '/images/articles/glass-shower-enclosures-small-bathrooms.webp',
+    heroImageAlt: 'A compact bathroom with a clear frameless glass shower enclosure, black hardware and a floating vanity',
+    heroImagePosition: 'left center', // banner text sits on the left, keep it in the card crop
+    excerpt: 'A small bathroom does not have to feel cramped. The right glass shower enclosure can create a cleaner sightline, let more light move through the room and help the design feel more cohesive.',
+    intro: [
+      "A small bathroom does not have to feel cramped. The right shower enclosure can create a cleaner sightline, let more light move through the room and help the overall design feel more cohesive. While glass does not increase the actual floor area, it can reduce the visual division created by a curtain or a bulky enclosure.",
+    ],
+    blocks: [
+      {
+        heading: '1. Keep the Design Visually Open',
+        paragraphs: [
+          "Clear glass is often a strong choice for compact bathrooms because it allows the eye to travel across the room and keeps tilework visible. Frameless or minimally framed designs can create a streamlined appearance, but the best solution depends on the bathroom layout, glass configuration, mounting conditions and project requirements.",
+        ],
+      },
+      {
+        heading: '2. Choose a Door Layout That Fits the Room',
+        paragraphs: [
+          "In a smaller bathroom, door clearance is a practical design decision. A hinged door needs room to swing without hitting the vanity, toilet, towel bar or other fixtures. Depending on the available space, a different hinge position, door orientation or fixed-panel arrangement may work better. These details should be considered before the glass is ordered.",
+        ],
+      },
+      {
+        heading: '3. Make the Most of Natural and Artificial Light',
+        paragraphs: [
+          "An opaque curtain or partition can interrupt light, while clear glass helps daylight and bathroom lighting reach more of the room. Pairing glass with well-planned lighting, a consistent tile palette and uncluttered surfaces can support a brighter, more spacious impression.",
+        ],
+      },
+      {
+        heading: '4. Coordinate Hardware With the Bathroom',
+        paragraphs: [
+          "Hinges, handles and other visible hardware contribute to the finished design. Chrome and stainless finishes can provide a restrained, timeless look; matte black creates contrast; and warmer metal tones can complement brass fixtures or wood cabinetry. Finish availability varies by hardware series, so confirm the available options for the selected product.",
+        ],
+      },
+      {
+        heading: '5. Review Site Conditions Before Fabrication',
+        paragraphs: [
+          "A successful enclosure begins with accurate measurements and a review of the finished opening. Tile alignment, wall plumb, curb or threshold details, floor slope, waterproofing and suitable mounting points can all affect the final layout. Coordinating these details early helps the glass fit the project and reduces the likelihood of avoidable changes.",
+        ],
+      },
+      {
+        heading: '6. Consider Cleaning and Everyday Use',
+        paragraphs: [
+          "Clear glass can show water spots and soap residue, so maintenance should be part of the decision. Regular rinsing or squeegeeing and using products suitable for the glass and hardware can help preserve the finish. Homeowners should follow the care instructions supplied for the specific glass treatment and hardware.",
+        ],
+      },
+      {
+        heading: 'Why Work With Finelines Glass Installations?',
+        paragraphs: [
+          "A custom glass enclosure needs to balance appearance, function and the realities of the installation site. Finelines Glass Installations works with homeowners, interior designers and contractors to coordinate enclosure layouts, hardware choices, measurements and installation requirements. Whether the project is a compact ensuite or part of a larger bathroom renovation, early coordination helps bring the design and the finished glass work together.",
+        ],
+      },
+      {
+        heading: 'Questions to Consider Before Ordering',
+        bullets: [
+          'Which enclosure layout best fits the room dimensions and nearby fixtures?',
+          'Will the door open comfortably and safely within the available clearance?',
+          'Which glass and hardware finishes complement the bathroom design?',
+          'Have tile, curb, wall and mounting conditions been checked before fabrication?',
+          'Who will coordinate final measurements and installation timing?',
+        ],
+      },
+      {
+        heading: 'Plan Your Bathroom Upgrade',
+        paragraphs: [
+          "If you are planning a bathroom renovation, Finelines Glass Installations can help you assess the glass enclosure options for your space and coordinate the next steps with your project team. Discuss your layout, design preferences and site requirements before ordering so the finished enclosure supports both the look and the everyday function of your bathroom.",
+        ],
+      },
+    ],
+    ctaNote: 'Finelines Glass Installations provides custom glass solutions and professional installation for homeowners, designers and contractors across Vancouver, the Lower Mainland and the Fraser Valley.',
+    tagline: 'Final design, hardware selection and installation requirements depend on site conditions, measurements and product specifications.',
+  },
+  {
+    slug: 'glass-office-partitions',
+    title: 'Glass Office Partitions: Creating Bright, Flexible Workspaces',
+    seoTitle: 'Glass Office Partitions: Bright, Flexible Workspaces | Finelines Glass',
+    metaDescription: 'How interior glass office partitions bring light into the workplace, define meeting rooms and offices, and what to plan for privacy, hardware, acoustics and coordination.',
+    keywords: ['glass office partitions', 'office glass partitions Vancouver', 'glass meeting room', 'black framed glass partitions', 'privacy glass office', 'commercial glass installation Lower Mainland'],
+    publishDate: 'November 9, 2026',
+    publishAt: '2026-11-09T00:00:00-08:00',
+    heroImage: '/images/articles/glass-office-partitions.webp',
+    heroImageAlt: 'A glass-walled meeting room with black-framed glass partitions in a bright modern office',
+    heroImagePosition: 'left center',
+    excerpt: "Today's workplaces need to balance collaboration, privacy and flexibility. Interior glass partitions define meeting rooms, offices and shared areas without making the floor plan feel closed off.",
+    intro: [
+      "Today's workplaces often need to balance collaboration, privacy and flexibility. Interior glass partitions help define meeting rooms, offices and shared areas without making the floor plan feel closed off. By allowing sightlines and light to pass through, glass can create a more open atmosphere while maintaining clear boundaries between different functions.",
+    ],
+    blocks: [
+      {
+        heading: '1. Bring More Light Into the Office',
+        paragraphs: [
+          "Opaque walls can block daylight from reaching the interior of a floor plan. Glass partitions can help daylight travel farther into adjacent spaces, depending on the building layout and glazing configuration. The result can feel brighter and more connected, especially when meeting rooms sit near windows or along the main circulation route.",
+        ],
+      },
+      {
+        heading: '2. Define Spaces Without Making Them Feel Closed In',
+        paragraphs: [
+          "Glass can separate a conference room, private office, reception area or collaboration zone while preserving visual continuity. This is useful for businesses that want a clean architectural look but do not want every room to feel boxed in. Partition layouts should still provide suitable circulation, door access and clearances for the way each space will be used.",
+        ],
+      },
+      {
+        heading: '3. Choose the Right Level of Privacy',
+        paragraphs: [
+          "Not every room needs the same degree of visibility. Clear glass suits spaces where openness is a priority, while frosted, patterned or privacy-treated glass can help reduce direct views into meeting rooms and offices. Privacy requirements should be discussed early, particularly for rooms used for confidential conversations, human resources, financial discussions or client meetings.",
+        ],
+      },
+      {
+        heading: '4. Consider Framing and Hardware',
+        paragraphs: [
+          "The appearance of a glass partition depends on more than the glass itself. Minimal hardware can create a clean, understated look, while black-framed systems can introduce strong lines and a more defined industrial or contemporary style. Door pulls, hinges, framing and other visible components should coordinate with the overall interior design and intended use.",
+        ],
+      },
+      {
+        heading: '5. Plan for Acoustics and Function',
+        paragraphs: [
+          "Glass partitions can define rooms visually, but they do not automatically provide the same acoustic performance as a fully constructed wall. Sound control depends on the complete system, including glass specification, seals, door gaps, framing and installation details. If speech privacy or noise reduction is important, discuss those requirements with the design and construction team before selecting a system.",
+        ],
+      },
+      {
+        heading: '6. Coordinate the Design Before Construction',
+        paragraphs: [
+          "Successful commercial glass installation begins with coordination. Floor plans, ceiling conditions, finished floor levels, door locations, adjacent finishes and building requirements should be reviewed before fabrication. Early communication between the client, designer, contractor and glass installer can help reduce conflicts and support a smoother installation process.",
+        ],
+      },
+      {
+        heading: 'Questions to Ask Before Installing Glass Partitions',
+        intro: 'Before finalizing an office partition layout, consider the following questions with your project team:',
+        bullets: [
+          'Which areas need visual openness, and which need privacy?',
+          'Will the partition include hinged doors, sliding doors or fixed glass panels?',
+          'Is sound control important for meeting rooms or private offices?',
+          'Which glass treatment, framing and hardware best suit the design?',
+          'Have ceiling, floor, wall and door clearances been confirmed?',
+          'Are building, accessibility, fire-safety and other applicable requirements being addressed by the project team?',
+          'Who is responsible for final site measurements and coordinating installation timing?',
+        ],
+      },
+      {
+        heading: 'Why Work With Finelines Glass Installations?',
+        paragraphs: [
+          "Glass partitions are both a design feature and a functional part of a commercial interior. Finelines Glass Installations works with business owners, interior designers, architects and contractors to coordinate glass layouts, hardware details, site measurements and installation requirements. From meeting-room enclosures to black-framed office partitions and privacy-glass applications, our focus is on helping each project achieve a clean, professional finish.",
+        ],
+      },
+      {
+        heading: 'Plan Your Office Glass Project',
+        paragraphs: [
+          "Whether you are updating an existing office or planning a new commercial space, involve your glass installer early. Discuss the room layout, privacy needs, door configuration, finishes and site conditions before final specifications are approved. This gives your project team a clearer path from design intent to installation.",
+        ],
+      },
+    ],
+    ctaNote: 'Planning a commercial renovation? Contact Finelines Glass Installations to discuss glass office partitions, meeting-room enclosures and privacy-glass options for your project.',
+    tagline: 'Serving Vancouver, the Lower Mainland and the Fraser Valley. Final system selection depends on project requirements, site conditions and product specifications.',
+  },
+  {
+    slug: 'glass-railings-design-safety-installation',
+    title: 'Glass Railings for Modern Homes: Design, Safety & Installation Considerations',
+    seoTitle: 'Glass Railings for Modern Homes: Design & Safety | Finelines Glass',
+    metaDescription: 'Where glass railings work best, how to choose a style and mounting system, and the safety, waterproofing and care considerations to plan before installation.',
+    keywords: ['glass railings', 'glass railings for modern homes', 'glass stair railing', 'glass balcony railing', 'glass railing mounting options', 'glass railing installation Vancouver'],
+    publishDate: 'November 16, 2026',
+    publishAt: '2026-11-16T00:00:00-08:00',
+    heroImage: '/images/articles/glass-railings-design-safety-installation.webp',
+    heroImageAlt: 'A glass stair railing with black handrail being installed in a modern home',
+    heroImagePosition: 'left center',
+    excerpt: 'Glass railings provide a clean visual boundary without hiding the architecture around them. Here is how to choose a system that suits the design, the location and the structure of your project.',
+    intro: [
+      "Glass railings are popular in contemporary homes because they provide a clean visual boundary without hiding the architecture around them. On staircases, balconies, decks and interior landings, glass can help preserve natural light and views while creating a refined finish. The best result comes from selecting a system that suits the design, the location and the structural conditions of the project.",
+    ],
+    blocks: [
+      {
+        heading: '1. Where Glass Railings Work Best',
+        paragraphs: [
+          "Glass railing systems can be used in several areas of a home, including interior staircases, upper-floor landings, balconies, patios and elevated decks. Interior applications can make a staircase feel lighter and more connected to nearby rooms. Exterior applications can preserve views and reduce the visual barrier between a living area and the outdoors. Each location has different exposure, drainage, mounting and maintenance considerations.",
+        ],
+      },
+      {
+        heading: '2. Choose a Look That Fits the Architecture',
+        paragraphs: [
+          "A glass railing can be designed with a minimal, nearly uninterrupted appearance or combined with visible posts, channels or a top rail. Frameless systems emphasize the glass itself, while framed systems introduce more defined lines and may suit particular architectural styles or project requirements. Hardware finishes can also affect the overall appearance, so consider how they relate to stair components, door hardware, window frames and other metal details.",
+        ],
+      },
+      {
+        heading: '3. Understand the Mounting Options',
+        paragraphs: [
+          "Depending on the project, glass may be supported by a base shoe or channel, posts, clamps or other engineered hardware. Some systems are mounted on top of a slab or deck; others use a side-mounted arrangement. The correct choice depends on the substrate, available edge distance, waterproofing details, structural design and the intended appearance. Mounting should be planned with the appropriate design and building professionals rather than chosen on appearance alone.",
+        ],
+      },
+      {
+        heading: '4. Safety Starts With the Complete System',
+        paragraphs: [
+          "A railing is a protective barrier, so its design must account for the applicable building requirements, location, height, openings, loads and the specified glass and hardware system. Glass type, thickness, edge treatment, support spacing and anchorage all matter. Requirements can vary by jurisdiction and by whether the railing is indoors, outdoors or adjacent to a change in level. Confirm the applicable code and engineered requirements before fabrication or installation.",
+        ],
+      },
+      {
+        heading: '5. Plan for Exterior Exposure and Water Management',
+        paragraphs: [
+          "Outdoor railings are exposed to rain, temperature changes, dirt and other environmental conditions. The support system must be suitable for the setting, and the mounting details should be coordinated with the deck or balcony membrane, drainage and finished surfaces. Penetrations through waterproofing require particular care and should be resolved with the project team before installation.",
+        ],
+      },
+      {
+        heading: '6. Keep Cleaning and Long-Term Care in Mind',
+        paragraphs: [
+          "Glass railings can be relatively simple to maintain, but fingerprints, dust, water spots and environmental deposits will still need attention. Accessible surfaces are generally easier to clean. Hardware and glass should be cared for according to the product manufacturer's instructions, and the railing should be checked periodically for signs of movement, damage or loose components. Any concern about structural integrity should be assessed by a qualified professional.",
+        ],
+      },
+      {
+        heading: 'Questions to Discuss Before Installation',
+        intro: 'Early planning helps the railing work with both the architecture and the construction details. Discuss these questions with your project team:',
+        bullets: [
+          'Where will the railing be installed: indoors, on a balcony, or on an elevated deck?',
+          'Which mounting style suits the structure and desired visual finish?',
+          'Have substrate strength, anchorage and edge distances been reviewed?',
+          'For exterior work, how will waterproofing, drainage and membrane details be protected?',
+          'Which glass and hardware specifications meet the applicable project requirements?',
+          'Have the railing height, openings and loads been checked against applicable codes and design requirements?',
+          'Who will coordinate final measurements, fabrication and installation timing?',
+        ],
+      },
+      {
+        heading: 'Why Work With Finelines Glass Installations?',
+        paragraphs: [
+          "A glass railing needs to look right, fit the site and be installed as part of a coordinated system. Finelines Glass Installations works with homeowners, designers and contractors to review layouts, coordinate hardware and mounting details, and plan installation around the project conditions. From interior stair railings to exterior balcony and deck applications, our goal is to deliver a clean, professional finish that complements the property.",
+        ],
+      },
+      {
+        heading: 'Planning a Glass Railing Project?',
+        paragraphs: [
+          "Whether you are renovating a staircase, updating a balcony or designing a new home, bring the glass railing into the conversation early. Share the drawings, finish selections and site details with your project team so mounting, safety and waterproofing requirements can be addressed before fabrication.",
+        ],
+      },
+    ],
+    ctaNote: 'Ready to discuss your project? Contact Finelines Glass Installations to talk through glass railing options for your home or renovation.',
+    tagline: 'Serving Vancouver, the Lower Mainland and the Fraser Valley. Final design and installation requirements depend on site conditions, product specifications and applicable codes.',
+  },
+  {
+    slug: 'exterior-glass-railings-balconies-decks',
+    title: 'Exterior Glass Railings: Design, Safety & Installation Considerations for Balconies and Decks',
+    seoTitle: 'Exterior Glass Railings for Balconies & Decks | Finelines Glass',
+    metaDescription: 'Planning exterior glass railings for a balcony or deck: railing style, mounting, waterproofing, safety, weather exposure and early coordination with your project team.',
+    keywords: ['exterior glass railings', 'glass balcony railings', 'glass deck railings', 'balcony railing waterproofing', 'glass railing installation Vancouver', 'glass railings Fraser Valley'],
+    publishDate: 'November 23, 2026',
+    publishAt: '2026-11-23T00:00:00-08:00',
+    heroImage: '/images/articles/exterior-glass-railings-balconies-decks.webp',
+    heroImageAlt: 'A balcony with a frameless exterior glass railing overlooking the water and mountains at sunset',
+    heroImagePosition: 'left center',
+    excerpt: 'Exterior glass railings keep the view connected to your balcony or deck. Here is what to plan for style, mounting, waterproofing, safety and weather exposure.',
+    intro: [
+      "A balcony or deck can be one of the most enjoyable parts of a home, especially when it opens onto a garden, water or mountain views. Exterior glass railings provide a protective boundary while keeping the surrounding landscape visually connected to the outdoor living area. Their clean lines suit many contemporary homes, but the right design depends on the building, the intended use of the space and the conditions at the installation site.",
+    ],
+    blocks: [
+      {
+        heading: '1. Choose a Railing Style That Suits the Property',
+        paragraphs: [
+          "Glass railing systems can be designed with a minimal appearance or with visible posts, channels and top rails. A more uninterrupted glass line can help preserve views, while posts or rails may complement other architectural details. The decision should consider the home's style, the shape of the balcony or deck, the preferred hardware finish and the requirements of the selected railing system.",
+        ],
+      },
+      {
+        heading: '2. Understand the Mounting Configuration',
+        paragraphs: [
+          "Exterior glass railings may use a base shoe or channel, posts, clamps or other system-specific supports. Depending on the design, the system may be mounted on top of the deck or slab, or attached at the side of the structure. Each method has different structural, dimensional and waterproofing implications. The supporting structure and anchorage must be appropriate for the system and the loads it is expected to resist.",
+        ],
+      },
+      {
+        heading: '3. Treat Waterproofing as a Key Design Detail',
+        paragraphs: [
+          "Balconies and elevated decks often rely on a waterproofing membrane to protect the building below. Railing posts or anchors can create penetrations that need careful coordination with the waterproofing design. The location and method of attachment should be reviewed with the project team before installation, especially where membranes, drainage paths and finished surfaces meet. Do not assume a sealant alone resolves every waterproofing requirement.",
+        ],
+      },
+      {
+        heading: '4. Safety Depends on the Complete Railing System',
+        paragraphs: [
+          "Glass railings are protective barriers, so the glass, supports, anchors, edge conditions and overall layout must be selected for the project. Applicable requirements may address railing height, openings, loads, glass type and other details. Requirements vary by jurisdiction and building conditions; confirm the applicable building code and any engineering specifications before fabrication. A visually appealing system should never be selected on appearance alone.",
+        ],
+      },
+      {
+        heading: '5. Consider Weather, Drainage and Long-Term Exposure',
+        paragraphs: [
+          "Outdoor installations are exposed to rain, temperature changes, wind-driven moisture, dirt and other environmental conditions. Hardware and support components must be suitable for the exposure. Drainage should remain functional, and the design should avoid creating details that trap water or make routine cleaning difficult. Periodic inspection can help identify damaged glass, corrosion, loose components or other issues that need professional attention.",
+        ],
+      },
+      {
+        heading: '6. Select Glass and Hardware With the Setting in Mind',
+        paragraphs: [
+          "The right glass specification and hardware depend on the railing system, the location and the project requirements. Hardware finishes can be chosen to coordinate with exterior doors, window frames and other architectural details. For coastal or highly exposed locations, confirm with the supplier that the selected components are suitable for the environment and maintenance expectations.",
+        ],
+      },
+      {
+        heading: '7. Coordinate Early With the Project Team',
+        paragraphs: [
+          "Glass railings are easier to plan when the glass installer is involved before deck finishes and waterproofing details are finalized. Drawings, dimensions, substrate conditions, edge distances, drainage, finish selections and installation sequence should be reviewed with the builder, designer and relevant technical professionals. Early coordination can help reduce site conflicts and avoid changes after materials have been ordered.",
+        ],
+      },
+      {
+        heading: 'Questions to Discuss Before Installation',
+        intro: 'Use these questions to guide early conversations with your contractor, designer and glass railing installer:',
+        bullets: [
+          'Which railing style best suits the architecture and preserves the desired view?',
+          'What mounting system is appropriate for the deck, slab or balcony edge?',
+          'Have the supporting structure, anchorage and project loads been reviewed?',
+          'How will mounting details coordinate with the waterproofing membrane and drainage?',
+          'Are the glass and hardware specifications suitable for the location and exposure?',
+          'Have applicable code requirements and any required engineering been confirmed?',
+          'Who will coordinate final measurements, fabrication and installation timing?',
+        ],
+      },
+      {
+        heading: 'Why Work With Finelines Glass Installations?',
+        paragraphs: [
+          "A well-designed exterior glass railing should complement the property while being planned around the real conditions of the building. Finelines Glass Installations works with homeowners, designers and contractors to coordinate railing layouts, mounting details, glass and hardware selections, and installation requirements. Our focus is on clear communication, careful planning and a professional finish that fits the project.",
+        ],
+      },
+      {
+        heading: 'Planning a Balcony or Deck Upgrade?',
+        paragraphs: [
+          "Bring your glass railing into the conversation early, particularly when the project includes a waterproofing membrane, new deck finishes or structural changes. Sharing drawings and site details before fabrication helps the project team confirm the right approach for the location.",
+        ],
+      },
+    ],
+    ctaNote: 'Ready to discuss your project? Contact Finelines Glass Installations to explore exterior glass railing options for your balcony, deck or residential renovation.',
+    tagline: 'Serving Vancouver, the Lower Mainland and the Fraser Valley. Final system selection and installation requirements depend on site conditions, product specifications, applicable codes and any required engineering.',
+  },
+  {
+    slug: 'shower-door-hardware-hinges-handles-finishes',
+    title: 'Shower Door Hardware: Hinges, Handles & Finishes Explained',
+    seoTitle: 'Shower Door Hardware: Hinges, Handles & Finishes | Finelines Glass',
+    metaDescription: 'How shower door hinges, handles and finishes affect function, durability and bathroom design, and what to confirm before your glass is fabricated.',
+    keywords: ['shower door hardware', 'shower door hinges', 'shower door handles', 'shower hardware finishes', 'frameless shower hardware', 'shower glass Vancouver'],
+    publishDate: 'November 30, 2026',
+    publishAt: '2026-11-30T00:00:00-08:00',
+    heroImage: '/images/articles/shower-door-hardware-hinges-handles-finishes.webp',
+    heroImageAlt: 'A frameless glass shower enclosure with matte black hinges and a pull handle in a modern bathroom',
+    heroImagePosition: 'left center',
+    excerpt: 'Shower hardware may be small compared with the glass and tile, but it plays an important role in how an enclosure looks and operates. Here is how to coordinate hinges, handles and finishes.',
+    intro: [
+      "Shower hardware may be small compared with the glass panels and tile, but it plays an important role in how an enclosure looks and operates. Hinges must support the door and suit the selected glass and mounting conditions. Handles need to be comfortable to use and placed appropriately. Finishes help connect the shower enclosure to faucets, cabinet pulls, lighting and other bathroom details.",
+    ],
+    blocks: [
+      {
+        heading: '1. Choose Hinges for the Door and Site Conditions',
+        paragraphs: [
+          "Hinge selection depends on the door configuration, glass specification, weight and dimensions, wall or glass mounting arrangement, and the hardware system's stated limits. Some hinges are designed for wall-to-glass applications; others connect glass panels. Door swing, clearances and the condition of the mounting surface should be reviewed before ordering. Hardware should be selected as part of a compatible system rather than by appearance alone.",
+        ],
+      },
+      {
+        heading: '2. Select a Handle That Suits Everyday Use',
+        paragraphs: [
+          "Shower handles range from compact knobs to longer pulls and combination pull/towel-bar designs. The right choice depends on the door layout, available clearance, user comfort and visual style. A handle should be easy to grip and positioned so it works naturally with the door's opening direction. The chosen handle must also be compatible with the glass thickness and hole preparation specified for the enclosure.",
+        ],
+      },
+      {
+        heading: '3. Coordinate the Finish With the Bathroom',
+        paragraphs: [
+          "Hardware finishes can create a quiet, coordinated look or a deliberate contrast. Polished chrome offers a bright, classic appearance; brushed stainless and nickel tones are often more subdued; matte black adds definition; and brass, bronze or gold-toned finishes can introduce warmth. The names and appearance of finishes vary between manufacturers, so compare actual samples when possible rather than assuming two products with similar names will match exactly.",
+        ],
+      },
+      {
+        heading: '4. Understand Common Finish Families',
+        paragraphs: [
+          "Cool metal tones such as chrome can complement contemporary white, grey or blue palettes. Neutral stainless finishes can blend with a range of styles. Warm finishes, including brass, bronze and gold tones, often work well with warm tile, wood cabinetry and warmer lighting. Matte black can coordinate with black faucets, window frames or lighting, but it can also be used as a deliberate accent. There is no single correct rule: consistency across key visible details is usually more important than matching every item exactly.",
+        ],
+      },
+      {
+        heading: '5. Check Availability by Hardware Series',
+        paragraphs: [
+          "Not every finish is available for every hinge, handle or accessory. Availability may differ by product series, hardware function and supplier. Before specifying a finish, confirm that it is offered for the exact components required and that the pieces are compatible with one another. Finelines Glass Installations can help coordinate the glass enclosure and discuss hardware options available for the selected system.",
+        ],
+      },
+      {
+        heading: '6. Balance Appearance With Maintenance',
+        paragraphs: [
+          "All finishes need appropriate care. Water spots, soap residue and cleaning products can affect the appearance of glass and metal hardware over time. Use soft cloths and cleaning products recommended by the product manufacturer; avoid abrasive pads or harsh chemicals unless specifically approved. Some specialty finishes may require more careful maintenance, so review care instructions before making the final selection.",
+        ],
+      },
+      {
+        heading: '7. Plan Hardware Before the Glass Is Fabricated',
+        paragraphs: [
+          "Hinges, handles and clamps can affect glass dimensions, cut-outs, clearances and mounting details. Confirming hardware choices early helps the project team coordinate the required glass preparation and installation method. Changes made after fabrication may be difficult or costly, so the selected hardware, door swing and site measurements should be checked before the order is finalized.",
+        ],
+      },
+      {
+        heading: 'Questions to Ask Before Choosing Hardware',
+        intro: 'Consider these questions with your designer, contractor or glass installer:',
+        bullets: [
+          'Which hinge type suits the door configuration, glass and mounting surface?',
+          'Will the door swing freely without hitting nearby fixtures or walls?',
+          'Which handle style is comfortable and appropriate for the enclosure?',
+          'Are the selected finishes available across the required hardware pieces?',
+          'Have the hardware, glass thickness, cut-outs and measurements been confirmed together?',
+          'What cleaning products and maintenance routine are recommended for the chosen finish?',
+        ],
+      },
+      {
+        heading: 'Why Work With Finelines Glass Installations?',
+        paragraphs: [
+          "A well-finished shower enclosure depends on the relationship between glass, hardware, site conditions and installation. Finelines Glass Installations works with homeowners, designers and contractors to coordinate custom shower glass, hinge and handle choices, finish details and installation requirements. Our goal is to help each enclosure look cohesive, operate smoothly and suit the needs of the space.",
+        ],
+      },
+      {
+        heading: 'Planning a Bathroom Upgrade?',
+        paragraphs: [
+          "If you are renovating a bathroom or specifying a new shower enclosure, discuss hardware and finish choices before the glass is fabricated. Early coordination helps confirm compatibility, clearances and the intended design.",
+        ],
+      },
+    ],
+    ctaNote: 'Ready to plan your shower enclosure? Contact Finelines Glass Installations to discuss custom shower glass, hardware options and finish coordination for your project.',
+    tagline: 'Serving Vancouver, the Lower Mainland and the Fraser Valley. Final hardware availability and installation requirements depend on the selected product series, site conditions and project specifications.',
   },
 ];
 

@@ -29,7 +29,12 @@ export default function Articles() {
                   <Link to={`/articles/${a.slug}`} className="card card-link article-card">
                     {a.heroImage && (
                       <div className="article-card-image-wrap">
-                        <img src={a.heroImage} alt={a.heroImageAlt || a.title} loading="lazy" />
+                        <img
+                          src={a.heroImage}
+                          alt={a.heroImageAlt || a.title}
+                          loading="lazy"
+                          style={a.heroImagePosition ? { objectPosition: a.heroImagePosition } : undefined}
+                        />
                       </div>
                     )}
                     <p className="article-card-date">{a.publishDate}</p>
