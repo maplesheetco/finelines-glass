@@ -41,9 +41,19 @@ function seoPages() {
       const block = /<!-- page-meta[\s\S]*?<!-- \/page-meta -->/
       if (!block.test(template)) throw new Error('index.html is missing the page-meta markers')
 
-      // Empty copy for any URL without a page file of its own (unknown URLs,
-      // articles published since the last build). vercel.json sends those here.
-      fs.writeFileSync(path.join(outDir, 'app-shell.html'), template)
+      // Vercel serves 404.html, with a real 404 status, for any URL without a
+      // page file of its own, so Google drops dead links (old Wix URLs are
+      // redirected in vercel.json instead). noindex keeps it out of results.
+      const notFound = [
+        '<title>Page not found | Finelines Glass</title>',
+        '<meta name="robots" content="noindex" />',
+      ].join('\n    ')
+      fs.writeFileSync(
+        path.join(outDir, '404.html'),
+        template
+          .replace(block, notFound)
+          .replace('<div id="root"></div>', () => `<div id="root">${render('/404')}</div>`),
+      )
 
       const now = new Date()
       const paths = getSitemapPaths(now)
