@@ -1,6 +1,12 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/app-shell.html" }
+  "redirects": [
+    { "source": "/blank-mpvle", "destination": "/about", "permanent": true },
+    { "source": "/blank-pvj6y", "destination": "/contact", "permanent": true },
+    { "source": "/glass-hardware", "destination": "/hardware-finishes", "permanent": true },
+    { "source": "/product-page/:slug*", "destination": "/hardware-finishes", "permanent": true },
+    { "source": "/category/:slug*", "destination": "/hardware-finishes", "permanent": true },
+    { "source": "/shop", "destination": "/hardware-finishes", "permanent": true },
+    { "source": "/cart-page", "destination": "/hardware-finishes", "permanent": true }
   ],
   "headers": [
     {
