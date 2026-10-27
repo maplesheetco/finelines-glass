@@ -3070,6 +3070,366 @@ export const ARTICLES = [
     ctaNote: 'Ready to plan your shower enclosure? Contact Finelines Glass Installations to discuss custom shower glass, hardware options and finish coordination for your project.',
     tagline: 'Serving Vancouver, the Lower Mainland and the Fraser Valley. Final hardware availability and installation requirements depend on the selected product series, site conditions and project specifications.',
   },
+  {
+    slug: 'glass-backsplashes-for-modern-kitchens',
+    title: 'Glass Backsplashes for Modern Kitchens',
+    seoTitle: 'Glass Backsplashes for Modern Kitchens | Finelines Glass',
+    metaDescription: 'Choosing a glass or mirror backsplash for a modern kitchen: glass selection, finishes, cut-outs, heat and moisture near the cooktop, and everyday care.',
+    keywords: ['glass backsplash', 'kitchen glass backsplash', 'mirror backsplash', 'glass backsplash Vancouver', 'custom glass backsplash Lower Mainland', 'backsplash glass installation'],
+    publishDate: 'December 7, 2026',
+    publishAt: '2026-12-07T00:00:00-08:00',
+    heroImage: '/images/articles/glass-backsplashes-modern-kitchens.webp',
+    heroImageAlt: 'A modern kitchen with a smooth glass backsplash behind the cooktop and white stone countertops',
+    heroImagePosition: 'left center',
+    excerpt: 'A glass backsplash gives a kitchen a clean, contemporary look with fewer grout lines. Here is how to choose the right glass and finish, and what to plan around the cooktop, outlets and cabinets.',
+    intro: [
+      "A glass backsplash can give a kitchen a clean, contemporary appearance with fewer grout lines than many tiled surfaces. It can reflect light, complement cabinetry and countertops, and create a smooth visual finish behind a work area. The best choice depends on the kitchen layout, the cooking equipment, the desired colour and the glass product's suitability for the intended location.",
+    ],
+    blocks: [
+      {
+        heading: '1. Selecting the Right Glass',
+        paragraphs: [
+          "Not every type of glass is suitable for every backsplash location. Selection should account for the distance from cooktops and other heat sources, the mounting method, panel size, edge treatment, cut-outs and the manufacturer's specifications. Tempered or other specially processed glass may be appropriate in some applications, but the correct specification must be confirmed for the exact installation. Do not assume ordinary glass is suitable directly behind every type of stove or cooktop.",
+        ],
+      },
+      {
+        heading: '2. Mirror Backsplashes',
+        paragraphs: [
+          "Mirror backsplash panels can brighten a kitchen by reflecting available light and creating a sense of depth. They may work particularly well in selected areas where a reflective finish suits the overall design. Consider what the mirror will reflect, how visible fingerprints and splashes may be, and whether the location is suitable for the mirror product and its backing. Mirror is not automatically the right choice behind every cooktop; heat exposure and manufacturer guidance must be checked carefully before specifying it.",
+        ],
+      },
+      {
+        heading: '3. Clear, Tinted and Decorative Options',
+        paragraphs: [
+          "Depending on the design and product range, glass may be clear, tinted, textured or otherwise decorative. Clear glass is often used to protect a feature surface while allowing it to remain visible, whereas tinted or coloured glass can introduce a different tone. Decorative choices should be reviewed alongside countertop patterns, cabinet finishes and lighting so the backsplash complements rather than competes with the rest of the kitchen.",
+        ],
+      },
+      {
+        heading: '4. Plan Around Outlets, Cabinets and Countertops',
+        paragraphs: [
+          "Kitchen backsplashes often need precise cut-outs for electrical outlets, switches, fixtures or other penetrations. Cabinet undersides, countertop levels, corner conditions and appliance dimensions all affect panel measurements. Because custom glass is fabricated to order, the team should confirm when final measurements can be taken and whether cabinets, counters and other adjacent finishes must be fully installed first. Changes after fabrication can be costly or may require a new panel.",
+        ],
+      },
+      {
+        heading: '5. Heat, Moisture and Installation Requirements',
+        paragraphs: [
+          "Areas around cooking equipment can involve high temperatures, grease and frequent cleaning. The glass type, any backing or coating, adhesive or mounting system, and the distance from heat sources must all be appropriate for the specific location. Follow the product manufacturer's instructions and applicable requirements. Where there is uncertainty, especially behind gas or high-output cooking appliances, confirm the intended use with the glass supplier and qualified project professionals before proceeding.",
+        ],
+      },
+      {
+        heading: '6. Cleaning and Everyday Care',
+        paragraphs: [
+          "A smooth glass surface is generally straightforward to wipe down, but fingerprints, grease and water marks can still show. Use a soft cloth and a cleaner approved for the glass and its finish. Avoid abrasive pads or harsh chemicals unless specifically permitted. Mirror products may have particular care requirements at edges and on the coated side, so follow the supplier's guidance.",
+        ],
+      },
+      {
+        heading: 'Questions to Ask Before Ordering',
+        intro: 'Before selecting a glass backsplash, discuss these points with your designer, contractor or glass installer:',
+        bullets: [
+          'Is this glass product suitable for the exact location, including the distance from the cooktop?',
+          'Would clear, tinted or mirror glass best suit the design?',
+          'Can I review a physical finish sample under my kitchen lighting?',
+          'Have all outlet cut-outs, corners, appliance clearances and panel dimensions been confirmed?',
+          'When should final measurements be taken, and are adjacent finishes ready?',
+          'Which mounting method and cleaning instructions apply to this specific product?',
+        ],
+      },
+      {
+        heading: 'How Finelines Glass Installations Can Help',
+        paragraphs: [
+          "A successful glass backsplash starts with choosing a suitable product and coordinating the details before fabrication. Finelines Glass Installations works with homeowners, designers and contractors to review the intended look, site measurements, cut-outs, mounting details and installation sequence. Whether you are considering a mirror backsplash or another glass finish, we can discuss the practical considerations for your project and coordinate the installation requirements.",
+        ],
+      },
+      {
+        heading: 'Planning a Kitchen Upgrade?',
+        paragraphs: [
+          "Bring your glass installer into the conversation while cabinetry, countertops and appliances are being finalized. Early coordination helps confirm the right glass option, dimensions and site preparation before the panel is ordered.",
+        ],
+      },
+    ],
+    ctaNote: 'Ready to explore a glass backsplash? Contact Finelines Glass Installations to discuss glass selection, mirror backsplash ideas and installation planning for your kitchen.',
+    tagline: 'Serving Vancouver, the Lower Mainland and the Fraser Valley. Final glass selection and installation requirements depend on the product, heat exposure, site conditions and manufacturer specifications.',
+  },
+  {
+    slug: 'framed-vs-frameless-glass',
+    title: 'Framed vs. Frameless Glass: Which Design Is Right for Your Project?',
+    seoTitle: 'Framed vs. Frameless Shower Glass: Which Is Right? | Finelines Glass',
+    metaDescription: 'Framed or frameless shower glass? Compare appearance, glass and hardware needs, cleaning, water control and cost to choose the right enclosure for your bathroom.',
+    keywords: ['framed vs frameless shower', 'frameless shower enclosure', 'framed shower enclosure', 'shower glass options', 'shower enclosure cost', 'shower glass Vancouver'],
+    publishDate: 'December 14, 2026',
+    publishAt: '2026-12-14T00:00:00-08:00',
+    heroImage: '/images/articles/framed-vs-frameless-glass.webp',
+    heroImageAlt: 'A black-framed glass shower enclosure side by side with a frameless glass shower enclosure',
+    heroImagePosition: 'left center',
+    excerpt: 'The choice between framed and frameless glass affects more than appearance. Compare looks, hardware, cleaning, water control and cost to find the right enclosure for your bathroom.',
+    intro: [
+      "When planning a bathroom renovation or a new shower enclosure, the choice between framed and frameless glass affects more than appearance. The enclosure must work with the room layout, door clearance, hardware, cleaning routine and project budget. Both styles can create a practical, attractive shower when the system is selected for the space and installed according to its specifications.",
+    ],
+    blocks: [
+      {
+        heading: 'What Is a Framed Shower Enclosure?',
+        paragraphs: [
+          "A framed enclosure uses a metal frame around some or all of the glass panels. The frame defines the enclosure visually and forms part of the system that supports and aligns the glass. Depending on the product, framed systems may offer a traditional look and a range of configurations. Their suitability depends on the specific design, hardware and site conditions, not simply on whether a frame is present.",
+        ],
+      },
+      {
+        heading: 'What Is a Frameless Shower Enclosure?',
+        paragraphs: [
+          "A frameless enclosure uses heavier glass panels and purpose-designed hinges, clamps or channels, with little or no surrounding metal framing. This creates a more open appearance and allows tile, stone and other finishes to remain visible. Frameless does not mean hardware-free: the glass still needs a compatible support and sealing system designed for the panel dimensions and installation conditions.",
+        ],
+      },
+      {
+        heading: '1. Appearance and Bathroom Style',
+        paragraphs: [
+          "Framed enclosures create more visible lines and can coordinate with black, chrome or other metal finishes used elsewhere in the bathroom. Frameless enclosures emphasize clean glass edges and a minimal look, often suiting contemporary bathrooms. Neither style is universally better. Consider the tile pattern, vanity, fixtures, available light and the overall architectural character of the space.",
+        ],
+      },
+      {
+        heading: '2. Glass, Hardware and Site Requirements',
+        paragraphs: [
+          "The glass specification and hardware must match the enclosure design, panel sizes, door configuration and mounting surfaces. Frameless doors place specific demands on hinges, clamps, anchors and the supporting structure. Framed systems also require accurate measurements and compatible components. Wall conditions, finished tile, curb or threshold details and available clearances should be checked before fabrication.",
+        ],
+      },
+      {
+        heading: '3. Cleaning and Maintenance',
+        paragraphs: [
+          "Both styles need regular cleaning. Frameless designs have fewer frame channels where residue may collect, but water spots and soap deposits can still show on glass and hardware. Framed enclosures may have additional edges or channels that need attention. Good ventilation, routine squeegeeing and manufacturer-approved cleaning products can help maintain either style. Actual maintenance depends on the enclosure design, water conditions and household use.",
+        ],
+      },
+      {
+        heading: '4. Water Control and Seals',
+        paragraphs: [
+          "A shower enclosure is not automatically watertight simply because it is framed or frameless. Water control depends on the layout, panel alignment, door gaps, seals, threshold or curb design, showerhead direction and installation quality. Some configurations are designed to manage incidental splash rather than contain all water. The proposed layout should be reviewed for the shower's size, spray pattern and drainage.",
+        ],
+      },
+      {
+        heading: '5. Cost and Overall Value',
+        paragraphs: [
+          "Pricing depends on more than the label 'framed' or 'frameless.' Glass dimensions and thickness, hardware type and finish, door style, site access, wall conditions and installation complexity all influence the final cost. A frameless enclosure may involve heavier glass and specialized hardware, while framed products have their own system-specific requirements. Compare complete, like-for-like specifications rather than assuming one style always costs a fixed amount more.",
+        ],
+      },
+      {
+        heading: '6. Which Option Fits Your Project?',
+        paragraphs: [
+          "A framed enclosure may suit a project where the preferred look, product configuration or budget aligns with an available framed system. Frameless glass may be a strong choice when a more open visual effect is a priority and the site can accommodate the required hardware and support. The best decision balances design goals with practical constraints, not trends alone.",
+        ],
+      },
+      {
+        heading: 'Questions to Ask Before Choosing',
+        intro: 'Before selecting a shower enclosure, discuss these points with your designer, contractor or glass installer:',
+        bullets: [
+          "Which style best suits the bathroom's design and layout?",
+          'Will the door open freely without hitting fixtures, walls or other doors?',
+          'Are the walls, curb and finished surfaces suitable for the selected system?',
+          'What glass and hardware specifications are required for the panel sizes?',
+          'How will seals, door gaps and shower spray affect water control?',
+          'What cleaning and maintenance routine does the manufacturer recommend?',
+          'Have measurements and hardware choices been confirmed before fabrication?',
+        ],
+      },
+      {
+        heading: 'Why Work With Finelines Glass Installations?',
+        paragraphs: [
+          "The right shower enclosure combines the desired appearance with careful measurement, compatible hardware and a layout suited to the room. Finelines Glass Installations works with homeowners, designers and contractors to review framed and frameless options, coordinate finishes and plan the installation details. Our goal is to help each custom glass enclosure complement the bathroom and function well in everyday use.",
+        ],
+      },
+      {
+        heading: 'Planning a Bathroom Renovation?',
+        paragraphs: [
+          "Discuss the enclosure style early, before final measurements and glass fabrication. Sharing your layout, tile selections, fixture locations and hardware preferences helps the project team confirm door clearances, mounting conditions and the intended finish.",
+        ],
+      },
+    ],
+    ctaNote: 'Ready to discuss your shower enclosure? Contact Finelines Glass Installations to explore framed and frameless glass options for your bathroom renovation or new build.',
+    tagline: 'Serving Vancouver, the Lower Mainland and the Fraser Valley. Final product selection and installation requirements depend on the chosen system, site conditions and manufacturer specifications.',
+  },
+  {
+    slug: 'early-glass-installer-coordination-renovation-projects',
+    title: 'Why Early Glass-Installer Coordination Helps Renovation Projects',
+    seoTitle: 'Why Early Glass-Installer Coordination Helps Renovations | Finelines Glass',
+    metaDescription: 'Why bringing your glass installer in early makes renovations smoother: scope, measurement timing, mounting, hardware, trade coordination and a practical checklist.',
+    keywords: ['glass installer coordination', 'renovation glass planning', 'when to measure shower glass', 'contractor glass installer', 'custom glass renovation Vancouver', 'glass installation schedule'],
+    publishDate: 'December 21, 2026',
+    publishAt: '2026-12-21T00:00:00-08:00',
+    heroImage: '/images/articles/early-glass-installer-coordination.webp',
+    heroImageAlt: 'A glass installer reviewing renovation drawings with a homeowner and designer beside a finished glass shower',
+    heroImagePosition: 'left center',
+    excerpt: 'Glass is often installed near the end of a renovation, but many decisions that shape the result happen much earlier. Here is how early coordination leads to a smoother installation.',
+    intro: [
+      "Glass is often installed near the end of a renovation, but many decisions that affect the final result need to happen much earlier. Shower enclosures, mirrors, glass backsplashes, railings and interior partitions all depend on accurate dimensions, suitable mounting conditions and coordination with surrounding finishes. Involving the glass installer during planning gives the project team time to identify requirements before they become last-minute problems.",
+    ],
+    blocks: [
+      {
+        heading: '1. Confirm the Design Intent and Scope',
+        paragraphs: [
+          "At the beginning, clarify what glass is being supplied, where it will be installed and what the finished result should look like. Review drawings, elevations, door locations, glass panel layouts, visible hardware and finish preferences. Confirming the scope helps the homeowner, designer, contractor and glass installer work toward the same outcome and reduces assumptions about what is included.",
+        ],
+      },
+      {
+        heading: '2. Coordinate Measurements With Construction Progress',
+        paragraphs: [
+          "Glass is commonly fabricated to specific site dimensions. Measuring too early, before tile, flooring, countertops or other relevant finishes are complete, can result in dimensions that no longer match the finished opening. On the other hand, waiting until the very end to involve the glass installer can leave too little time for site review, product selection and fabrication. Agree on when preliminary measurements, final field measurements and fabrication approval should occur.",
+        ],
+      },
+      {
+        heading: '3. Review Mounting and Substrate Conditions',
+        paragraphs: [
+          "Glass panels and hardware need suitable support. The installer and project team should review the surfaces where hinges, channels, clamps, anchors or other mounting components will attach. Wall construction, backing, slab edges, floor transitions and finished surfaces can all affect the installation method. For railings and other applications with structural or waterproofing implications, the relevant design and building professionals should confirm the required support and details before work proceeds.",
+        ],
+      },
+      {
+        heading: '4. Select Hardware and Finishes Before Ordering',
+        paragraphs: [
+          "Hinges, handles, clamps, channels and other visible components can affect both appearance and technical requirements. Finish availability may vary by product series, and hardware selection can influence glass cut-outs, clearances and door operation. Confirming choices early gives the team time to check compatibility and coordinate with faucets, cabinetry, window frames and other finishes without delaying fabrication.",
+        ],
+      },
+      {
+        heading: '5. Coordinate With Tile, Cabinetry and Other Trades',
+        paragraphs: [
+          "Glass installations often meet surfaces completed by other trades. Shower glass depends on finished tile, curb geometry and wall conditions; mirrors may need to align with lighting, outlets or vanities; backsplashes must fit around cabinets, counters and electrical cut-outs. Early communication helps establish responsibilities, identify dependencies and confirm which surfaces must be complete before final measurements or installation.",
+        ],
+      },
+      {
+        heading: '6. Plan the Schedule and Site Readiness',
+        paragraphs: [
+          "Custom glass typically requires time for final measurement, specification review, fabrication, delivery and installation. These steps should be built into the renovation schedule rather than treated as an immediate final task. Before installation, confirm that the work area is accessible, adjacent finishes are ready, mounting surfaces are suitable and other trades will not interfere with the work. A clear schedule helps reduce avoidable return visits and disruptions.",
+        ],
+      },
+      {
+        heading: '7. Resolve Questions Before Fabrication',
+        paragraphs: [
+          "Once custom glass has been fabricated, changes to panel dimensions, holes, edge details or hardware preparation may be difficult or costly to correct. Before approving an order, confirm the measurements, glass specification, finish, hardware, door swing, panel arrangement and any cut-outs. Make sure the people responsible for design, site preparation and installation have reviewed the same information.",
+        ],
+      },
+      {
+        heading: '8. Keep Communication Open Throughout the Project',
+        paragraphs: [
+          "Renovation conditions can change. If tile thickness, cabinet dimensions, fixture locations or construction details change, notify the glass installer before fabrication or installation proceeds. A simple process for sharing updated drawings, photos and site information helps everyone respond to changes in time. Clear communication is especially valuable when several trades work in the same area.",
+        ],
+      },
+      {
+        heading: 'A Practical Coordination Checklist',
+        intro: 'Use this checklist with your contractor, designer and glass installer as the project moves from planning to installation.',
+        bullets: [
+          'Confirm the glass scope, intended layout and design requirements.',
+          'Share current drawings, elevations and relevant site dimensions.',
+          'Identify required backing, mounting locations and substrate conditions.',
+          'Choose compatible hardware and confirm finish availability.',
+          'Coordinate glass dimensions with tile, cabinetry, countertops and fixtures.',
+          'Agree on preliminary and final measurement dates.',
+          'Allow sufficient time for specification approval, fabrication and delivery.',
+          'Confirm the area is ready, accessible and clear before installation.',
+          'Communicate any site or design changes before fabrication or installation.',
+        ],
+      },
+      {
+        heading: 'How Finelines Glass Installations Supports Renovation Projects',
+        paragraphs: [
+          "Finelines Glass Installations works with homeowners, designers, builders and contractors to coordinate glass requirements with the wider renovation schedule. Early discussions can help clarify measurements, hardware and finish choices, mounting conditions, site readiness and installation timing. Whether the project includes a shower enclosure, custom mirror, glass backsplash, railing or interior partition, our focus is on clear communication and a well-coordinated installation.",
+        ],
+      },
+      {
+        heading: 'Bring Your Glass Installer Into the Plan Early',
+        paragraphs: [
+          "The best time to discuss glass is before the surrounding work is complete, not after every finish has been installed. Including the glass installer early gives the project team an opportunity to confirm requirements, schedule measurements and plan fabrication with fewer surprises.",
+        ],
+      },
+    ],
+    ctaNote: 'Planning a renovation or new build? Contact Finelines Glass Installations early to discuss your glass scope, site conditions and installation schedule.',
+    tagline: 'Serving Vancouver, the Lower Mainland and the Fraser Valley. Final measurements, product selection and installation timing depend on the project scope, site conditions and product specifications.',
+  },
+  {
+    slug: 'plan-your-2027-glass-upgrade',
+    title: 'Plan Your 2027 Upgrade: Glass Improvements for Homes and Businesses',
+    seoTitle: 'Plan Your 2027 Glass Upgrade for Home or Business | Finelines Glass',
+    metaDescription: 'Planning a 2027 upgrade? Shower enclosures, glass railings, custom mirrors, partitions and kitchen glass, plus how to build a practical glass-upgrade plan.',
+    keywords: ['2027 home upgrade', 'glass renovation ideas', 'custom shower enclosure', 'glass railings', 'custom mirrors', 'glass partitions', 'glass installation Vancouver'],
+    publishDate: 'December 28, 2026',
+    publishAt: '2026-12-28T00:00:00-08:00',
+    heroImage: '/images/articles/plan-your-2027-glass-upgrade.webp',
+    heroImageAlt: 'A collage of a glass shower, a glass stair railing, a glass-walled meeting room and a kitchen glass backsplash',
+    heroImagePosition: 'left center',
+    excerpt: 'The end of the year is a good time to plan the improvements you want in 2027. Here are the glass upgrades to consider and how to build a practical plan.',
+    intro: [
+      "The end of the year is a useful time to identify improvements you want to make to your home or commercial space in 2027. Glass features can change how a room feels, improve sightlines, support privacy or contribute to a more cohesive design. A successful project starts by defining the purpose of the upgrade, reviewing the space and coordinating the glass work with the wider renovation plan.",
+    ],
+    blocks: [
+      {
+        heading: '1. Upgrade Your Bathroom With a Custom Shower Enclosure',
+        paragraphs: [
+          "A custom glass shower enclosure can help a bathroom feel more open and connect visually with tile, stone and other finishes. When planning an upgrade, consider the shower layout, door swing, access, glass configuration, hardware finish and cleaning routine. Wall conditions, finished tile, curb details and mounting requirements should be reviewed before final measurements and fabrication. Discuss the enclosure with your glass installer early enough to coordinate with the contractor and other trades.",
+        ],
+      },
+      {
+        heading: '2. Add Glass Railings to Open Up the View',
+        paragraphs: [
+          "Glass railings can preserve sightlines on balconies, decks, terraces and staircases while providing a clean architectural appearance. The appropriate system depends on the location, supporting structure, attachment method, design requirements and applicable building-code considerations. Railings are safety-critical assemblies, so the project team should confirm the required glass specification, support details, engineering or permit requirements where applicable, and installation method before ordering.",
+        ],
+      },
+      {
+        heading: '3. Use Custom Mirrors to Enhance Interior Spaces',
+        paragraphs: [
+          "Custom mirrors can reflect light and create a sense of depth in bathrooms, entryways, dressing areas, gyms and commercial interiors. Size, shape, edge treatment, mounting method and placement all affect the result. Planning should account for nearby lighting, outlets, moisture exposure and the surface that will support the mirror. Accurate measurements and coordination with cabinetry or other finishes help achieve a neat, integrated appearance.",
+        ],
+      },
+      {
+        heading: '4. Consider Interior Glass Partitions',
+        paragraphs: [
+          "Glass partitions can separate meeting rooms, offices or selected areas of a home while maintaining visual connection and allowing light to travel through a space. Clear glass supports openness; frosted or patterned options can provide additional visual privacy. Before choosing a system, consider door operation, sound privacy expectations, accessibility, attachment points and how the partition will meet walls, floors and ceilings.",
+        ],
+      },
+      {
+        heading: '5. Explore Specialty Glass for Kitchens and Interiors',
+        paragraphs: [
+          "Glass backsplashes and other specialty glass features can provide a smooth, contemporary finish. Mirror backsplash panels may suit selected areas where reflection is desired. Product suitability must be checked for the exact location, especially near cooktops or other heat sources. Confirm the glass specification, coating, edge details, mounting method and manufacturer requirements before fabrication.",
+        ],
+      },
+      {
+        heading: '6. Plan Hardware, Finishes and Details Early',
+        paragraphs: [
+          "Hinges, handles, clamps, channels and other visible hardware influence both function and appearance. Finishes may vary by product series, so confirm availability and compatibility for the components required. Hardware can also affect glass cut-outs, panel dimensions and door clearances. Early decisions give the project team time to coordinate these details with faucets, cabinetry, lighting and other finishes.",
+        ],
+      },
+      {
+        heading: '7. Coordinate the Project Before Work Begins',
+        paragraphs: [
+          "Custom glass is often fabricated to specific site dimensions. Final measurements may depend on completed tile, countertops, cabinetry, flooring or other adjacent finishes. Involving the glass installer early helps establish measurement timing, identify mounting or substrate requirements, confirm site readiness and allow time for fabrication and delivery. If the design or site conditions change, communicate the update before fabrication or installation proceeds.",
+        ],
+      },
+      {
+        heading: 'Build a Practical Glass-Upgrade Plan',
+        paragraphs: [
+          "Before requesting a quote, list the areas you want to improve and gather any available drawings, dimensions, photos and finish selections. Identify your priorities, such as appearance, privacy, easier cleaning, openness or replacement of an existing feature. Discuss the project timeline and any dependencies with your contractor or designer. The glass installer can then help review suitable options and identify details that need confirmation before an order is placed.",
+        ],
+      },
+      {
+        heading: 'Questions to Consider for Your 2027 Project',
+        bullets: [
+          'Which area would benefit most from a glass upgrade?',
+          'What is the main goal: appearance, privacy, openness, function or replacement?',
+          'Are there structural, mounting, heat, moisture or code requirements to review?',
+          'Which glass type, hardware and finishes suit the space?',
+          'When will final site measurements be possible?',
+          'Who is coordinating the glass installer with the other trades?',
+          'What is the target budget and preferred installation window?',
+        ],
+      },
+      {
+        heading: 'Plan With Finelines Glass Installations',
+        paragraphs: [
+          "Finelines Glass Installations works with homeowners, designers, builders and contractors on custom glass projects for residential and commercial spaces. From shower enclosures and mirrors to glass railings, interior partitions and specialty glass, our team can discuss the intended design, review site conditions and coordinate installation requirements with your project team.",
+        ],
+      },
+      {
+        heading: 'Make Your 2027 Glass Project a Priority',
+        paragraphs: [
+          "Starting the conversation early helps you explore options, coordinate measurements and finishes, and build realistic timing into your renovation plan. Prepare your ideas and project details, then contact Finelines Glass Installations to discuss the next steps.",
+        ],
+      },
+    ],
+    ctaNote: 'Planning a home or commercial upgrade for 2027? Contact Finelines Glass Installations to discuss your project and arrange the next steps.',
+    tagline: 'Serving Vancouver, the Lower Mainland and the Fraser Valley. Final product selection, measurements and installation requirements depend on the application, site conditions and manufacturer specifications.',
+  },
 ];
 
 // Articles whose publishAt has already passed, oldest first for lookups and
