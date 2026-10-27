@@ -1932,28 +1932,122 @@ export const PROCESS_STEPS = [
   },
 ];
 
-export const FAQS = [
+// FAQs shown on the Services page, grouped by topic. `link` points the
+// visitor to the page with the full details for that answer. The flat FAQS
+// list below feeds the FAQPage structured data.
+export const FAQ_GROUPS = [
   {
-    q: 'How much does a project like this usually cost?',
-    a: "It depends on the hardware, glass, and finish choices for your project, so pricing varies from job to job. Reach out and we'll walk you through the options to give you a clear, no-obligation estimate.",
+    title: 'General questions',
+    faqs: [
+      {
+        q: 'How much does a project like this usually cost?',
+        a: "It depends on the hardware, glass, and finish choices for your project, so pricing varies from job to job. Reach out and we'll walk you through the options to give you a clear, no-obligation estimate.",
+      },
+      {
+        q: 'How long does an installation take?',
+        a: "It depends on the size of the project. A single shower enclosure or mirror can often be completed in a day, while larger jobs take longer.",
+      },
+      {
+        q: 'Do I need to be home during the installation?',
+        a: "Not necessarily. As long as we have a way in — a key, an entry code, or someone to let us in when we arrive — and the work area is clear, you don't need to stay on-site for the installation.",
+      },
+      {
+        q: 'Do you handle both residential and builder/commercial projects?',
+        a: `Yes — we handle both residential and commercial projects, mostly working alongside the contractors and designers on those jobs, across ${COMPANY.serviceAreas.join(', ')}.`,
+      },
+      {
+        q: 'What is the lead time?',
+        a: "It depends on the product choices you make — lead time tracks glass and hardware availability, so it varies by project. Standard finishes and glass are usually quick to source, but specialty finishes, colors, or glass types can take noticeably longer to arrive — we'll flag this during your consultation so it doesn't hold up your project timeline.",
+      },
+      {
+        q: 'Which areas do you serve?',
+        a: `We work across ${COMPANY.serviceAreas.slice(0, -1).join(', ')} and the ${COMPANY.serviceAreas[COMPANY.serviceAreas.length - 1]}. Let us know your project location and we'll confirm we can get to you.`,
+        link: { to: '/service-areas', label: 'See our service areas' },
+      },
+    ],
   },
   {
-    q: 'How long does an installation take?',
-    a: "It depends on the size of the project. A single shower enclosure or mirror can often be completed in a day, while larger jobs take longer.",
+    title: 'Shower enclosures',
+    faqs: [
+      {
+        q: 'What types of glass shower enclosures do you install?',
+        a: 'Mostly custom frameless enclosures, and framed enclosures when a project calls for them. That includes fixed panels, hinged shower doors, and custom configurations. We coordinate the glass, hardware, and installation details with homeowners, designers, and contractors.',
+        link: { to: '/services/frameless-shower-enclosures', label: 'Shower enclosure options' },
+      },
+      {
+        q: 'Can you customize a shower enclosure to fit my bathroom?',
+        a: 'Yes. Every enclosure is built around your bathroom. We review the measurements, wall conditions, door clearances, hardware placement, and surrounding finishes to work out the right configuration.',
+        link: { to: '/services/frameless-shower-enclosures', label: 'Shower enclosure options' },
+      },
+      {
+        q: 'What is the difference between framed and frameless shower glass?',
+        a: 'Framed enclosures use metal framing around some or all of the glass. Frameless designs use thicker glass panels held by hinges, clamps, or channels, for a more open look with less metal to clean around. The right choice depends on your design preferences, the site conditions, and the project.',
+        link: { to: '/services/frameless-shower-enclosures', label: 'Shower enclosure options' },
+      },
+      {
+        q: 'How do I choose the right shower hardware finish?',
+        a: 'Most people match the hinges and handles to their faucets, shower fixtures, and cabinet handles. Popular options include polished chrome, brushed nickel, matte black, and brass or bronze tones. Availability varies by hardware style.',
+        link: { to: '/hardware-finishes', label: 'Browse hardware finishes' },
+      },
+    ],
   },
   {
-    q: 'Do I need to be home during the installation?',
-    a: "Not necessarily. As long as we have a way in — a key, an entry code, or someone to let us in when we arrive — and the work area is clear, you don't need to stay on-site for the installation.",
+    title: 'Glass railings',
+    faqs: [
+      {
+        q: 'Do you install glass railings for balconies, decks, and stairs?',
+        a: 'Yes. We install glass railing systems on balconies, decks, terraces, and staircases for residential and commercial projects, so you keep the view. The right system depends on the design, the supporting structure, the mounting method, and building code requirements.',
+        link: { to: '/services/glass-railings', label: 'Glass railing options' },
+      },
+      {
+        q: 'Are glass railings suitable for outdoor use?',
+        a: 'Yes, when the system, glass, hardware, and mounting details suit the outdoor setting. Weather exposure, drainage, structural support, and waterproofing are all considered during planning.',
+        link: { to: '/services/glass-railings', label: 'Glass railing options' },
+      },
+      {
+        q: 'Can glass railings be installed on an existing balcony or deck?',
+        a: 'Often, yes. The supporting structure, attachment points, finished surfaces, and waterproofing need to be checked first, and some projects need a review by the builder or another qualified professional.',
+        link: { to: '/services/glass-railings', label: 'Glass railing options' },
+      },
+    ],
   },
   {
-    q: 'Do you handle both residential and builder/commercial projects?',
-    a: `Yes — we handle both residential and commercial projects, mostly working alongside the contractors and designers on those jobs, across ${COMPANY.serviceAreas.join(', ')}.`,
+    title: 'Mirrors & specialty glass',
+    faqs: [
+      {
+        q: 'Do you provide custom mirrors?',
+        a: 'Yes. We supply and install custom mirrors for bathrooms, gyms, dance studios, feature walls, and other residential and commercial interiors, with the size, shape, edge finish, placement, and mounting chosen to suit the space.',
+        link: { to: '/services/mirrors', label: 'Mirror options' },
+      },
+      {
+        q: 'Can you install a glass backsplash in a kitchen?',
+        a: "Yes, on request. Glass and mirror backsplashes give a smooth, easy-to-clean finish behind counters. Whether one suits your kitchen depends on the location, heat exposure near the cooktop, and the mounting method, so we'll go over that with you first.",
+        link: { to: '/services/custom-glass-solutions', label: 'Custom glass solutions' },
+      },
+      {
+        q: 'Do you install interior glass partitions?',
+        a: 'Yes. Glass partitions define offices, meeting rooms, and some residential spaces while keeping them open and bright. Clear, frosted, or patterned glass can be used depending on privacy needs, layout, door operation, and mounting conditions.',
+        link: { to: '/services/commercial-glazing-office-partitions', label: 'Office partition options' },
+      },
+    ],
   },
   {
-    q: 'What is the lead time?',
-    a: "It depends on the product choices you make — lead time tracks glass and hardware availability, so it varies by project. Standard finishes and glass are usually quick to source, but specialty finishes, colors, or glass types can take noticeably longer to arrive — we'll flag this during your consultation so it doesn't hold up your project timeline.",
+    title: 'Planning & estimates',
+    faqs: [
+      {
+        q: 'When should I contact a glass installer during a renovation?',
+        a: 'Early, even if final measurements have to wait. Talking to us early helps sort out hardware, mounting details, and finished-surface requirements, and keeps fabrication and installation on schedule.',
+      },
+      {
+        q: 'What information should I provide when requesting an estimate?',
+        a: "Your project location, the type of glass work, approximate dimensions, a few photos, your design preferences, and your timeline. Drawings or renovation plans help if you have them.",
+        link: { to: '/request-estimate', label: 'Request an estimate' },
+      },
+    ],
   },
 ];
+
+export const FAQS = FAQ_GROUPS.flatMap((g) => g.faqs);
 
 // ---------------------------------------------------------------------------
 // ARTICLES
