@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { COMPANY, FAQS } from '../data.js';
+import { COMPANY, FAQS, FAQ_GROUPS } from '../data.js';
 import ServiceGrid from '../components/ServiceGrid.jsx';
 import Reveal from '../components/Reveal.jsx';
 
@@ -45,13 +45,19 @@ export default function Services() {
       <section className="block tint">
         <div className="container" style={{ maxWidth: 760 }}>
           <Reveal><h2 className="section-heading">Common questions</h2></Reveal>
-          {FAQS.map((f, i) => (
-            <Reveal delay={(i % 4) * 70} key={f.q}>
-              <div className="faq-item">
-                <h3>{f.q}</h3>
-                <p>{f.a}</p>
-              </div>
-            </Reveal>
+          {FAQ_GROUPS.map((group) => (
+            <div className="faq-group" key={group.title}>
+              <Reveal><h3 className="faq-group-title">{group.title}</h3></Reveal>
+              {group.faqs.map((f) => (
+                <details className="faq-item" key={f.q}>
+                  <summary>{f.q}</summary>
+                  <p>{f.a}</p>
+                  {f.link && (
+                    <Link className="faq-link" to={f.link.to}>{f.link.label} →</Link>
+                  )}
+                </details>
+              ))}
+            </div>
           ))}
         </div>
         <script
@@ -62,9 +68,11 @@ export default function Services() {
 
       <section className="block" style={{ textAlign: 'center' }}>
         <div className="container">
-          <h2 className="section-heading">Have a project in mind?</h2>
+          <h2 className="section-heading">Planning a custom glass project?</h2>
           <p className="section-subheading" style={{ margin: '0 auto 28px' }}>
-            Tell us what you're planning and we'll come back with a clear, no-obligation estimate.
+            From shower enclosures and glass railings to custom mirrors and specialty glass, we work
+            with homeowners, designers, and contractors across the Lower Mainland. Tell us what
+            you're planning and we'll come back with a clear, no-obligation estimate.
           </p>
           <a className="btn btn-primary" href="/request-estimate">Request an Estimate</a>
           <p className="cta-contact">
