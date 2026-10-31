@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { COMPANY, SERVICES, SERVICE_AREA_DETAILS } from '../data.js';
+import { COMPANY, SERVICES, SERVICE_AREA_DETAILS, CITY_PAGES } from '../data.js';
 import Reveal from '../components/Reveal.jsx';
 
 export default function ServiceAreas() {
@@ -25,7 +25,16 @@ export default function ServiceAreas() {
                   <h2 style={{ color: 'var(--navy)', margin: 0, fontSize: '1.3rem' }}>{area.region}</h2>
                   <p>{area.summary}</p>
                   <p style={{ fontSize: '0.9rem' }}>
-                    <strong>Including:</strong> {area.cities.join(', ')}
+                    <strong>Including:</strong>{' '}
+                    {area.cities.map((name, j) => {
+                      const page = CITY_PAGES.find((c) => c.name === name);
+                      return (
+                        <React.Fragment key={name}>
+                          {j > 0 && ', '}
+                          {page ? <Link to={`/service-areas/${page.slug}`}>{name}</Link> : name}
+                        </React.Fragment>
+                      );
+                    })}
                   </p>
                 </div>
               </Reveal>

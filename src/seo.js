@@ -21,6 +21,7 @@ import {
   SKYLIGHT_DESIGNS,
   CUSTOM_GLASS_DESIGNS,
   ARTICLES,
+  CITY_PAGES,
 } from './data.js';
 
 // The live domain. Every canonical URL, share link and sitemap entry uses it.
@@ -147,6 +148,16 @@ export function getPageMeta(pathname, now = new Date()) {
       }
     }
 
+    if (section === 'service-areas' && slug && !designSlug) {
+      const city = CITY_PAGES.find((c) => c.slug === slug);
+      if (city) {
+        meta = {
+          title: `Glass Installation in ${city.name}, BC | ${BRAND}`,
+          description: clip(`Frameless showers, glass railings, mirrors, windows and custom glass installed in ${city.name} and across the ${city.region} by Finelines Glass. Free estimates.`),
+        };
+      }
+    }
+
     if (section === 'articles' && slug && !designSlug) {
       const article = ARTICLES.find((a) => a.slug === slug);
       if (article && isPublished(article, now)) {
@@ -174,8 +185,9 @@ export function getPageMeta(pathname, now = new Date()) {
 
 // Home > Services > Glass Railings > Spigot, as [{ name, path }], for the
 // breadcrumb trail Google can show under a result. Only for pages below a
-// section (services, designs, articles); returns [] for everything else.
-const SECTION_NAMES = { services: 'Services', articles: 'Articles' };
+// section (services, designs, city pages, articles); returns [] for
+// everything else.
+const SECTION_NAMES = { services: 'Services', 'service-areas': 'Service Areas', articles: 'Articles' };
 
 export function getBreadcrumbs(pathname, now = new Date()) {
   const path = normalizePath(pathname);
@@ -194,6 +206,10 @@ export function getBreadcrumbs(pathname, now = new Date()) {
       if (!design) return [];
       crumbs.push({ name: design.title, path });
     }
+  } else if (section === 'service-areas') {
+    const city = CITY_PAGES.find((c) => c.slug === slug);
+    if (!city || designSlug) return [];
+    crumbs.push({ name: city.name, path });
   } else {
     const article = ARTICLES.find((a) => a.slug === slug);
     if (!article || !isPublished(article, now)) return [];
@@ -212,6 +228,7 @@ export function getSitemapPaths(now = new Date()) {
       paths.push(`/services/${service.slug}/${design.slug}`);
     }
   }
+  for (const city of CITY_PAGES) paths.push(`/service-areas/${city.slug}`);
   for (const article of ARTICLES) {
     if (isPublished(article, now)) paths.push(`/articles/${article.slug}`);
   }

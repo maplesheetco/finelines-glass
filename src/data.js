@@ -65,6 +65,31 @@ export const SERVICE_AREA_DETAILS = [
   },
 ];
 
+// City pages (/service-areas/:slug), one per city we want to show up for in
+// local searches ("glass railings Coquitlam"). Each page lists every service,
+// the jobs we've done in or near that city (by name from PROJECTS), the
+// install process and nearby cities. Write the intro fresh for each city and
+// only mention real local work: near-identical city pages look like spam to
+// Google.
+//   slug:     the URL, /service-areas/<slug>
+//   region:   which SERVICE_AREA_DETAILS region it belongs to
+//   intro:    1-3 short paragraphs, specific to this city
+//   projects: names of PROJECTS jobs to show (in or near the city)
+//   nearby:   other city names to mention; ones with their own page get linked
+export const CITY_PAGES = [
+  {
+    slug: 'coquitlam',
+    name: 'Coquitlam',
+    region: 'Tri-City',
+    intro: [
+      "Finelines Glass installs frameless showers, glass railings, mirrors, windows and commercial glass for homes and businesses in Coquitlam. We're based in Vancouver, so Coquitlam, Port Coquitlam and Port Moody are a regular part of our week.",
+      'Our recent work in Coquitlam includes a storefront glass and window installation. We also take on residential renovations across the Tri-Cities, working with homeowners, builders and designers.',
+    ],
+    projects: ['Coquitlam Storefront'],
+    nearby: ['Port Coquitlam', 'Port Moody', 'Burnaby', 'New Westminster', 'Maple Ridge'],
+  },
+];
+
 export const NAV = [
   { label: 'Home', path: '/' },
   { label: 'Services', path: '/services' },
