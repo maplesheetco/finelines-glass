@@ -87,12 +87,13 @@ export default function Projects() {
                   aria-label={`View ${p.photos.length} photo${p.photos.length > 1 ? 's' : ''} from ${p.name}`}
                 >
                   <div className="project-card-image-wrap">
-                    <img src={p.photos[0].src} alt={p.name} loading="lazy" />
+                    <img src={p.photos[0].src} alt={`${p.name} - ${p.photos[0].label}`} loading="lazy" />
                     {p.photos.length > 1 && (
                       <span className="project-card-badge">{p.photos.length} photos</span>
                     )}
                   </div>
                   <div className="project-card-name">{p.name}</div>
+                  {p.summary && <div className="project-card-summary">{p.summary}</div>}
                 </button>
               </Reveal>
             ))}

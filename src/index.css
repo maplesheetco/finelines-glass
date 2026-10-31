@@ -1021,6 +1021,13 @@ form.contact-form textarea { min-height: 120px; resize: vertical; }
   font-weight: 700;
   color: var(--navy);
 }
+.project-card-summary {
+  padding: 0 14px 14px;
+  margin-top: -6px;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--gray);
+}
 
 /* ---------- Project lightbox ---------- */
 .lightbox-backdrop {

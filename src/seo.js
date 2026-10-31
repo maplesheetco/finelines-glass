@@ -101,10 +101,13 @@ function clip(text, max = 160) {
 }
 
 // "Glass Shelving" -> "Glass Shelving in Vancouver | Finelines Glass", leaving
-// out "in Vancouver" when the title would get too long for Google (~60 chars).
+// out "in Vancouver", then the brand, when the title would get too long for
+// Google (~60 chars).
 function withBrand(name) {
   const local = `${name} in Vancouver | ${BRAND}`;
-  return local.length <= 60 ? local : `${name} | ${BRAND}`;
+  if (local.length <= 60) return local;
+  const branded = `${name} | ${BRAND}`;
+  return branded.length <= 65 ? branded : name;
 }
 
 function isPublished(article, now) {
@@ -167,6 +170,36 @@ export function getPageMeta(pathname, now = new Date()) {
   // The site shows .webp photos, but some link previews (LinkedIn, older
   // apps) only accept JPEG, so shares point at the .jpg copy of each photo.
   return { ...page, image: page.image.replace(/\.webp$/, '.jpg') };
+}
+
+// Home > Services > Glass Railings > Spigot, as [{ name, path }], for the
+// breadcrumb trail Google can show under a result. Only for pages below a
+// section (services, designs, articles); returns [] for everything else.
+const SECTION_NAMES = { services: 'Services', articles: 'Articles' };
+
+export function getBreadcrumbs(pathname, now = new Date()) {
+  const path = normalizePath(pathname);
+  const [, section, slug, designSlug] = path.split('/');
+  if (!SECTION_NAMES[section] || !slug) return [];
+  const crumbs = [
+    { name: 'Home', path: '/' },
+    { name: SECTION_NAMES[section], path: `/${section}` },
+  ];
+  if (section === 'services') {
+    const service = SERVICES.find((s) => s.slug === slug);
+    if (!service) return [];
+    crumbs.push({ name: service.title, path: `/services/${slug}` });
+    if (designSlug) {
+      const design = (DESIGNS_BY_SERVICE[slug] || []).find((d) => d.slug === designSlug);
+      if (!design) return [];
+      crumbs.push({ name: design.title, path });
+    }
+  } else {
+    const article = ARTICLES.find((a) => a.slug === slug);
+    if (!article || !isPublished(article, now)) return [];
+    crumbs.push({ name: article.title, path });
+  }
+  return crumbs;
 }
 
 // Every page that should be in Google, for the sitemap and the build step.
