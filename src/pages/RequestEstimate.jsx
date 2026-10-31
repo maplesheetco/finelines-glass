@@ -71,14 +71,29 @@ export default function RequestEstimate() {
     if (fileInputRef.current) fileInputRef.current.value = '';
   }
 
-  // TODO: this currently only shows a local success screen — it doesn't send
-  // anywhere yet. Wire it up the same way as the plain Contact form (see the
-  // note in Contact.jsx): a free Formspree endpoint is the simplest option,
-  // no backend needed, and Formspree's free plan supports a file field like
-  // this one out of the box (just give the <input name="attachment"> and it
-  // rides along with the rest of the fields).
+  // Interim: the form has no backend yet, so Submit opens the visitor's email
+  // app with the request pre-filled and addressed to COMPANY.email. Swap this
+  // for a Formspree (or similar) endpoint once the owner's account is set up;
+  // mailto can't carry the attachment, so the visitor is asked to attach it.
   function handleSubmit(e) {
     e.preventDefault();
+    const project = [
+      `Service: ${form.service}`,
+      form.timeline && `Timeline: ${form.timeline}`,
+      form.propertyType && `Property type: ${form.propertyType}`,
+      form.area && `Area: ${form.area}`,
+      form.details && `Details: ${form.details}`,
+      form.attachment && `Attachment: ${form.attachment.name} (please attach it to this email)`,
+    ].filter(Boolean);
+    const contact = [
+      `Name: ${form.name}`,
+      `Email: ${form.email}`,
+      `Phone: ${form.phone}`,
+      `Preferred contact: ${form.contactMethod}`,
+    ];
+    const subject = `Estimate request: ${form.service} (${form.name})`;
+    const body = [...project, '', ...contact].join('\n');
+    window.location.href = `mailto:${COMPANY.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     setSubmitted(true);
   }
 
@@ -99,10 +114,11 @@ export default function RequestEstimate() {
                 <circle cx="12" cy="12" r="10.5" stroke="#C0762A" strokeWidth="1.6" />
                 <path d="M7.5 12.5 L10.5 15.5 L16.5 8.5" stroke="#C0762A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-              <h2>Thanks{form.name ? `, ${form.name.split(' ')[0]}` : ''} — we've got it.</h2>
+              <h2>Almost done{form.name ? `, ${form.name.split(' ')[0]}` : ''} — just hit send.</h2>
               <p className="section-subheading" style={{ margin: '0 auto 24px' }}>
-                We'll review your project and get back to you by {form.contactMethod.toLowerCase()} within one
-                business day with next steps.
+                Your email app should have opened with your request filled in. Press send and we'll get back to
+                you by {form.contactMethod.toLowerCase()} within one business day.
+                {form.attachment && ' Remember to attach your photo or PDF before sending.'}
               </p>
               <dl className="estimate-summary">
                 {form.service && (<><dt>Service</dt><dd>{form.service}</dd></>)}
@@ -115,7 +131,8 @@ export default function RequestEstimate() {
                 <dd>{form.name} &middot; {form.email}{form.phone ? ` · ${form.phone}` : ''}</dd>
               </dl>
               <p style={{ color: 'var(--gray)' }}>
-                Need to reach us sooner? Call <a href={COMPANY.phoneHref} style={{ color: 'var(--steel)', fontWeight: 600 }}>{COMPANY.phone}</a>.
+                Email app didn't open? Send these details to <a href={`mailto:${COMPANY.email}`} style={{ color: 'var(--steel)', fontWeight: 600 }}>{COMPANY.email}</a> or
+                call <a href={COMPANY.phoneHref} style={{ color: 'var(--steel)', fontWeight: 600 }}>{COMPANY.phone}</a>.
               </p>
             </div>
           </div>
@@ -303,6 +320,10 @@ export default function RequestEstimate() {
                 </>
               )}
             </form>
+            <p className="file-upload-hint" style={{ textAlign: 'center', marginTop: 18 }}>
+              Prefer to talk? Call <a href={COMPANY.phoneHref}>{COMPANY.phone}</a> or
+              email <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a>.
+            </p>
           </div>
         </div>
       </section>
