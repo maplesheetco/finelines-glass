@@ -1807,15 +1807,19 @@ export const PROJECTS_PREVIEW = [
 // TO ADD A BRAND NEW JOB:
 //   Copy one of the { name: ..., photos: [...] } blocks below, give it the
 //   new job's name, and list its photo(s) the same way.
+//   `summary` is the one line of what was installed, shown under the job
+//   name on its card (and read by Google, so name the glass work plainly).
 export const PROJECTS = [
   {
     name: 'West Vancouver',
+    summary: 'Frameless shower enclosure',
     photos: [
       { src: '/images/project-1.webp', label: 'Frameless Shower' },
     ],
   },
   {
     name: 'Bellevue Dr.',
+    summary: 'Exterior and interior glass railings, a glass wine cellar and frameless shower enclosures',
     photos: [
       { src: '/images/project-2.webp', label: 'Exterior Glass Railing' },
       { src: '/images/project-4.webp', label: 'Interior Railing' },
@@ -1825,12 +1829,14 @@ export const PROJECTS = [
   },
   {
     name: 'Richmond',
+    summary: 'Glass shower enclosure',
     photos: [
       { src: '/images/project-3.webp', label: 'Shower Enclosure' },
     ],
   },
   {
     name: 'Pender Island',
+    summary: 'Exterior glass deck railings with marina views',
     photos: [
       { src: '/images/project-7.webp', label: 'Exterior Railing' },
       { src: '/images/project-10.webp', label: 'Exterior Glass Railing' },
@@ -1841,18 +1847,21 @@ export const PROJECTS = [
   },
   {
     name: 'Cedarhurst St.',
+    summary: 'Glass wine cellar',
     photos: [
       { src: '/images/project-8.webp', label: 'Wine Cellar' },
     ],
   },
   {
     name: 'West 34th Vancouver',
+    summary: 'Glass shower enclosures',
     photos: [
       { src: '/images/project-9.webp', label: 'Shower Enclosures' },
     ],
   },
   {
     name: 'Marine Drive - Skybar',
+    summary: 'Backlit onyx bar and feature wall, wine storage, glass shelving and an outdoor kitchen and bar',
     photos: [
       { src: '/images/project-25.webp', label: 'Backlit Onyx Bar & Wine Storage' },
       { src: '/images/project-14.webp', label: 'Backlit Onyx Feature Wall' },
@@ -1864,6 +1873,7 @@ export const PROJECTS = [
   },
   {
     name: 'West Cordova - Vancouver',
+    summary: 'Frameless shower enclosures, glass wardrobe doors and feature and vanity mirrors',
     photos: [
       { src: '/images/project-19.webp', label: 'Frameless Shower Enclosure' },
       { src: '/images/project-20.webp', label: 'Walk-In Closet - Glass Wardrobe Doors' },
@@ -1875,6 +1885,7 @@ export const PROJECTS = [
   },
   {
     name: 'Lions Bay',
+    summary: 'Skylight replacement and interior window film',
     photos: [
       { src: '/images/project-26.webp', label: 'Skylight Glass Panel - Installation' },
       { src: '/images/project-27.webp', label: 'Finished Skylight Ridge' },
@@ -1885,6 +1896,7 @@ export const PROJECTS = [
   },
   {
     name: 'Coquitlam Storefront',
+    summary: 'Storefront glass and window installation',
     photos: [
       { src: '/images/project-31.webp', label: 'Storefront Unit - Front View' },
       { src: '/images/project-32.webp', label: 'Storefront Window - Close-Up' },

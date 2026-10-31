@@ -3,7 +3,7 @@ import path from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { build, defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { getPageMeta, getSitemapPaths, absoluteUrl } from './src/seo.js'
+import { getPageMeta, getSitemapPaths, getBreadcrumbs, absoluteUrl } from './src/seo.js'
 
 const escapeHtml = (s) =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
@@ -11,7 +11,8 @@ const escapeHtml = (s) =>
 // After each build, writes a copy of index.html for every page with that
 // page's own title, description, share tags, canonical URL and fully
 // rendered content (so search engines and link previews see them without
-// running JavaScript), plus sitemap.xml. Page wording lives in src/seo.js.
+// running JavaScript), breadcrumb data for pages under Services and
+// Articles, plus sitemap.xml. Page wording lives in src/seo.js.
 // Articles scheduled for later are left out until a build runs after their
 // publish time.
 function seoPages() {
@@ -68,11 +69,25 @@ function seoPages() {
           `<meta property="og:description" content="${escapeHtml(meta.description)}" />`,
           `<meta property="og:url" content="${absoluteUrl(meta.path)}" />`,
           `<meta property="og:image" content="${absoluteUrl(meta.image)}" />`,
-        ].join('\n    ')
+        ]
+        const crumbs = getBreadcrumbs(pagePath, now)
+        if (crumbs.length) {
+          const breadcrumbSchema = {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: crumbs.map((c, i) => ({
+              '@type': 'ListItem',
+              position: i + 1,
+              name: c.name,
+              item: absoluteUrl(c.path),
+            })),
+          }
+          tags.push(`<script type="application/ld+json">${JSON.stringify(breadcrumbSchema).replace(/</g, '\\u003c')}</script>`)
+        }
         const file = path.join(outDir, pagePath, 'index.html')
         fs.mkdirSync(path.dirname(file), { recursive: true })
         const html = template
-          .replace(block, tags)
+          .replace(block, () => tags.join('\n    '))
           .replace('<div id="root"></div>', () => `<div id="root">${render(pagePath)}</div>`)
         fs.writeFileSync(file, html)
       }
