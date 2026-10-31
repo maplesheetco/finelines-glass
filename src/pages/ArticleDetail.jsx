@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { COMPANY, getPublishedArticles } from '../data.js';
 import Reveal from '../components/Reveal.jsx';
+import { absoluteUrl } from '../seo.js';
 
 // Full post page for a single article, e.g. /articles/frameless-shower-
 // enclosures-jobsite-to-finished-product. Linked from the cards on
@@ -24,6 +25,20 @@ export default function ArticleDetail() {
   }
 
   const otherArticles = ARTICLES.filter((a) => a.slug !== slug);
+
+  // Tells Google this page is an article: headline, photo, publish date and
+  // who wrote it, for article listings in search results.
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: article.title,
+    description: article.metaDescription || article.excerpt,
+    image: article.heroImage ? [absoluteUrl(article.heroImage.replace(/\.webp$/, '.jpg'))] : undefined,
+    datePublished: article.publishAt,
+    mainEntityOfPage: absoluteUrl(`/articles/${article.slug}`),
+    author: { '@type': 'Organization', name: COMPANY.name, url: absoluteUrl('/') },
+    publisher: { '@type': 'Organization', name: COMPANY.name, url: absoluteUrl('/') },
+  };
 
   return (
     <>
@@ -161,6 +176,10 @@ export default function ArticleDetail() {
             </aside>
           </Reveal>
         </div>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
       </section>
     </>
   );

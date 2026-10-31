@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { COMPANY } from '../data.js';
 import Reveal from '../components/Reveal.jsx';
+import { trackEvent } from '../analytics.js';
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -19,6 +20,7 @@ export default function Contact() {
       `Email: ${data.get('email')}`,
       data.get('phone') ? `Phone: ${data.get('phone')}` : null,
     ].filter((line) => line !== null).join('\n');
+    trackEvent('generate_lead', { form_name: 'contact' });
     window.location.href = `mailto:${COMPANY.email}?subject=${encodeURIComponent(`Website enquiry from ${name}`)}&body=${encodeURIComponent(body)}`;
     setSubmitted(true);
   }

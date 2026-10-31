@@ -2085,7 +2085,7 @@ export const ARTICLES = [
   {
     slug: 'frameless-shower-enclosures-jobsite-to-finished-product',
     title: 'Frameless Shower Enclosures: From Jobsite to a Beautiful Finished Product',
-    seoTitle: 'Frameless Shower Enclosures: From Jobsite to Finished Product | Finelines Glass Installations',
+    seoTitle: 'Frameless Shower Enclosures, Jobsite to Finish | Finelines Glass',
     metaDescription: 'Discover how a frameless shower enclosure goes from jobsite measurements and installation to a beautiful finished product. Explore glass design, door placement, hardware, and installation considerations.',
     keywords: ['frameless shower enclosures', 'frameless shower glass', 'custom shower glass', 'glass shower doors', 'frameless glass shower doors', 'custom glass shower enclosure', 'shower glass installation', 'glass shower enclosure Vancouver', 'glass shower enclosure Surrey', 'custom glass installation', 'bathroom glass installation'],
     publishDate: 'October 5, 2026',
@@ -2298,7 +2298,7 @@ export const ARTICLES = [
   {
     slug: 'glass-railing-for-modern-homes',
     title: 'Glass Railing for Modern Homes',
-    seoTitle: 'Glass Railing for Modern Homes: Design, Safety & Installation Considerations | Finelines Glass Installations',
+    seoTitle: 'Choosing Glass Railings for a Modern Home | Finelines Glass',
     metaDescription: 'Explore how glass railings bring an open, modern look to balconies, decks, and stairways, and what homeowners, designers, and contractors should consider before installation.',
     keywords: ['glass railing', 'glass railing for modern homes', 'frameless glass railing', 'glass balcony railing', 'glass deck railing', 'glass stair railing', 'glass railing installation Vancouver', 'glass railing installation Surrey'],
     publishDate: 'October 12, 2026',
@@ -2376,7 +2376,7 @@ export const ARTICLES = [
   {
     slug: 'custom-mirrors-that-make-small-spaces-feel-bigger',
     title: 'Custom Mirrors That Make Small Spaces Feel Bigger',
-    seoTitle: 'Custom Mirrors That Make Small Spaces Feel Bigger: Design, Placement & Installation Ideas | Finelines Glass Installations',
+    seoTitle: 'Mirrors That Make Small Spaces Feel Bigger | Finelines Glass',
     metaDescription: 'Discover how custom mirrors can make bathrooms, entryways, gyms, and other interiors feel brighter and more spacious, with design and placement ideas from Finelines Glass Installations.',
     keywords: ['custom mirrors', 'custom mirror installation', 'bathroom mirrors', 'full-wall mirrors', 'gym mirrors', 'custom mirror Vancouver', 'custom mirror Surrey', 'mirrors for small spaces'],
     publishDate: 'October 19, 2026',
@@ -2478,7 +2478,7 @@ export const ARTICLES = [
   {
     slug: 'choosing-shower-glass-hardware-finishes',
     title: 'Choosing Shower Glass Hardware Finishes for Your Bathroom',
-    seoTitle: 'Choosing Shower Glass Hardware Finishes for Your Bathroom: How to Match Shower Hardware With Your Bathroom Design | Finelines Glass Installations',
+    seoTitle: 'Choosing Shower Glass Hardware Finishes | Finelines Glass',
     metaDescription: 'A guide to choosing shower glass hardware finishes — hinges, handles, and clamps — that coordinate with your bathroom’s faucets, cabinetry, and lighting, from Finelines Glass Installations.',
     keywords: ['shower glass hardware finishes', 'shower hinge finishes', 'shower door hardware', 'matte black shower hardware', 'brushed nickel shower hardware', 'shower glass hardware Vancouver', 'shower glass hardware Surrey', 'CRL shower hardware'],
     publishDate: 'October 26, 2026',

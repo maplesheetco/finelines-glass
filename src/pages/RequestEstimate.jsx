@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { COMPANY, SERVICES } from '../data.js';
 import ServiceIcon from '../components/ServiceIcon.jsx';
+import { trackEvent } from '../analytics.js';
 
 const STEP_LABELS = ['Project', 'Details', 'Contact'];
 const TIMELINES = ['As soon as possible', 'Within the next month', '1–3 months', 'Just exploring options'];
@@ -93,6 +94,7 @@ export default function RequestEstimate() {
     ];
     const subject = `Estimate request: ${form.service} (${form.name})`;
     const body = [...project, '', ...contact].join('\n');
+    trackEvent('generate_lead', { form_name: 'estimate', service: form.service });
     window.location.href = `mailto:${COMPANY.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     setSubmitted(true);
   }
