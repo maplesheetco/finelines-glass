@@ -5,13 +5,21 @@ import Reveal from '../components/Reveal.jsx';
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
 
-  // TODO: this form currently only shows a success message locally — it does not
-  // actually send anywhere yet. The simplest fix (no backend needed) is a free
-  // Formspree endpoint (formspree.io): create a form there, then change the
-  // <form> tag below to action="https://formspree.io/f/yourFormId" method="POST"
-  // and remove the onSubmit handler. See the repo README for the full walkthrough.
+  // Interim: no backend yet, so Send opens the visitor's email app with the
+  // message pre-filled and addressed to COMPANY.email. Swap this for a
+  // Formspree (or similar) endpoint once the owner's account is set up.
   function handleSubmit(e) {
     e.preventDefault();
+    const data = new FormData(e.target);
+    const name = data.get('name');
+    const body = [
+      data.get('message'),
+      '',
+      `Name: ${name}`,
+      `Email: ${data.get('email')}`,
+      data.get('phone') ? `Phone: ${data.get('phone')}` : null,
+    ].filter((line) => line !== null).join('\n');
+    window.location.href = `mailto:${COMPANY.email}?subject=${encodeURIComponent(`Website enquiry from ${name}`)}&body=${encodeURIComponent(body)}`;
     setSubmitted(true);
   }
 
@@ -97,8 +105,9 @@ export default function Contact() {
           <div>
             {submitted ? (
               <div className="card">
-                <h3>Thanks — message received!</h3>
-                <p>We'll get back to you shortly. In the meantime, feel free to call {COMPANY.phone}.</p>
+                <h3>Almost done — just hit send.</h3>
+                <p>Your email app should have opened with your message filled in. Press send and we'll get back to you shortly.</p>
+                <p>Email app didn't open? Write to <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a> or call <a href={COMPANY.phoneHref}>{COMPANY.phone}</a>.</p>
               </div>
             ) : (
               <form className="contact-form" onSubmit={handleSubmit}>
