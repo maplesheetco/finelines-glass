@@ -72,21 +72,98 @@ export const SERVICE_AREA_DETAILS = [
 // only mention real local work: near-identical city pages look like spam to
 // Google.
 //   slug:     the URL, /service-areas/<slug>
-//   region:   which SERVICE_AREA_DETAILS region it belongs to
+//   area:     the wider area, as it reads after "the rest of"
 //   intro:    1-3 short paragraphs, specific to this city
 //   projects: names of PROJECTS jobs to show (in or near the city)
 //   nearby:   other city names to mention; ones with their own page get linked
 export const CITY_PAGES = [
   {
+    slug: 'vancouver',
+    name: 'Vancouver',
+    area: 'Greater Vancouver',
+    intro: [
+      "Vancouver is home for Finelines Glass. Our shop is on East Kent Avenue, and we work right across the city, from downtown ensuites to West Side homes and commercial spaces.",
+      'Recent Vancouver jobs include exterior and interior glass railings, a glass wine cellar and frameless showers on Bellevue Drive, a wine cellar on Cedarhurst Street, shower enclosures on West 34th, a full ensuite and walk-in closet on West Cordova, and the backlit onyx bar and glass shelving at the Marine Drive Skybar.',
+    ],
+    projects: ['Bellevue Dr. - Vancouver', 'West Cordova - Vancouver', 'Marine Drive - Skybar - Vancouver', 'Cedarhurst St. - Vancouver', 'West 34th Vancouver'],
+    nearby: ['Burnaby', 'Richmond', 'North Vancouver', 'West Vancouver', 'New Westminster'],
+  },
+  {
+    slug: 'burnaby',
+    name: 'Burnaby',
+    area: 'Greater Vancouver',
+    intro: [
+      "Burnaby is right next door to our Vancouver shop. We install frameless showers, glass railings, mirrors, office partitions and window glass for Burnaby homeowners, strata owners and businesses.",
+      'Whether it is a condo bathroom upgrade, new railings on a house or townhouse, or glass partitions for an office, every job is measured on site and installed by our own team.',
+    ],
+    projects: [],
+    nearby: ['Vancouver', 'New Westminster', 'Coquitlam', 'Richmond', 'North Vancouver'],
+  },
+  {
+    slug: 'richmond',
+    name: 'Richmond',
+    area: 'Greater Vancouver',
+    intro: [
+      'Finelines Glass installs shower enclosures, glass railings, mirrors, windows and custom glass across Richmond, a short drive south of our Vancouver shop.',
+      'Our recent work in Richmond includes a glass shower enclosure, and we also take on bathroom renovations, railings and mirror walls for Richmond homeowners and contractors.',
+    ],
+    projects: ['Richmond'],
+    nearby: ['Vancouver', 'Burnaby', 'Delta', 'New Westminster', 'Surrey'],
+  },
+  {
+    slug: 'surrey',
+    name: 'Surrey',
+    area: 'the Lower Mainland',
+    intro: [
+      'Finelines Glass travels across Surrey for frameless showers, glass railings, mirrors, windows, skylights and commercial glass. We work with homeowners as well as the builders and contractors putting up new homes in the area.',
+      'From a single shower door to railings for a new build, every job is measured on site, planned with you or your contractor, and installed by our own team.',
+    ],
+    projects: [],
+    nearby: ['Langley', 'Delta', 'White Rock', 'New Westminster', 'Burnaby'],
+  },
+  {
+    slug: 'north-vancouver',
+    name: 'North Vancouver',
+    area: 'the North Shore',
+    intro: [
+      'On the North Shore, glass railings are often about keeping the view open, and frameless showers about making the most of every bathroom. Finelines Glass installs both, along with mirrors, skylights, windows and custom glass, across the City and District of North Vancouver.',
+      'We also work in West Vancouver and up the coast to Lions Bay, where we recently replaced skylights and applied window film on a home.',
+    ],
+    projects: ['Lions Bay'],
+    nearby: ['West Vancouver', 'Lions Bay', 'Vancouver', 'Burnaby'],
+  },
+  {
+    slug: 'west-vancouver',
+    name: 'West Vancouver',
+    area: 'the North Shore',
+    intro: [
+      'Finelines Glass installs frameless showers, glass railings, wine cellars, mirrors and skylights for West Vancouver homes, where clear glass that keeps the view open is often the whole point.',
+      'Recent work on this side of the North Shore includes a frameless shower enclosure in West Vancouver, and skylight replacement and window film on a home in Lions Bay.',
+    ],
+    projects: ['West Vancouver', 'Lions Bay'],
+    nearby: ['North Vancouver', 'Lions Bay', 'Vancouver'],
+  },
+  {
     slug: 'coquitlam',
     name: 'Coquitlam',
-    region: 'Tri-City',
+    area: 'the Tri-Cities',
     intro: [
       "Finelines Glass installs frameless showers, glass railings, mirrors, windows and commercial glass for homes and businesses in Coquitlam. We're based in Vancouver, so Coquitlam, Port Coquitlam and Port Moody are a regular part of our week.",
       'Our recent work in Coquitlam includes a storefront glass and window installation. We also take on residential renovations across the Tri-Cities, working with homeowners, builders and designers.',
     ],
     projects: ['Coquitlam Storefront'],
     nearby: ['Port Coquitlam', 'Port Moody', 'Burnaby', 'New Westminster', 'Maple Ridge'],
+  },
+  {
+    slug: 'langley',
+    name: 'Langley',
+    area: 'the Fraser Valley',
+    intro: [
+      'Finelines Glass installs frameless showers, glass railings, mirrors, windows and skylights in the City and Township of Langley, for homeowners and for the builders working on new homes in the area.',
+      'We travel out from Vancouver for Langley jobs, measure every opening on site, and install with our own team, so the glass fits the finished walls, floors and decks rather than a drawing.',
+    ],
+    projects: [],
+    nearby: ['Surrey', 'Abbotsford', 'Maple Ridge', 'White Rock'],
   },
 ];
 

@@ -15,6 +15,10 @@ export default function CityPage() {
   if (!city) return <NotFound />;
 
   const projects = PROJECTS.filter((p) => city.projects.includes(p.name));
+  // Up to three photos from each local job, shown together in one grid.
+  const photos = projects.flatMap((project) =>
+    project.photos.slice(0, 3).map((photo) => ({ project, photo })),
+  );
   const cityPageFor = (name) => CITY_PAGES.find((c) => c.name === name);
 
   return (
@@ -27,7 +31,7 @@ export default function CityPage() {
           <h1>Glass Installation in {city.name}</h1>
           <p>
             Showers, railings, mirrors, windows and custom glass, measured and installed by our own
-            team. Serving {city.name} and the rest of the {city.region}.
+            team. Serving {city.name} and the rest of {city.area}.
           </p>
           <div className="hero-actions" style={{ marginTop: 24 }}>
             <Link className="btn btn-primary" to="/request-estimate">Request an Estimate</Link>
@@ -58,28 +62,22 @@ export default function CityPage() {
         <section className="block">
           <div className="container">
             <Reveal><h2 className="section-heading">Recent work in and around {city.name}</h2></Reveal>
-            {projects.map((project) => (
-              <div key={project.name} style={{ marginBottom: 28 }}>
-                <Reveal>
-                  <h3 style={{ color: 'var(--navy)', marginBottom: 4 }}>{project.name}</h3>
-                  {project.summary && <p style={{ color: 'var(--gray)', marginTop: 0 }}>{project.summary}</p>}
+            {/* auto-fill keeps a lone photo card-sized instead of stretching full width */}
+            <div className="project-grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))' }}>
+              {photos.map(({ project, photo }, i) => (
+                <Reveal key={photo.src} delay={(i % 3) * 90}>
+                  <div className="project-card" style={{ cursor: 'default' }}>
+                    <div className="project-card-image-wrap">
+                      <img src={photo.src} alt={`${project.name} - ${photo.label}`} loading="lazy" />
+                    </div>
+                    <div className="project-card-name">{project.name}</div>
+                    <div className="project-card-summary">{photo.label}</div>
+                  </div>
                 </Reveal>
-                <div className="project-grid">
-                  {project.photos.slice(0, 3).map((photo, i) => (
-                    <Reveal key={photo.src} delay={i * 90}>
-                      <div className="project-card" style={{ cursor: 'default' }}>
-                        <div className="project-card-image-wrap">
-                          <img src={photo.src} alt={`${project.name} - ${photo.label}`} loading="lazy" />
-                        </div>
-                        <div className="project-card-summary" style={{ paddingTop: 12, marginTop: 0 }}>{photo.label}</div>
-                      </div>
-                    </Reveal>
-                  ))}
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
             <Reveal>
-              <p><Link to="/projects">See all our projects &rarr;</Link></p>
+              <p style={{ marginTop: 24 }}><Link to="/projects">See all our projects &rarr;</Link></p>
             </Reveal>
           </div>
         </section>

@@ -153,7 +153,7 @@ export function getPageMeta(pathname, now = new Date()) {
       if (city) {
         meta = {
           title: `Glass Installation in ${city.name}, BC | ${BRAND}`,
-          description: clip(`Frameless showers, glass railings, mirrors, windows and custom glass installed in ${city.name} and across the ${city.region} by Finelines Glass. Free estimates.`),
+          description: clip(`Frameless showers, glass railings, mirrors, windows and custom glass installed in ${city.name} and across ${city.area} by Finelines Glass. Free estimates.`),
         };
       }
     }
