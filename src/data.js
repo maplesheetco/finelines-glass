@@ -1773,18 +1773,18 @@ export const CUSTOM_GLASS_NOTE = {
 // Captions describe the work only — never a client's exact address (see the
 // website report / discovery checklist for why).
 export const PROJECTS_PREVIEW = [
-  { src: '/images/project-25.webp', caption: 'Marine Drive - Skybar - Backlit Onyx Bar & Wine Storage' },
+  { src: '/images/project-25.webp', caption: 'Marine Drive - Skybar - Vancouver - Backlit Onyx Bar & Wine Storage' },
   { src: '/images/project-1.webp', caption: 'West Vancouver - Frameless Shower' },
-  { src: '/images/project-2.webp', caption: 'Bellevue Dr. - Exterior Glass Railing' },
+  { src: '/images/project-2.webp', caption: 'Bellevue Dr. - Vancouver - Exterior Glass Railing' },
   { src: '/images/project-3.webp', caption: 'Richmond - Shower Enclosure' },
-  { src: '/images/project-4.webp', caption: 'Bellevue Dr. - Interior Railing' },
-  { src: '/images/project-5.webp', caption: 'Bellevue Dr. - Wine Cellar' },
-  { src: '/images/project-6.webp', caption: 'Bellevue Dr. - Frameless Shower Enclosures' },
+  { src: '/images/project-4.webp', caption: 'Bellevue Dr. - Vancouver - Interior Railing' },
+  { src: '/images/project-5.webp', caption: 'Bellevue Dr. - Vancouver - Wine Cellar' },
+  { src: '/images/project-6.webp', caption: 'Bellevue Dr. - Vancouver - Frameless Shower Enclosures' },
   { src: '/images/project-7.webp', caption: 'Pender Island - Exterior Railing' },
-  { src: '/images/project-8.webp', caption: 'Cedarhurst St. - Wine Cellar' },
+  { src: '/images/project-8.webp', caption: 'Cedarhurst St. - Vancouver - Wine Cellar' },
   { src: '/images/project-9.webp', caption: 'West 34th Vancouver - Shower Enclosures' },
-  { src: '/images/project-14.webp', caption: 'Marine Drive - Skybar - Backlit Onyx Feature Wall' },
-  { src: '/images/project-15.webp', caption: 'Marine Drive - Skybar - Outdoor Kitchen & Bar' },
+  { src: '/images/project-14.webp', caption: 'Marine Drive - Skybar - Vancouver - Backlit Onyx Feature Wall' },
+  { src: '/images/project-15.webp', caption: 'Marine Drive - Skybar - Vancouver - Outdoor Kitchen & Bar' },
   { src: '/images/project-19.webp', caption: 'West Cordova - Vancouver - Frameless Shower Enclosure' },
   { src: '/images/project-21.webp', caption: 'West Cordova - Vancouver - Ensuite Shower & Freestanding Tub' },
   { src: '/images/project-22.webp', caption: 'West Cordova - Vancouver - Walk-In Closet Feature Mirror' },
@@ -1818,7 +1818,7 @@ export const PROJECTS = [
     ],
   },
   {
-    name: 'Bellevue Dr.',
+    name: 'Bellevue Dr. - Vancouver',
     summary: 'Exterior and interior glass railings, a glass wine cellar and frameless shower enclosures',
     photos: [
       { src: '/images/project-2.webp', label: 'Exterior Glass Railing' },
@@ -1846,7 +1846,7 @@ export const PROJECTS = [
     ],
   },
   {
-    name: 'Cedarhurst St.',
+    name: 'Cedarhurst St. - Vancouver',
     summary: 'Glass wine cellar',
     photos: [
       { src: '/images/project-8.webp', label: 'Wine Cellar' },
@@ -1860,7 +1860,7 @@ export const PROJECTS = [
     ],
   },
   {
-    name: 'Marine Drive - Skybar',
+    name: 'Marine Drive - Skybar - Vancouver',
     summary: 'Backlit onyx bar and feature wall, wine storage, glass shelving and an outdoor kitchen and bar',
     photos: [
       { src: '/images/project-25.webp', label: 'Backlit Onyx Bar & Wine Storage' },
