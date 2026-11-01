@@ -32,7 +32,7 @@ export const COMPANY = {
   emailFallback: 'info@finelinesglass.ca', // switch `email` back to this once the professional address is set up
   // Formspree form ID (formspree.io/f/<id>) for the estimate and contact
   // forms; see src/forms.js. Empty means the forms open the visitor's email app.
-  formspreeId: '',
+  formspreeId: 'xaeepzvk',
   // Set true only on a paid Formspree plan, which accepts file uploads.
   formspreeUploads: false,
   address: '1509 East Kent Ave N, Vancouver, BC V5P 4Y7',
