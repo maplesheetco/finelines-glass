@@ -2007,6 +2007,30 @@ export const PROJECTS = [
       { src: '/images/project-35.webp', label: 'Storefront Window - Corner Detail' },
     ],
   },
+  {
+    // A collection of wine room jobs from several homes, not one address,
+    // so it isn't tied to a city page.
+    name: 'Wine Enclosures',
+    summary: 'Glass wine rooms, cellars and wine walls: frameless, black-framed and arched glass',
+    photos: [
+      { src: '/images/project-36.webp', label: 'Frameless Glass Wine Room - Games Room' },
+      { src: '/images/project-37.webp', label: 'Glass Wine Wall - Lounge' },
+      { src: '/images/project-38.webp', label: 'Glass Wine Room - Basement Lounge' },
+      { src: '/images/project-39.webp', label: 'Glass Wine Room & Bar' },
+      { src: '/images/project-40.webp', label: 'Glass Wine Cellar - Brick Arches' },
+      { src: '/images/project-41.webp', label: 'Glass Wine Wall - Feature Lighting' },
+      { src: '/images/project-42.webp', label: 'Black-Framed Glass Wine Wall - Media Room' },
+      { src: '/images/project-43.webp', label: 'Arched Glass Doors - Wine Cellar Entry' },
+      { src: '/images/project-44.webp', label: 'Curved Glass - Arched Wine Cellar' },
+      { src: '/images/project-45.webp', label: 'Framed Glass Wine Room Doors' },
+      { src: '/images/project-46.webp', label: 'Glass Wine Room - Framed Doors' },
+      { src: '/images/project-47.webp', label: 'Glass Wine Cellar - Kitchen' },
+      { src: '/images/project-48.webp', label: 'Frameless Glass Wine Enclosure' },
+      { src: '/images/project-49.webp', label: 'Glass Wine Room - Bar Area' },
+      { src: '/images/project-50.webp', label: 'Black-Framed Glass Wine Room Doors' },
+      { src: '/images/project-51.webp', label: 'Black-Framed Glass Wine Cabinet' },
+    ],
+  },
 ];
 
 // Trust signals — pull these out of paragraph text and show them as a strip
