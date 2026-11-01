@@ -170,6 +170,8 @@ export default function RequestEstimate() {
             </div>
           </div>
 
+          <p className="scope-note">{COMPANY.scopeNote}</p>
+
           <div className="wizard-card">
             <Stepper step={step} />
 

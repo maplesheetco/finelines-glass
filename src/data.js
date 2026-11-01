@@ -22,6 +22,10 @@ export const B = {
 export const COMPANY = {
   name: 'Finelines Glass Installation Ltd.',
   shortName: 'Finelines Glass',
+  // Shown above the Request an Estimate and Contact forms (owner request,
+  // 2026-11-01). Keep it free of dollar figures.
+  scopeNote:
+    'We focus on complete projects where we supply and install the glass. For glass-only orders or very small repairs, a local glass supplier is usually the better choice.',
   phone: '604-789-5154',
   phoneHref: 'tel:+16047895154',
   email: 'finelinesglass@gmail.com', // Using Gmail for now — owner is still deciding on a professional email
@@ -2190,6 +2194,10 @@ export const FAQ_GROUPS = [
       {
         q: 'How much does a project like this usually cost?',
         a: "It depends on the hardware, glass, and finish choices for your project, so pricing varies from job to job. Reach out and we'll walk you through the options to give you a clear, no-obligation estimate.",
+      },
+      {
+        q: 'Do you sell glass only, or take on small jobs?',
+        a: "Every project we take on includes both the glass and professional installation. If you only need a piece of glass cut to size, or a very small repair, a local glass supplier or manufacturer is the quickest option.",
       },
       {
         q: 'How long does an installation take?',
