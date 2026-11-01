@@ -2082,6 +2082,48 @@ export const PROJECTS = [
       { src: '/images/project-85.webp', label: 'Textured Art Glass Panel - Detail' },
     ],
   },
+  {
+    // Railing jobs from many homes, not one address, so it isn't tied to a
+    // city page. Interior stairs and landings first, then rooftops, decks
+    // and an oceanfront exterior stair.
+    name: 'Glass Railings',
+    summary: 'Frameless glass stair railings, glass walls for floating stairs, rooftop and deck guards, and a curved glass railing',
+    photos: [
+      { src: '/images/project-86.webp', label: 'Glass Stair Railing - Modern Entry' },
+      { src: '/images/project-87.webp', label: 'Floor-to-Ceiling Glass Wall - Floating Stair' },
+      { src: '/images/project-88.webp', label: 'Frameless Glass Staircase Wall - Chandelier Foyer' },
+      { src: '/images/project-89.webp', label: 'Curved Glass Railing - Library Landing' },
+      { src: '/images/project-90.webp', label: 'Rooftop Glass Railing - City View' },
+      { src: '/images/project-91.webp', label: 'Rooftop Glass Railing - Ocean View' },
+      { src: '/images/project-92.webp', label: 'Glass Railing - Open-Riser Stair' },
+      { src: '/images/project-93.webp', label: 'Glass Stair Railing - Walnut Treads' },
+      { src: '/images/project-94.webp', label: 'Glass Stair Railing - Open-Concept Kitchen' },
+      { src: '/images/project-95.webp', label: 'Rooftop Glass Railing - Black Handrail' },
+      { src: '/images/project-96.webp', label: 'Rooftop Glass Railing - Garden Terrace' },
+      { src: '/images/project-97.webp', label: 'Exterior Glass Stair Railing - Oceanfront' },
+      { src: '/images/project-98.webp', label: 'Glass Deck & Stair Railings - Waterfront Home' },
+      { src: '/images/project-99.webp', label: 'Side-Mounted Glass Stair Railing - Ocean View' },
+      { src: '/images/project-100.webp', label: 'Glass Stair & Landing Railing' },
+      { src: '/images/project-101.webp', label: 'Rooftop Deck Glass Railing' },
+      { src: '/images/project-102.webp', label: 'Side-Mounted Glass Railing - Rooftop Deck' },
+      { src: '/images/project-103.webp', label: 'Glass Railing - Rooftop Patio' },
+      { src: '/images/project-104.webp', label: 'Rooftop Glass Railing - Mountain View' },
+      { src: '/images/project-105.webp', label: 'Glass Guard Railing - Terrace Skylight' },
+      { src: '/images/project-106.webp', label: 'Glass Stair Railing - Wood Handrail' },
+      { src: '/images/project-107.webp', label: 'Glass Railing - Black Steel Stair' },
+      { src: '/images/project-108.webp', label: 'Glass Wall - Floating Oak Stair' },
+      { src: '/images/project-109.webp', label: 'Glass Stair Railing - Oak Handrail' },
+      { src: '/images/project-110.webp', label: 'Frameless Glass Railing - Stairwell Opening' },
+      { src: '/images/project-111.webp', label: 'Glass Spiral Staircase' },
+      { src: '/images/project-112.webp', label: 'Glass Railing - Floating Walnut Stair' },
+      { src: '/images/project-113.webp', label: 'Glass Stair Railing - Walnut Handrail' },
+      { src: '/images/project-114.webp', label: 'Glass Railing - Garden Courtyard' },
+      { src: '/images/project-115.webp', label: 'Glass Railing - Front Patio' },
+      { src: '/images/project-116.webp', label: 'Glass Stair Railing - Stainless Handrail' },
+      { src: '/images/project-117.webp', label: 'Glass Stair Railing - Basement Stairwell' },
+      { src: '/images/project-118.webp', label: 'Glass Landing Railing - Wood Cap' },
+    ],
+  },
 ];
 
 // Trust signals — pull these out of paragraph text and show them as a strip
