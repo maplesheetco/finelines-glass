@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { COMPANY, SERVICES } from '../data.js';
 import ServiceIcon from '../components/ServiceIcon.jsx';
 import { trackEvent } from '../analytics.js';
+import { sendToFormspree, openMailto } from '../forms.js';
 
 const STEP_LABELS = ['Project', 'Details', 'Contact'];
 const TIMELINES = ['As soon as possible', 'Within the next month', '1–3 months', 'Just exploring options'];
@@ -46,6 +47,7 @@ function Stepper({ step }) {
 export default function RequestEstimate() {
   const [step, setStep] = useState(1);
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
   const [form, setForm] = useState(EMPTY_FORM);
   const [fileError, setFileError] = useState('');
   const fileInputRef = useRef(null);
@@ -72,31 +74,36 @@ export default function RequestEstimate() {
     if (fileInputRef.current) fileInputRef.current.value = '';
   }
 
-  // Interim: the form has no backend yet, so Submit opens the visitor's email
-  // app with the request pre-filled and addressed to COMPANY.email. Swap this
-  // for a Formspree (or similar) endpoint once the owner's account is set up;
-  // mailto can't carry the attachment, so the visitor is asked to attach it.
-  function handleSubmit(e) {
+  // Sends through Formspree when it's set up (see src/forms.js); otherwise
+  // opens the visitor's email app with the request filled in.
+  async function handleSubmit(e) {
     e.preventDefault();
-    const project = [
-      `Service: ${form.service}`,
-      form.timeline && `Timeline: ${form.timeline}`,
-      form.propertyType && `Property type: ${form.propertyType}`,
-      form.area && `Area: ${form.area}`,
-      form.details && `Details: ${form.details}`,
-      form.attachment && `Attachment: ${form.attachment.name} (please attach it to this email)`,
-    ].filter(Boolean);
-    const contact = [
-      `Name: ${form.name}`,
-      `Email: ${form.email}`,
-      `Phone: ${form.phone}`,
-      `Preferred contact: ${form.contactMethod}`,
-    ];
+    if (sending) return;
     const subject = `Estimate request: ${form.service} (${form.name})`;
-    const body = [...project, '', ...contact].join('\n');
+    const sendsFile = form.attachment && COMPANY.formspreeUploads;
+    const fields = {
+      Service: form.service,
+      Timeline: form.timeline,
+      'Property type': form.propertyType,
+      Area: form.area,
+      Details: form.details,
+      Attachment: form.attachment && !sendsFile ? `${form.attachment.name} (not uploaded, ask the customer to email it)` : '',
+      Name: form.name,
+      Email: form.email,
+      Phone: form.phone,
+      'Preferred contact': form.contactMethod,
+    };
+    setSending(true);
+    const sent = await sendToFormspree({ subject, replyTo: form.email, fields, file: form.attachment });
+    setSending(false);
     trackEvent('generate_lead', { form_name: 'estimate', service: form.service });
-    window.location.href = `mailto:${COMPANY.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    setSubmitted(true);
+    if (sent) {
+      setSubmitted('sent');
+    } else {
+      if (form.attachment) fields.Attachment = `${form.attachment.name} (please attach it to this email)`;
+      openMailto({ subject, fields });
+      setSubmitted('mailto');
+    }
   }
 
   if (submitted) {
@@ -116,12 +123,25 @@ export default function RequestEstimate() {
                 <circle cx="12" cy="12" r="10.5" stroke="#C0762A" strokeWidth="1.6" />
                 <path d="M7.5 12.5 L10.5 15.5 L16.5 8.5" stroke="#C0762A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-              <h2>Almost done{form.name ? `, ${form.name.split(' ')[0]}` : ''} — just hit send.</h2>
-              <p className="section-subheading" style={{ margin: '0 auto 24px' }}>
-                Your email app should have opened with your request filled in. Press send and we'll get back to
-                you by {form.contactMethod.toLowerCase()} within one business day.
-                {form.attachment && ' Remember to attach your photo or PDF before sending.'}
-              </p>
+              {submitted === 'sent' ? (
+                <>
+                  <h2>Thanks{form.name ? `, ${form.name.split(' ')[0]}` : ''} — we've got it.</h2>
+                  <p className="section-subheading" style={{ margin: '0 auto 24px' }}>
+                    We'll review your project and get back to you by {form.contactMethod.toLowerCase()} within one
+                    business day with next steps.
+                    {form.attachment && !COMPANY.formspreeUploads && <> Please email your photo or PDF to <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a> so we can take a look.</>}
+                  </p>
+                </>
+              ) : (
+                <>
+                  <h2>Almost done{form.name ? `, ${form.name.split(' ')[0]}` : ''} — just hit send.</h2>
+                  <p className="section-subheading" style={{ margin: '0 auto 24px' }}>
+                    Your email app should have opened with your request filled in. Press send and we'll get back to
+                    you by {form.contactMethod.toLowerCase()} within one business day.
+                    {form.attachment && ' Remember to attach your photo or PDF before sending.'}
+                  </p>
+                </>
+              )}
               <dl className="estimate-summary">
                 {form.service && (<><dt>Service</dt><dd>{form.service}</dd></>)}
                 {form.timeline && (<><dt>Timeline</dt><dd>{form.timeline}</dd></>)}
@@ -133,8 +153,7 @@ export default function RequestEstimate() {
                 <dd>{form.name} &middot; {form.email}{form.phone ? ` · ${form.phone}` : ''}</dd>
               </dl>
               <p style={{ color: 'var(--gray)' }}>
-                Email app didn't open? Send these details to <a href={`mailto:${COMPANY.email}`} style={{ color: 'var(--steel)', fontWeight: 600 }}>{COMPANY.email}</a> or
-                call <a href={COMPANY.phoneHref} style={{ color: 'var(--steel)', fontWeight: 600 }}>{COMPANY.phone}</a>.
+                {submitted === 'sent' ? 'Need to reach us sooner? Call' : <>Email app didn't open? Send these details to <a href={`mailto:${COMPANY.email}`} style={{ color: 'var(--steel)', fontWeight: 600 }}>{COMPANY.email}</a> or call</>}{' '} <a href={COMPANY.phoneHref} style={{ color: 'var(--steel)', fontWeight: 600 }}>{COMPANY.phone}</a>.
               </p>
             </div>
           </div>
@@ -319,7 +338,7 @@ export default function RequestEstimate() {
 
                   <div className="wizard-actions">
                     <button className="btn-back" type="button" onClick={back}>Back</button>
-                    <button className="btn btn-primary" type="submit">Submit request</button>
+                    <button className="btn btn-primary" type="submit" disabled={sending}>{sending ? 'Sending…' : 'Submit request'}</button>
                   </div>
                 </>
               )}

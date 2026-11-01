@@ -30,6 +30,11 @@ export const COMPANY = {
   phoneHref: 'tel:+16047895154',
   email: 'finelinesglass@gmail.com', // Using Gmail for now — owner is still deciding on a professional email
   emailFallback: 'info@finelinesglass.ca', // switch `email` back to this once the professional address is set up
+  // Formspree form ID (formspree.io/f/<id>) for the estimate and contact
+  // forms; see src/forms.js. Empty means the forms open the visitor's email app.
+  formspreeId: '',
+  // Set true only on a paid Formspree plan, which accepts file uploads.
+  formspreeUploads: false,
   address: '1509 East Kent Ave N, Vancouver, BC V5P 4Y7',
   mapQuery: '1509+East+Kent+Ave+N+Vancouver+BC+V5P+4Y7',
   hours: [

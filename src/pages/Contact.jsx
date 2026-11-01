@@ -2,27 +2,31 @@ import React, { useState } from 'react';
 import { COMPANY } from '../data.js';
 import Reveal from '../components/Reveal.jsx';
 import { trackEvent } from '../analytics.js';
+import { sendToFormspree, openMailto } from '../forms.js';
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
 
-  // Interim: no backend yet, so Send opens the visitor's email app with the
-  // message pre-filled and addressed to COMPANY.email. Swap this for a
-  // Formspree (or similar) endpoint once the owner's account is set up.
-  function handleSubmit(e) {
+  // Sends through Formspree when it's set up (see src/forms.js); otherwise
+  // opens the visitor's email app with the message filled in.
+  async function handleSubmit(e) {
     e.preventDefault();
+    if (sending) return;
     const data = new FormData(e.target);
-    const name = data.get('name');
-    const body = [
-      data.get('message'),
-      '',
-      `Name: ${name}`,
-      `Email: ${data.get('email')}`,
-      data.get('phone') ? `Phone: ${data.get('phone')}` : null,
-    ].filter((line) => line !== null).join('\n');
+    const subject = `Website enquiry from ${data.get('name')}`;
+    const fields = {
+      Message: data.get('message'),
+      Name: data.get('name'),
+      Email: data.get('email'),
+      Phone: data.get('phone'),
+    };
+    setSending(true);
+    const sent = await sendToFormspree({ subject, replyTo: data.get('email'), fields });
+    setSending(false);
     trackEvent('generate_lead', { form_name: 'contact' });
-    window.location.href = `mailto:${COMPANY.email}?subject=${encodeURIComponent(`Website enquiry from ${name}`)}&body=${encodeURIComponent(body)}`;
-    setSubmitted(true);
+    if (!sent) openMailto({ subject, fields });
+    setSubmitted(sent ? 'sent' : 'mailto');
   }
 
   return (
@@ -107,9 +111,18 @@ export default function Contact() {
           <div>
             {submitted ? (
               <div className="card">
-                <h3>Almost done — just hit send.</h3>
-                <p>Your email app should have opened with your message filled in. Press send and we'll get back to you shortly.</p>
-                <p>Email app didn't open? Write to <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a> or call <a href={COMPANY.phoneHref}>{COMPANY.phone}</a>.</p>
+                {submitted === 'sent' ? (
+                  <>
+                    <h3>Thanks — message received!</h3>
+                    <p>We'll get back to you shortly. In the meantime, feel free to call <a href={COMPANY.phoneHref}>{COMPANY.phone}</a>.</p>
+                  </>
+                ) : (
+                  <>
+                    <h3>Almost done — just hit send.</h3>
+                    <p>Your email app should have opened with your message filled in. Press send and we'll get back to you shortly.</p>
+                    <p>Email app didn't open? Write to <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a> or call <a href={COMPANY.phoneHref}>{COMPANY.phone}</a>.</p>
+                  </>
+                )}
               </div>
             ) : (
               <>
@@ -131,7 +144,7 @@ export default function Contact() {
                   <label htmlFor="message">Tell us about your project</label>
                   <textarea id="message" name="message" required />
                 </div>
-                <button className="btn btn-primary" type="submit">Send</button>
+                <button className="btn btn-primary" type="submit" disabled={sending}>{sending ? 'Sending…' : 'Send'}</button>
               </form>
               </>
             )}
