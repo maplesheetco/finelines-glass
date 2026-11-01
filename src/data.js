@@ -3065,84 +3065,85 @@ export const ARTICLES = [
     tagline: 'Serving Vancouver, the Lower Mainland and the Fraser Valley. Final system selection depends on project requirements, site conditions and product specifications.',
   },
   {
-    slug: 'glass-railings-design-safety-installation',
-    title: 'Glass Railings for Modern Homes: Design, Safety & Installation Considerations',
-    seoTitle: 'Glass Railings for Modern Homes: Design & Safety | Finelines Glass',
-    metaDescription: 'Where glass railings work best, how to choose a style and mounting system, and the safety, waterproofing and care considerations to plan before installation.',
-    keywords: ['glass railings', 'glass railings for modern homes', 'glass stair railing', 'glass balcony railing', 'glass railing mounting options', 'glass railing installation Vancouver'],
+    slug: 'glass-stair-railings-mounting-safety-care',
+    title: 'Glass Stair Railings: Mounting Options, Safety and Long-Term Care',
+    seoTitle: 'Glass Stair Railings: Mounting, Safety & Care | Finelines Glass',
+    metaDescription: 'Planning a glass stair railing? How base shoe, post, clamp and side-mount systems compare, what safety details to confirm, and how to keep the railing looking its best.',
+    keywords: ['glass stair railing', 'glass staircase railing', 'interior glass railing', 'glass railing mounting options', 'base shoe glass railing', 'glass stair railing Vancouver'],
     publishDate: 'November 16, 2026',
     publishAt: '2026-11-16T00:00:00-08:00',
     heroImage: '/images/articles/glass-railings-design-safety-installation.webp',
     heroImageAlt: 'A glass stair railing with black handrail being installed in a modern home',
     heroImagePosition: 'left center',
-    excerpt: 'Glass railings provide a clean visual boundary without hiding the architecture around them. Here is how to choose a system that suits the design, the location and the structure of your project.',
+    excerpt: 'A glass stair railing can make a staircase feel lighter and let light move between floors. Here is how the mounting options compare, what safety details to confirm, and how to care for the railing over time.',
     intro: [
-      "Glass railings are popular in contemporary homes because they provide a clean visual boundary without hiding the architecture around them. On staircases, balconies, decks and interior landings, glass can help preserve natural light and views while creating a refined finish. The best result comes from selecting a system that suits the design, the location and the structural conditions of the project.",
+      "A staircase is often one of the first things people see when they walk into a home. A glass stair railing lets light move between floors, keeps sightlines open and makes the staircase feel lighter than a solid wall or a row of balusters. Getting that clean look depends on choosing the right mounting system, confirming the safety details early and planning for how the railing will be used and cleaned every day.",
     ],
     blocks: [
       {
-        heading: '1. Where Glass Railings Work Best',
+        heading: '1. Where Glass Works on a Staircase',
         paragraphs: [
-          "Glass railing systems can be used in several areas of a home, including interior staircases, upper-floor landings, balconies, patios and elevated decks. Interior applications can make a staircase feel lighter and more connected to nearby rooms. Exterior applications can preserve views and reduce the visual barrier between a living area and the outdoors. Each location has different exposure, drainage, mounting and maintenance considerations.",
+          "Glass can be used along the open side of a staircase, around the stairwell opening on an upper floor, and across interior landings and lofts. Because a stair railing is touched and passed every day, the layout should consider where people will hold on, how the glass meets walls and newel locations, and how the railing transitions from the sloped stair run to the level landing.",
         ],
       },
       {
-        heading: '2. Choose a Look That Fits the Architecture',
+        heading: '2. Compare the Mounting Options',
         paragraphs: [
-          "A glass railing can be designed with a minimal, nearly uninterrupted appearance or combined with visible posts, channels or a top rail. Frameless systems emphasize the glass itself, while framed systems introduce more defined lines and may suit particular architectural styles or project requirements. Hardware finishes can also affect the overall appearance, so consider how they relate to stair components, door hardware, window frames and other metal details.",
+          "Glass stair railings are usually supported in one of a few ways. A base shoe or channel holds the bottom edge of the glass in a continuous track, which gives a very clean, uninterrupted look. Posts with clamps support the glass at set points and introduce more visible metal. Standoff or side-mounted hardware attaches the glass to the face of the stair stringer or floor edge, which can keep the stair treads clear and suits many contemporary designs.",
+          "The right choice depends on the stair structure, the available edge distance, the finish materials and the look you want. Mounting should be planned with the appropriate design and building professionals rather than chosen on appearance alone.",
         ],
       },
       {
-        heading: '3. Understand the Mounting Options',
+        heading: '3. Choose a Look That Fits the Home',
         paragraphs: [
-          "Depending on the project, glass may be supported by a base shoe or channel, posts, clamps or other engineered hardware. Some systems are mounted on top of a slab or deck; others use a side-mounted arrangement. The correct choice depends on the substrate, available edge distance, waterproofing details, structural design and the intended appearance. Mounting should be planned with the appropriate design and building professionals rather than chosen on appearance alone.",
+          "A frameless-style railing puts the focus on the glass itself, while posts, channels or a top rail add more defined lines. A handrail is often part of a stair design, and its material and finish set much of the overall character. Consider how hardware finishes relate to other metal details in the home, such as door hardware, light fixtures and window frames.",
         ],
       },
       {
         heading: '4. Safety Starts With the Complete System',
         paragraphs: [
-          "A railing is a protective barrier, so its design must account for the applicable building requirements, location, height, openings, loads and the specified glass and hardware system. Glass type, thickness, edge treatment, support spacing and anchorage all matter. Requirements can vary by jurisdiction and by whether the railing is indoors, outdoors or adjacent to a change in level. Confirm the applicable code and engineered requirements before fabrication or installation.",
+          "A stair railing is a protective barrier, so its design must account for the applicable building requirements, including height, openings, handrail needs and loads, together with the specified glass and hardware system. Glass type, thickness, edge treatment, support spacing and anchorage all matter. Requirements can vary by jurisdiction, so confirm the applicable code and engineered requirements before fabrication or installation.",
         ],
       },
       {
-        heading: '5. Plan for Exterior Exposure and Water Management',
+        heading: '5. Plan Around the Stair Structure and Finishes',
         paragraphs: [
-          "Outdoor railings are exposed to rain, temperature changes, dirt and other environmental conditions. The support system must be suitable for the setting, and the mounting details should be coordinated with the deck or balcony membrane, drainage and finished surfaces. Penetrations through waterproofing require particular care and should be resolved with the project team before installation.",
+          "Mounting a glass railing on a staircase means working with the stringers, framing, flooring and wall finishes. Blocking or structural support may need to be in place before drywall and flooring go in, and finished surfaces such as hardwood, tile or stone need careful handling during installation. Bringing the glass installer in before finishes are complete makes it easier to coordinate these details.",
         ],
       },
       {
         heading: '6. Keep Cleaning and Long-Term Care in Mind',
         paragraphs: [
-          "Glass railings can be relatively simple to maintain, but fingerprints, dust, water spots and environmental deposits will still need attention. Accessible surfaces are generally easier to clean. Hardware and glass should be cared for according to the product manufacturer's instructions, and the railing should be checked periodically for signs of movement, damage or loose components. Any concern about structural integrity should be assessed by a qualified professional.",
+          "Indoor glass railings stay out of the weather, but fingerprints and dust build up quickly on a busy staircase, especially at hand height. Consider how easily each side of the glass can be reached for cleaning, including panels over an open stairwell. Hardware and glass should be cared for according to the product manufacturer's instructions, and the railing should be checked periodically for signs of movement, damage or loose components. Any concern about structural integrity should be assessed by a qualified professional.",
         ],
       },
       {
         heading: 'Questions to Discuss Before Installation',
-        intro: 'Early planning helps the railing work with both the architecture and the construction details. Discuss these questions with your project team:',
+        intro: 'Early planning helps the railing work with both the staircase design and the construction details. Discuss these questions with your project team:',
         bullets: [
-          'Where will the railing be installed: indoors, on a balcony, or on an elevated deck?',
-          'Which mounting style suits the structure and desired visual finish?',
-          'Have substrate strength, anchorage and edge distances been reviewed?',
-          'For exterior work, how will waterproofing, drainage and membrane details be protected?',
-          'Which glass and hardware specifications meet the applicable project requirements?',
+          'Which parts of the staircase, landing or stairwell opening will have glass?',
+          'Which mounting style suits the stair structure and the look you want?',
+          'Is there enough structural support and edge distance for the chosen system?',
+          'Will the design include a handrail, and how will it be attached?',
           'Have the railing height, openings and loads been checked against applicable codes and design requirements?',
+          'Will flooring and wall finishes be installed before or after the glass?',
           'Who will coordinate final measurements, fabrication and installation timing?',
         ],
       },
       {
         heading: 'Why Work With Finelines Glass Installations?',
         paragraphs: [
-          "A glass railing needs to look right, fit the site and be installed as part of a coordinated system. Finelines Glass Installations works with homeowners, designers and contractors to review layouts, coordinate hardware and mounting details, and plan installation around the project conditions. From interior stair railings to exterior balcony and deck applications, our goal is to deliver a clean, professional finish that complements the property.",
+          "A glass stair railing needs to look right, fit the structure and be installed as part of a coordinated system. Finelines Glass Installations works with homeowners, designers and contractors to review layouts, coordinate hardware and mounting details, and plan installation around the project conditions, with the goal of a clean, professional finish that complements the home.",
         ],
       },
       {
-        heading: 'Planning a Glass Railing Project?',
+        heading: 'Planning a Glass Stair Railing?',
         paragraphs: [
-          "Whether you are renovating a staircase, updating a balcony or designing a new home, bring the glass railing into the conversation early. Share the drawings, finish selections and site details with your project team so mounting, safety and waterproofing requirements can be addressed before fabrication.",
+          "Whether you are renovating an existing staircase or designing a new home, bring the glass railing into the conversation early. Share the drawings, finish selections and site details with your project team so mounting and safety requirements can be addressed before fabrication. For balconies and decks, see our article on exterior glass railings.",
         ],
       },
     ],
-    ctaNote: 'Ready to discuss your project? Contact Finelines Glass Installations to talk through glass railing options for your home or renovation.',
+    ctaNote: 'Ready to discuss your staircase? Contact Finelines Glass Installations to talk through glass stair railing options for your home or renovation.',
     tagline: 'Serving Vancouver, the Lower Mainland and the Fraser Valley. Final design and installation requirements depend on site conditions, product specifications and applicable codes.',
   },
   {
