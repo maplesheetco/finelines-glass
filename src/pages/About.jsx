@@ -1,30 +1,39 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { COMPANY, TRUST_BADGES } from '../data.js';
+import { COMPANY, TRUST_BADGES, PROJECTS, CITY_PAGES } from '../data.js';
+import { projectAnchor } from './Projects.jsx';
 import ServiceGrid from '../components/ServiceGrid.jsx';
 import ProcessSteps from '../components/ProcessSteps.jsx';
 import Reveal from '../components/Reveal.jsx';
 
 const copy = { lineHeight: 1.7, color: 'var(--gray)' };
+const link = { color: 'var(--steel)', fontWeight: 600 };
+// "the Lower Mainland, Greater Vancouver, Tri-City and the Fraser Valley"
+const areas = `the ${COMPANY.serviceAreas.slice(0, -1).join(', ')} and the ${COMPANY.serviceAreas.at(-1)}`;
 // Four cards fit one row on desktop and stack two-by-two, then one, on smaller screens.
 const fourUp = { gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))' };
 
+// Photo collections from the Projects page shown under "Our work". Each card
+// links to /projects#<anchor>, which opens that gallery.
+const GALLERIES = ['Shower Enclosures', 'Glass Railings', 'Wine Enclosures', 'Glass Doors & Custom Glass'];
+
 const WHO_WE_WORK_WITH = [
-  { title: 'Homeowners', body: 'Bathroom renovations, new railings, mirrors, skylights and window repairs, from a single piece of glass to a whole-house project.' },
+  { title: 'Homeowners', body: 'Shower enclosures, glass railings, mirrors, wine cellars, skylights, window replacement and window film, from a single mirror to a whole-house project.' },
   { title: 'Builders & contractors', body: 'We work alongside the trades on new builds and renovations, following the approved scope, dimensions and schedule.' },
   { title: 'Designers & architects', body: 'Custom and architectural glass built to your drawings, with glass, hardware and finish options reviewed before fabrication.' },
-  { title: 'Commercial clients', body: 'Storefronts, office partitions, boardrooms, washroom privacy glass and window film for businesses and strata properties.' },
+  { title: 'Commercial clients', body: 'Storefront glass, office partitions, boardrooms, privacy glass and window film for businesses and strata properties.' },
 ];
 
 export default function About() {
+  const galleries = GALLERIES.map((name) => PROJECTS.find((p) => p.name === name)).filter(Boolean);
   return (
     <>
       <section className="page-hero">
         <div className="container">
           <h1>About Finelines Glass</h1>
           <p>
-            {COMPANY.yearsExperience} years in the construction industry, and still a team that shows
-            up, measures twice, and stands behind the work.
+            A family-run Vancouver glass contractor since 1994, and still a team that shows up,
+            measures twice, and stands behind the work.
           </p>
         </div>
       </section>
@@ -34,19 +43,18 @@ export default function About() {
           <Reveal><h2 className="section-heading">Our story</h2></Reveal>
           <Reveal delay={80}>
             <p style={copy}>
-              Finelines Glass grew out of {COMPANY.yearsExperience} years of hands-on construction
-              experience into a dedicated glass and railing specialist. Today, our team of experienced
-              Vancouver installers works directly with both homeowners and builders across{' '}
-              {COMPANY.serviceAreas.join(', ')} — whether that's a single custom shower enclosure or a
-              full custom glass build-out.
+              {COMPANY.name} is a family-run glass company based in Vancouver, established in 1994.
+              Built on {COMPANY.yearsExperience} years of hands-on construction experience, it has become
+              a dedicated glass and railing installer. Today our installers work directly with homeowners, builders and designers across {areas}, on anything from a single shower enclosure to the
+              glass for a whole new home.
             </p>
           </Reveal>
           <Reveal delay={140}>
             <p style={copy}>
               {/* TODO: swap in a real welcome note from whoever runs the shop, ideally with a name and photo — see the website report. */}
-              We care about getting the details right: every railing we install complies with the BC
-              Building Code and municipal policy, and we back our railing products with a warranty,
-              because we want you living with the work, not worrying about it.
+              We care about getting the details right. Every job is measured on site, railings are
+              built to meet BC Building Code and local requirements, and we back our railing products
+              with a warranty, because we want you living with the work, not worrying about it.
             </p>
           </Reveal>
           {/* TODO (owner to confirm): a few lines on how the business started — founding year, who started it, and how it became a family business. */}
@@ -80,6 +88,34 @@ export default function About() {
 
       <section className="block tint">
         <div className="container">
+          <Reveal><h2 className="section-heading">Our work</h2></Reveal>
+          <Reveal delay={80}>
+            <p className="section-subheading">
+              Photos from real Finelines installs. Open a collection to see the full gallery.
+            </p>
+          </Reveal>
+          <div className="project-grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))' }}>
+            {galleries.map((p, i) => (
+              <Reveal key={p.name} delay={(i % 4) * 90}>
+                <Link className="project-card" to={`/projects#${projectAnchor(p.name)}`}>
+                  <div className="project-card-image-wrap">
+                    <img src={p.photos[0].src} alt={`${p.name} - ${p.photos[0].label}`} loading="lazy" />
+                    <span className="project-card-badge">{p.photos.length} photos</span>
+                  </div>
+                  <div className="project-card-name">{p.name}</div>
+                  {p.summary && <div className="project-card-summary">{p.summary}</div>}
+                </Link>
+              </Reveal>
+            ))}
+          </div>
+          <Reveal>
+            <p style={{ marginTop: 24 }}><Link style={link} to="/projects">See all our projects &rarr;</Link></p>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="block">
+        <div className="container">
           <Reveal><h2 className="section-heading">Who we work with</h2></Reveal>
           <div className="grid" style={{ ...fourUp, marginTop: 24 }}>
             {WHO_WE_WORK_WITH.map((w, i) => (
@@ -94,14 +130,22 @@ export default function About() {
         </div>
       </section>
 
-      <section className="block">
+      <section className="block tint">
         <div className="container" style={{ maxWidth: 760 }}>
           <Reveal><h2 className="section-heading">Where we work</h2></Reveal>
           <Reveal delay={80}>
             <p style={copy}>
-              Based in Vancouver at {COMPANY.address}, we install across{' '}
-              {COMPANY.serviceAreas.join(', ')}. See our <Link to="/service-areas">service areas</Link> for the cities we cover, or call us at{' '}
-              <a href={COMPANY.phoneHref}>{COMPANY.phone}</a> and we'll let you know.
+              Our shop is at {COMPANY.address}, and we install across {areas}. We have local
+              pages for{' '}
+              {CITY_PAGES.map((c, i) => (
+                <React.Fragment key={c.slug}>
+                  {i > 0 && (i === CITY_PAGES.length - 1 ? ' and ' : ', ')}
+                  <Link style={link} to={`/service-areas/${c.slug}`}>{c.name}</Link>
+                </React.Fragment>
+              ))}
+              . Not on the list? See all our <Link style={link} to="/service-areas">service areas</Link>, call us at{' '}
+              <a style={link} href={COMPANY.phoneHref}>{COMPANY.phone}</a> or email{' '}
+              <a style={link} href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a> and we'll let you know.
             </p>
           </Reveal>
           <Reveal delay={140}>
@@ -125,7 +169,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="block tint">
+      <section className="block">
         <div className="container">
           <Reveal><h2 className="section-heading">Let's talk about your project</h2></Reveal>
           <Reveal delay={80}>

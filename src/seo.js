@@ -44,7 +44,7 @@ const STATIC_PAGES = {
   '/': HOME,
   '/about': {
     title: `About ${BRAND} | Vancouver Glass Contractor Since 1994`,
-    description: 'Finelines Glass Installation Ltd. is a family-run Vancouver glass contractor serving the Lower Mainland, Tri-City and Fraser Valley for over 30 years.',
+    description: 'Finelines Glass is a family-run Vancouver glass contractor, established 1994, installing showers, railings, mirrors and windows across the Lower Mainland.',
   },
   '/services': {
     title: `Glass Installation Services in Vancouver | ${BRAND}`,
