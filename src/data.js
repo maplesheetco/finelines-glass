@@ -3072,8 +3072,8 @@ export const ARTICLES = [
     keywords: ['glass stair railing', 'glass staircase railing', 'interior glass railing', 'glass railing mounting options', 'base shoe glass railing', 'glass stair railing Vancouver'],
     publishDate: 'November 16, 2026',
     publishAt: '2026-11-16T00:00:00-08:00',
-    heroImage: '/images/articles/glass-railings-design-safety-installation.webp',
-    heroImageAlt: 'A glass stair railing with black handrail being installed in a modern home',
+    heroImage: '/images/articles/glass-stair-railings-mounting-safety-care.webp',
+    heroImageAlt: 'Frameless glass railings with stainless standoff and spigot mounts on a modern home, an elevated deck and a rooftop patio',
     heroImagePosition: 'left center',
     excerpt: 'A glass stair railing can make a staircase feel lighter and let light move between floors. Here is how the mounting options compare, what safety details to confirm, and how to care for the railing over time.',
     intro: [
