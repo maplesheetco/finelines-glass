@@ -112,6 +112,8 @@ export default function Contact() {
                 <p>Email app didn't open? Write to <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a> or call <a href={COMPANY.phoneHref}>{COMPANY.phone}</a>.</p>
               </div>
             ) : (
+              <>
+              <p className="scope-note">{COMPANY.scopeNote}</p>
               <form className="contact-form" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name">Name</label>
@@ -131,6 +133,7 @@ export default function Contact() {
                 </div>
                 <button className="btn btn-primary" type="submit">Send</button>
               </form>
+              </>
             )}
           </div>
           </Reveal>
