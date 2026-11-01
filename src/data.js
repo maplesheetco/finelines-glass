@@ -2066,6 +2066,22 @@ export const PROJECTS = [
       { src: '/images/project-77.webp', label: 'Frameless Corner Shower - Matte Black' },
     ],
   },
+  {
+    // Interior glass doors and custom glass from several homes, not one
+    // address, so it isn't tied to a city page.
+    name: 'Glass Doors & Custom Glass',
+    summary: 'Frameless and black-framed interior glass doors, a glass room enclosure and textured art-glass panels',
+    photos: [
+      { src: '/images/project-84.webp', label: 'Textured Art Glass Panel - Ocean View' },
+      { src: '/images/project-78.webp', label: 'Frameless Glass Double Doors - Home Office' },
+      { src: '/images/project-79.webp', label: 'Glass Room Enclosure with Double Doors' },
+      { src: '/images/project-80.webp', label: 'Frameless Glass Door - Hallway' },
+      { src: '/images/project-81.webp', label: 'Black-Framed Grid Glass Door' },
+      { src: '/images/project-82.webp', label: 'Frosted Glass Door - Ensuite' },
+      { src: '/images/project-83.webp', label: 'Frosted Frameless Glass Door' },
+      { src: '/images/project-85.webp', label: 'Textured Art Glass Panel - Detail' },
+    ],
+  },
 ];
 
 // Trust signals — pull these out of paragraph text and show them as a strip
