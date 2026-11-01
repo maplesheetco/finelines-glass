@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from 'react';
+
+// URL anchor for a project or collection, e.g. 'Glass Doors & Custom Glass'
+// -> 'glass-doors-custom-glass'. /projects#<anchor> opens that gallery.
+export const projectAnchor = (name) => name.toLowerCase().replace(/&/g, ' ').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 import { COMPANY, PROJECTS } from '../data.js';
 import Reveal from '../components/Reveal.jsx';
 
@@ -61,6 +65,14 @@ export default function Projects() {
     setPhotoIndex(0);
   };
   const close = () => setOpenProject(null);
+
+  // Open the gallery named in the URL hash (links from the About page).
+  useEffect(() => {
+    const hash = decodeURIComponent(window.location.hash.slice(1));
+    if (!hash) return;
+    const i = PROJECTS.findIndex((p) => projectAnchor(p.name) === hash);
+    if (i >= 0) openAt(i);
+  }, []);
   const project = openProject === null ? null : PROJECTS[openProject];
   const prev = () => setPhotoIndex((i) => (i - 1 + project.photos.length) % project.photos.length);
   const next = () => setPhotoIndex((i) => (i + 1) % project.photos.length);
