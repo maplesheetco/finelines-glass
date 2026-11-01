@@ -2031,6 +2031,41 @@ export const PROJECTS = [
       { src: '/images/project-51.webp', label: 'Black-Framed Glass Wine Cabinet' },
     ],
   },
+  {
+    // A collection of shower jobs from several homes, not one address,
+    // so it isn't tied to a city page. Frameless is the focus; a few are
+    // frosted, satin-etched or black-framed.
+    name: 'Shower Enclosures',
+    summary: 'Frameless glass showers, steam showers and tub panels, plus frosted, satin-etch and black-framed options',
+    photos: [
+      { src: '/images/project-52.webp', label: 'Frameless Glass Shower - Marble Ensuite' },
+      { src: '/images/project-53.webp', label: 'Frameless Walk-In Shower - Ensuite' },
+      { src: '/images/project-54.webp', label: 'Frameless Glass Shower & Freestanding Tub' },
+      { src: '/images/project-55.webp', label: 'Frameless Glass Shower - Statement Marble' },
+      { src: '/images/project-56.webp', label: 'Frameless Neo-Angle Shower' },
+      { src: '/images/project-57.webp', label: 'Grey Tinted Glass Shower - Ocean View' },
+      { src: '/images/project-58.webp', label: 'Glass Corner Shower with Header Bar' },
+      { src: '/images/project-59.webp', label: 'Frameless Corner Shower - Towel Bar Door' },
+      { src: '/images/project-60.webp', label: 'Frameless Shower - Matte Black Hardware' },
+      { src: '/images/project-61.webp', label: 'Fixed Glass Panel - Walk-In Shower' },
+      { src: '/images/project-62.webp', label: 'Frameless Steam Shower with Bench' },
+      { src: '/images/project-63.webp', label: 'Frameless Glass Shower - Spa Bathroom' },
+      { src: '/images/project-64.webp', label: 'Frameless Shower - Marble & Black Hardware' },
+      { src: '/images/project-65.webp', label: 'Frameless Shower Screen - Stone Tile' },
+      { src: '/images/project-66.webp', label: 'Frosted-Band Glass Shower - Ensuite' },
+      { src: '/images/project-67.webp', label: 'Frosted-Band Glass Shower Enclosure' },
+      { src: '/images/project-68.webp', label: 'Frosted-Band Glass Shower - Marble' },
+      { src: '/images/project-69.webp', label: 'Satin Etch Glass Shower - Privacy' },
+      { src: '/images/project-70.webp', label: 'Low-Iron Glass Shower with Satin Etch Panel' },
+      { src: '/images/project-71.webp', label: 'Frameless Bathtub Glass Panel' },
+      { src: '/images/project-72.webp', label: 'Floor-to-Ceiling Glass Shower with Bench' },
+      { src: '/images/project-73.webp', label: 'Frameless Glass Shower - Patterned Tile' },
+      { src: '/images/project-74.webp', label: 'Frameless Shower - Sloped Ceiling' },
+      { src: '/images/project-75.webp', label: 'Black-Framed Grid Glass Shower' },
+      { src: '/images/project-76.webp', label: 'Curved Glass Shower' },
+      { src: '/images/project-77.webp', label: 'Frameless Corner Shower - Matte Black' },
+    ],
+  },
 ];
 
 // Trust signals — pull these out of paragraph text and show them as a strip
