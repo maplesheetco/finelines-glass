@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { COMPANY, CITY_PAGES, PROJECTS } from '../data.js';
+import { COMPANY, CITY_PAGES, PROJECTS, COLLECTION_CITIES } from '../data.js';
+import { projectAnchor } from './Projects.jsx';
 import ServiceGrid from '../components/ServiceGrid.jsx';
 import ProcessSteps from '../components/ProcessSteps.jsx';
 import Reveal from '../components/Reveal.jsx';
@@ -20,6 +21,11 @@ export default function CityPage() {
     project.photos.slice(0, 3).map((photo) => ({ project, photo })),
   );
   const cityPageFor = (name) => CITY_PAGES.find((c) => c.name === name);
+  // The photo collections mix jobs from several cities, so they are linked
+  // as a whole rather than shown as "photos from this city".
+  const collections = city.inCollections
+    ? PROJECTS.filter((p) => p.collection)
+    : [];
 
   return (
     <>
@@ -79,6 +85,34 @@ export default function CityPage() {
             <Reveal>
               <p style={{ marginTop: 24 }}><Link to="/projects">See all our projects &rarr;</Link></p>
             </Reveal>
+          </div>
+        </section>
+      )}
+
+      {collections.length > 0 && (
+        <section className="block">
+          <div className="container">
+            <Reveal><h2 className="section-heading">Our project collections</h2></Reveal>
+            <Reveal delay={60}>
+              <p style={{ lineHeight: 1.7, color: 'var(--gray)', maxWidth: 760 }}>
+                These galleries bring together jobs from {COLLECTION_CITIES.slice(0, -1).join(', ')} and{' '}
+                {COLLECTION_CITIES[COLLECTION_CITIES.length - 1]}, including work in {city.name}.
+              </p>
+            </Reveal>
+            <div className="project-grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))' }}>
+              {collections.map((p, i) => (
+                <Reveal key={p.name} delay={(i % 3) * 90}>
+                  <Link className="project-card" to={`/projects#${projectAnchor(p.name)}`}>
+                    <div className="project-card-image-wrap">
+                      <img src={p.photos[0].src} alt={`${p.name} - ${p.photos[0].label}`} loading="lazy" />
+                      <span className="project-card-badge">{p.photos.length} photos</span>
+                    </div>
+                    <div className="project-card-name">{p.name}</div>
+                    <div className="project-card-summary">{p.summary}</div>
+                  </Link>
+                </Reveal>
+              ))}
+            </div>
           </div>
         </section>
       )}

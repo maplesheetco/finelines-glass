@@ -3,7 +3,8 @@ import React, { useState, useEffect } from 'react';
 // URL anchor for a project or collection, e.g. 'Glass Doors & Custom Glass'
 // -> 'glass-doors-custom-glass'. /projects#<anchor> opens that gallery.
 export const projectAnchor = (name) => name.toLowerCase().replace(/&/g, ' ').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-import { COMPANY, PROJECTS } from '../data.js';
+import { Link } from 'react-router-dom';
+import { COMPANY, PROJECTS, CITY_PAGES, COLLECTION_CITIES } from '../data.js';
 import Reveal from '../components/Reveal.jsx';
 
 function Lightbox({ project, index, onClose, onPrev, onNext }) {
@@ -110,7 +111,21 @@ export default function Projects() {
               </Reveal>
             ))}
           </div>
-          <p style={{ marginTop: 28, color: 'var(--gray)' }}>
+          <p style={{ marginTop: 28, color: 'var(--gray)', lineHeight: 1.7 }}>
+            The {PROJECTS.filter((p) => p.collection).map((p) => p.name).join(', ').replace(/, ([^,]*)$/, ' and $1')} collections
+            bring together jobs from{' '}
+            {COLLECTION_CITIES.map((name, i) => {
+              const page = CITY_PAGES.find((c) => c.name === name);
+              return (
+                <React.Fragment key={name}>
+                  {i > 0 && (i === COLLECTION_CITIES.length - 1 ? ' and ' : ', ')}
+                  {page ? <Link to={`/service-areas/${page.slug}`} style={{ color: 'var(--steel)', fontWeight: 600 }}>{name}</Link> : name}
+                </React.Fragment>
+              );
+            })}
+            .
+          </p>
+          <p style={{ marginTop: 12, color: 'var(--gray)' }}>
             Want your project featured here? <a href="/contact" style={{ color: 'var(--steel)', fontWeight: 600 }}>Get in touch</a>.
           </p>
         </div>

@@ -85,6 +85,8 @@ export const SERVICE_AREA_DETAILS = [
 //   intro:    1-3 short paragraphs, specific to this city
 //   projects: names of PROJECTS jobs to show (in or near the city)
 //   nearby:   other city names to mention; ones with their own page get linked
+//   inCollections: true when jobs from this city are in the photo
+//             collections (see COLLECTION_CITIES); the page then links to them
 export const CITY_PAGES = [
   {
     slug: 'vancouver',
@@ -174,7 +176,85 @@ export const CITY_PAGES = [
     projects: [],
     nearby: ['Surrey', 'Abbotsford', 'Maple Ridge', 'White Rock'],
   },
+  {
+    slug: 'delta',
+    name: 'Delta',
+    area: 'the Lower Mainland',
+    intro: [
+      'Finelines Glass installs frameless showers, glass railings, wine rooms, interior glass doors and mirrors in Delta, from North Delta down to Ladner and Tsawwassen. It is a short drive from our Vancouver shop through Richmond.',
+      'Some of the homes in our project collections are in Delta. Every job there is measured on site and installed by our own team, whether it is a single shower door or railings for a full renovation.',
+    ],
+    projects: [],
+    inCollections: true,
+    nearby: ['Richmond', 'Surrey', 'Vancouver', 'White Rock', 'Langley'],
+  },
+  {
+    slug: 'port-coquitlam',
+    name: 'Port Coquitlam',
+    area: 'the Tri-Cities',
+    intro: [
+      'Port Coquitlam homeowners and builders call us for frameless showers, glass stair and deck railings, wine rooms, interior glass doors and mirrors. Along with Coquitlam and Port Moody, PoCo is a regular stop for our crew.',
+      'Jobs from Port Coquitlam are part of the photo collections on our Projects page. We measure every opening on site and build the glass to fit the finished walls, floors and stairs.',
+    ],
+    projects: [],
+    inCollections: true,
+    nearby: ['Coquitlam', 'Port Moody', 'Maple Ridge', 'Pitt Meadows', 'New Westminster'],
+  },
+  {
+    slug: 'port-moody',
+    name: 'Port Moody',
+    area: 'the Tri-Cities',
+    intro: [
+      'Finelines Glass installs frameless showers, glass railings, wine rooms, glass doors and mirrors in Port Moody and in the nearby villages of Anmore and Belcarra.',
+      'We have done work in all three, and photos from those homes are in the collections on our Projects page. For hillside and waterfront homes, frameless glass railings are a popular way to keep the view open.',
+    ],
+    projects: [],
+    inCollections: true,
+    nearby: ['Anmore', 'Belcarra', 'Coquitlam', 'Port Coquitlam', 'Burnaby'],
+  },
+  {
+    slug: 'abbotsford',
+    name: 'Abbotsford',
+    area: 'the Fraser Valley',
+    intro: [
+      'Finelines Glass travels out to Abbotsford for frameless showers, glass railings, wine rooms, interior glass doors and mirrors, for homeowners and for the builders working on new homes in the area.',
+      'Abbotsford homes are among the jobs in our project collections. Like every job, they were measured on site and installed by our own team, so the glass fits the finished space rather than a drawing.',
+    ],
+    projects: [],
+    inCollections: true,
+    nearby: ['Mission', 'Chilliwack', 'Langley', 'Surrey'],
+  },
+  {
+    slug: 'mission',
+    name: 'Mission',
+    area: 'the Fraser Valley',
+    intro: [
+      'Across the Fraser River from Abbotsford, Mission is part of the Fraser Valley we cover for showers, glass railings, wine rooms, glass doors and mirrors.',
+      'We have installed glass in Mission homes, and those jobs are part of the collections on our Projects page. Tell us about your project and we will plan the visit, measure on site and give you a straightforward estimate.',
+    ],
+    projects: [],
+    inCollections: true,
+    nearby: ['Abbotsford', 'Maple Ridge', 'Chilliwack', 'Langley'],
+  },
+  {
+    slug: 'chilliwack',
+    name: 'Chilliwack',
+    area: 'the Fraser Valley',
+    intro: [
+      'Chilliwack is the eastern end of the area we serve. Finelines Glass makes the trip for frameless showers, glass railings, wine rooms, interior glass doors and mirrors.',
+      'Some of the homes in our photo collections are in Chilliwack. We plan each visit ahead so measuring and installation take as few trips as possible.',
+    ],
+    projects: [],
+    inCollections: true,
+    nearby: ['Abbotsford', 'Mission', 'Langley'],
+  },
 ];
+
+// Cities the four photo collections (Wine Enclosures, Shower Enclosures,
+// Glass Doors & Custom Glass, Glass Railings) were drawn from, per Lino
+// (2026-11-04). We don't know which photo is from which city, so never
+// label a single photo or collection with one of these.
+export const COLLECTION_CITIES = ['Delta', 'Abbotsford', 'Port Coquitlam', 'Port Moody', 'Anmore', 'Belcarra', 'Mission', 'Chilliwack'];
 
 export const NAV = [
   { label: 'Home', path: '/' },
@@ -2018,8 +2098,9 @@ export const PROJECTS = [
   },
   {
     // A collection of wine room jobs from several homes, not one address,
-    // so it isn't tied to a city page.
+    // so it isn't tied to one city page (see COLLECTION_CITIES).
     name: 'Wine Enclosures',
+    collection: true,
     summary: 'Glass wine rooms, cellars and wine walls: frameless, black-framed and arched glass',
     photos: [
       { src: '/images/project-36.webp', label: 'Frameless Glass Wine Room - Games Room' },
@@ -2042,9 +2123,11 @@ export const PROJECTS = [
   },
   {
     // A collection of shower jobs from several homes, not one address,
-    // so it isn't tied to a city page. Frameless is the focus; a few are
+    // so it isn't tied to one city page (see COLLECTION_CITIES).
+    // Frameless is the focus; a few are
     // frosted, satin-etched or black-framed.
     name: 'Shower Enclosures',
+    collection: true,
     summary: 'Frameless glass showers, steam showers and tub panels, plus frosted, satin-etch and black-framed options',
     photos: [
       { src: '/images/project-52.webp', label: 'Frameless Glass Shower - Marble Ensuite' },
@@ -2077,8 +2160,9 @@ export const PROJECTS = [
   },
   {
     // Interior glass doors and custom glass from several homes, not one
-    // address, so it isn't tied to a city page.
+    // address, so it isn't tied to one city page (see COLLECTION_CITIES).
     name: 'Glass Doors & Custom Glass',
+    collection: true,
     summary: 'Frameless and black-framed interior glass doors, a glass room enclosure and textured art-glass panels',
     photos: [
       { src: '/images/project-84.webp', label: 'Textured Art Glass Panel - Ocean View' },
@@ -2092,10 +2176,11 @@ export const PROJECTS = [
     ],
   },
   {
-    // Railing jobs from many homes, not one address, so it isn't tied to a
-    // city page. Interior stairs and landings first, then rooftops, decks
+    // Railing jobs from many homes, not one address, so it isn't tied to
+    // one city page (see COLLECTION_CITIES). Interior stairs and landings first, then rooftops, decks
     // and an oceanfront exterior stair.
     name: 'Glass Railings',
+    collection: true,
     summary: 'Frameless glass stair railings, glass walls for floating stairs, rooftop and deck guards, and a curved glass railing',
     photos: [
       { src: '/images/project-86.webp', label: 'Glass Stair Railing - Modern Entry' },
