@@ -172,8 +172,9 @@ export const CITY_PAGES = [
     intro: [
       'Finelines Glass installs frameless showers, glass railings, mirrors, windows and skylights in the City and Township of Langley, for homeowners and for the builders working on new homes in the area.',
       'We travel out from Vancouver for Langley jobs, measure every opening on site, and install with our own team, so the glass fits the finished walls, floors and decks rather than a drawing.',
+      'Our recent work in Langley includes a commercial storefront: an aluminum frame with glass sidelites and a transom around a pair of frameless glass doors on hydraulic floor closers.',
     ],
-    projects: [],
+    projects: ['Langley Storefront'],
     nearby: ['Surrey', 'Abbotsford', 'Maple Ridge', 'White Rock'],
   },
   {
@@ -1981,6 +1982,7 @@ export const PROJECTS_PREVIEW = [
   { src: '/images/project-22.webp', caption: 'West Cordova - Vancouver - Walk-In Closet Feature Mirror' },
   { src: '/images/project-27.webp', caption: 'Lions Bay - Skylight Replacement & Window Film Application' },
   { src: '/images/project-33.webp', caption: 'Coquitlam - Storefront Glass & Window Installation' },
+  { src: '/images/project-136.webp', caption: 'Langley - Storefront with Frameless Hydraulic Glass Doors' },
 ];
 
 // Projects page gallery, grouped by job instead of one-photo-per-tile. Each
@@ -2094,6 +2096,18 @@ export const PROJECTS = [
       { src: '/images/project-33.webp', label: 'Storefront Unit - Side Angle' },
       { src: '/images/project-34.webp', label: 'Storefront Corner - Installation Site' },
       { src: '/images/project-35.webp', label: 'Storefront Window - Corner Detail' },
+    ],
+  },
+  {
+    name: 'Langley Storefront',
+    summary: 'Aluminum storefront frame with sidelites, transom and frameless hydraulic glass doors',
+    photos: [
+      { src: '/images/project-136.webp', label: 'Frameless Hydraulic Double Doors - Open' },
+      { src: '/images/project-137.webp', label: 'Hydraulic Glass Door - Swing' },
+      { src: '/images/project-138.webp', label: 'Storefront - Sidelites, Transom & Closed Doors' },
+      { src: '/images/project-139.webp', label: 'Installation - Door Glass Set in the Frame' },
+      { src: '/images/project-140.webp', label: 'Installation - Fitting the Top Pivot' },
+      { src: '/images/project-141.webp', label: 'Installation - Sidelite Glass in Place' },
     ],
   },
   {
