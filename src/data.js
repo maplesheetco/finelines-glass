@@ -44,7 +44,8 @@ export const COMPANY = {
   ],
   yearsExperience: '30+',
   serviceAreas: ['Lower Mainland', 'Greater Vancouver', 'Tri-City', 'Fraser Valley'],
-  instagramUrl: 'https://www.instagram.com/', // TODO: paste real handle URL
+  instagramUrl: 'https://www.instagram.com/finelinesglass_ltd/',
+  instagramHandle: '@finelinesglass_ltd',
   currentYear: new Date().getFullYear(),
 };
 
