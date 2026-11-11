@@ -20,7 +20,10 @@ export default function Footer() {
         </p>
         <p className="footer-contact">
           <Link to="/service-areas">Service Areas</Link> &nbsp;·&nbsp;
-          <Link to="/request-estimate">Request an Estimate</Link>
+          <Link to="/request-estimate">Request an Estimate</Link> &nbsp;·&nbsp;
+          <a href={COMPANY.instagramUrl} target="_blank" rel="noopener noreferrer">
+            Instagram {COMPANY.instagramHandle}
+          </a>
         </p>
         <p className="footer-credit">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 24" fill="none" aria-hidden="true">
