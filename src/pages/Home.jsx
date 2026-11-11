@@ -78,27 +78,77 @@ function CompletedWorkCarousel() {
   );
 }
 
-// The hero video (2.4 MB) only loads and plays on desktop-width screens, and
-// not for visitors who ask for reduced motion or data saving. Everyone else
-// sees the poster image, which is what the boxed phone layout shows anyway.
-function useDesktopHeroVideo() {
-  const ref = useRef(null);
+// Homepage hero: a slow crossfade through finished project photos (picked by
+// Lino from the Projects page). The first photo is in the prerendered HTML and
+// loads eagerly with high priority. After the page has loaded, each next photo
+// is fetched one slide ahead, so visitors never download photos they don't
+// reach. Visitors who ask for reduced motion see the first photo only.
+const HERO_SLIDES = [
+  { src: 'project-2', position: 'center 55%' },  // Bellevue Dr. exterior glass railing
+  { src: 'project-3', position: 'center 50%' },  // Richmond shower enclosure
+  { src: 'project-37', position: 'center 60%' }, // glass wine wall, lounge
+  { src: 'project-87', position: 'center 62%' }, // floor-to-ceiling glass wall, floating stairs
+  { src: 'project-9', position: 'center 50%' },  // West 34th shower enclosures
+  { src: 'project-36', position: 'center 55%' }, // frameless glass wine room, games room
+  { src: 'project-10', position: 'center 55%' }, // Pender Island deck railings
+  { src: 'project-1', position: 'center 55%' },  // West Vancouver frameless shower
+  { src: 'project-38', position: 'center 60%' }, // glass wine room, basement lounge
+  { src: 'project-86', position: 'center 50%' }, // glass stair railing, modern entry
+  { src: 'project-8', position: 'center 60%' },  // Cedarhurst St. glass wine cellar
+  { src: 'project-4', position: 'center 50%' },  // interior glass railing
+];
+const HERO_INTERVAL = 6000;
+
+function HeroSlideshow() {
+  const [index, setIndex] = useState(0);
+  const [loadRest, setLoadRest] = useState(false);
+  // How many slides are in the page so far (only ever grows).
+  const [mounted, setMounted] = useState(1);
   useEffect(() => {
-    const video = ref.current;
-    if (!video) return;
-    const wide = window.matchMedia('(min-width: 861px)').matches;
+    if (loadRest) setMounted((m) => Math.max(m, Math.min(index + 2, HERO_SLIDES.length)));
+  }, [index, loadRest]);
+
+  useEffect(() => {
     const calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const saveData = navigator.connection && navigator.connection.saveData;
-    if (wide && !calm && !saveData) {
-      video.preload = 'auto';
-      video.play().catch(() => {});
+    if (calm) return undefined;
+    const start = () => setLoadRest(true);
+    if (document.readyState === 'complete') {
+      const t = setTimeout(start, 1200);
+      return () => clearTimeout(t);
     }
+    window.addEventListener('load', start, { once: true });
+    return () => window.removeEventListener('load', start);
   }, []);
-  return ref;
+
+  useEffect(() => {
+    if (!loadRest) return undefined;
+    const t = setTimeout(() => setIndex((i) => (i + 1) % HERO_SLIDES.length), HERO_INTERVAL);
+    return () => clearTimeout(t);
+  }, [index, loadRest]);
+
+  return (
+    <div className="hero-slides" aria-hidden="true">
+      {HERO_SLIDES.map((slide, i) => {
+        if (i >= mounted) return null;
+        return (
+          <picture key={slide.src} className={`hero-slide${i === index ? ' active' : ''}`}>
+            <source srcSet={`/images/${slide.src}.webp`} type="image/webp" />
+            <img
+              src={`/images/${slide.src}.jpg`}
+              alt=""
+              style={{ objectPosition: slide.position }}
+              loading={i === 0 ? 'eager' : 'lazy'}
+              fetchpriority={i === 0 ? 'high' : 'low'}
+              decoding="async"
+            />
+          </picture>
+        );
+      })}
+    </div>
+  );
 }
 
 export default function Home() {
-  const heroVideo = useDesktopHeroVideo();
   return (
     <>
       <section className="hero">
@@ -121,18 +171,7 @@ export default function Home() {
             </p>
           </div>
           <div className="hero-graphic">
-            <video
-              ref={heroVideo}
-              className="hero-video"
-              preload="none"
-              muted
-              loop
-              playsInline
-              poster="/images/hero-poster.webp"
-              aria-hidden="true"
-            >
-              <source src="/images/hero-video.mp4" type="video/mp4" />
-            </video>
+            <HeroSlideshow />
           </div>
         </div>
       </section>

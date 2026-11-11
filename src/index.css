@@ -159,14 +159,29 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
 }
-.hero-video {
+.hero-slides {
+  position: relative;
   width: 100%;
-  max-width: 440px;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  max-width: 560px;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 20px 50px rgba(0,0,0,0.35);
   border: 1px solid rgba(255,255,255,0.15);
+  background: #1c2a44;
+}
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.4s ease-in-out;
+}
+.hero-slide.active { opacity: 1; }
+.hero-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .hero-eyebrow {
   font-size: 0.8rem;
@@ -199,41 +214,45 @@ h1, h2, h3, h4, h5, h6 {
 .cta-contact { margin: 18px 0 0; color: var(--gray); }
 .cta-contact a { color: var(--navy); font-weight: 600; }
 
-/* On wider screens, the video becomes a full-bleed hero background with the
-   headline overlaid on top of it (a dark scrim keeps the text readable).
-   Below 861px this block doesn't apply, so mobile keeps the boxed video
-   layout defined above. */
+/* On wider screens, the photo slideshow fills the right half of the hero,
+   edge to edge, and the headline sits on the navy left half. Showing the
+   photos at about half the screen width keeps them sharp and barely cropped
+   (a full-width banner would have to zoom far into a 4:3 photo). A soft navy
+   fade blends the photo's left edge into the text side. Below 861px this
+   block doesn't apply, so mobile keeps the boxed slideshow defined above. */
 @media (min-width: 861px) {
   .hero {
     position: relative;
     overflow: hidden;
-    padding: 120px 0;
-  }
-  .hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background:
-      linear-gradient(180deg, rgba(16,26,48,0) 70%, rgba(16,26,48,0.65) 100%),
-      linear-gradient(100deg, rgba(16,26,48,0.8) 0%, rgba(16,26,48,0.5) 35%, rgba(16,26,48,0.2) 65%, rgba(16,26,48,0.05) 100%);
-    z-index: 1;
+    padding: 110px 0;
   }
   .hero-copy {
     position: relative;
     z-index: 2;
+    flex: 0 1 auto;
+    max-width: calc(50% - 40px);
   }
   .hero-graphic {
     position: absolute;
-    inset: 0;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
     z-index: 0;
     display: block;
   }
-  .hero-video {
+  .hero-graphic::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, var(--navy) 0%, rgba(27,42,74,0) 16%);
+    pointer-events: none;
+  }
+  .hero-slides {
     width: 100%;
     height: 100%;
     max-width: none;
     aspect-ratio: auto;
-    object-fit: cover;
     border-radius: 0;
     box-shadow: none;
     border: none;
@@ -242,7 +261,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 860px) {
   .hero .container { flex-direction: column; }
-  .hero-graphic { order: -1; }
+  .hero-graphic { order: -1; flex: none; width: 100%; }
 }
 
 .btn {
