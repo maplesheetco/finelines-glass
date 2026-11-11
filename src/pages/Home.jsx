@@ -78,23 +78,35 @@ function CompletedWorkCarousel() {
   );
 }
 
-// Homepage hero: a slow crossfade through finished project photos. The first
-// photo is in the prerendered HTML and loads eagerly with high priority; the
-// rest are only added once the page has loaded, so they never compete with the
-// first paint. Visitors who ask for reduced motion see the first photo only.
+// Homepage hero: a slow crossfade through finished project photos (picked by
+// Lino from the Projects page). The first photo is in the prerendered HTML and
+// loads eagerly with high priority. After the page has loaded, each next photo
+// is fetched one slide ahead, so visitors never download photos they don't
+// reach. Visitors who ask for reduced motion see the first photo only.
 const HERO_SLIDES = [
-  { src: 'project-2', position: 'center 55%' },   // rooftop glass railing, ocean view
-  { src: 'project-54', position: 'center 60%' },  // frameless shower beside a soaker tub
-  { src: 'project-37', position: 'center 60%' },  // glass wine room and lounge
-  { src: 'project-7', position: 'center 40%' },   // glass deck railings above the pool
-  { src: 'project-3', position: 'center 55%' },   // frameless steam shower and vanity
-  { src: 'project-40', position: 'center 60%' },  // glass-front wine cellar
+  { src: 'project-2', position: 'center 55%' },  // Bellevue Dr. exterior glass railing
+  { src: 'project-3', position: 'center 50%' },  // Richmond shower enclosure
+  { src: 'project-37', position: 'center 60%' }, // glass wine wall, lounge
+  { src: 'project-87', position: 'center 62%' }, // floor-to-ceiling glass wall, floating stairs
+  { src: 'project-9', position: 'center 50%' },  // West 34th shower enclosures
+  { src: 'project-36', position: 'center 55%' }, // frameless glass wine room, games room
+  { src: 'project-10', position: 'center 55%' }, // Pender Island deck railings
+  { src: 'project-1', position: 'center 55%' },  // West Vancouver frameless shower
+  { src: 'project-38', position: 'center 60%' }, // glass wine room, basement lounge
+  { src: 'project-86', position: 'center 50%' }, // glass stair railing, modern entry
+  { src: 'project-8', position: 'center 60%' },  // Cedarhurst St. glass wine cellar
+  { src: 'project-4', position: 'center 50%' },  // interior glass railing
 ];
 const HERO_INTERVAL = 6000;
 
 function HeroSlideshow() {
   const [index, setIndex] = useState(0);
   const [loadRest, setLoadRest] = useState(false);
+  // How many slides are in the page so far (only ever grows).
+  const [mounted, setMounted] = useState(1);
+  useEffect(() => {
+    if (loadRest) setMounted((m) => Math.max(m, Math.min(index + 2, HERO_SLIDES.length)));
+  }, [index, loadRest]);
 
   useEffect(() => {
     const calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -117,7 +129,7 @@ function HeroSlideshow() {
   return (
     <div className="hero-slides" aria-hidden="true">
       {HERO_SLIDES.map((slide, i) => {
-        if (i > 0 && !loadRest) return null;
+        if (i >= mounted) return null;
         return (
           <picture key={slide.src} className={`hero-slide${i === index ? ' active' : ''}`}>
             <source srcSet={`/images/${slide.src}.webp`} type="image/webp" />
