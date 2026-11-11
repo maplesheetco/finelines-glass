@@ -78,27 +78,65 @@ function CompletedWorkCarousel() {
   );
 }
 
-// The hero video (2.4 MB) only loads and plays on desktop-width screens, and
-// not for visitors who ask for reduced motion or data saving. Everyone else
-// sees the poster image, which is what the boxed phone layout shows anyway.
-function useDesktopHeroVideo() {
-  const ref = useRef(null);
+// Homepage hero: a slow crossfade through finished project photos. The first
+// photo is in the prerendered HTML and loads eagerly with high priority; the
+// rest are only added once the page has loaded, so they never compete with the
+// first paint. Visitors who ask for reduced motion see the first photo only.
+const HERO_SLIDES = [
+  { src: 'project-2', position: 'center 55%' },   // rooftop glass railing, ocean view
+  { src: 'project-54', position: 'center 60%' },  // frameless shower beside a soaker tub
+  { src: 'project-37', position: 'center 60%' },  // glass wine room and lounge
+  { src: 'project-7', position: 'center 40%' },   // glass deck railings above the pool
+  { src: 'project-3', position: 'center 55%' },   // frameless steam shower and vanity
+  { src: 'project-40', position: 'center 60%' },  // glass-front wine cellar
+];
+const HERO_INTERVAL = 6000;
+
+function HeroSlideshow() {
+  const [index, setIndex] = useState(0);
+  const [loadRest, setLoadRest] = useState(false);
+
   useEffect(() => {
-    const video = ref.current;
-    if (!video) return;
-    const wide = window.matchMedia('(min-width: 861px)').matches;
     const calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const saveData = navigator.connection && navigator.connection.saveData;
-    if (wide && !calm && !saveData) {
-      video.preload = 'auto';
-      video.play().catch(() => {});
+    if (calm) return undefined;
+    const start = () => setLoadRest(true);
+    if (document.readyState === 'complete') {
+      const t = setTimeout(start, 1200);
+      return () => clearTimeout(t);
     }
+    window.addEventListener('load', start, { once: true });
+    return () => window.removeEventListener('load', start);
   }, []);
-  return ref;
+
+  useEffect(() => {
+    if (!loadRest) return undefined;
+    const t = setTimeout(() => setIndex((i) => (i + 1) % HERO_SLIDES.length), HERO_INTERVAL);
+    return () => clearTimeout(t);
+  }, [index, loadRest]);
+
+  return (
+    <div className="hero-slides" aria-hidden="true">
+      {HERO_SLIDES.map((slide, i) => {
+        if (i > 0 && !loadRest) return null;
+        return (
+          <picture key={slide.src} className={`hero-slide${i === index ? ' active' : ''}`}>
+            <source srcSet={`/images/${slide.src}.webp`} type="image/webp" />
+            <img
+              src={`/images/${slide.src}.jpg`}
+              alt=""
+              style={{ objectPosition: slide.position }}
+              loading={i === 0 ? 'eager' : 'lazy'}
+              fetchpriority={i === 0 ? 'high' : 'low'}
+              decoding="async"
+            />
+          </picture>
+        );
+      })}
+    </div>
+  );
 }
 
 export default function Home() {
-  const heroVideo = useDesktopHeroVideo();
   return (
     <>
       <section className="hero">
@@ -121,18 +159,7 @@ export default function Home() {
             </p>
           </div>
           <div className="hero-graphic">
-            <video
-              ref={heroVideo}
-              className="hero-video"
-              preload="none"
-              muted
-              loop
-              playsInline
-              poster="/images/hero-poster.webp"
-              aria-hidden="true"
-            >
-              <source src="/images/hero-video.mp4" type="video/mp4" />
-            </video>
+            <HeroSlideshow />
           </div>
         </div>
       </section>
