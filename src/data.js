@@ -185,8 +185,9 @@ export const CITY_PAGES = [
     intro: [
       'Finelines Glass installs frameless showers, glass railings, wine rooms, interior glass doors and mirrors in Delta, from North Delta down to Ladner and Tsawwassen. It is a short drive from our Vancouver shop through Richmond.',
       'Some of the homes in our project collections are in Delta. Every job there is measured on site and installed by our own team, whether it is a single shower door or railings for a full renovation.',
+      'Our recent work in Delta includes a frameless sliding shower door: clear glass panels on a top-mounted roller track, set on the curb of a marble-tiled walk-in shower with a corner bench.',
     ],
-    projects: [],
+    projects: ['Delta Frameless Slider Shower'],
     inCollections: true,
     nearby: ['Richmond', 'Surrey', 'Vancouver', 'White Rock', 'Langley'],
   },
@@ -1984,6 +1985,7 @@ export const PROJECTS_PREVIEW = [
   { src: '/images/project-27.webp', caption: 'Lions Bay - Skylight Replacement & Window Film Application' },
   { src: '/images/project-33.webp', caption: 'Coquitlam - Storefront Glass & Window Installation' },
   { src: '/images/project-136.webp', caption: 'Langley - Storefront with Frameless Hydraulic Glass Doors' },
+  { src: '/images/project-142.webp', caption: 'Delta - Serenity Frameless Sliding Shower Door' },
 ];
 
 // Projects page gallery, grouped by job instead of one-photo-per-tile. Each
@@ -2109,6 +2111,16 @@ export const PROJECTS = [
       { src: '/images/project-139.webp', label: 'Installation - Door Glass Set in the Frame' },
       { src: '/images/project-140.webp', label: 'Installation - Fitting the Top Pivot' },
       { src: '/images/project-141.webp', label: 'Installation - Sidelite Glass in Place' },
+    ],
+  },
+  {
+    name: 'Delta Frameless Slider Shower',
+    summary: 'Serenity frameless sliding shower doors with polished chrome and brushed gold roller tracks',
+    photos: [
+      { src: '/images/project-142.webp', label: 'Frameless Sliding Shower Door - Marble Bathroom' },
+      { src: '/images/project-143.webp', label: 'Sliding Door & Fixed Panel - Polished Chrome Track' },
+      { src: '/images/project-144.webp', label: 'Bathroom View - Slider Behind the Vanity' },
+      { src: '/images/project-145.webp', label: 'Frameless Slider - Brushed Gold Track & Handle' },
     ],
   },
   {
