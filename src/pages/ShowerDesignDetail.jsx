@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { COMPANY, SHOWER_DESIGNS } from '../data.js';
 import Reveal from '../components/Reveal.jsx';
+import RelatedLinks from '../components/RelatedLinks.jsx';
 
 // Individual page for one of the four typical shower designs, e.g.
 // /services/frameless-shower-enclosures/inline. Linked from the design
@@ -151,6 +152,7 @@ export default function ShowerDesignDetail() {
               <p className="service-detail-areas">
                 <Link to="/services/frameless-shower-enclosures">&larr; Back to all shower designs</Link>
               </p>
+              <RelatedLinks serviceSlug="frameless-shower-enclosures" />
             </aside>
           </Reveal>
         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { COMPANY, PARTITION_DESIGNS } from '../data.js';
 import Reveal from '../components/Reveal.jsx';
+import RelatedLinks from '../components/RelatedLinks.jsx';
 
 // Individual page for one of the three commercial glazing / office partition
 // systems, e.g. /services/commercial-glazing-office-partitions/storefront-glazing.
@@ -161,6 +162,7 @@ export default function PartitionDesignDetail() {
               <p className="service-detail-areas">
                 <Link to="/services/commercial-glazing-office-partitions">&larr; Back to all commercial glazing systems</Link>
               </p>
+              <RelatedLinks serviceSlug="commercial-glazing-office-partitions" />
             </aside>
           </Reveal>
         </div>

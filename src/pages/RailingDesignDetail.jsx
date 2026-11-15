@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { COMPANY, RAILING_DESIGNS } from '../data.js';
 import Reveal from '../components/Reveal.jsx';
+import RelatedLinks from '../components/RelatedLinks.jsx';
 
 // Individual page for one of the two typical glass railing systems, e.g.
 // /services/glass-railings/base-shoe. Linked from the design cards on
@@ -185,6 +186,7 @@ export default function RailingDesignDetail() {
               <p className="service-detail-areas">
                 <Link to="/services/glass-railings">&larr; Back to all railing systems</Link>
               </p>
+              <RelatedLinks serviceSlug="glass-railings" />
             </aside>
           </Reveal>
         </div>

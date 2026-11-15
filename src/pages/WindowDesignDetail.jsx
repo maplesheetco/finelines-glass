@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { COMPANY, WINDOW_DESIGNS } from '../data.js';
 import Reveal from '../components/Reveal.jsx';
+import RelatedLinks from '../components/RelatedLinks.jsx';
 
 // Individual page for one of the two window services, e.g.
 // /services/window-replacement-film/window-replacement. Linked from the
@@ -144,6 +145,7 @@ export default function WindowDesignDetail() {
               <p className="service-detail-areas">
                 <Link to="/services/window-replacement-film">&larr; Back to window services</Link>
               </p>
+              <RelatedLinks serviceSlug="window-replacement-film" />
             </aside>
           </Reveal>
         </div>

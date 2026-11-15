@@ -3,6 +3,7 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import { COMPANY, SERVICES, SHOWER_DESIGNS, SHOWER_CUSTOM_LAYOUT, RAILING_DESIGNS, RAILING_CUSTOM_NOTE, WINE_DESIGNS, WINE_CUSTOM_NOTE, PARTITION_DESIGNS, PARTITION_CUSTOM_NOTE, MIRROR_DESIGNS, MIRROR_CUSTOM_NOTE, WINDOW_DESIGNS, WINDOW_CUSTOM_NOTE, SKYLIGHT_DESIGNS, SKYLIGHT_CUSTOM_NOTE, CUSTOM_GLASS_DESIGNS, CUSTOM_GLASS_NOTE } from '../data.js';
 import ServiceIcon from '../components/ServiceIcon.jsx';
 import Reveal from '../components/Reveal.jsx';
+import RelatedLinks from '../components/RelatedLinks.jsx';
 
 export default function ServiceDetail() {
   const { slug } = useParams();
@@ -69,6 +70,7 @@ export default function ServiceDetail() {
               <p className="service-detail-areas">
                 Serving {COMPANY.serviceAreas.join(', ')}.
               </p>
+              <RelatedLinks serviceSlug={service.slug} />
             </aside>
           </Reveal>
         </div>

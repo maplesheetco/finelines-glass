@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { COMPANY, WINE_DESIGNS } from '../data.js';
 import Reveal from '../components/Reveal.jsx';
+import RelatedLinks from '../components/RelatedLinks.jsx';
 
 // Individual page for one of the three wine cellar enclosure systems, e.g.
 // /services/wine-cellars/wood-framed. Linked from the design cards on
@@ -182,6 +183,7 @@ export default function WineDesignDetail() {
               <p className="service-detail-areas">
                 <Link to="/services/wine-cellars">&larr; Back to all wine cellar systems</Link>
               </p>
+              <RelatedLinks serviceSlug="wine-cellars" />
             </aside>
           </Reveal>
         </div>
