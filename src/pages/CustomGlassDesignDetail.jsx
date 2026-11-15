@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { COMPANY, CUSTOM_GLASS_DESIGNS } from '../data.js';
 import Reveal from '../components/Reveal.jsx';
+import RelatedLinks from '../components/RelatedLinks.jsx';
 
 // Individual page for one of the six Custom Glass Solutions categories, e.g.
 // /services/custom-glass-solutions/custom-tabletops. Linked from the
@@ -147,6 +148,7 @@ export default function CustomGlassDesignDetail() {
               <p className="service-detail-areas">
                 <Link to="/services/custom-glass-solutions">&larr; Back to custom glass categories</Link>
               </p>
+              <RelatedLinks serviceSlug="custom-glass-solutions" />
             </aside>
           </Reveal>
         </div>

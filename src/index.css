@@ -505,6 +505,29 @@ section.block.tint { background: var(--glass-tint); }
   font-size: 0.92rem;
 }
 .service-detail-list a:hover { text-decoration: underline; }
+.related-block {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid #dbe4ea;
+}
+.related-block .service-detail-list { margin-bottom: 0; }
+.related-cities {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+}
+.related-cities a {
+  color: var(--steel);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: rgba(62,107,138,0.35);
+  text-underline-offset: 3px;
+}
+.related-cities a:hover { text-decoration-color: currentColor; }
 .service-detail-areas {
   color: var(--gray);
   font-size: 0.85rem;
@@ -663,7 +686,10 @@ section.block.tint { background: var(--glass-tint); }
 }
 
 form.contact-form { display: flex; flex-direction: column; gap: 14px; }
-form.contact-form label { display: block; font-weight: 600; font-size: 0.9rem; color: var(--navy); margin-bottom: 6px; }
+form.contact-form label,
+form.contact-form .contact-form-label { display: block; font-weight: 600; font-size: 0.9rem; color: var(--navy); margin-bottom: 6px; }
+form.contact-form .contact-form-label { margin-top: 0; margin-bottom: -6px; }
+form.contact-form .file-upload-hint a { color: var(--steel); font-weight: 600; text-decoration: underline; }
 form.contact-form input, form.contact-form textarea, form.contact-form select {
   display: block;
   width: 100%;
@@ -921,7 +947,7 @@ form.contact-form textarea { min-height: 120px; resize: vertical; }
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1.1fr 0.9fr 0.9fr 1.3fr;
+  grid-template-columns: 1.3fr 1.05fr 0.75fr 1.45fr 1.45fr;
   gap: 36px;
   padding: 56px 0 44px;
 }
@@ -980,6 +1006,9 @@ form.contact-form textarea { min-height: 120px; resize: vertical; }
   color: #E3A15C;
 }
 .footer-col ul { list-style: none; margin: 0; padding: 0; }
+/* All 14 city pages, in two short columns */
+.footer-col ul.footer-cities { columns: 2; column-gap: 18px; }
+.footer-cities li { break-inside: avoid; }
 .footer-col li { margin: 0 0 10px; }
 .footer-col a,
 .footer-social-handle {
@@ -1060,6 +1089,7 @@ form.contact-form textarea { min-height: 120px; resize: vertical; }
 @media (max-width: 640px) {
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px 20px; padding: 40px 0 32px; }
   .footer-contact-col { grid-column: 1 / -1; }
+  .footer-areas-col { grid-column: 1 / -1; }
   .footer-bottom-inner { flex-direction: column; text-align: center; }
   .footer-col li { margin-bottom: 12px; }
 }
@@ -1575,4 +1605,32 @@ section.tint .spec-note { background: var(--white); }
   font-size: 13px;
   font-weight: 600;
   fill: var(--ink);
+}
+
+/* ---------- Keyboard access ---------- */
+/* "Skip to content" link: hidden until a keyboard user tabs to it. */
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -60px;
+  z-index: 1000;
+  background: var(--navy);
+  color: var(--white);
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: top 0.15s;
+}
+.skip-link:focus { top: 12px; }
+main:focus { outline: none; }
+/* One clear, consistent focus ring for keyboard users (mouse clicks don't show it). */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:not(main):focus-visible {
+  outline: 3px solid var(--amber);
+  outline-offset: 2px;
 }

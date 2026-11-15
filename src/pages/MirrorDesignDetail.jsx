@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { COMPANY, MIRROR_DESIGNS } from '../data.js';
 import Reveal from '../components/Reveal.jsx';
+import RelatedLinks from '../components/RelatedLinks.jsx';
 
 // Individual page for one of the three mirror finishes, e.g.
 // /services/mirrors/bronze. Linked from the design cards on ServiceDetail.jsx.
@@ -159,6 +160,7 @@ export default function MirrorDesignDetail() {
               <p className="service-detail-areas">
                 <Link to="/services/mirrors">&larr; Back to all mirror finishes</Link>
               </p>
+              <RelatedLinks serviceSlug="mirrors" />
             </aside>
           </Reveal>
         </div>

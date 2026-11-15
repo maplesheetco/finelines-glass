@@ -3809,6 +3809,65 @@ export const ARTICLES = [
 // Articles whose publishAt has already passed, oldest first for lookups and
 // newest-first for display — see the SCHEDULING note above ARTICLES. Pages
 // should use this (not ARTICLES directly) for anything a site visitor sees.
+// Articles to show under "Related reading" on each service page and its
+// design pages (see components/RelatedLinks.jsx). Listed by service slug,
+// best match first. Future articles can be listed here already: only the
+// ones that have been published are shown.
+export const SERVICE_ARTICLES = {
+  'frameless-shower-enclosures': [
+    'glass-shower-enclosures-for-small-bathrooms',
+    'framed-vs-frameless-glass',
+    'shower-door-hardware-hinges-handles-finishes',
+    'choosing-shower-glass-hardware-finishes',
+    'how-to-clean-glass-shower-doors',
+    'frameless-shower-enclosures-jobsite-to-finished-product',
+    'what-affects-the-cost-of-a-glass-project',
+  ],
+  'glass-railings': [
+    'glass-railing-for-modern-homes',
+    'glass-stair-railings-mounting-safety-care',
+    'exterior-glass-railings-balconies-decks',
+    'what-affects-the-cost-of-a-glass-project',
+  ],
+  'wine-cellars': [
+    'framed-vs-frameless-glass',
+    'early-glass-installer-coordination-renovation-projects',
+    'what-affects-the-cost-of-a-glass-project',
+  ],
+  'commercial-glazing-office-partitions': [
+    'glass-office-partitions',
+    'plan-your-2027-glass-upgrade',
+    'what-affects-the-cost-of-a-glass-project',
+  ],
+  mirrors: [
+    'custom-mirrors-that-make-small-spaces-feel-bigger',
+    'what-affects-the-cost-of-a-glass-project',
+  ],
+  'window-replacement-film': [
+    'plan-your-2027-glass-upgrade',
+    'what-affects-the-cost-of-a-glass-project',
+  ],
+  skylights: [
+    'plan-your-2027-glass-upgrade',
+    'what-affects-the-cost-of-a-glass-project',
+  ],
+  'custom-glass-solutions': [
+    'glass-backsplashes-for-modern-kitchens',
+    'custom-mirrors-that-make-small-spaces-feel-bigger',
+    'early-glass-installer-coordination-renovation-projects',
+    'what-affects-the-cost-of-a-glass-project',
+  ],
+};
+
+// Published articles related to a service, in the order listed above (max 4).
+export function getServiceArticles(serviceSlug, limit = 4) {
+  const published = getPublishedArticles();
+  return (SERVICE_ARTICLES[serviceSlug] || [])
+    .map((slug) => published.find((a) => a.slug === slug))
+    .filter(Boolean)
+    .slice(0, limit);
+}
+
 export function getPublishedArticles() {
   const now = new Date();
   return ARTICLES

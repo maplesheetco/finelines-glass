@@ -200,13 +200,14 @@ export default function RequestEstimate() {
             >
               {step === 1 && (
                 <>
-                  <label>What do you need help with?</label>
-                  <div className="option-grid">
+                  <label id="service-label">What do you need help with?</label>
+                  <div className="option-grid" role="group" aria-labelledby="service-label">
                     {SERVICES.map((s) => (
                       <button
                         type="button"
                         key={s.title}
                         className={`option-card${form.service === s.title ? ' selected' : ''}`}
+                        aria-pressed={form.service === s.title}
                         onClick={() => update('service', s.title)}
                       >
                         <ServiceIcon name={s.icon} size={26} />
@@ -216,6 +217,7 @@ export default function RequestEstimate() {
                     <button
                       type="button"
                       className={`option-card${form.service === "Not sure yet" ? ' selected' : ''}`}
+                      aria-pressed={form.service === 'Not sure yet'}
                       onClick={() => update('service', 'Not sure yet')}
                     >
                       <span>Not sure yet</span>
@@ -237,13 +239,14 @@ export default function RequestEstimate() {
                     {TIMELINES.map((t) => <option key={t} value={t}>{t}</option>)}
                   </select>
 
-                  <label>Property type</label>
-                  <div className="pill-group">
+                  <label id="property-label">Property type</label>
+                  <div className="pill-group" role="group" aria-labelledby="property-label">
                     {PROPERTY_TYPES.map((p) => (
                       <button
                         type="button"
                         key={p}
                         className={`pill${form.propertyType === p ? ' selected' : ''}`}
+                        aria-pressed={form.propertyType === p}
                         onClick={() => update('propertyType', p)}
                       >
                         {p}
@@ -266,43 +269,59 @@ export default function RequestEstimate() {
                     placeholder="Rough size, specific finishes in mind, etc."
                   />
 
-                  <label htmlFor="attachment">Attach a photo or PDF (optional)</label>
-                  <div className="file-upload">
-                    <input
-                      ref={fileInputRef}
-                      id="attachment"
-                      type="file"
-                      accept="image/*,.pdf,application/pdf"
-                      onChange={handleFileChange}
-                      style={{ display: 'none' }}
-                    />
-                    {!form.attachment ? (
-                      <button
-                        type="button"
-                        className="file-upload-btn"
-                        onClick={() => fileInputRef.current && fileInputRef.current.click()}
-                      >
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                          <path d="M12 16V4M12 4L7 9M12 4l5 5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-                          <path d="M4 16v2.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V16" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                        Choose a photo or PDF
-                      </button>
-                    ) : (
-                      <div className="file-chip">
-                        <span className="file-chip-name">{form.attachment.name}</span>
-                        <span style={{ color: 'var(--gray)', fontWeight: 500 }}>({formatFileSize(form.attachment.size)})</span>
-                        <button type="button" className="file-chip-remove" onClick={removeFile} aria-label="Remove attached file">
-                          ×
-                        </button>
+                  {/* The form service (Formspree Free) can't carry files, so the picker
+                      only shows once COMPANY.formspreeUploads is turned on. Until then,
+                      customers are asked to email photos after sending. */}
+                  {COMPANY.formspreeUploads ? (
+                    <>
+                      <label htmlFor="attachment">Attach a photo or PDF (optional)</label>
+                      <div className="file-upload">
+                        <input
+                          ref={fileInputRef}
+                          id="attachment"
+                          type="file"
+                          accept="image/*,.pdf,application/pdf"
+                          onChange={handleFileChange}
+                          style={{ display: 'none' }}
+                        />
+                        {!form.attachment ? (
+                          <button
+                            type="button"
+                            className="file-upload-btn"
+                            onClick={() => fileInputRef.current && fileInputRef.current.click()}
+                          >
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                              <path d="M12 16V4M12 4L7 9M12 4l5 5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                              <path d="M4 16v2.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V16" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                            Choose a photo or PDF
+                          </button>
+                        ) : (
+                          <div className="file-chip">
+                            <span className="file-chip-name">{form.attachment.name}</span>
+                            <span style={{ color: 'var(--gray)', fontWeight: 500 }}>({formatFileSize(form.attachment.size)})</span>
+                            <button type="button" className="file-chip-remove" onClick={removeFile} aria-label="Remove attached file">
+                              ×
+                            </button>
+                          </div>
+                        )}
+                        {fileError ? (
+                          <p className="file-upload-hint" style={{ color: '#B3432B' }}>{fileError}</p>
+                        ) : (
+                          <p className="file-upload-hint">A photo of the space or a floor plan helps us scope things faster. JPG, PNG, or PDF, up to {MAX_FILE_MB}MB.</p>
+                        )}
                       </div>
-                    )}
-                    {fileError ? (
-                      <p className="file-upload-hint" style={{ color: '#B3432B' }}>{fileError}</p>
-                    ) : (
-                      <p className="file-upload-hint">A photo of the space or a floor plan helps us scope things faster. JPG, PNG, or PDF, up to {MAX_FILE_MB}MB.</p>
-                    )}
-                  </div>
+                    </>
+                  ) : (
+                    <>
+                      <p className="contact-form-label">Photos or drawings (optional)</p>
+                      <p className="file-upload-hint">
+                        A photo of the space or a floor plan helps us scope things faster. After you send this
+                        request, email them to <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a> and we&rsquo;ll
+                        match them to it.
+                      </p>
+                    </>
+                  )}
 
                   <div className="wizard-actions">
                     <button className="btn-back" type="button" onClick={back}>Back</button>

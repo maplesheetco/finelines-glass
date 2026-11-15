@@ -22,8 +22,9 @@ export default function App() {
   return (
     <>
       <PageMeta />
+      <a className="skip-link" href="#main">Skip to content</a>
       <Header />
-      <main>
+      <main id="main" tabIndex={-1}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

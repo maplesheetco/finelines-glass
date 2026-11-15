@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { COMPANY, SKYLIGHT_DESIGNS } from '../data.js';
 import Reveal from '../components/Reveal.jsx';
+import RelatedLinks from '../components/RelatedLinks.jsx';
 
 // Individual page for one of the two skylight services, e.g.
 // /services/skylights/new-skylight-installation. Linked from the design
@@ -143,6 +144,7 @@ export default function SkylightDesignDetail() {
               <p className="service-detail-areas">
                 <Link to="/services/skylights">&larr; Back to skylight services</Link>
               </p>
+              <RelatedLinks serviceSlug="skylights" />
             </aside>
           </Reveal>
         </div>

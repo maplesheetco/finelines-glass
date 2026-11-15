@@ -16,8 +16,6 @@ const COMPANY_LINKS = [
   { label: 'Request an Estimate', to: '/request-estimate' },
 ];
 
-// Cities shown in the footer; the rest are one click away on /service-areas.
-const FOOTER_CITIES = ['vancouver', 'burnaby', 'richmond', 'surrey', 'coquitlam', 'langley', 'abbotsford'];
 
 function Icon({ name }) {
   const common = {
@@ -79,7 +77,8 @@ function Icon({ name }) {
 }
 
 export default function Footer() {
-  const cities = FOOTER_CITIES.map((slug) => CITY_PAGES.find((c) => c.slug === slug)).filter(Boolean);
+  // Every city page is listed, so none of them is only reachable from /service-areas.
+  const cities = CITY_PAGES;
   const mapUrl = `https://www.google.com/maps/search/?api=1&query=${COMPANY.mapQuery}`;
 
   return (
@@ -147,9 +146,9 @@ export default function Footer() {
             </ul>
           </nav>
 
-          <nav className="footer-col" aria-label="Service areas">
+          <nav className="footer-col footer-areas-col" aria-label="Service areas">
             <h3 className="footer-heading">Areas We Serve</h3>
-            <ul>
+            <ul className="footer-cities">
               {cities.map((c) => (
                 <li key={c.slug}>
                   <Link to={`/service-areas/${c.slug}`}>{c.name}</Link>
