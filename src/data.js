@@ -95,9 +95,9 @@ export const CITY_PAGES = [
     area: 'Greater Vancouver',
     intro: [
       "Vancouver is home for Finelines Glass. Our shop is on East Kent Avenue, and we work right across the city, from downtown ensuites to West Side homes and commercial spaces.",
-      'Recent Vancouver jobs include exterior and interior glass railings, a glass wine cellar and frameless showers on Bellevue Drive, a wine cellar on Cedarhurst Street, shower enclosures on West 34th, a full ensuite and walk-in closet on West Cordova, and the backlit onyx bar and glass shelving at the Marine Drive Skybar.',
+      'Recent Vancouver jobs include exterior and interior glass railings, a glass wine cellar and frameless showers on Bellevue Drive, a wine cellar on Cedarhurst Street, shower enclosures on West 34th, a full ensuite and walk-in closet on West Cordova, the backlit onyx bar and glass shelving at the Marine Drive Skybar, and a Laurier Street home with a steam shower, several custom cut tempered glass shower enclosures and custom shaped mirrors.',
     ],
-    projects: ['Bellevue Dr. - Vancouver', 'West Cordova - Vancouver', 'Marine Drive - Skybar - Vancouver', 'Cedarhurst St. - Vancouver', 'West 34th Vancouver'],
+    projects: ['Laurier St. Vancouver', 'Bellevue Dr. - Vancouver', 'West Cordova - Vancouver', 'Marine Drive - Skybar - Vancouver', 'Cedarhurst St. - Vancouver', 'West 34th Vancouver'],
     nearby: ['Burnaby', 'Richmond', 'North Vancouver', 'West Vancouver', 'New Westminster'],
   },
   {
@@ -1986,6 +1986,7 @@ export const PROJECTS_PREVIEW = [
   { src: '/images/project-33.webp', caption: 'Coquitlam - Storefront Glass & Window Installation' },
   { src: '/images/project-136.webp', caption: 'Langley - Storefront with Frameless Hydraulic Glass Doors' },
   { src: '/images/project-142.webp', caption: 'Delta - Serenity Frameless Sliding Shower Door' },
+  { src: '/images/project-146.webp', caption: 'Laurier St. Vancouver - Full-Height Steam Shower Enclosure' },
 ];
 
 // Projects page gallery, grouped by job instead of one-photo-per-tile. Each
@@ -2121,6 +2122,25 @@ export const PROJECTS = [
       { src: '/images/project-143.webp', label: 'Sliding Door & Fixed Panel - Polished Chrome Track' },
       { src: '/images/project-144.webp', label: 'Bathroom View - Slider Behind the Vanity' },
       { src: '/images/project-145.webp', label: 'Frameless Slider - Brushed Gold Track & Handle' },
+    ],
+  },
+  {
+    name: 'Laurier St. Vancouver',
+    summary: 'Shower enclosures, steam showers & bath, and custom shaped mirrors. All showers are custom cut tempered glass',
+    photos: [
+      { src: '/images/project-146.webp', label: 'Full-Height Steam Shower Enclosure - Dark Marble Tile' },
+      { src: '/images/project-147.webp', label: 'Steam Shower & Custom Shaped Mirror' },
+      { src: '/images/project-148.webp', label: 'Steam Shower - Glass Door & Panels to the Ceiling' },
+      { src: '/images/project-149.webp', label: 'Home Gym - Full-Wall Mirror' },
+      { src: '/images/project-150.webp', label: 'Frameless Shower & Oval Mirror - Black Hardware' },
+      { src: '/images/project-151.webp', label: 'Frameless Shower Door - Black Hardware' },
+      { src: '/images/project-152.webp', label: 'Walk-In Frameless Shower - Subway Tile' },
+      { src: '/images/project-153.webp', label: 'Custom Shaped Vanity Mirrors - Subway Tile Bathroom' },
+      { src: '/images/project-154.webp', label: 'Master Bath - Corner Glass Shower Enclosure' },
+      { src: '/images/project-155.webp', label: 'Corner Shower Enclosure & Vanity Mirror' },
+      { src: '/images/project-156.webp', label: 'Master Bath - Freestanding Tub & Glass Shower' },
+      { src: '/images/project-157.webp', label: 'Frameless Shower & Oval Mirror - Penny Tile Floor' },
+      { src: '/images/project-158.webp', label: 'Frameless Shower Enclosure - Penny Tile Floor' },
     ],
   },
   {
