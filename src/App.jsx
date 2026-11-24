@@ -1,24 +1,26 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import PageMeta from './components/PageMeta.jsx';
-import Home from './pages/Home.jsx';
-import About from './pages/About.jsx';
-import Services from './pages/Services.jsx';
-import ServiceDetail from './pages/ServiceDetail.jsx';
-import ServiceDesignDetail from './pages/ServiceDesignDetail.jsx';
-import HardwareFinishes from './pages/HardwareFinishes.jsx';
-import Projects from './pages/Projects.jsx';
-import Articles from './pages/Articles.jsx';
-import ArticleDetail from './pages/ArticleDetail.jsx';
-import Contact from './pages/Contact.jsx';
-import ServiceAreas from './pages/ServiceAreas.jsx';
-import CityPage from './pages/CityPage.jsx';
-import RequestEstimate from './pages/RequestEstimate.jsx';
-import Privacy from './pages/Privacy.jsx';
-import Disclaimer from './pages/Disclaimer.jsx';
 import NotFound from './pages/NotFound.jsx';
+import {
+  Home,
+  About,
+  Services,
+  ServiceDetail,
+  ServiceDesignDetail,
+  HardwareFinishes,
+  Projects,
+  Articles,
+  ArticleDetail,
+  Contact,
+  ServiceAreas,
+  CityPage,
+  RequestEstimate,
+  Privacy,
+  Disclaimer,
+} from './pages/lazy.js';
 
 export default function App() {
   return (
@@ -27,6 +29,7 @@ export default function App() {
       <a className="skip-link" href="#main">Skip to content</a>
       <Header />
       <main id="main" tabIndex={-1}>
+        <Suspense fallback={null}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -45,6 +48,7 @@ export default function App() {
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        </Suspense>
       </main>
       <Footer />
     </>

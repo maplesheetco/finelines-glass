@@ -41,15 +41,19 @@
     <meta property="og:locale" content="en_CA" />
     <meta name="twitter:card" content="summary_large_image" />
 
-    <!-- Business details for Google -->
+    <!-- Business details for Google. hasOfferCatalog lists the services in
+         SERVICES (src/data.js); add a line here when a service is added. -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "HomeAndConstructionBusiness",
+        "@id": "https://finelinesglass.ca/#business",
         "name": "Finelines Glass Installation Ltd.",
+        "legalName": "Finelines Glass Installation Ltd.",
         "alternateName": "Finelines Glass",
         "url": "https://finelinesglass.ca/",
         "image": "https://finelinesglass.ca/images/project-1.jpg",
+        "logo": "https://finelinesglass.ca/images/logo-on-light.png",
         "telephone": "+1-604-789-5154",
         "email": "finelinesglass@gmail.com",
         "foundingDate": "1994",
@@ -62,6 +66,21 @@
           "addressRegion": "BC",
           "postalCode": "V5P 4Y7",
           "addressCountry": "CA"
+        },
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=1509+East+Kent+Ave+N+Vancouver+BC+V5P+4Y7",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Glass installation services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Frameless Shower Enclosures", "url": "https://finelinesglass.ca/services/frameless-shower-enclosures" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Interior & Exterior Glass Railing", "url": "https://finelinesglass.ca/services/glass-railings" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellars", "url": "https://finelinesglass.ca/services/wine-cellars" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Glazing & Office Partition", "url": "https://finelinesglass.ca/services/commercial-glazing-office-partitions" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mirrors", "url": "https://finelinesglass.ca/services/mirrors" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Window Replacement & Window Film Application", "url": "https://finelinesglass.ca/services/window-replacement-film" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Skylights (New or Replacement)", "url": "https://finelinesglass.ca/services/skylights" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Glass Solutions", "url": "https://finelinesglass.ca/services/custom-glass-solutions" } }
+          ]
         },
         "areaServed": [
           { "@type": "Place", "name": "Lower Mainland, BC" },

@@ -1,13 +1,14 @@
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { COMPANY, RAILING_DESIGNS } from '../data.js';
+import { COMPANY } from '../data.js';
+import { RAILING_DESIGNS } from '../designs.js';
 import Reveal from '../components/Reveal.jsx';
 import RelatedLinks from '../components/RelatedLinks.jsx';
 
 // Individual page for one of the two typical glass railing systems, e.g.
 // /services/glass-railings/base-shoe. Linked from the design cards on
 // ServiceDetail.jsx. Full copy for each system lives in RAILING_DESIGNS
-// (src/data.js), drawn from the Finelines design-reference sheets for that
+// (src/designs.js), drawn from the Finelines design-reference sheets for that
 // system — including the Safety & Building Code Considerations language,
 // which should be treated as legal/business-sensitive and not reworded
 // without checking the source PDF.

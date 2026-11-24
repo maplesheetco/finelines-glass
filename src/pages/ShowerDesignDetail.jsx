@@ -1,13 +1,14 @@
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { COMPANY, SHOWER_DESIGNS } from '../data.js';
+import { COMPANY } from '../data.js';
+import { SHOWER_DESIGNS } from '../designs.js';
 import Reveal from '../components/Reveal.jsx';
 import RelatedLinks from '../components/RelatedLinks.jsx';
 
 // Individual page for one of the four typical shower designs, e.g.
 // /services/frameless-shower-enclosures/inline. Linked from the design
 // cards on ServiceDetail.jsx. Full copy for each design lives in
-// SHOWER_DESIGNS (src/data.js), drawn from the Finelines design-reference
+// SHOWER_DESIGNS (src/designs.js), drawn from the Finelines design-reference
 // sheets for that layout.
 export default function ShowerDesignDetail() {
   const { slug, designSlug } = useParams();

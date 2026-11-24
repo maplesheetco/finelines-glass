@@ -1,20 +1,25 @@
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { COMPANY, getPublishedArticles } from '../data.js';
+import { COMPANY } from '../data.js';
+import { getPublishedArticles } from '../articles.js';
+
+// Same as absoluteUrl in seo.js, kept here so article pages don't download
+// seo.js (which carries every design page's title).
+const SITE_URL = 'https://finelinesglass.ca';
+const absoluteUrl = (path) => SITE_URL + (path === '/' ? '/' : path);
 import Reveal from '../components/Reveal.jsx';
-import { absoluteUrl } from '../seo.js';
 
 // Full post page for a single article, e.g. /articles/frameless-shower-
 // enclosures-jobsite-to-finished-product. Linked from the cards on
 // Articles.jsx. Content for every post lives in the ARTICLES array
-// (src/data.js) — add a new post there and it shows up here automatically,
+// (src/articles.js) — add a new post there and it shows up here automatically,
 // no changes needed in this file. Same flexible `blocks` engine as the
 // service design-detail pages, plus an optional `flow` field for a
-// horizontal step row (see the comment above ARTICLES in data.js).
+// horizontal step row (see the comment above ARTICLES in articles.js).
 //
 // Uses getPublishedArticles() rather than ARTICLES directly, so a
 // not-yet-scheduled post 404s (redirects to /articles) even if someone
-// guesses or bookmarks its URL early — see the SCHEDULING note in data.js.
+// guesses or bookmarks its URL early — see the SCHEDULING note in articles.js.
 export default function ArticleDetail() {
   const { slug } = useParams();
   const ARTICLES = getPublishedArticles();

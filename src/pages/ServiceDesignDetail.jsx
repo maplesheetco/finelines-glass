@@ -11,7 +11,7 @@ import CustomGlassDesignDetail from './CustomGlassDesignDetail.jsx';
 
 // Single route target for /services/:slug/:designSlug. Different services
 // have their own "typical designs" detail page component (each with its own
-// content shape in data.js), so this just looks at the top-level :slug and
+// content shape in designs.js), so this just looks at the top-level :slug and
 // hands off to the right one. Add a new `if` here when another service gets
 // its own set of dedicated design pages.
 export default function ServiceDesignDetail() {

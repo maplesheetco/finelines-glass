@@ -3,7 +3,7 @@ import path from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { build, defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { getPageMeta, getSitemapPaths, getBreadcrumbs, absoluteUrl } from './src/seo.js'
+import { getPageMeta, getSitemapPaths, getBreadcrumbs, getStructuredData, getLastModified, absoluteUrl } from './src/seo.js'
 
 const escapeHtml = (s) =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
@@ -17,11 +17,13 @@ const escapeHtml = (s) =>
 // publish time.
 function seoPages() {
   let outDir
+  let config_root
   let isSsrBuild
   return {
     name: 'seo-pages',
     apply: 'build',
     configResolved(config) {
+      config_root = config.root
       outDir = path.resolve(config.root, config.build.outDir)
       isSsrBuild = Boolean(config.build.ssr)
     },
@@ -34,6 +36,11 @@ function seoPages() {
         configFile: false,
         logLevel: 'warn',
         plugins: [react()],
+        // Prerendering needs every page loaded up front, so swap the lazy
+        // page list for the direct one.
+        resolve: {
+          alias: [{ find: /^\.\/pages\/lazy\.js$/, replacement: path.resolve(config_root, 'src/pages/eager.js') }],
+        },
         build: { ssr: 'src/entry-server.jsx', outDir: ssrOutDir, emptyOutDir: true },
       })
       const { render } = await import(pathToFileURL(path.join(ssrOutDir, 'entry-server.js')).href)
@@ -84,6 +91,9 @@ function seoPages() {
           }
           tags.push(`<script type="application/ld+json">${JSON.stringify(breadcrumbSchema).replace(/</g, '\\u003c')}</script>`)
         }
+        for (const schema of getStructuredData(pagePath)) {
+          tags.push(`<script type="application/ld+json">${JSON.stringify(schema).replace(/</g, '\\u003c')}</script>`)
+        }
         const file = path.join(outDir, pagePath, 'index.html')
         fs.mkdirSync(path.dirname(file), { recursive: true })
         const html = template
@@ -93,7 +103,10 @@ function seoPages() {
       }
 
       const urls = paths
-        .map((p) => `  <url><loc>${absoluteUrl(p)}</loc></url>`)
+        .map((p) => {
+          const lastmod = getLastModified(p, now)
+          return `  <url><loc>${absoluteUrl(p)}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}</url>`
+        })
         .join('\n')
       fs.writeFileSync(
         path.join(outDir, 'sitemap.xml'),

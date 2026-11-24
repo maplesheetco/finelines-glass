@@ -6,6 +6,8 @@
 //   - generate_lead      someone pressed Submit on the estimate or contact form
 //   - phone_call_click   someone tapped the phone number
 //   - email_click        someone tapped the email address
+// Not a lead, but useful for spotting drop-off on the estimate form:
+//   - estimate_start     someone picked a service and pressed Next on step 1
 // ---------------------------------------------------------------------------
 
 export function trackEvent(name, params = {}) {

@@ -1,13 +1,14 @@
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { COMPANY, PARTITION_DESIGNS } from '../data.js';
+import { COMPANY } from '../data.js';
+import { PARTITION_DESIGNS } from '../designs.js';
 import Reveal from '../components/Reveal.jsx';
 import RelatedLinks from '../components/RelatedLinks.jsx';
 
 // Individual page for one of the three commercial glazing / office partition
 // systems, e.g. /services/commercial-glazing-office-partitions/storefront-glazing.
 // Linked from the design cards on ServiceDetail.jsx. Full copy for each system
-// lives in PARTITION_DESIGNS (src/data.js), drawn from the Finelines
+// lives in PARTITION_DESIGNS (src/designs.js), drawn from the Finelines
 // commercial glazing design-reference sheets for that system.
 //
 // Unlike the other *DesignDetail pages, each design here carries a flexible
