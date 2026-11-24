@@ -54,7 +54,16 @@ export default function RequestEstimate() {
   const fileInputRef = useRef(null);
 
   const update = (field, value) => setForm((f) => ({ ...f, [field]: value }));
-  const next = () => setStep((s) => Math.min(s + 1, 3));
+  const started = useRef(false);
+  const next = () => {
+    // estimate_start: someone finished step 1 (picked a service). Compared
+    // with generate_lead it shows how many people drop off part way through.
+    if (!started.current) {
+      started.current = true;
+      trackEvent('estimate_start', { service: form.service });
+    }
+    setStep((s) => Math.min(s + 1, 3));
+  };
   const back = () => setStep((s) => Math.max(s - 1, 1));
 
   function handleFileChange(e) {

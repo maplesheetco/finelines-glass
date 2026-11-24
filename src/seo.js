@@ -1,7 +1,7 @@
 // ---------------------------------------------------------------------------
 // PAGE TITLES, DESCRIPTIONS & SITEMAP
 // Works out the <title>, meta description, share image and canonical URL for
-// every page from the content in data.js, so a new service, design or article
+// every page from the content in data.js, designs.js and articles.js, so a new service, design or article
 // gets its own search listing automatically. Used in two places:
 //   - components/PageMeta.jsx updates the browser tab/head as visitors move
 //     between pages.
@@ -9,20 +9,9 @@
 //     Google, Facebook, iMessage etc. see the right title without running
 //     JavaScript) and generates /sitemap.xml.
 // ---------------------------------------------------------------------------
-import {
-  COMPANY,
-  SERVICES,
-  SHOWER_DESIGNS,
-  RAILING_DESIGNS,
-  WINE_DESIGNS,
-  PARTITION_DESIGNS,
-  MIRROR_DESIGNS,
-  WINDOW_DESIGNS,
-  SKYLIGHT_DESIGNS,
-  CUSTOM_GLASS_DESIGNS,
-  ARTICLES,
-  CITY_PAGES,
-} from './data.js';
+import { COMPANY, SERVICES, CITY_PAGES } from './data.js';
+import { SHOWER_DESIGNS, RAILING_DESIGNS, WINE_DESIGNS, PARTITION_DESIGNS, MIRROR_DESIGNS, WINDOW_DESIGNS, SKYLIGHT_DESIGNS, CUSTOM_GLASS_DESIGNS } from './designs.js';
+import { ARTICLES } from './articles.js';
 
 // The live domain. Every canonical URL, share link and sitemap entry uses it.
 export const SITE_URL = 'https://finelinesglass.ca';
@@ -224,6 +213,52 @@ export function getBreadcrumbs(pathname, now = new Date()) {
     crumbs.push({ name: article.title, path });
   }
   return crumbs;
+}
+
+// Extra structured data for a page, beyond the business details in
+// index.html: each city page describes the glass installation service in that
+// city, linked to the business by its @id. Returns a list of JSON-LD objects.
+export function getStructuredData(pathname) {
+  const path = normalizePath(pathname);
+  const [, section, slug, extra] = path.split('/');
+  if (section !== 'service-areas' || !slug || extra) return [];
+  const city = CITY_PAGES.find((c) => c.slug === slug);
+  if (!city) return [];
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      name: `Glass installation in ${city.name}, BC`,
+      serviceType: 'Glass installation',
+      url: absoluteUrl(path),
+      provider: { '@id': `${SITE_URL}/#business` },
+      areaServed: { '@type': 'City', name: `${city.name}, BC` },
+    },
+  ];
+}
+
+// Date (YYYY-MM-DD) for a page's <lastmod> in the sitemap: the publish date
+// for an article, and the newest published article for /articles. Other pages
+// get none, since a made-up date is worse than no date for Google.
+export function getLastModified(pathname, now = new Date()) {
+  const path = normalizePath(pathname);
+  const toDay = (iso) => {
+    const d = new Date(iso);
+    // Articles go live at midnight Vancouver time, so use the Vancouver date.
+    return new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Vancouver' }).format(d);
+  };
+  const published = ARTICLES.filter((a) => a.publishAt && isPublished(a, now));
+  if (path === '/articles') {
+    if (!published.length) return null;
+    const newest = published.reduce((a, b) => (new Date(a.publishAt) > new Date(b.publishAt) ? a : b));
+    return toDay(newest.publishAt);
+  }
+  const [, section, slug, extra] = path.split('/');
+  if (section === 'articles' && slug && !extra) {
+    const article = published.find((a) => a.slug === slug);
+    return article ? toDay(article.updatedAt || article.publishAt) : null;
+  }
+  return null;
 }
 
 // Every page that should be in Google, for the sitemap and the build step.

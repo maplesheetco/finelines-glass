@@ -1,13 +1,14 @@
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { COMPANY, WINE_DESIGNS } from '../data.js';
+import { COMPANY } from '../data.js';
+import { WINE_DESIGNS } from '../designs.js';
 import Reveal from '../components/Reveal.jsx';
 import RelatedLinks from '../components/RelatedLinks.jsx';
 
 // Individual page for one of the three wine cellar enclosure systems, e.g.
 // /services/wine-cellars/wood-framed. Linked from the design cards on
 // ServiceDetail.jsx. Full copy for each system lives in WINE_DESIGNS
-// (src/data.js), drawn from the Finelines wine cellar design-reference
+// (src/designs.js), drawn from the Finelines wine cellar design-reference
 // sheets for that system.
 export default function WineDesignDetail() {
   const { slug, designSlug } = useParams();

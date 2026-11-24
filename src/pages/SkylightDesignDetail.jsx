@@ -1,13 +1,14 @@
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { COMPANY, SKYLIGHT_DESIGNS } from '../data.js';
+import { COMPANY } from '../data.js';
+import { SKYLIGHT_DESIGNS } from '../designs.js';
 import Reveal from '../components/Reveal.jsx';
 import RelatedLinks from '../components/RelatedLinks.jsx';
 
 // Individual page for one of the two skylight services, e.g.
 // /services/skylights/new-skylight-installation. Linked from the design
 // cards on ServiceDetail.jsx. Full copy for each one lives in
-// SKYLIGHT_DESIGNS (src/data.js), drawn from the Finelines New Skylight
+// SKYLIGHT_DESIGNS (src/designs.js), drawn from the Finelines New Skylight
 // Installation and Skylight Replacement design-reference sheets.
 //
 // Same "two services under one heading" shape and flexible `blocks` engine

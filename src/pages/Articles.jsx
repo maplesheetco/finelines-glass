@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { COMPANY, getPublishedArticles } from '../data.js';
+import { COMPANY } from '../data.js';
+import { getPublishedArticles } from '../articles.js';
 import Reveal from '../components/Reveal.jsx';
 
 // Listing page at /articles. Cards are generated from the ARTICLES array
-// (src/data.js) — add a new article there and it appears here automatically
+// (src/articles.js) — add a new article there and it appears here automatically
 // once its scheduled publishAt time passes (see the SCHEDULING note above
-// ARTICLES in data.js). Falls back to a "coming soon" message when there are
+// ARTICLES in articles.js). Falls back to a "coming soon" message when there are
 // no published articles yet.
 export default function Articles() {
   const ARTICLES = getPublishedArticles();

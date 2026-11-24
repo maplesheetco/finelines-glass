@@ -1,13 +1,14 @@
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { COMPANY, CUSTOM_GLASS_DESIGNS } from '../data.js';
+import { COMPANY } from '../data.js';
+import { CUSTOM_GLASS_DESIGNS } from '../designs.js';
 import Reveal from '../components/Reveal.jsx';
 import RelatedLinks from '../components/RelatedLinks.jsx';
 
 // Individual page for one of the six Custom Glass Solutions categories, e.g.
 // /services/custom-glass-solutions/custom-tabletops. Linked from the
 // category cards on ServiceDetail.jsx. Full copy for each one lives in
-// CUSTOM_GLASS_DESIGNS (src/data.js), drawn from the Finelines Custom Glass
+// CUSTOM_GLASS_DESIGNS (src/designs.js), drawn from the Finelines Custom Glass
 // Solutions design-reference sheet.
 //
 // Same flexible `blocks` engine as the other *DesignDetail pages, but here
@@ -15,7 +16,7 @@ import RelatedLinks from '../components/RelatedLinks.jsx';
 // Designers & Contractors, Glass & Finish Options) and the same shared
 // `approach`/`codeDisclaimer`, since those apply to custom glass work in
 // general rather than to any one category — see the comment above
-// CUSTOM_GLASS_DESIGNS in data.js. A block can mix:
+// CUSTOM_GLASS_DESIGNS in designs.js. A block can mix:
 //   - paragraphs: string[]        -> plain paragraphs
 //   - bullets: string[]           -> a plain bulleted list
 //   - items: { title, body }[]    -> a bulleted list with bold lead-ins

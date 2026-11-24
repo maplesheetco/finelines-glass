@@ -1,13 +1,14 @@
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { COMPANY, WINDOW_DESIGNS } from '../data.js';
+import { COMPANY } from '../data.js';
+import { WINDOW_DESIGNS } from '../designs.js';
 import Reveal from '../components/Reveal.jsx';
 import RelatedLinks from '../components/RelatedLinks.jsx';
 
 // Individual page for one of the two window services, e.g.
 // /services/window-replacement-film/window-replacement. Linked from the
 // design cards on ServiceDetail.jsx. Full copy for each one lives in
-// WINDOW_DESIGNS (src/data.js), drawn from the Finelines Window Replacement
+// WINDOW_DESIGNS (src/designs.js), drawn from the Finelines Window Replacement
 // and Window Film Application design-reference sheets.
 //
 // Like PartitionDesignDetail/MirrorDesignDetail, each entry here carries a

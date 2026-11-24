@@ -8,7 +8,9 @@ import './index.css';
 const root = document.getElementById('root');
 const app = (
   <React.StrictMode>
-    <BrowserRouter>
+    {/* v7_startTransition keeps the current page on screen while the next
+        page's file downloads, instead of flashing an empty page. */}
+    <BrowserRouter future={{ v7_startTransition: true }}>
       <App />
     </BrowserRouter>
   </React.StrictMode>

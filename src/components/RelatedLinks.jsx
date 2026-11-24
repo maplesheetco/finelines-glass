@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { CITY_PAGES, getServiceArticles } from '../data.js';
+import { CITY_PAGES } from '../data.js';
+import { getServiceArticles } from '../articles.js';
 
 // Sidebar block on service and design pages: published articles about this
-// service (SERVICE_ARTICLES in data.js) and links to every city page, so each
+// service (SERVICE_ARTICLES in articles.js) and links to every city page, so each
 // city page is reachable from the pages people land on.
 export default function RelatedLinks({ serviceSlug }) {
   const articles = getServiceArticles(serviceSlug);

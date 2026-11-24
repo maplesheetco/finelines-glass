@@ -4,7 +4,7 @@
 // makes Vercel rebuild and the new article lands in sitemap.xml and gets its
 // own prerendered page without anyone touching the site.
 import fs from 'node:fs'
-import { ARTICLES } from '../src/data.js'
+import { ARTICLES } from '../src/articles.js'
 
 const now = new Date()
 const slugs = ARTICLES
