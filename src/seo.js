@@ -74,6 +74,14 @@ const STATIC_PAGES = {
     title: `Request a Free Estimate | ${BRAND}`,
     description: 'Tell us about your shower, railing, mirror, window or custom glass project and Finelines Glass will get back to you with an estimate.',
   },
+  '/privacy-policy': {
+    title: `Privacy Policy | ${BRAND}`,
+    description: 'How Finelines Glass collects, uses and protects personal information from website forms, email, phone calls and Google Analytics, under BC privacy law.',
+  },
+  '/disclaimer': {
+    title: `Disclaimer | ${BRAND}`,
+    description: 'Finelines Glass articles and guides are general information, not engineering or code advice. Quotes need a site visit; photos show past work.',
+  },
 };
 
 // Which design list belongs to which service page (/services/:slug/:designSlug).

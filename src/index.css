@@ -1136,6 +1136,15 @@ form.contact-form textarea { min-height: 120px; resize: vertical; }
 }
 .footer-credit a:hover { color: #F0B477; text-decoration-color: currentColor; }
 .footer-credit svg { width: 20px; height: 16px; flex-shrink: 0; }
+.footer-legal { display: inline-flex; gap: 18px; }
+.footer-legal a {
+  color: var(--white);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(255,255,255,0.35);
+  text-underline-offset: 3px;
+}
+.footer-legal a:hover { color: #F0B477; text-decoration-color: currentColor; }
 .footer-top {
   display: inline-flex;
   align-items: center;
@@ -1157,6 +1166,16 @@ form.contact-form textarea { min-height: 120px; resize: vertical; }
   .footer-bottom-inner { flex-direction: column; text-align: center; }
   .footer-col li { margin-bottom: 12px; }
 }
+
+/* ---------- Legal pages (Privacy Policy, Disclaimer) ---------- */
+.legal-page { max-width: 760px; line-height: 1.7; color: var(--gray); }
+.legal-page h2 { color: var(--navy); font-size: 1.3rem; margin: 34px 0 10px; }
+.legal-page ul { padding-left: 22px; margin: 0 0 16px; }
+.legal-page li { margin-bottom: 6px; }
+.legal-page a { color: var(--steel); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.legal-updated { font-size: 0.9rem; font-style: italic; }
+.form-privacy-note { font-size: 0.82rem; color: var(--gray); margin: 10px 0 0; }
+.form-privacy-note a { color: var(--steel); font-weight: 600; }
 
 /* ---------- Page hero (interior pages) ---------- */
 .page-hero {

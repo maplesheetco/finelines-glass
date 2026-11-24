@@ -197,6 +197,10 @@ export default function Footer() {
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
           <p>&copy; {COMPANY.currentYear} {COMPANY.name} All rights reserved.</p>
+          <nav className="footer-legal" aria-label="Legal">
+            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="/disclaimer">Disclaimer</Link>
+          </nav>
           <p className="footer-credit">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 24" fill="none" aria-hidden="true">
               <defs>

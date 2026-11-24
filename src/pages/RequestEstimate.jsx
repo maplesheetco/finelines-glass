@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { COMPANY, SERVICES } from '../data.js';
+import { Link } from 'react-router-dom';
 import ServiceIcon from '../components/ServiceIcon.jsx';
 import { trackEvent } from '../analytics.js';
 import { sendToFormspree, openMailto } from '../forms.js';
@@ -359,6 +360,7 @@ export default function RequestEstimate() {
                     <button className="btn-back" type="button" onClick={back}>Back</button>
                     <button className="btn btn-primary" type="submit" disabled={sending}>{sending ? 'Sending…' : 'Submit request'}</button>
                   </div>
+                  <p className="form-privacy-note">We use your details only to reply about your project. See our <Link to="/privacy-policy">Privacy Policy</Link>.</p>
                 </>
               )}
             </form>
