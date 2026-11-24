@@ -16,6 +16,8 @@ import Contact from './pages/Contact.jsx';
 import ServiceAreas from './pages/ServiceAreas.jsx';
 import CityPage from './pages/CityPage.jsx';
 import RequestEstimate from './pages/RequestEstimate.jsx';
+import Privacy from './pages/Privacy.jsx';
+import Disclaimer from './pages/Disclaimer.jsx';
 import NotFound from './pages/NotFound.jsx';
 
 export default function App() {
@@ -39,6 +41,8 @@ export default function App() {
           <Route path="/service-areas" element={<ServiceAreas />} />
           <Route path="/service-areas/:slug" element={<CityPage />} />
           <Route path="/request-estimate" element={<RequestEstimate />} />
+          <Route path="/privacy-policy" element={<Privacy />} />
+          <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

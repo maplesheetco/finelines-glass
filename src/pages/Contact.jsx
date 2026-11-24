@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { COMPANY } from '../data.js';
+import { Link } from 'react-router-dom';
 import Reveal from '../components/Reveal.jsx';
 import { trackEvent } from '../analytics.js';
 import { sendToFormspree, openMailto } from '../forms.js';
@@ -145,6 +146,7 @@ export default function Contact() {
                   <textarea id="message" name="message" required />
                 </div>
                 <button className="btn btn-primary" type="submit" disabled={sending}>{sending ? 'Sending…' : 'Send'}</button>
+                <p className="form-privacy-note">We use your details only to reply about your project. See our <Link to="/privacy-policy">Privacy Policy</Link>.</p>
               </form>
               </>
             )}
