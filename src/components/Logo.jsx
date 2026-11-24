@@ -22,7 +22,7 @@ export default function Logo({ variant = 'onDark', height = 40, className }) {
   return (
     <img
       src={SOURCES[variant] || SOURCES.onDark}
-      alt="Finelines Installations Ltd. Glass"
+      alt="Finelines Glass Installation Ltd."
       height={height}
       width={Math.round(height * ASPECT_RATIO)}
       className={className}
