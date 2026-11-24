@@ -424,7 +424,7 @@ export const SHOWER_DESIGNS = [
     image: '/images/shower-design-1-inline.webp',
     blurb: "A clean single-door, single-panel layout — space-efficient, open in appearance, with easy access through a hinged door and a timeless look that suits most bathrooms. Frameless glass means no bulky metal framing, less soap-scum buildup, and your tile stays fully visible.",
     intro: [
-      "At Finelines Glass Installations, we believe a frameless shower enclosure is more than simply installing glass — it's about precision, craftsmanship, and flawless application.",
+      "At Finelines Glass, we believe a frameless shower enclosure is more than simply installing glass — it's about precision, craftsmanship, and flawless application.",
       'A frameless inline shower is a clean and practical solution for bathrooms with a straight shower opening. The combination of a hinged glass door and fixed panel creates an open, spacious appearance while maintaining a refined, minimalist design.',
     ],
     whyChoose: [
@@ -462,7 +462,7 @@ export const SHOWER_DESIGNS = [
     image: '/images/shower-design-2-return-panel.webp',
     blurb: "Adds a perpendicular return panel to the inline layout, closing off the open end for a clearly defined enclosure while keeping the same open, uncluttered feel and easy entry through the hinged door. Configured around your exact walls and layout.",
     intro: [
-      'Finelines Glass Installations specializes in precision frameless shower enclosures designed to complement the unique layout of your bathroom. A frameless inline with return panel creates an elegant L-shaped configuration using a hinged glass door, an inline fixed panel, and a perpendicular return panel.',
+      'Finelines Glass specializes in precision frameless shower enclosures designed to complement the unique layout of your bathroom. A frameless inline with return panel creates an elegant L-shaped configuration using a hinged glass door, an inline fixed panel, and a perpendicular return panel.',
     ],
     whyChoose: [
       { title: 'Efficient use of space', body: 'The L-shaped configuration makes excellent use of a corner while maintaining a comfortable shower area.' },
@@ -479,7 +479,7 @@ export const SHOWER_DESIGNS = [
       body: 'We offer a variety of hardware finish options to coordinate your shower enclosure with your bathroom fixtures and décor. Available finishes vary by hardware style and supplier.',
     },
     installation: [
-      'A frameless shower is only as good as its installation. Finelines Glass Installations brings careful attention to measuring, glass alignment, hinge placement, door clearances, hardware positioning, and finishing details.',
+      'A frameless shower is only as good as its installation. Finelines Glass brings careful attention to measuring, glass alignment, hinge placement, door clearances, hardware positioning, and finishing details.',
       'Our goal is to ensure that every glass panel and door works together seamlessly while delivering the clean lines, functionality, and craftsmanship expected from a professionally installed frameless shower enclosure.',
     ],
   },
@@ -491,7 +491,7 @@ export const SHOWER_DESIGNS = [
     image: '/images/shower-design-3-neo-angle.webp',
     blurb: "Built into a corner, turning space a standard layout would waste into a comfortable shower area. Open sightlines and a distinctive angled design, fully custom-built to your bathroom's corner and dimensions.",
     intro: [
-      "At Finelines Glass Installations, we believe a frameless shower enclosure is more than simply installing glass — it's about precision, craftsmanship, and flawless application.",
+      "At Finelines Glass, we believe a frameless shower enclosure is more than simply installing glass — it's about precision, craftsmanship, and flawless application.",
       'A neo-angle shower enclosure is an excellent way to maximize a bathroom corner while creating a clean, open, and distinctive look. Its angled configuration provides comfortable shower space while maintaining an efficient footprint, making it especially well suited for bathrooms where every inch matters.',
     ],
     whyChoose: [
@@ -510,7 +510,7 @@ export const SHOWER_DESIGNS = [
       body: 'Hinges, handles, and other glass hardware can be finished to complement your bathroom fixtures.',
     },
     installation: [
-      'The beauty of a frameless shower depends heavily on how it is installed. This is where Finelines Glass Installations makes the difference.',
+      'The beauty of a frameless shower depends heavily on how it is installed. This is where Finelines Glass makes the difference.',
       'Our workmanship and application are centered around precision measuring, accurate glass alignment, proper hardware placement, consistent clearances, and meticulous finishing. Every panel and door must work together seamlessly to achieve the clean lines and refined appearance expected from a premium frameless enclosure. The result is not simply a shower enclosure — it is a carefully executed glass installation designed around your space.',
     ],
   },
@@ -522,7 +522,7 @@ export const SHOWER_DESIGNS = [
     image: '/images/shower-design-4-serenity-slider.webp',
     blurb: "A fixed panel paired with a sliding panel — no swing clearance needed, making it the practical choice for wider openings. Clean, minimal-frame look with smooth, quality sliding hardware, tailored to your space.",
     intro: [
-      'Finelines Glass Installations brings precision workmanship and thoughtful design to frameless sliding shower enclosures. The Serenity / Frameless Slider is a practical and elegant solution for wider shower openings where a sliding door provides convenient access without requiring the floor space needed for a swinging door.',
+      'Finelines Glass brings precision workmanship and thoughtful design to frameless sliding shower enclosures. The Serenity / Frameless Slider is a practical and elegant solution for wider shower openings where a sliding door provides convenient access without requiring the floor space needed for a swinging door.',
       "Designed with a fixed glass panel and a sliding glass panel, this configuration creates a clean, open appearance while providing smooth, practical access to the shower. The frameless glass allows the bathroom's tilework, stone, fixtures, and architectural details to remain visible.",
     ],
     whyChoose: [
@@ -541,7 +541,7 @@ export const SHOWER_DESIGNS = [
       items: ['Polished chrome', 'Brushed nickel', 'Matte black', 'Satin brass / champagne', 'Gunmetal grey', 'Oil rubbed bronze'],
     },
     installation: [
-      'A frameless sliding enclosure requires careful attention to the opening, glass dimensions, alignment, hardware positioning, clearances, and sliding operation. Finelines Glass Installations approaches each installation with precision and attention to detail from measurement through final installation.',
+      'A frameless sliding enclosure requires careful attention to the opening, glass dimensions, alignment, hardware positioning, clearances, and sliding operation. Finelines Glass approaches each installation with precision and attention to detail from measurement through final installation.',
       'Our goal is to deliver a sliding enclosure that operates properly, looks balanced and refined, and is built around the specific conditions of your bathroom rather than relying on a one-size-fits-all approach.',
     ],
     customNote: 'Every bathroom is different. When a standard configuration does not suit the space, we work through the layout and installation requirements to find a practical solution. Our experience with custom glass layouts allows us to explore configurations that work with the existing walls, dimensions, and design of the bathroom.',
@@ -575,7 +575,7 @@ export const RAILING_DESIGNS = [
     image: '/images/railing-design-1-base-shoe.webp',
     blurb: 'A continuous aluminum or metal channel secures the glass along its lower edge, creating one uninterrupted architectural line instead of individual point fittings — installed as a top-mount or side-mount system depending on the structure.',
     intro: [
-      'Finelines Glass Installations provides modern base shoe glass railing systems designed to create a clean, contemporary architectural appearance while providing a practical solution for balconies, decks, stairs, landings, terraces, and other railing applications.',
+      'Finelines Glass provides modern base shoe glass railing systems designed to create a clean, contemporary architectural appearance while providing a practical solution for balconies, decks, stairs, landings, terraces, and other railing applications.',
       'A base shoe system uses a continuous structural aluminum or metal channel to secure the glass along its lower edge. Unlike individual point-supported hardware, the continuous base shoe creates a strong visual line and allows the glass to appear as one uninterrupted architectural element.',
       'The result is a sleek, streamlined look that works particularly well with modern residential and commercial architecture. The minimal visual interruption of the glass helps preserve views while allowing the railing to integrate naturally with the surrounding design.',
     ],
@@ -588,11 +588,11 @@ export const RAILING_DESIGNS = [
     safetyCode: [
       'A glass railing is a life-safety guard system. Its design cannot be based on appearance alone. Guard height, loading, glass specification, structural support, anchorage, base shoe selection, fastening, and the supporting structure must be appropriate for the specific project.',
       'Applicable requirements can vary according to the building type, occupancy, interior or exterior location, height above grade, and jurisdiction. Vancouver, for example, operates under its own Vancouver Building By-law rather than the provincial BC Building Code.',
-      "Where engineering is required, Finelines Glass Installations works with the project's Structural Engineer and other design professionals to coordinate an appropriate railing system for the actual site conditions.",
+      "Where engineering is required, Finelines Glass works with the project's Structural Engineer and other design professionals to coordinate an appropriate railing system for the actual site conditions.",
     ],
     coordinationHeading: 'Designed Around Your Project',
     coordination: [
-      'Finelines Glass Installations works closely with designers, architects, general contractors, builders, and other project professionals to coordinate the railing system with the overall design and construction of the project.',
+      'Finelines Glass works closely with designers, architects, general contractors, builders, and other project professionals to coordinate the railing system with the overall design and construction of the project.',
       'Early coordination can help address railing locations, structural conditions, finished elevations, waterproofing considerations, glass dimensions, attachment locations, transitions, stairs, corners, and other details before fabrication and installation.',
       'Whether the project is a new build, renovation, or custom architectural application, our goal is to make the glass railing look like it was intentionally designed as part of the building — not added as an afterthought.',
     ],
@@ -615,9 +615,9 @@ export const RAILING_DESIGNS = [
       body: 'Base shoe systems and related components are available in different profiles, sizes, and finish options depending on the selected system, application, and project requirements.',
     },
     approach: [
-      'At Finelines Glass Installations, we understand that successful architectural glass work requires more than installing glass. It requires careful coordination between the design, structural requirements, site conditions, and construction sequence.',
+      'At Finelines Glass, we understand that successful architectural glass work requires more than installing glass. It requires careful coordination between the design, structural requirements, site conditions, and construction sequence.',
       'We work with designers and contractors to help develop practical glass railing solutions, coordinate details, and deliver a finished installation that complements the project while respecting the applicable structural and building-code requirements.',
-      'Whether you need a clean top-mounted railing or a streamlined side-mounted solution, Finelines Glass Installations can work with your project team to develop the right approach for the space.',
+      'Whether you need a clean top-mounted railing or a streamlined side-mounted solution, Finelines Glass can work with your project team to develop the right approach for the space.',
     ],
     codeDisclaimer: "Building-code and engineering requirements vary by project and jurisdiction. Final compliance is determined by the applicable authority having jurisdiction and, where required, the project's qualified design professional or Structural Engineer.",
   },
@@ -629,7 +629,7 @@ export const RAILING_DESIGNS = [
     image: '/images/railing-design-2-standoff.webp',
     blurb: 'Individual metal standoffs secure the glass to the structural surface, creating a clean, open appearance with minimal visible hardware — well suited to balconies, decks, and stairs where the view matters most.',
     intro: [
-      'Finelines Glass Installations specializes in modern standoff glass railing systems that combine clean architectural design with careful attention to structural requirements, safety, and professional installation.',
+      'Finelines Glass specializes in modern standoff glass railing systems that combine clean architectural design with careful attention to structural requirements, safety, and professional installation.',
       'A standoff glass railing uses individual metal standoffs to secure the glass to the structural surface, creating a clean, open appearance with minimal visible hardware. This system is particularly well suited for balconies, decks, stairs, landings, terraces, and other elevated areas where maintaining an unobstructed view is important.',
     ],
     safetyCode: [
@@ -640,7 +640,7 @@ export const RAILING_DESIGNS = [
     ],
     coordinationHeading: 'Working With Structural Engineers',
     coordination: [
-      'For projects where engineering is required, Finelines Glass Installations works with the Structural Engineer to help establish an appropriate railing design and attachment system for the specific project.',
+      'For projects where engineering is required, Finelines Glass works with the Structural Engineer to help establish an appropriate railing design and attachment system for the specific project.',
     ],
     coordinationPointsHeading: null,
     coordinationPoints: [
@@ -659,9 +659,9 @@ export const RAILING_DESIGNS = [
       type: 'link',
       body: 'Standoff hardware is available in different sizes, styles, and finishes depending on the selected system and supplier.',
     },
-    customNote: 'Not every project has standard conditions. Finelines Glass Installations works with the actual site conditions and project design to develop practical solutions for unusual layouts, difficult attachment locations, angled conditions, stairs, balconies, and other custom applications. Where engineering is required, we coordinate with the appropriate structural professional so the proposed system can be reviewed and designed for the specific project.',
+    customNote: 'Not every project has standard conditions. Finelines Glass works with the actual site conditions and project design to develop practical solutions for unusual layouts, difficult attachment locations, angled conditions, stairs, balconies, and other custom applications. Where engineering is required, we coordinate with the appropriate structural professional so the proposed system can be reviewed and designed for the specific project.',
     approach: [
-      "At Finelines Glass Installations, we believe a beautiful railing should also be properly designed, properly supported, and properly installed. Our workmanship focuses on accurate layout, glass alignment, hardware placement, secure attachment, clean finishing, and coordination with the project's structural requirements.",
+      "At Finelines Glass, we believe a beautiful railing should also be properly designed, properly supported, and properly installed. Our workmanship focuses on accurate layout, glass alignment, hardware placement, secure attachment, clean finishing, and coordination with the project's structural requirements.",
       "Bring us your space, your design, or your challenge. We'll work with the appropriate professionals to find a safe, practical, and beautiful glass railing solution.",
     ],
     codeDisclaimer: "Building-code requirements can vary by project and jurisdiction. Final compliance is determined by the applicable authority having jurisdiction and, where required, the project's qualified design professional or Structural Engineer.",
@@ -674,7 +674,7 @@ export const RAILING_DESIGNS = [
     image: '/images/railing-design-3-post.webp',
     blurb: 'Engineered metal posts combine strength and visual definition with the openness of architectural glass — a versatile choice for stairways, balconies, decks, and interior guardrails.',
     intro: [
-      'Finelines Glass Installations provides post glass railing systems that combine the strength and visual definition of metal posts with the openness and transparency of architectural glass. This system is a versatile choice for stairways, balconies, decks, landings, terraces, interior guardrails, and other residential or commercial applications.',
+      'Finelines Glass provides post glass railing systems that combine the strength and visual definition of metal posts with the openness and transparency of architectural glass. This system is a versatile choice for stairways, balconies, decks, landings, terraces, interior guardrails, and other residential or commercial applications.',
       'The system uses engineered posts, glass panels, glass clamps or fittings, and a handrail or top rail where required by the project design and applicable requirements. The result is a refined railing system that provides a strong architectural presence while maintaining clear sightlines and allowing natural light to move through the space.',
     ],
     applicationsHeading: 'Interior & Exterior Applications',
@@ -685,12 +685,12 @@ export const RAILING_DESIGNS = [
     applicationsNote: 'The final system is selected and detailed according to the specific project.',
     safetyCode: [
       'A glass railing is a life-safety guard system. Its design must consider more than appearance. Guard height, loading, glass type, glass thickness, openings, handrail requirements, post spacing, anchorage, supporting structure, and the installation method all need to be appropriate for the intended application.',
-      "Finelines Glass Installations works with the applicable BC Building Code requirements and local building regulations/bylaws, together with the project's structural design and site conditions. Requirements can vary depending on the jurisdiction, building type, occupancy, location, and application.",
+      "Finelines Glass works with the applicable BC Building Code requirements and local building regulations/bylaws, together with the project's structural design and site conditions. Requirements can vary depending on the jurisdiction, building type, occupancy, location, and application.",
       'Where engineering is required, Finelines coordinates with the appropriate Structural Engineer and project design professionals so that the railing system can be reviewed as part of the overall structural design.',
     ],
     coordinationHeading: 'Designed Around Your Vision',
     coordination: [
-      'Finelines Glass Installations works closely with interior designers, architects, contractors, builders, and project teams to help achieve the design intent and quality standards established for each client and project.',
+      'Finelines Glass works closely with interior designers, architects, contractors, builders, and project teams to help achieve the design intent and quality standards established for each client and project.',
       'From contemporary residential interiors to sophisticated exterior decks and terraces, we coordinate the glass, posts, hardware, dimensions, finishes, and installation details with the surrounding architecture. Our goal is to make the railing feel like an intentional part of the design rather than a separate component added after construction.',
       'When a project has specific design standards, finish requirements, or architectural details, we work with the project team to develop a practical glass railing solution that respects those requirements while accounting for actual site conditions.',
     ],
@@ -709,10 +709,10 @@ export const RAILING_DESIGNS = [
       type: 'link',
       body: 'Post systems, handrails, clamps, fittings, and related components are available in different sizes, profiles, styles, and finishes depending on the selected system and project requirements.',
     },
-    customNote: 'Every project has its own conditions. Finelines Glass Installations can work with straight runs, stair angles, corners, transitions, different floor conditions, custom post layouts, and other architectural requirements. Whether the project begins with an architectural drawing, interior design concept, contractor specification, or an existing site condition, we work with the project team to turn the design intent into a practical glass railing installation.',
+    customNote: 'Every project has its own conditions. Finelines Glass can work with straight runs, stair angles, corners, transitions, different floor conditions, custom post layouts, and other architectural requirements. Whether the project begins with an architectural drawing, interior design concept, contractor specification, or an existing site condition, we work with the project team to turn the design intent into a practical glass railing installation.',
     approach: [
-      'At Finelines Glass Installations, we believe quality architectural glass is the result of good design coordination, proper structural planning, precision fabrication, and professional installation.',
-      "We work with interior designers, architects, contractors, builders, and Structural Engineers to help deliver a railing system that meets the project's design intent and applicable requirements — while maintaining the clean, refined appearance our clients expect. From concept to installation, Finelines Glass Installations can make it happen.",
+      'At Finelines Glass, we believe quality architectural glass is the result of good design coordination, proper structural planning, precision fabrication, and professional installation.',
+      "We work with interior designers, architects, contractors, builders, and Structural Engineers to help deliver a railing system that meets the project's design intent and applicable requirements — while maintaining the clean, refined appearance our clients expect. From concept to installation, Finelines Glass can make it happen.",
     ],
     codeDisclaimer: "Building-code, engineering, and permit requirements vary by project and jurisdiction. Final compliance is determined by the applicable authority having jurisdiction and, where required, the project's qualified design professional or Structural Engineer.",
   },
@@ -724,7 +724,7 @@ export const RAILING_DESIGNS = [
     image: '/images/railing-design-4-spigot.webp',
     blurb: 'Individual spigots support clear glass panels with minimal visual obstruction, letting the surrounding architecture, landscape, and views remain the focus — ideal for luxury decks, patios, and pool areas.',
     intro: [
-      'Finelines Glass Installations offers modern Spigot Glass Railing Systems designed to provide a clean, open architectural appearance while maintaining the strength, safety, and structural coordination required for residential and commercial projects.',
+      'Finelines Glass offers modern Spigot Glass Railing Systems designed to provide a clean, open architectural appearance while maintaining the strength, safety, and structural coordination required for residential and commercial projects.',
       'The system uses individual spigots to support clear glass panels, creating minimal visual obstruction while allowing the glass to become an integral part of the architecture. A continuous top cap or handrail can be incorporated into the system to provide a refined finished appearance and satisfy project-specific design and safety requirements.',
       'Spigot glass railings are an excellent choice when the goal is to maximize views while keeping the railing visually light — well suited to modern residential homes, luxury decks and patios, balconies and terraces, pool and recreational areas, exterior walkways, interior stairways and landings, and commercial and architectural projects.',
     ],
@@ -734,13 +734,13 @@ export const RAILING_DESIGNS = [
       { title: 'Exterior Applications', body: 'Exterior installations require particular attention to the supporting structure, anchorage, weather exposure, drainage, material selection, and long-term durability, depending on the project requirements, structural conditions, environmental exposure, and applicable building regulations.' },
     ],
     safetyCode: [
-      'At Finelines Glass Installations, engineering is an important part of our railing process. Engineering approval is required for every project before installation, in accordance with the requirements established for the project and applicable authority having jurisdiction.',
+      'At Finelines Glass, engineering is an important part of our railing process. Engineering approval is required for every project before installation, in accordance with the requirements established for the project and applicable authority having jurisdiction.',
       'We do not treat a glass railing as simply a glass-and-hardware installation. The complete system needs to be considered, including glass type and thickness, guard height, top cap or handrail requirements, spigot design and spacing, spigot anchorage, structural substrate, concrete, steel, wood, or other supporting conditions, required guard loading, edge distances and fastener locations, interior or exterior exposure, and project-specific structural requirements.',
       'Where required, the Structural Engineer reviews and approves the railing system and its attachment to the supporting structure before installation proceeds.',
     ],
     coordinationHeading: 'Working With Designers & Contractors',
     coordination: [
-      "Finelines Glass Installations works closely with interior designers, architects, contractors, builders, and Structural Engineers to achieve the project's design intent while addressing the technical requirements of the installation.",
+      "Finelines Glass works closely with interior designers, architects, contractors, builders, and Structural Engineers to achieve the project's design intent while addressing the technical requirements of the installation.",
       'We understand that every project has its own architectural standards, finishes, dimensions, construction details, and client expectations. Our role is to work with the project team to coordinate the glass railing with the overall design — not simply install a standard system.',
       'From architectural drawings and construction details to field conditions and final installation, we coordinate the railing system with the project wherever possible.',
     ],
@@ -749,10 +749,10 @@ export const RAILING_DESIGNS = [
       type: 'link',
       body: 'Spigots, top caps, handrails, fittings, and related components are available in different styles and finishes depending on the selected system and project requirements.',
     },
-    customNote: 'Not every railing follows a straight line. Finelines Glass Installations can work with stairs, angles, corners, transitions, changing elevations, balconies, terraces, and custom architectural layouts. Whether the project requires a simple straight run or a more complex configuration, we work with the designer, contractor, and Structural Engineer to develop a practical solution based on the actual site conditions.',
+    customNote: 'Not every railing follows a straight line. Finelines Glass can work with stairs, angles, corners, transitions, changing elevations, balconies, terraces, and custom architectural layouts. Whether the project requires a simple straight run or a more complex configuration, we work with the designer, contractor, and Structural Engineer to develop a practical solution based on the actual site conditions.',
     approach: [
-      'At Finelines Glass Installations, we believe exceptional architectural glass requires more than beautiful materials. It requires design coordination, engineering, accurate fabrication, quality materials, and professional installation.',
-      "We work with the project's designers, contractors, and Structural Engineers to help transform the design concept into a finished glass railing system that meets the project's requirements. From design coordination to engineering approval and final installation, Finelines Glass Installations can make it happen.",
+      'At Finelines Glass, we believe exceptional architectural glass requires more than beautiful materials. It requires design coordination, engineering, accurate fabrication, quality materials, and professional installation.',
+      "We work with the project's designers, contractors, and Structural Engineers to help transform the design concept into a finished glass railing system that meets the project's requirements. From design coordination to engineering approval and final installation, Finelines Glass can make it happen.",
     ],
     codeDisclaimer: "Engineering, building-code, permit, and municipal requirements vary by project and jurisdiction. Final approval and compliance are determined by the applicable authority having jurisdiction and the project's qualified Structural Engineer/design professionals.",
   },
@@ -764,8 +764,8 @@ export const RAILING_DESIGNS = [
     image: '/images/railing-design-5-custom-applications.webp',
     blurb: 'Not every project calls for the same system — from a nearly seamless embedded glass channel to a warm wood frame or a bold black aluminum frame, we adapt the application to the architecture.',
     intro: [
-      'Finelines Glass Installations provides custom glass railing solutions designed around the architecture, materials, and requirements of each project. We work according to the design intent and coordinate with designers, architects, contractors, builders, and Structural Engineers to develop the appropriate glass railing application for the space.',
-      'Not every project requires the same railing system. A modern architectural home may call for a nearly seamless embedded glass channel, while another project may be better suited to a warm wood frame or a contemporary black aluminum frame. Finelines Glass Installations works with different applications to achieve the desired appearance and project requirements.',
+      'Finelines Glass provides custom glass railing solutions designed around the architecture, materials, and requirements of each project. We work according to the design intent and coordinate with designers, architects, contractors, builders, and Structural Engineers to develop the appropriate glass railing application for the space.',
+      'Not every project requires the same railing system. A modern architectural home may call for a nearly seamless embedded glass channel, while another project may be better suited to a warm wood frame or a contemporary black aluminum frame. Finelines Glass works with different applications to achieve the desired appearance and project requirements.',
     ],
     applicationsHeading: 'Three Custom Applications',
     applications: [
@@ -805,20 +805,20 @@ export const RAILING_DESIGNS = [
     ],
     safetyCode: [
       'Glass railings are life-safety guard systems. The appropriate glass, framing, anchorage, guard height, loading, connections, and supporting structure must be determined for the specific project and jurisdiction.',
-      "Finelines Glass Installations works with the applicable BC Building Code requirements, local building regulations, and project structural design. Where engineering approval is required, the railing system is coordinated with the project's qualified Structural Engineer before installation.",
+      "Finelines Glass works with the applicable BC Building Code requirements, local building regulations, and project structural design. Where engineering approval is required, the railing system is coordinated with the project's qualified Structural Engineer before installation.",
     ],
     coordinationHeading: 'Designed According to the Project',
     coordination: [
-      'At Finelines Glass Installations, we understand that architectural glass needs to work with the building — not against it. We review the design intent, site conditions, supporting structure, finished elevations, surrounding materials, and installation requirements when determining the appropriate railing approach.',
+      'At Finelines Glass, we understand that architectural glass needs to work with the building — not against it. We review the design intent, site conditions, supporting structure, finished elevations, surrounding materials, and installation requirements when determining the appropriate railing approach.',
       'We work with interior designers, architects, contractors, builders, and Structural Engineers to coordinate the railing with the overall project. This collaborative approach helps ensure that the finished system reflects the intended design while addressing the technical requirements of the installation.',
     ],
-    coordinationNote: 'Our work focuses on accurate measurements, proper layout, quality materials, precise fabrication, secure installation, clean finishing, and coordination with the construction sequence. Whether the project calls for a minimal embedded system, a warm wood-framed railing, or a bold black aluminum frame, Finelines Glass Installations can adapt the glass railing application to the design.',
+    coordinationNote: 'Our work focuses on accurate measurements, proper layout, quality materials, precise fabrication, secure installation, clean finishing, and coordination with the construction sequence. Whether the project calls for a minimal embedded system, a warm wood-framed railing, or a bold black aluminum frame, Finelines Glass can adapt the glass railing application to the design.',
     hardware: {
       type: 'link',
       body: 'Glass railing systems, framing components, channels, handrails, fittings, and related hardware are available in different styles and finishes depending on the selected application and project requirements.',
     },
     approach: [
-      "From a designer's concept to a contractor's construction plan, Finelines Glass Installations works with the project team to make the glass railing design work in the real-world conditions of the site.",
+      "From a designer's concept to a contractor's construction plan, Finelines Glass works with the project team to make the glass railing design work in the real-world conditions of the site.",
       'Different materials. Different applications. One commitment to quality.',
     ],
     codeDisclaimer: "Engineering, building-code, permit, and municipal requirements vary by project and jurisdiction. Final approval and compliance are determined by the applicable authority having jurisdiction and, where required, the project's qualified design professional or Structural Engineer.",
@@ -845,7 +845,7 @@ export const WINE_DESIGNS = [
     image: '/images/wine-design-1-wood-framed.webp',
     blurb: "A custom wood frame combines the warmth of natural wood with the transparency of architectural glass, integrating the wine cellar directly into the home's millwork, stairs, and finishes.",
     intro: [
-      'Finelines Glass Installations provides custom wood-framed glass wine cellar enclosures that combine the warmth of natural wood with the transparency of architectural glass. This design creates a distinctive feature within a high-end residential or commercial interior while keeping the wine collection visually connected to the surrounding space.',
+      'Finelines Glass provides custom wood-framed glass wine cellar enclosures that combine the warmth of natural wood with the transparency of architectural glass. This design creates a distinctive feature within a high-end residential or commercial interior while keeping the wine collection visually connected to the surrounding space.',
       'The wood framing can be designed as part of the architectural millwork, creating a cohesive transition between the wine cellar, stairways, living areas, dining spaces, and other finished elements of the home.',
     ],
     philosophyHeading: 'Designed as Part of the Home',
@@ -855,7 +855,7 @@ export const WINE_DESIGNS = [
     ],
     coordinationHeading: "Working From the Designer's & Contractor's Scope",
     coordination: [
-      'Finelines Glass Installations works with interior designers, architects, contractors, builders, and project teams to achieve the approved design intent and project standards.',
+      'Finelines Glass works with interior designers, architects, contractors, builders, and project teams to achieve the approved design intent and project standards.',
       'We work from architectural drawings, interior design concepts, construction details, specifications, and actual site conditions. Frame dimensions, door locations, glass panel sizes, hardware, wood profiles, and transitions can be coordinated with the overall design.',
       'Our role is to coordinate the glass portion of the installation with the surrounding construction so the finished enclosure looks like an integrated part of the home.',
     ],
@@ -865,7 +865,7 @@ export const WINE_DESIGNS = [
       { title: 'Starphire® / Low-Iron Glass', body: 'Offers enhanced clarity and a more neutral appearance when high visual transparency is desired.' },
       { title: 'Laminated Colored or Specialty Glass', body: 'Can be incorporated when the design calls for color, privacy, decorative effects, or other specified characteristics.' },
     ],
-    applicationsNote: 'Glass thickness, safety glazing, heat treatment, lamination, color, and other specifications are selected according to the project requirements — Finelines Glass Installations works according to the approved scope rather than applying one standard glass specification to every project.',
+    applicationsNote: 'Glass thickness, safety glazing, heat treatment, lamination, color, and other specifications are selected according to the project requirements — Finelines Glass works according to the approved scope rather than applying one standard glass specification to every project.',
     materialHeading: 'Wood & Glass: A Refined Combination',
     material: [
       'The combination of wood and glass provides a balance between warmth and openness. The wood frame establishes a strong architectural boundary, while the glass allows the wine collection, lighting, and interior finishes to remain visible.',
@@ -873,21 +873,21 @@ export const WINE_DESIGNS = [
     ],
     customHeading: 'Custom Configurations',
     customNote: [
-      'Every home has different architectural conditions. Finelines Glass Installations can coordinate custom wine cellar enclosures around corners, stairways, wall openings, floor transitions, ceiling conditions, large glass panels, and custom entry doors.',
+      'Every home has different architectural conditions. Finelines Glass can coordinate custom wine cellar enclosures around corners, stairways, wall openings, floor transitions, ceiling conditions, large glass panels, and custom entry doors.',
       'This makes the system suitable for wine cellars incorporated into feature walls, stair areas, living spaces, dining areas, or other high-end architectural interiors.',
     ],
     tradesHeading: 'Coordination With Other Trades',
     trades: [
-      'A custom wine cellar can involve several trades, including millwork, flooring, electrical, lighting, HVAC, cabinetry, wine-rack fabrication, and general construction. Finelines Glass Installations works with the designer and contractor to coordinate our installation with the overall construction sequence.',
+      'A custom wine cellar can involve several trades, including millwork, flooring, electrical, lighting, HVAC, cabinetry, wine-rack fabrication, and general construction. Finelines Glass works with the designer and contractor to coordinate our installation with the overall construction sequence.',
       'Accurate measurements, site verification, and communication with the project team help ensure that the finished glass and wood-framed system fits the actual conditions.',
     ],
     hardware: {
       body: 'Wine cellar doors and hardware can be selected to complement the wood framing and surrounding architecture. Hinges, pulls, locks, channels, fittings, and related components can be coordinated with the approved design and available finish options.',
     },
     approach: [
-      'Finelines Glass Installations can make it happen with quality assurance. Our process focuses on accurate field measurements, careful glass specification, precise fabrication, proper glass handling, frame and glass alignment, hardware placement, clean joints, and professional finishing.',
+      'Finelines Glass can make it happen with quality assurance. Our process focuses on accurate field measurements, careful glass specification, precise fabrication, proper glass handling, frame and glass alignment, hardware placement, clean joints, and professional finishing.',
       'Because this type of wine cellar is highly visible within the home, we pay particular attention to the relationship between the glass, frame, doors, hardware, and surrounding architectural finishes.',
-      "At Finelines Glass Installations, we believe custom glass should become part of the architecture. Our wood-framed wine cellar enclosures are developed around the project's design, materials, dimensions, and construction requirements.",
+      "At Finelines Glass, we believe custom glass should become part of the architecture. Our wood-framed wine cellar enclosures are developed around the project's design, materials, dimensions, and construction requirements.",
       "From the designer's concept and contractor's scope to field measurements, glass selection, fabrication, and installation, we work with the project team to bring the approved design into the finished space.",
     ],
     codeDisclaimer: "Glass, engineering, building-code, permit, and project requirements vary according to the application and jurisdiction. Final specifications and compliance are determined by the applicable project requirements, authority having jurisdiction, and qualified design professionals where required.",
@@ -900,7 +900,7 @@ export const WINE_DESIGNS = [
     image: '/images/wine-design-2-black-framed.webp',
     blurb: 'A modern black frame system provides structure and visual definition, turning an underused corner or wall into a defined architectural feature that shows off the collection.',
     intro: [
-      'Finelines Glass Installations provides custom black-framed glass wine cellar enclosures that combine the transparency of architectural glass with the strong, refined appearance of a modern black frame system.',
+      'Finelines Glass provides custom black-framed glass wine cellar enclosures that combine the transparency of architectural glass with the strong, refined appearance of a modern black frame system.',
       'This design creates a defined architectural feature while allowing the wine collection, lighting, millwork, and interior finishes to remain visible from the surrounding living space. The black framing provides structure and visual definition, making the wine cellar an intentional part of the interior architecture.',
     ],
     philosophyHeading: 'A Statement Piece Within the Architecture',
@@ -910,7 +910,7 @@ export const WINE_DESIGNS = [
     ],
     coordinationHeading: "Working From the Designer's & Contractor's Design",
     coordination: [
-      'Finelines Glass Installations works closely with interior designers, architects, contractors, builders, and project teams to build the glass enclosure around the approved design and scope of work.',
+      'Finelines Glass works closely with interior designers, architects, contractors, builders, and project teams to build the glass enclosure around the approved design and scope of work.',
       "Frame profiles, door locations, panel sizes, ceiling conditions, floor transitions, hardware, finishes, and surrounding millwork can all be coordinated with the project's architectural details. Our goal is to make the glass enclosure integrate naturally with the rest of the space.",
       "We work from the project's drawings, specifications, dimensions, and field conditions to determine the practical glass and framing approach for fabrication and installation.",
     ],
@@ -920,7 +920,7 @@ export const WINE_DESIGNS = [
       { title: 'Starphire® / Low-Iron Glass', body: 'Provides enhanced clarity and a more neutral appearance where high visual clarity is desired.' },
       { title: 'Laminated Colored or Specialty Glass', body: 'Can be incorporated when the design calls for color, privacy, decorative effects, or other specified characteristics.' },
     ],
-    applicationsNote: 'Glass thickness, safety glazing, heat treatment, lamination, color, and other specifications are determined according to the applicable project requirements — Finelines Glass Installations does not use a one-size-fits-all glass specification.',
+    applicationsNote: 'Glass thickness, safety glazing, heat treatment, lamination, color, and other specifications are determined according to the applicable project requirements — Finelines Glass does not use a one-size-fits-all glass specification.',
     materialHeading: 'Custom Framing & Architectural Details',
     material: [
       'Black-framed wine cellar systems can be customized to accommodate different room dimensions, corners, ceiling heights, sloped conditions, doors, fixed panels, and interior layouts.',
@@ -928,22 +928,22 @@ export const WINE_DESIGNS = [
     ],
     customHeading: 'Custom Solutions for Your Space',
     customNote: [
-      'No two wine cellars have to look the same. Finelines Glass Installations can work with custom room shapes, corners, angled conditions, large openings, floor-to-ceiling glazing, under-stair spaces, and other architectural configurations.',
+      'No two wine cellars have to look the same. Finelines Glass can work with custom room shapes, corners, angled conditions, large openings, floor-to-ceiling glazing, under-stair spaces, and other architectural configurations.',
       "Whether the project begins with a designer's concept, an architect's drawing, or a contractor's scope of work, we work with the project team to develop the glass and framing solution around the design.",
     ],
     tradesHeading: 'Coordination With the Project Team',
     trades: [
-      'Wine cellar installations often require coordination with flooring, millwork, electrical, lighting, HVAC, wine-rack fabrication, cabinetry, and other trades. Finelines Glass Installations works with designers and contractors to coordinate our portion of the project with the overall construction sequence.',
+      'Wine cellar installations often require coordination with flooring, millwork, electrical, lighting, HVAC, wine-rack fabrication, cabinetry, and other trades. Finelines Glass works with designers and contractors to coordinate our portion of the project with the overall construction sequence.',
       'Accurate site measurements and communication with the project team help ensure that the finished glass and framing system fits the actual conditions and supports the intended design.',
     ],
     hardware: {
       body: 'Wine cellar doors can be designed with hinged or other project-appropriate configurations, depending on the approved design and system requirements. Pull handles, hinges, locks, clamps, framing components, and related hardware can be selected to complement the overall architectural style.',
     },
     approach: [
-      'Finelines Glass Installations can make it happen with quality assurance. Our process focuses on accurate measurements, proper frame layout, precise fabrication, careful glass handling, correct hardware placement, alignment, clean finishing, and professional installation.',
+      'Finelines Glass can make it happen with quality assurance. Our process focuses on accurate measurements, proper frame layout, precise fabrication, careful glass handling, correct hardware placement, alignment, clean finishing, and professional installation.',
       'We understand that a wine cellar is a highly visible architectural feature. Small details in frame alignment, glass joints, door operation, hardware placement, and finishing can have a significant effect on the completed appearance.',
-      'At Finelines Glass Installations, we believe a wine cellar enclosure should be both functional and architectural. The glass, framing, hardware, lighting, wine storage, and surrounding finishes should work together as one cohesive design.',
-      'From design coordination and glass selection to field measurements, fabrication, and installation, Finelines Glass Installations works with the project team to bring the approved design to life.',
+      'At Finelines Glass, we believe a wine cellar enclosure should be both functional and architectural. The glass, framing, hardware, lighting, wine storage, and surrounding finishes should work together as one cohesive design.',
+      'From design coordination and glass selection to field measurements, fabrication, and installation, Finelines Glass works with the project team to bring the approved design to life.',
     ],
     codeDisclaimer: "Glass specifications, safety glazing, engineering, building-code, permit, and municipal requirements vary according to the application and jurisdiction. Final specifications and compliance are determined by the applicable project requirements, authority having jurisdiction, and qualified design professionals where required.",
   },
@@ -955,13 +955,13 @@ export const WINE_DESIGNS = [
     image: '/images/wine-design-3-frameless.webp',
     blurb: 'Large panels of glass with minimal visible framing let the wine collection and surrounding architecture take center stage — well suited to under-stair spaces and floor-to-ceiling displays.',
     intro: [
-      'Finelines Glass Installations provides custom frameless glass wine cellar enclosures designed to showcase wine collections while integrating seamlessly with the surrounding architecture.',
+      'Finelines Glass provides custom frameless glass wine cellar enclosures designed to showcase wine collections while integrating seamlessly with the surrounding architecture.',
       'Using large areas of glass with minimal visible framing, a frameless wine cellar enclosure can create a sophisticated architectural feature while maintaining visual connection between the wine cellar and the surrounding living space.',
-      "Whether the wine cellar is located beneath a staircase, within a dedicated room, beside a dining area, or integrated into a larger interior design, Finelines Glass Installations works according to the project's design and scope of work.",
+      "Whether the wine cellar is located beneath a staircase, within a dedicated room, beside a dining area, or integrated into a larger interior design, Finelines Glass works according to the project's design and scope of work.",
     ],
     coordinationHeading: 'Working From the Design',
     coordination: [
-      'Finelines Glass Installations works closely with the designs and specifications provided by interior designers, architects, contractors, builders, and project teams.',
+      'Finelines Glass works closely with the designs and specifications provided by interior designers, architects, contractors, builders, and project teams.',
       "We understand that the glass enclosure is one part of a larger architectural project. Door locations, glass panel sizes, ceiling conditions, floor transitions, wall finishes, hardware, and surrounding millwork may all be established by the project's design.",
       'Our role is to translate the approved design and project scope into a carefully measured and professionally installed glass enclosure while coordinating with the other trades involved in the project.',
     ],
@@ -971,7 +971,7 @@ export const WINE_DESIGNS = [
       { title: 'Starphire® / Low-Iron Glass', body: 'Provides enhanced clarity with reduced green edge appearance, making it suitable when a more neutral, high-clarity appearance is desired.' },
       { title: 'Laminated Colored or Specialty Glass', body: 'Can be incorporated where the project design calls for color, privacy, decorative effects, or other specified performance characteristics.' },
     ],
-    applicationsNote: 'Glass thickness, safety glazing, heat treatment, lamination, color, and other specifications are selected according to the applicable project requirements and scope of work — Finelines Glass Installations does not assume that one glass specification is appropriate for every project.',
+    applicationsNote: 'Glass thickness, safety glazing, heat treatment, lamination, color, and other specifications are selected according to the applicable project requirements and scope of work — Finelines Glass does not assume that one glass specification is appropriate for every project.',
     materialHeading: 'Frameless Design & Architectural Integration',
     material: [
       'A frameless wine cellar enclosure is designed to minimize visual obstruction and allow the wine collection, interior finishes, and architectural lighting to remain the focus.',
@@ -979,21 +979,21 @@ export const WINE_DESIGNS = [
     ],
     customHeading: 'Custom Applications',
     customNote: [
-      'Wine cellars are often located in spaces with challenging architectural conditions. Finelines Glass Installations can work with custom layouts such as under-stair wine cellars, floor-to-ceiling enclosures, corner configurations, angled ceilings, custom openings, and large glass entry systems.',
+      'Wine cellars are often located in spaces with challenging architectural conditions. Finelines Glass can work with custom layouts such as under-stair wine cellars, floor-to-ceiling enclosures, corner configurations, angled ceilings, custom openings, and large glass entry systems.',
       'We coordinate the glass installation with the surrounding flooring, ceilings, walls, millwork, lighting, and other construction elements wherever possible.',
     ],
     tradesHeading: 'Coordination With Designers & Contractors',
     trades: [
-      'Successful wine cellar glass installation requires coordination between multiple trades. Finelines Glass Installations works with designers and contractors to understand the project scope, approved details, dimensions, finishes, and installation sequence.',
+      'Successful wine cellar glass installation requires coordination between multiple trades. Finelines Glass works with designers and contractors to understand the project scope, approved details, dimensions, finishes, and installation sequence.',
       'This collaborative approach helps ensure that the finished glass enclosure supports the design intent and integrates properly with the completed space.',
     ],
     hardware: {
       body: 'Wine cellar hardware can be selected in different styles and finishes depending on the design and project specifications. Hinges, pulls, clamps, channels, and other components can be coordinated with the overall interior design.',
     },
     approach: [
-      'Finelines Glass Installations can make it happen with quality assurance. Our process focuses on accurate field measurements, careful glass specification, precise fabrication, professional handling, accurate hardware placement, proper alignment, and clean finishing.',
+      'Finelines Glass can make it happen with quality assurance. Our process focuses on accurate field measurements, careful glass specification, precise fabrication, professional handling, accurate hardware placement, proper alignment, and clean finishing.',
       'Every glass enclosure is treated according to its specific scope rather than as a one-size-fits-all installation.',
-      'At Finelines Glass Installations, we understand that a wine cellar enclosure is more than a glass wall or door. It is part of the architecture and should be coordinated with the complete design.',
+      'At Finelines Glass, we understand that a wine cellar enclosure is more than a glass wall or door. It is part of the architecture and should be coordinated with the complete design.',
       "From the designer's concept and contractor's scope to field measurements, glass selection, fabrication, and installation, we work with the project team to deliver a frameless glass wine cellar enclosure that reflects the intended design.",
     ],
     codeDisclaimer: "Glass specifications, safety glazing, engineering, building-code, permit, and project requirements vary according to the application and jurisdiction. Final glass selection and compliance are determined by the applicable project specifications, authority having jurisdiction, and qualified design professionals where required.",
@@ -1024,7 +1024,7 @@ export const PARTITION_DESIGNS = [
     image: '/images/partition-design-1-storefront.webp',
     blurb: "Storefront framing, entrance doors, and glazing systems for retail, office, and commercial buildings, coordinated with the building design from the ground up.",
     intro: [
-      'Finelines Glass Installations provides commercial storefront glazing solutions for retail spaces, offices, professional buildings, restaurants, showrooms, and other commercial environments.',
+      'Finelines Glass provides commercial storefront glazing solutions for retail spaces, offices, professional buildings, restaurants, showrooms, and other commercial environments.',
       "Commercial storefront glazing is more than installing glass into an opening. The complete system must be coordinated with the building design, structural conditions, entrance requirements, framing system, glass specification, hardware, finishes, weather exposure, and the project's overall scope of work.",
       "Our approach is to work with the designer, architect, contractor, builder, and project team to understand the approved design and deliver the glazing system according to the project's requirements.",
     ],
@@ -1032,7 +1032,7 @@ export const PARTITION_DESIGNS = [
       {
         heading: 'Working With Designers & Contractors',
         paragraphs: [
-          "Finelines Glass Installations works directly with contractors and designers based on the project's scope of work, drawings, specifications, and site conditions.",
+          "Finelines Glass works directly with contractors and designers based on the project's scope of work, drawings, specifications, and site conditions.",
           'We understand that commercial glazing is one component of a larger construction project. Coordination may be required with exterior cladding, concrete, structural openings, doors, electrical systems, interior finishes, flooring, millwork, security systems, accessibility requirements, and other trades.',
           'Our goal is to make the glass and framing system integrate properly with the overall architectural design and construction sequence.',
         ],
@@ -1063,12 +1063,12 @@ export const PARTITION_DESIGNS = [
           { title: 'Matte Black', body: 'Creates a strong contemporary appearance and coordinates well with modern architectural elements.' },
           { title: 'Customized Colours', body: 'Project-specific colour requirements can be explored when the design calls for a particular architectural finish.' },
         ],
-        note: 'Available finishes, colour matching, and system options depend on the selected manufacturer and project requirements. Finelines Glass Installations can help identify the appropriate system and finish based on the scope of work.',
+        note: 'Available finishes, colour matching, and system options depend on the selected manufacturer and project requirements. Finelines Glass can help identify the appropriate system and finish based on the scope of work.',
       },
       {
         heading: 'Multiple Supplier Options',
         paragraphs: [
-          'Finelines Glass Installations works with multiple suppliers for commercial storefront systems. This allows us to consider different system configurations, profiles, finishes, performance requirements, availability, and project specifications rather than limiting every project to a single storefront system.',
+          'Finelines Glass works with multiple suppliers for commercial storefront systems. This allows us to consider different system configurations, profiles, finishes, performance requirements, availability, and project specifications rather than limiting every project to a single storefront system.',
           "The appropriate supplier and system are selected according to the project's requirements, approved design, technical specifications, availability, and compatibility with the building conditions.",
         ],
       },
@@ -1076,7 +1076,7 @@ export const PARTITION_DESIGNS = [
         heading: 'Glass Selection',
         paragraphs: [
           "The glass used in a commercial storefront is selected according to the project's scope and specifications. Depending on the application, options may include clear architectural glass, low-iron glass, tinted glass, laminated glass, insulated glazing, or other specialty products where appropriate.",
-          'Glass performance requirements can include safety, thermal performance, solar control, privacy, acoustic performance, security, appearance, and other project-specific criteria. Finelines Glass Installations works from the project specifications rather than applying one standard glass package to every commercial installation.',
+          'Glass performance requirements can include safety, thermal performance, solar control, privacy, acoustic performance, security, appearance, and other project-specific criteria. Finelines Glass works from the project specifications rather than applying one standard glass package to every commercial installation.',
         ],
       },
       {
@@ -1088,9 +1088,9 @@ export const PARTITION_DESIGNS = [
       },
     ],
     approach: [
-      'Finelines Glass Installations can make it happen with quality assurance. Our installation process focuses on accurate field measurements, coordination of fabrication dimensions, proper handling of glass and framing components, accurate layout, secure installation, clean joints, appropriate sealing, door alignment, hardware installation, and professional finishing.',
+      'Finelines Glass can make it happen with quality assurance. Our installation process focuses on accurate field measurements, coordination of fabrication dimensions, proper handling of glass and framing components, accurate layout, secure installation, clean joints, appropriate sealing, door alignment, hardware installation, and professional finishing.',
       'Commercial storefront glazing is highly visible and often forms the first impression of a business. We understand the importance of clean lines, consistent framing, accurate glass alignment, properly operating doors, and a finished appearance that reflects the quality of the project.',
-      "At Finelines Glass Installations, we don't treat commercial storefront glazing as a one-size-fits-all product. We evaluate the project's design, scope, site conditions, system requirements, finish expectations, and construction coordination.",
+      "At Finelines Glass, we don't treat commercial storefront glazing as a one-size-fits-all product. We evaluate the project's design, scope, site conditions, system requirements, finish expectations, and construction coordination.",
       "From the designer's concept and contractor's drawings to supplier coordination, fabrication, and installation, we work with the project team to bring the approved commercial glazing design to life.",
     ],
     codeDisclaimer: "Commercial glazing requirements vary by project, building type, application, and jurisdiction. Final glass, framing, engineering, code, permit, accessibility, energy-performance, and other project requirements are determined by the approved project documents, applicable authority having jurisdiction, and qualified design professionals where required.",
@@ -1103,14 +1103,14 @@ export const PARTITION_DESIGNS = [
     image: '/images/partition-design-2-frameless-office.webp',
     blurb: 'Large clear glass panels with minimal visible framing divide and define private offices, meeting rooms, and boardrooms without sacrificing natural light.',
     intro: [
-      'Finelines Glass Installations provides custom frameless office glass partition systems designed to divide and define commercial spaces while maintaining an open, bright, and contemporary environment.',
+      'Finelines Glass provides custom frameless office glass partition systems designed to divide and define commercial spaces while maintaining an open, bright, and contemporary environment.',
       'Using large clear glass panels with minimal visible framing, frameless partitions can create private offices, meeting rooms, boardrooms, reception areas, and collaborative spaces without sacrificing natural light or visual connection throughout the workplace.',
     ],
     blocks: [
       {
         heading: 'Working With Designers & Contractors',
         paragraphs: [
-          'Finelines Glass Installations works closely with interior designers, architects, contractors, builders, and commercial project teams to achieve the approved design and project standards.',
+          'Finelines Glass works closely with interior designers, architects, contractors, builders, and commercial project teams to achieve the approved design and project standards.',
           "Every commercial project has different requirements. We work from the project's drawings, specifications, scope of work, field conditions, and installation details to determine the appropriate glass, hardware, layout, and installation approach.",
           "Our goal is to make the glass partition system work as part of the complete building design — not as a separate element added after the fact.",
         ],
@@ -1124,7 +1124,7 @@ export const PARTITION_DESIGNS = [
       },
       {
         heading: 'Custom Configurations',
-        intro: 'Commercial interiors rarely have identical layouts. Finelines Glass Installations can work with custom configurations including floor-to-ceiling glass, straight partitions, corner conditions, glass doors, meeting-room enclosures, and other architectural layouts.',
+        intro: 'Commercial interiors rarely have identical layouts. Finelines Glass can work with custom configurations including floor-to-ceiling glass, straight partitions, corner conditions, glass doors, meeting-room enclosures, and other architectural layouts.',
         items: [
           { title: 'Private Offices', body: 'Create enclosed workspaces while maintaining visual connection.' },
           { title: 'Meeting & Conference Rooms', body: 'Provide defined meeting areas with an open architectural appearance.' },
@@ -1148,7 +1148,7 @@ export const PARTITION_DESIGNS = [
         heading: 'Commercial Project Coordination',
         paragraphs: [
           'Office glass partitions often require coordination with flooring, ceilings, millwork, electrical systems, lighting, HVAC, security/access-control systems, doors, and other trades.',
-          'Finelines Glass Installations works with the contractor and design team to coordinate our portion of the installation with the overall construction sequence.',
+          'Finelines Glass works with the contractor and design team to coordinate our portion of the installation with the overall construction sequence.',
           'Accurate field measurements and communication with the project team help ensure that glass panels, doors, hardware, and connections are properly coordinated with the completed space.',
         ],
       },
@@ -1157,9 +1157,9 @@ export const PARTITION_DESIGNS = [
       body: 'Frameless office systems can be coordinated with a variety of architectural hardware and finish selections. Hinges, pulls, patch fittings, channels, locks, and other components can be selected to complement the overall design.',
     },
     approach: [
-      'Finelines Glass Installations can make it happen with quality assurance. Our installation process focuses on accurate measurements, proper glass specification, precise fabrication, careful handling, accurate layout, hardware alignment, secure installation, clean joints, and professional finishing.',
+      'Finelines Glass can make it happen with quality assurance. Our installation process focuses on accurate measurements, proper glass specification, precise fabrication, careful handling, accurate layout, hardware alignment, secure installation, clean joints, and professional finishing.',
       'Because frameless glass partitions are highly visible architectural elements, we pay close attention to glass alignment, consistent joints, hardware placement, door operation, and the finished appearance of the entire system.',
-      "No two commercial interiors are exactly the same. Finelines Glass Installations works according to the project's approved design, scope, dimensions, site conditions, and technical requirements.",
+      "No two commercial interiors are exactly the same. Finelines Glass works according to the project's approved design, scope, dimensions, site conditions, and technical requirements.",
       'Whether the project is a small private office or a large corporate workplace, we collaborate with designers and contractors to develop and install a glass partition system that supports the intended architectural design.',
     ],
     codeDisclaimer: "Glass specifications, safety glazing, engineering, acoustic performance, accessibility, building-code, permit, and other requirements vary by project and jurisdiction. Final specifications and compliance are determined by the approved project documents, applicable authority having jurisdiction, and qualified design professionals where required.",
@@ -1172,7 +1172,7 @@ export const PARTITION_DESIGNS = [
     image: '/images/partition-design-3-privacy-boardroom-black-framed.webp',
     blurb: 'From frosted privacy glass to frameless boardrooms and contemporary black-framed partitions — three ways to define a workspace without closing it in.',
     intro: [
-      'Finelines Glass Installations provides custom commercial glass partition solutions designed to create functional, sophisticated, and visually connected work environments.',
+      'Finelines Glass provides custom commercial glass partition solutions designed to create functional, sophisticated, and visually connected work environments.',
       'From privacy and specialty glass to frameless meeting rooms and contemporary black-framed office partitions, we work with interior designers, architects, contractors, builders, and project teams to bring the approved design and scope of work to life.',
     ],
     blocks: [
@@ -1212,7 +1212,7 @@ export const PARTITION_DESIGNS = [
       {
         heading: 'Working With Designers & Contractors',
         paragraphs: [
-          "Finelines Glass Installations works according to the project's drawings, specifications, scope of work, and site conditions.",
+          "Finelines Glass works according to the project's drawings, specifications, scope of work, and site conditions.",
           'Every commercial interior has different requirements. We coordinate with the designer and contractor to determine the appropriate glass, hardware, layout, dimensions, finishes, doors, and installation approach for the project.',
           'Our objective is to make the glass installation work as part of the complete building design, not as a separate element added after construction.',
         ],
@@ -1229,9 +1229,9 @@ export const PARTITION_DESIGNS = [
       body: 'Office glass systems can be coordinated with different hinges, pulls, patch fittings, channels, locks, handles, and other architectural hardware depending on the selected system and project requirements.',
     },
     approach: [
-      'Finelines Glass Installations can make it happen with quality assurance. Our process focuses on accurate field measurements, proper glass specification, precise fabrication, careful handling, accurate layout, hardware alignment, secure installation, clean joints, and professional finishing.',
+      'Finelines Glass can make it happen with quality assurance. Our process focuses on accurate field measurements, proper glass specification, precise fabrication, careful handling, accurate layout, hardware alignment, secure installation, clean joints, and professional finishing.',
       'Because office glass partitions are highly visible architectural elements, we pay close attention to consistent glass joints, alignment, door operation, hardware placement, and the finished appearance of the complete system.',
-      "No two commercial interiors are exactly the same. Finelines Glass Installations works with the project team to adapt the glass solution to the approved design, scope, dimensions, site conditions, and technical requirements.",
+      "No two commercial interiors are exactly the same. Finelines Glass works with the project team to adapt the glass solution to the approved design, scope, dimensions, site conditions, and technical requirements.",
       'Whether the project calls for privacy glass, a sophisticated boardroom enclosure, or a contemporary black-framed office system, we work with designers and contractors to deliver a finished installation that reflects the intended design.',
     ],
     codeDisclaimer: "Glass specifications, safety glazing, engineering, acoustic performance, accessibility, building-code, permit, and other requirements vary by project and jurisdiction. Final specifications and compliance are determined by the approved project documents, applicable authority having jurisdiction, and qualified design professionals where required.",
@@ -1259,7 +1259,7 @@ export const MIRROR_DESIGNS = [
     image: '/images/mirror-design-1-bronze.webp',
     blurb: 'A warm, elegant reflective finish that works especially well in hotel lobbies, restaurants, and high-end interiors alongside stone, wood, and warm lighting.',
     intro: [
-      'Finelines Glass Installations provides custom bronze mirror installations for residential, hospitality, commercial, and high-end architectural interiors. Bronze mirror adds a warm, elegant reflective quality that works particularly well with stone, wood, brass, bronze, and warm architectural lighting.',
+      'Finelines Glass provides custom bronze mirror installations for residential, hospitality, commercial, and high-end architectural interiors. Bronze mirror adds a warm, elegant reflective quality that works particularly well with stone, wood, brass, bronze, and warm architectural lighting.',
     ],
     blocks: [
       {
@@ -1272,7 +1272,7 @@ export const MIRROR_DESIGNS = [
       {
         heading: 'Custom Mirror Designs',
         paragraphs: [
-          'Finelines Glass Installations can work with different custom mirror designs and configurations depending on the requirements of the project.',
+          'Finelines Glass can work with different custom mirror designs and configurations depending on the requirements of the project.',
         ],
         bullets: [
           'Full-height feature walls',
@@ -1290,7 +1290,7 @@ export const MIRROR_DESIGNS = [
       {
         heading: 'Working With Designers & Contractors',
         paragraphs: [
-          "Finelines Glass Installations works closely with interior designers, architects, contractors, and builders to understand the project's design intent and installation requirements.",
+          "Finelines Glass works closely with interior designers, architects, contractors, and builders to understand the project's design intent and installation requirements.",
           'The configuration of the mirror installation can be coordinated with the overall architectural design, including:',
         ],
         bullets: [
@@ -1315,7 +1315,7 @@ export const MIRROR_DESIGNS = [
       },
     ],
     approach: [
-      'Finelines Glass Installations focuses on precise measurements, careful fabrication coordination, proper glass handling, accurate installation, clean seams, and quality finishing.',
+      'Finelines Glass focuses on precise measurements, careful fabrication coordination, proper glass handling, accurate installation, clean seams, and quality finishing.',
       'Whether the project calls for a dramatic bronze-mirror hotel lobby, an elegant restaurant feature wall, or a custom residential installation, we work with the project team to achieve the intended design.',
     ],
     codeDisclaimer: "Mirror specifications, safety considerations, substrate conditions, installation methods, and other requirements vary by application. Final product selection and installation details are determined by the project scope, site conditions, applicable requirements, and qualified professionals where required.",
@@ -1328,7 +1328,7 @@ export const MIRROR_DESIGNS = [
     image: '/images/mirror-design-2-gray.webp',
     blurb: 'A softer, smoked-toned reflection that adds depth and a contemporary edge to home bars, dining areas, powder rooms, and feature walls.',
     intro: [
-      'Finelines Glass Installations provides custom gray mirror installations for residential and commercial interiors where a darker, more sophisticated reflective finish is desired.',
+      'Finelines Glass provides custom gray mirror installations for residential and commercial interiors where a darker, more sophisticated reflective finish is desired.',
       'Gray mirror, sometimes referred to as smoked or gray-toned mirror, provides a softer and more contemporary reflection than traditional clear mirror. Its darker tone can add depth, contrast, and a refined architectural character to an interior.',
     ],
     blocks: [
@@ -1350,21 +1350,21 @@ export const MIRROR_DESIGNS = [
       {
         heading: 'Custom-Sized Gray Mirror',
         paragraphs: [
-          'Most Finelines Glass Installations mirror projects are custom-cut to the dimensions required by the space. Gray mirror can be fabricated for wall-to-wall applications, feature walls, vanity areas, bar backs, columns, niches, and other architectural conditions.',
+          'Most Finelines Glass mirror projects are custom-cut to the dimensions required by the space. Gray mirror can be fabricated for wall-to-wall applications, feature walls, vanity areas, bar backs, columns, niches, and other architectural conditions.',
           'Custom fabrication allows the mirror layout to be coordinated with corners, cabinetry, countertops, lighting, electrical outlets, wall features, and other elements within the design.',
         ],
       },
       {
         heading: 'Precise Measurements',
         paragraphs: [
-          'Finelines Glass Installations takes precise field measurements before fabrication to help achieve an accurate installation.',
+          'Finelines Glass takes precise field measurements before fabrication to help achieve an accurate installation.',
           'For large or detailed mirror installations, measurement accuracy is particularly important. We consider finished wall dimensions, corners, reveals, cabinetry, millwork, lighting, outlets, countertops, trim, and other site conditions that may affect the final fit.',
         ],
       },
       {
         heading: 'Designed With Your Interior',
         paragraphs: [
-          'Finelines Glass Installations works with interior designers, architects, contractors, builders, and homeowners to coordinate the mirror installation with the overall design.',
+          'Finelines Glass works with interior designers, architects, contractors, builders, and homeowners to coordinate the mirror installation with the overall design.',
           'Gray mirror can be used as a feature material alongside wood, natural stone, marble, metal, black finishes, warm lighting, and contemporary cabinetry. The result can be subtle and elegant or become a major architectural focal point depending on the design.',
         ],
       },
@@ -1378,7 +1378,7 @@ export const MIRROR_DESIGNS = [
       {
         heading: 'Mirror Selection',
         paragraphs: [
-          "Gray mirror is one of the three popular mirror options offered by Finelines Glass Installations, alongside clear mirror and bronze mirror. The appropriate mirror colour is selected according to the project's design intent, surrounding materials, lighting, and scope of work.",
+          "Gray mirror is one of the three popular mirror options offered by Finelines Glass, alongside clear mirror and bronze mirror. The appropriate mirror colour is selected according to the project's design intent, surrounding materials, lighting, and scope of work.",
         ],
       },
     ],
@@ -1386,7 +1386,7 @@ export const MIRROR_DESIGNS = [
       body: 'Where mirror installations incorporate related glass hardware or architectural components, available styles and finishes can be coordinated with the overall interior design.',
     },
     approach: [
-      'Finelines Glass Installations can make it happen with quality assurance. From field measurement and fabrication coordination through final installation, our focus is on precision, clean detailing, and a finished result that complements the surrounding architecture.',
+      'Finelines Glass can make it happen with quality assurance. From field measurement and fabrication coordination through final installation, our focus is on precision, clean detailing, and a finished result that complements the surrounding architecture.',
     ],
     codeDisclaimer: "Mirror specifications, safety considerations, substrate conditions, installation methods, and other requirements vary by application. Final product selection and installation details are determined by the project scope, site conditions, applicable requirements, and qualified professionals where required.",
   },
@@ -1398,21 +1398,21 @@ export const MIRROR_DESIGNS = [
     image: '/images/mirror-design-3-clear.webp',
     blurb: 'A clean, bright, and highly reflective finish — the most popular choice for bathrooms, vanities, gyms, and home gyms.',
     intro: [
-      'Finelines Glass Installations provides custom clear mirror installations for residential and commercial spaces where a clean, bright, and highly reflective finish is desired.',
+      'Finelines Glass provides custom clear mirror installations for residential and commercial spaces where a clean, bright, and highly reflective finish is desired.',
       'Clear mirror is one of the most commonly used mirror products and is especially popular for bathrooms, vanity areas, gyms, and home gyms. It can also be incorporated into bedrooms, dressing areas, commercial facilities, hospitality spaces, feature walls, and other interior applications.',
     ],
     blocks: [
       {
         heading: 'Custom Sizes & Cut-to-Size Mirrors',
         paragraphs: [
-          "Most Finelines Glass Installations mirror projects are fabricated to the dimensions required for the specific space. Rather than relying on standard off-the-shelf mirror sizes, we work with the project's actual measurements and design requirements.",
+          "Most Finelines Glass mirror projects are fabricated to the dimensions required for the specific space. Rather than relying on standard off-the-shelf mirror sizes, we work with the project's actual measurements and design requirements.",
           'Custom sizing is particularly important for wall-to-wall installations, vanity mirrors, large gym mirrors, full-height mirrors, feature walls, and spaces with architectural details that require precise fitting.',
         ],
       },
       {
         heading: 'Precise Measurement Matters',
         paragraphs: [
-          'Finelines Glass Installations takes precise field measurements to establish the required dimensions before fabrication and installation.',
+          'Finelines Glass takes precise field measurements to establish the required dimensions before fabrication and installation.',
           'We consider wall dimensions, corners, finished surfaces, cabinetry, countertops, electrical outlets, lighting, faucets, backsplashes, trim, and other conditions that can affect the final fit. The objective is a clean, accurately fitted installation with consistent lines and properly coordinated edges throughout the finished space.',
         ],
       },
@@ -1429,7 +1429,7 @@ export const MIRROR_DESIGNS = [
       {
         heading: 'Designed Around the Project',
         paragraphs: [
-          'Finelines Glass Installations works with interior designers, architects, contractors, builders, and homeowners to achieve the intended design and installation requirements.',
+          'Finelines Glass works with interior designers, architects, contractors, builders, and homeowners to achieve the intended design and installation requirements.',
           'For projects involving designers and contractors, we work from the drawings, specifications, scope of work, and actual site conditions. Mirror dimensions, locations, cutouts, edges, and installation methods can be coordinated with the surrounding construction.',
         ],
       },
@@ -1450,12 +1450,12 @@ export const MIRROR_DESIGNS = [
       {
         heading: 'Mirror Options',
         paragraphs: [
-          'Clear mirror is one of the primary mirror options offered by Finelines Glass Installations. Depending on the design, we can also work with other popular mirror selections such as gray mirror and bronze mirror, along with specialty options when required by the project.',
+          'Clear mirror is one of the primary mirror options offered by Finelines Glass. Depending on the design, we can also work with other popular mirror selections such as gray mirror and bronze mirror, along with specialty options when required by the project.',
         ],
       },
     ],
     approach: [
-      'Finelines Glass Installations can make it happen with quality assurance. From precise field measurements through fabrication and installation, our focus is on accuracy and a clean finished appearance.',
+      'Finelines Glass can make it happen with quality assurance. From precise field measurements through fabrication and installation, our focus is on accuracy and a clean finished appearance.',
       'Most importantly, we understand that custom mirror work is measured and fabricated for a specific space. Precision at the measurement stage helps establish the foundation for a successful installation.',
     ],
     codeDisclaimer: "Mirror specifications, safety considerations, substrate conditions, installation methods, and other requirements vary by application. Final product selection and installation details are determined by the project scope, site conditions, applicable requirements, and qualified professionals where required.",
@@ -1491,7 +1491,7 @@ export const WINDOW_DESIGNS = [
     image: '/images/window-design-1-replacement.webp',
     blurb: 'Replacing broken, fogged, or aging windows with a new system that matches your home or building’s approved design, rather than just swapping glass.',
     intro: [
-      "Finelines Glass Installations provides residential and commercial window replacement services for homeowners, contractors, and property managers looking to replace aging, damaged, or failed windows with a new system that fits the project's design and performance requirements.",
+      "Finelines Glass provides residential and commercial window replacement services for homeowners, contractors, and property managers looking to replace aging, damaged, or failed windows with a new system that fits the project's design and performance requirements.",
       'Whether the project involves broken glass, failed or fogged insulating glass units, damaged windows, or older windows requiring replacement, we work closely with the homeowner and contractor to determine the appropriate replacement solution.',
     ],
     blocks: [
@@ -1512,13 +1512,13 @@ export const WINDOW_DESIGNS = [
       {
         heading: 'Working With Homeowners & Contractors',
         paragraphs: [
-          'Finelines Glass Installations works closely with homeowners and contractors throughout the replacement process.',
+          'Finelines Glass works closely with homeowners and contractors throughout the replacement process.',
           'The existing window condition, opening, measurements, design, and project scope are reviewed to determine the appropriate replacement approach. We coordinate with the contractor and homeowner to make sure the selected window and glass configuration meets the approved design and project requirements.',
         ],
       },
       {
         heading: 'Glass Options & Window Configuration',
-        intro: 'There can be different glass and window options depending on the project. Finelines Glass Installations works with the contractor and homeowner to determine the type of glass and window configuration based on the approved look and project requirements. Depending on the application, considerations may include:',
+        intro: 'There can be different glass and window options depending on the project. Finelines Glass works with the contractor and homeowner to determine the type of glass and window configuration based on the approved look and project requirements. Depending on the application, considerations may include:',
         bullets: [
           'Clear or specialty glass',
           'Energy-performance requirements',
@@ -1536,7 +1536,7 @@ export const WINDOW_DESIGNS = [
         heading: 'Matching the Approved Design',
         paragraphs: [
           'Window replacement is not always simply a matter of removing an old window and installing a new one. The replacement needs to work with the architectural appearance of the property.',
-          'Finelines Glass Installations works with the contractor and homeowner to achieve the approved appearance, coordinating the window style, frame, glass, configuration, and installation details with the surrounding building.',
+          'Finelines Glass works with the contractor and homeowner to achieve the approved appearance, coordinating the window style, frame, glass, configuration, and installation details with the surrounding building.',
         ],
       },
       {
@@ -1549,7 +1549,7 @@ export const WINDOW_DESIGNS = [
     ],
     approach: [
       'Accurate measurements and proper coordination are important to a successful window replacement. Our team focuses on measuring the existing opening, confirming the required dimensions, coordinating the selected glass and window system, and completing the installation with attention to fit and finish.',
-      'Finelines Glass Installations understands that every replacement project can be different. We work with the homeowner and contractor to find the appropriate solution for the specific opening and project requirements.',
+      'Finelines Glass understands that every replacement project can be different. We work with the homeowner and contractor to find the appropriate solution for the specific opening and project requirements.',
     ],
     codeDisclaimer: 'Window and glass specifications, energy performance, safety glazing, structural requirements, permits, and other requirements vary by project and jurisdiction. Final product selection and compliance are determined by the approved project documents, applicable authority having jurisdiction, and qualified professionals where required.',
   },
@@ -1561,13 +1561,13 @@ export const WINDOW_DESIGNS = [
     image: '/images/window-design-2-film-application.webp',
     blurb: 'Solar-control, glare-reduction, and privacy window film applied to your existing glass — changing how a window performs without replacing the window itself.',
     intro: [
-      'Finelines Glass Installations provides professional window film application for residential and commercial properties. Window film can be used to modify the appearance and performance characteristics of existing glass while maintaining the existing window system.',
+      'Finelines Glass provides professional window film application for residential and commercial properties. Window film can be used to modify the appearance and performance characteristics of existing glass while maintaining the existing window system.',
       'Our team works with homeowners, designers, contractors, and project teams to determine the appropriate film type and application method based on the glass, location, design intent, and project requirements.',
     ],
     blocks: [
       {
         heading: 'Interior & Exterior Applications',
-        intro: 'Window film may be applied to the interior or exterior surface of the glass, depending on the selected film, existing glazing system, site conditions, and manufacturer’s application requirements. Finelines Glass Installations coordinates carefully where the film will be applied so the selected product and installation method are appropriate for the specific window and project.',
+        intro: 'Window film may be applied to the interior or exterior surface of the glass, depending on the selected film, existing glazing system, site conditions, and manufacturer’s application requirements. Finelines Glass coordinates carefully where the film will be applied so the selected product and installation method are appropriate for the specific window and project.',
         items: [
           { title: 'Interior application', body: 'Commonly selected where the glass and film specification calls for installation from inside the building.' },
           { title: 'Exterior application', body: 'Available for applications where the selected film is designed and specified for exterior installation.' },
@@ -1585,12 +1585,12 @@ export const WINDOW_DESIGNS = [
           'Neutral and reflective appearance options',
           'Specialty films for specific design or performance requirements',
         ],
-        note: 'Because different films are designed for different applications, Finelines Glass Installations will review the project requirements before recommending the appropriate film type and application.',
+        note: 'Because different films are designed for different applications, Finelines Glass will review the project requirements before recommending the appropriate film type and application.',
       },
       {
         heading: 'LLumar® Film Products',
         paragraphs: [
-          'Finelines Glass Installations uses LLumar® window film products as part of our window film offering, helping us provide a recognized film product line for residential and commercial applications.',
+          'Finelines Glass uses LLumar® window film products as part of our window film offering, helping us provide a recognized film product line for residential and commercial applications.',
           'The specific LLumar® film series and specification can vary according to the project requirements, existing glazing, desired appearance, and intended application.',
         ],
       },
@@ -1609,7 +1609,7 @@ export const WINDOW_DESIGNS = [
         heading: 'Commercial Applications',
         paragraphs: [
           'For commercial properties, window film can be incorporated into offices, retail spaces, restaurants, hospitality environments, storefronts, and other buildings where the existing glazing needs a specific appearance or film treatment.',
-          'Finelines Glass Installations works with contractors and designers to coordinate film selection and application with the overall project scope and approved design.',
+          'Finelines Glass works with contractors and designers to coordinate film selection and application with the overall project scope and approved design.',
         ],
       },
       {
@@ -1622,7 +1622,7 @@ export const WINDOW_DESIGNS = [
     ],
     approach: [
       'Proper film installation begins with evaluating the glass and determining the correct application method. Our process focuses on appropriate surface preparation, accurate film placement, clean edges, consistent installation, and professional finishing.',
-      'Every window film project is different. Finelines Glass Installations works with homeowners, designers, contractors, and commercial project teams to determine the appropriate product and application for the project, whether the goal is solar control, glare reduction, privacy, decorative appearance, or another specified film application.',
+      'Every window film project is different. Finelines Glass works with homeowners, designers, contractors, and commercial project teams to determine the appropriate product and application for the project, whether the goal is solar control, glare reduction, privacy, decorative appearance, or another specified film application.',
     ],
     codeDisclaimer: 'Window film compatibility, application location, performance, warranty, and installation requirements vary by film product, existing glazing system, and project conditions. Final product selection and application should be confirmed with the applicable manufacturer requirements and project specifications.',
   },
@@ -1652,7 +1652,7 @@ export const SKYLIGHT_DESIGNS = [
     image: '/images/skylight-design-1-new-installation.webp',
     blurb: 'Bringing natural light into a kitchen, stairwell, or living space with a dome or flat skylight system, matched to your roof and architectural design.',
     intro: [
-      'Finelines Glass Installations provides new skylight installation solutions for residential and commercial projects where natural light, architectural design, and the existing building conditions need to work together.',
+      'Finelines Glass provides new skylight installation solutions for residential and commercial projects where natural light, architectural design, and the existing building conditions need to work together.',
       'We work hand in hand with homeowners and contractors to understand the project requirements, approved design, opening conditions, and intended skylight application before selecting the appropriate system.',
     ],
     blocks: [
@@ -1671,7 +1671,7 @@ export const SKYLIGHT_DESIGNS = [
       {
         heading: 'Working With Homeowners & Contractors',
         paragraphs: [
-          'Finelines Glass Installations works closely with the homeowner and contractor to determine what type of skylight is appropriate for the project.',
+          'Finelines Glass works closely with the homeowner and contractor to determine what type of skylight is appropriate for the project.',
           'The selection can depend on the approved architectural design, existing or proposed opening, dimensions, roof configuration, desired appearance, glazing requirements, and the overall scope of work.',
           'Where designers, architects, builders, or other professionals are involved, we coordinate the skylight glass and system requirements with the broader project design.',
         ],
@@ -1679,7 +1679,7 @@ export const SKYLIGHT_DESIGNS = [
       {
         heading: 'Multiple Suppliers & System Options',
         paragraphs: [
-          'Finelines Glass Installations works with different suppliers to help meet the requirements of each project. Different manufacturers and systems may provide different configurations, glazing options, dimensions, performance characteristics, and installation details.',
+          'Finelines Glass works with different suppliers to help meet the requirements of each project. Different manufacturers and systems may provide different configurations, glazing options, dimensions, performance characteristics, and installation details.',
           "Our goal is to identify a suitable system based on the project's approved design, technical requirements, availability, and applicable installation conditions rather than assuming one skylight system will work for every application.",
         ],
       },
@@ -1687,7 +1687,7 @@ export const SKYLIGHT_DESIGNS = [
         heading: 'City & Building-Code Requirements',
         paragraphs: [
           'Skylight installations can be subject to building-code, safety, structural, glazing, roofing, and permit requirements. These requirements can vary according to the jurisdiction, building type, location, and specific application.',
-          'Finelines Glass Installations works with the project team to coordinate the skylight requirements with the applicable city or authority having jurisdiction. Where the project requires qualified professionals, engineering, permits, or other technical review, those requirements should be addressed as part of the project.',
+          'Finelines Glass works with the project team to coordinate the skylight requirements with the applicable city or authority having jurisdiction. Where the project requires qualified professionals, engineering, permits, or other technical review, those requirements should be addressed as part of the project.',
         ],
       },
       {
@@ -1699,7 +1699,7 @@ export const SKYLIGHT_DESIGNS = [
       },
     ],
     approach: [
-      'Finelines Glass Installations is committed to coordinating each skylight project carefully from selection through installation. We work with homeowners, contractors, designers, suppliers, and qualified professionals as required to help keep the project requirements aligned.',
+      'Finelines Glass is committed to coordinating each skylight project carefully from selection through installation. We work with homeowners, contractors, designers, suppliers, and qualified professionals as required to help keep the project requirements aligned.',
       'From a single residential skylight to a multi-panel architectural installation, we work to deliver a clean, properly coordinated result that follows the approved design and applicable project requirements.',
     ],
     codeDisclaimer: 'Skylight requirements vary by project, jurisdiction, building type, roof construction, glazing system, and intended use. Applicable building-code, safety, structural, roofing, waterproofing, permit, and manufacturer requirements should be confirmed for each project with the contractor, qualified professionals, manufacturer, and authority having jurisdiction as applicable.',
@@ -1712,7 +1712,7 @@ export const SKYLIGHT_DESIGNS = [
     image: '/images/skylight-design-2-replacement.webp',
     blurb: 'Replacing a fogged, failed, or damaged skylight with a properly coordinated insulated sealed unit, matched to your existing frame and opening.',
     intro: [
-      'Finelines Glass Installations provides skylight replacement and new skylight glass services for residential and commercial projects. Skylights can bring valuable natural light into a space, but they also require careful consideration because they are installed in an exposed and safety-sensitive part of a building.',
+      'Finelines Glass provides skylight replacement and new skylight glass services for residential and commercial projects. Skylights can bring valuable natural light into a space, but they also require careful consideration because they are installed in an exposed and safety-sensitive part of a building.',
       'We work closely with the homeowner, contractor, designer, and project team to understand why the skylight is being replaced and to determine the appropriate replacement solution for the existing opening and project requirements.',
     ],
     blocks: [
@@ -1742,7 +1742,7 @@ export const SKYLIGHT_DESIGNS = [
         heading: 'Safety & Building-Code Considerations',
         paragraphs: [
           'Skylights are a critical building component and should not be treated simply as a standard piece of glass. The appropriate glazing, installation method, fall-protection considerations, and surrounding construction need to be evaluated for the specific application.',
-          'Finelines Glass Installations works with the contractor or homeowner to identify the appropriate skylight solution while taking safety requirements into consideration.',
+          'Finelines Glass works with the contractor or homeowner to identify the appropriate skylight solution while taking safety requirements into consideration.',
           'Depending on the project and jurisdiction, building-code requirements, permits, safety glazing requirements, or other professional review may apply. Requirements can vary by city and by the specific building and application.',
         ],
       },
@@ -1762,7 +1762,7 @@ export const SKYLIGHT_DESIGNS = [
       },
     ],
     approach: [
-      'Skylight work requires careful handling, preparation, installation, and finishing. Finelines Glass Installations focuses on accurate measurements, proper glass selection, careful installation, and coordination with the contractor or homeowner throughout the project.',
+      'Skylight work requires careful handling, preparation, installation, and finishing. Finelines Glass focuses on accurate measurements, proper glass selection, careful installation, and coordination with the contractor or homeowner throughout the project.',
       'Whether replacing a failed insulated sealed unit or installing a new skylight solution, we work toward a clean, durable, and properly coordinated finished installation.',
     ],
     codeDisclaimer: 'Skylight requirements vary according to the building, location, glazing system, roof configuration, jurisdiction, and project scope. Applicable safety glazing, building-code, permit, structural, waterproofing, and installation requirements should be confirmed for each project with the contractor, qualified professionals, manufacturer, and authority having jurisdiction as applicable.',
@@ -1792,7 +1792,7 @@ export const SKYLIGHT_CUSTOM_NOTE = {
 const CUSTOM_GLASS_WORKING_WITH_BLOCK = {
   heading: 'Working With Designers & Contractors',
   paragraphs: [
-    'Finelines Glass Installations works closely with designers and contractors to follow the approved scope of work and project configuration. Custom glass often requires coordination with other trades, so dimensions, interfaces, hardware, finishes, and installation conditions are reviewed before fabrication.',
+    'Finelines Glass works closely with designers and contractors to follow the approved scope of work and project configuration. Custom glass often requires coordination with other trades, so dimensions, interfaces, hardware, finishes, and installation conditions are reviewed before fabrication.',
     'Where a project requires engineering, specialized fabrication, safety glazing, permits, or other professional review, those requirements should be addressed according to the project and applicable jurisdiction.',
   ],
 };
@@ -1800,12 +1800,12 @@ const CUSTOM_GLASS_FINISH_BLOCK = {
   heading: 'Glass & Finish Options',
   paragraphs: [
     'Custom projects can use different glass types, thicknesses, colours, textures, mirror finishes, edge profiles, and hardware depending on the application and approved design.',
-    'Available options can vary by product and supplier. Please contact Finelines Glass Installations to discuss the glass type, colour, finish, hardware, and fabrication options available for your project.',
+    'Available options can vary by product and supplier. Please contact Finelines Glass to discuss the glass type, colour, finish, hardware, and fabrication options available for your project.',
   ],
 };
 const CUSTOM_GLASS_APPROACH = [
   'Our goal is simple: bring us your idea, design, drawing, or challenge, and we will work with you to determine how the glass can be incorporated into the project.',
-  'From a custom tabletop to a specialty mirror wall or a unique architectural glass component, Finelines Glass Installations focuses on accurate measurement, careful coordination, quality fabrication, and professional installation.',
+  'From a custom tabletop to a specialty mirror wall or a unique architectural glass component, Finelines Glass focuses on accurate measurement, careful coordination, quality fabrication, and professional installation.',
 ];
 const CUSTOM_GLASS_DISCLAIMER = 'Custom glass applications are subject to project-specific glass, safety, structural, fabrication, installation, and jurisdictional requirements. Final specifications should be confirmed with the approved project documents, applicable professionals, manufacturers, and authority having jurisdiction where required.';
 
@@ -1818,7 +1818,7 @@ export const CUSTOM_GLASS_DESIGNS = [
     image: '/images/custom-tabletop.webp',
     blurb: 'Custom-cut glass tabletops for dining tables, desks, counters, and display surfaces, sized and finished to fit.',
     intro: [
-      'Finelines Glass Installations fabricates and installs custom glass tabletops for residential and commercial spaces. Glass can be used to protect and enhance dining tables, desks, counters, display surfaces, and other furniture or architectural applications.',
+      'Finelines Glass fabricates and installs custom glass tabletops for residential and commercial spaces. Glass can be used to protect and enhance dining tables, desks, counters, display surfaces, and other furniture or architectural applications.',
     ],
     blocks: [
       {
@@ -1848,7 +1848,7 @@ export const CUSTOM_GLASS_DESIGNS = [
     image: '/images/custom-cabinet-glass-inserts.webp',
     blurb: 'Clear, tinted, textured, or specialty glass panels sized to fit your cabinetry, from kitchens to built-in bars.',
     intro: [
-      'Custom glass cabinet inserts can transform standard cabinetry into a more open and architectural feature. Finelines Glass Installations works with cabinetmakers, designers, contractors, and homeowners to provide glass panels sized for the cabinet configuration.',
+      'Custom glass cabinet inserts can transform standard cabinetry into a more open and architectural feature. Finelines Glass works with cabinetmakers, designers, contractors, and homeowners to provide glass panels sized for the cabinet configuration.',
     ],
     blocks: [
       {
@@ -1878,7 +1878,7 @@ export const CUSTOM_GLASS_DESIGNS = [
     image: '/images/custom-glass-shelving.webp',
     blurb: 'Custom glass shelving for display, storage, or decorative use — built into niches, cabinets, and wall systems.',
     intro: [
-      'Finelines Glass Installations provides custom glass shelving for residential and commercial interiors. Shelving can be designed for display, storage, or decorative purposes and can be integrated into niches, cabinets, wall systems, and built-in features.',
+      'Finelines Glass provides custom glass shelving for residential and commercial interiors. Shelving can be designed for display, storage, or decorative purposes and can be integrated into niches, cabinets, wall systems, and built-in features.',
     ],
     blocks: [
       {
@@ -1908,7 +1908,7 @@ export const CUSTOM_GLASS_DESIGNS = [
     image: '/images/custom-urinal-privacy-partitions.webp',
     blurb: 'Durable, modern glass privacy partitions for commercial washrooms, coordinated with your hardware and layout.',
     intro: [
-      'Finelines Glass Installations provides custom glass privacy partitions for commercial washrooms and other facilities where durable, clean, and modern privacy solutions are required.',
+      'Finelines Glass provides custom glass privacy partitions for commercial washrooms and other facilities where durable, clean, and modern privacy solutions are required.',
     ],
     blocks: [
       {
@@ -1932,7 +1932,7 @@ export const CUSTOM_GLASS_DESIGNS = [
     image: '/images/custom-antique-mirror-wall.webp',
     blurb: 'Antique mirror feature walls that bring depth and character to residential, hospitality, and retail interiors.',
     intro: [
-      'Finelines Glass Installations also works with specialty mirror applications, including antique mirror wall designs. Antique mirror can add depth, character, and a distinctive decorative finish to high-end residential, hospitality, retail, and commercial interiors.',
+      'Finelines Glass also works with specialty mirror applications, including antique mirror wall designs. Antique mirror can add depth, character, and a distinctive decorative finish to high-end residential, hospitality, retail, and commercial interiors.',
     ],
     blocks: [
       {
@@ -1963,7 +1963,7 @@ export const CUSTOM_GLASS_DESIGNS = [
     image: '/images/custom-requests.webp',
     blurb: "Have something one-of-a-kind in mind? Bring us the idea and we'll help work out how the glass fits.",
     intro: [
-      'Some glass projects are completely unique. Finelines Glass Installations welcomes custom requests involving unusual dimensions, specialty shapes, unique mounting conditions, custom glass components, or one-off architectural applications.',
+      'Some glass projects are completely unique. Finelines Glass welcomes custom requests involving unusual dimensions, specialty shapes, unique mounting conditions, custom glass components, or one-off architectural applications.',
     ],
     blocks: [
       {
@@ -2513,7 +2513,7 @@ export const ARTICLES = [
     intro: [
       "A frameless glass shower can completely change the appearance of a bathroom. Instead of heavy frames and bulky profiles, clear glass creates a clean, open look that allows the tile, fixtures, lighting, and overall bathroom design to remain visible.",
       "But achieving that clean appearance doesn't happen by simply installing a piece of glass. Behind every successful frameless shower enclosure is careful site preparation, accurate measurements, glass planning, hardware placement, installation, and final adjustment.",
-      "At Finelines Glass Installations, we approach every project as a complete glass installation — not simply a piece of glass placed into an opening.",
+      "At Finelines Glass, we approach every project as a complete glass installation — not simply a piece of glass placed into an opening.",
     ],
     blocks: [
       {
@@ -2586,7 +2586,7 @@ export const ARTICLES = [
       {
         heading: 'Working With Designers and Contractors',
         paragraphs: [
-          "A successful glass installation is often a collaboration. At Finelines Glass Installations, we can work with homeowners, designers, builders, renovation contractors, and other trades to coordinate the glass portion of a project. Early communication can help address glass layout, measurements, hardware selection, door swing, finished wall conditions, installation sequence, access requirements, and coordination with other trades.",
+          "A successful glass installation is often a collaboration. At Finelines Glass, we can work with homeowners, designers, builders, renovation contractors, and other trades to coordinate the glass portion of a project. Early communication can help address glass layout, measurements, hardware selection, door swing, finished wall conditions, installation sequence, access requirements, and coordination with other trades.",
         ],
       },
       {
@@ -2600,18 +2600,18 @@ export const ARTICLES = [
         heading: 'Thinking About a Frameless Shower Enclosure?',
         paragraphs: [
           "Whether you're building a new bathroom, renovating an existing space, or working with a designer or contractor on a custom project, the glass enclosure should be considered as part of the overall design. From the first measurement at the jobsite to the final adjustment of the door, every detail contributes to the finished result.",
-          "Finelines Glass Installations provides custom glass installation solutions for residential and commercial projects, including frameless shower enclosures, glass railings, custom mirrors, office partitions, specialty glass, and other architectural glass applications.",
+          "Finelines Glass provides custom glass installation solutions for residential and commercial projects, including frameless shower enclosures, glass railings, custom mirrors, office partitions, specialty glass, and other architectural glass applications.",
         ],
       },
     ],
-    ctaNote: "If you're planning a shower renovation and want a clean, custom glass enclosure, contact Finelines Glass Installations to discuss your project.",
-    tagline: 'Finelines Glass Installations — Where precision meets the finished product.',
+    ctaNote: "If you're planning a shower renovation and want a clean, custom glass enclosure, contact Finelines Glass to discuss your project.",
+    tagline: 'Finelines Glass — Where precision meets the finished product.',
   },
   {
     slug: 'how-to-clean-glass-shower-doors',
     title: 'How to Clean Glass Shower Doors and Prevent Water Spots',
     seoTitle: 'How to Clean Glass Shower Doors and Prevent Water Spots',
-    metaDescription: 'Learn how to clean glass shower doors, prevent water spots, remove soap scum, and maintain a clear frameless shower enclosure with practical tips from Finelines Glass Installations.',
+    metaDescription: 'Learn how to clean glass shower doors, prevent water spots, remove soap scum, and maintain a clear frameless shower enclosure with practical tips from Finelines Glass.',
     keywords: ['how to clean glass shower doors', 'prevent water spots on shower glass', 'remove hard-water stains from glass', 'frameless shower enclosure maintenance', 'clean frameless glass shower doors', 'glass shower door cleaning tips'],
     publishDate: 'October 5, 2026',
     publishAt: '2026-10-05T06:00:00-07:00',
@@ -2621,7 +2621,7 @@ export const ARTICLES = [
     intro: [
       "A frameless glass shower enclosure can make a bathroom feel brighter, more spacious, and more modern. However, regular exposure to water, soap, shampoo, and body-care products can leave glass doors looking cloudy or covered in spots.",
       "The good news is that proper maintenance can help keep your shower glass looking its best. With a few simple habits and the right cleaning products, homeowners can reduce water spots, minimize soap scum, and protect the appearance of their glass shower enclosure.",
-      "At Finelines Glass Installations, we understand that a beautiful glass shower is an investment in your home. Knowing how to care for it properly helps preserve its appearance long after installation.",
+      "At Finelines Glass, we understand that a beautiful glass shower is an investment in your home. Knowing how to care for it properly helps preserve its appearance long after installation.",
     ],
     blocks: [
       {
@@ -2687,7 +2687,7 @@ export const ARTICLES = [
         heading: 'Why Professional Glass Installation Matters',
         paragraphs: [
           "Proper installation is an important part of a shower enclosure's long-term performance. Accurate measurements, suitable hardware, correct door alignment, and careful installation all contribute to a finished enclosure that functions as intended.",
-          "At Finelines Glass Installations, we provide custom glass installation solutions designed around each project's layout and requirements. We work with homeowners, designers, and contractors to help bring bathroom renovation plans to life.",
+          "At Finelines Glass, we provide custom glass installation solutions designed around each project's layout and requirements. We work with homeowners, designers, and contractors to help bring bathroom renovation plans to life.",
           "Whether you are planning a new frameless shower enclosure or upgrading an existing bathroom, our team can help you explore glass options that suit your space and design goals.",
         ],
       },
@@ -2698,18 +2698,18 @@ export const ARTICLES = [
           { title: 'Does vinegar remove water spots from shower glass?', body: 'Vinegar can help loosen some mineral deposits, but it is not suitable for every glass treatment, metal finish, seal, or surrounding material. Check manufacturer instructions before using it, and never mix vinegar with bleach or other cleaning chemicals.' },
           { title: 'Can water spots permanently damage shower glass?', body: 'Yes. If mineral deposits remain on the surface for a prolonged period, they may contribute to etching that ordinary cleaning cannot remove. Early and consistent maintenance helps reduce this risk.' },
           { title: 'Should I use a razor blade to remove stubborn stains?', body: 'Do not use a razor blade unless the glass manufacturer or a qualified professional confirms that the method is appropriate. Incorrect scraping can scratch the glass or damage coatings.' },
-          { title: 'Can Finelines Glass Installations help with a new shower enclosure?', body: 'Yes. Finelines Glass Installations provides custom glass installation services, including frameless shower enclosures. Contact us to discuss your bathroom project and installation requirements.' },
+          { title: 'Can Finelines Glass help with a new shower enclosure?', body: 'Yes. Finelines Glass provides custom glass installation services, including frameless shower enclosures. Contact us to discuss your bathroom project and installation requirements.' },
         ],
       },
       {
         heading: 'Keep Your Shower Glass Looking Its Best',
         paragraphs: [
           "A clear glass shower enclosure can enhance the appearance of a bathroom for years. The key is consistent care: rinse away residue, use a squeegee, clean with suitable products, and address mineral buildup before it becomes difficult to remove.",
-          "If you are planning a bathroom renovation or considering a custom frameless shower enclosure, Finelines Glass Installations can help you explore a solution tailored to your space.",
+          "If you are planning a bathroom renovation or considering a custom frameless shower enclosure, Finelines Glass can help you explore a solution tailored to your space.",
         ],
       },
     ],
-    ctaNote: 'Contact Finelines Glass Installations to discuss your custom glass shower project and bring a clean, modern finish to your bathroom.',
+    ctaNote: 'Contact Finelines Glass to discuss your custom glass shower project and bring a clean, modern finish to your bathroom.',
     tagline: 'Care note: Cleaning guidance is general. For coated glass, specialized finishes, and hardware, follow the relevant manufacturers’ instructions.',
   },
   {
@@ -2766,7 +2766,7 @@ export const ARTICLES = [
       {
         heading: '6. Working With Designers and Contractors',
         paragraphs: [
-          "Glass railings are often one part of a larger renovation or construction project. Finelines Glass Installations can work with homeowners, designers, builders, and contractors to coordinate the glass scope with the overall project. Early communication can help coordinate measurements, fabrication, finishes, site readiness, and installation scheduling.",
+          "Glass railings are often one part of a larger renovation or construction project. Finelines Glass can work with homeowners, designers, builders, and contractors to coordinate the glass scope with the overall project. Early communication can help coordinate measurements, fabrication, finishes, site readiness, and installation scheduling.",
         ],
       },
       {
@@ -2784,17 +2784,17 @@ export const ARTICLES = [
         heading: 'Professional Glass Installation Makes a Difference',
         paragraphs: [
           "A glass railing can look simple when it is finished, but achieving a clean result requires careful planning and installation. Accurate measurements, appropriate hardware, proper handling of glass, attention to finished surfaces, and coordination with other trades all contribute to the final result.",
-          "Finelines Glass Installations provides custom glass railing solutions and professional installation for residential, renovation, and construction projects. Contact Finelines Glass Installations to discuss your project.",
+          "Finelines Glass provides custom glass railing solutions and professional installation for residential, renovation, and construction projects. Contact Finelines Glass to discuss your project.",
         ],
       },
     ],
-    ctaNote: 'Ready to explore a glass railing for your home or renovation project? Finelines Glass Installations works with homeowners, designers, builders, and contractors on custom glass railing projects. Contact us to discuss your project, design goals, site conditions, and installation requirements.',
+    ctaNote: 'Ready to explore a glass railing for your home or renovation project? Finelines Glass works with homeowners, designers, builders, and contractors on custom glass railing projects. Contact us to discuss your project, design goals, site conditions, and installation requirements.',
   },
   {
     slug: 'custom-mirrors-that-make-small-spaces-feel-bigger',
     title: 'Custom Mirrors That Make Small Spaces Feel Bigger',
     seoTitle: 'Mirrors That Make Small Spaces Feel Bigger | Finelines Glass',
-    metaDescription: 'Discover how custom mirrors can make bathrooms, entryways, gyms, and other interiors feel brighter and more spacious, with design and placement ideas from Finelines Glass Installations.',
+    metaDescription: 'Discover how custom mirrors can make bathrooms, entryways, gyms, and other interiors feel brighter and more spacious, with design and placement ideas from Finelines Glass.',
     keywords: ['custom mirrors', 'custom mirror installation', 'bathroom mirrors', 'full-wall mirrors', 'gym mirrors', 'custom mirror Vancouver', 'custom mirror Surrey', 'mirrors for small spaces'],
     publishDate: 'October 19, 2026',
     publishAt: '2026-10-19T06:00:00-07:00',
@@ -2856,7 +2856,7 @@ export const ARTICLES = [
       {
         heading: '8. Working With Designers and Contractors',
         paragraphs: [
-          "Custom mirrors are often part of a larger renovation or construction project. Finelines Glass Installations can work with homeowners, interior designers, builders, and contractors to coordinate dimensions, finishes, access, scheduling, and installation requirements. Bringing the glass installer into the project at the right stage can help the finished result come together smoothly.",
+          "Custom mirrors are often part of a larger renovation or construction project. Finelines Glass can work with homeowners, interior designers, builders, and contractors to coordinate dimensions, finishes, access, scheduling, and installation requirements. Bringing the glass installer into the project at the right stage can help the finished result come together smoothly.",
         ],
       },
       {
@@ -2886,17 +2886,17 @@ export const ARTICLES = [
         heading: 'Professional Installation Completes the Design',
         paragraphs: [
           "A custom mirror can be one of the most visually effective upgrades in an interior, but the installation needs to be planned carefully. Accurate measurements, proper handling, suitable installation methods, and attention to finished surfaces all contribute to a clean final result.",
-          "Finelines Glass Installations provides custom mirrors and professional glass installation for residential, renovation, and commercial projects. Contact Finelines Glass Installations to discuss your project.",
+          "Finelines Glass provides custom mirrors and professional glass installation for residential, renovation, and commercial projects. Contact Finelines Glass to discuss your project.",
         ],
       },
     ],
-    ctaNote: 'Looking for a custom mirror for your home or business? Finelines Glass Installations works with homeowners, designers, builders, and contractors on custom mirror projects. Contact us to discuss your space, design goals, dimensions, and installation requirements.',
+    ctaNote: 'Looking for a custom mirror for your home or business? Finelines Glass works with homeowners, designers, builders, and contractors on custom mirror projects. Contact us to discuss your space, design goals, dimensions, and installation requirements.',
   },
   {
     slug: 'choosing-shower-glass-hardware-finishes',
     title: 'Choosing Shower Glass Hardware Finishes for Your Bathroom',
     seoTitle: 'Choosing Shower Glass Hardware Finishes | Finelines Glass',
-    metaDescription: 'A guide to choosing shower glass hardware finishes — hinges, handles, and clamps — that coordinate with your bathroom’s faucets, cabinetry, and lighting, from Finelines Glass Installations.',
+    metaDescription: 'A guide to choosing shower glass hardware finishes — hinges, handles, and clamps — that coordinate with your bathroom’s faucets, cabinetry, and lighting, from Finelines Glass.',
     keywords: ['shower glass hardware finishes', 'shower hinge finishes', 'shower door hardware', 'matte black shower hardware', 'brushed nickel shower hardware', 'shower glass hardware Vancouver', 'shower glass hardware Surrey', 'CRL shower hardware'],
     publishDate: 'October 26, 2026',
     publishAt: '2026-10-26T06:00:00-07:00',
@@ -2978,7 +2978,7 @@ export const ARTICLES = [
       {
         heading: '8. The Finelines Approach',
         paragraphs: [
-          'A custom glass enclosure should be treated as part of the bathroom design — not simply as a piece of glass installed at the end of the renovation. Finelines Glass Installations can work with homeowners, interior designers and contractors to review the enclosure configuration, hardware style and finish selection before installation.',
+          'A custom glass enclosure should be treated as part of the bathroom design — not simply as a piece of glass installed at the end of the renovation. Finelines Glass can work with homeowners, interior designers and contractors to review the enclosure configuration, hardware style and finish selection before installation.',
           'The goal is a finished shower that combines clean glass lines, properly selected hardware and a finish that belongs naturally in the space.',
         ],
       },
@@ -3010,7 +3010,7 @@ export const ARTICLES = [
     excerpt: "\"How much does it cost?\" is the first question almost everyone asks. The honest answer is that it depends on the site and the job, and here's what actually moves the number.",
     intro: [
       '"How much will it cost?" is usually the first question people ask about a glass shower, a railing, or a custom glass piece, and it is a fair one. The honest answer is that it depends on what we find on site and how involved the job is.',
-      'Two showers that look similar in a photo can be very different jobs once we see the walls, the floor, and the access. That is why Finelines Glass Installations quotes every project after looking at the actual space, rather than giving a price list that would not hold up.',
+      'Two showers that look similar in a photo can be very different jobs once we see the walls, the floor, and the access. That is why Finelines Glass quotes every project after looking at the actual space, rather than giving a price list that would not hold up.',
       'This guide explains what shapes the cost of a glass project, so you know what to expect and how to get an accurate estimate quickly.',
     ],
     blocks: [
@@ -3078,7 +3078,7 @@ export const ARTICLES = [
     slug: 'glass-shower-enclosures-for-small-bathrooms',
     title: 'Glass Shower Enclosures for Small Bathrooms',
     seoTitle: 'Glass Shower Enclosures for Small Bathrooms | Finelines Glass',
-    metaDescription: 'Space-saving glass shower enclosure ideas for small bathrooms: door layout, light, hardware finishes, site conditions and cleaning, from Finelines Glass Installations.',
+    metaDescription: 'Space-saving glass shower enclosure ideas for small bathrooms: door layout, light, hardware finishes, site conditions and cleaning, from Finelines Glass.',
     keywords: ['glass shower enclosures for small bathrooms', 'small bathroom shower glass', 'frameless shower small bathroom', 'shower door clearance', 'glass shower enclosure Vancouver', 'custom shower glass Lower Mainland'],
     publishDate: 'November 2, 2026',
     publishAt: '2026-11-02T00:00:00-08:00', // PST: daylight saving ends Nov 1
@@ -3127,9 +3127,9 @@ export const ARTICLES = [
         ],
       },
       {
-        heading: 'Why Work With Finelines Glass Installations?',
+        heading: 'Why Work With Finelines Glass?',
         paragraphs: [
-          "A custom glass enclosure needs to balance appearance, function and the realities of the installation site. Finelines Glass Installations works with homeowners, interior designers and contractors to coordinate enclosure layouts, hardware choices, measurements and installation requirements. Whether the project is a compact ensuite or part of a larger bathroom renovation, early coordination helps bring the design and the finished glass work together.",
+          "A custom glass enclosure needs to balance appearance, function and the realities of the installation site. Finelines Glass works with homeowners, interior designers and contractors to coordinate enclosure layouts, hardware choices, measurements and installation requirements. Whether the project is a compact ensuite or part of a larger bathroom renovation, early coordination helps bring the design and the finished glass work together.",
         ],
       },
       {
@@ -3145,11 +3145,11 @@ export const ARTICLES = [
       {
         heading: 'Plan Your Bathroom Upgrade',
         paragraphs: [
-          "If you are planning a bathroom renovation, Finelines Glass Installations can help you assess the glass enclosure options for your space and coordinate the next steps with your project team. Discuss your layout, design preferences and site requirements before ordering so the finished enclosure supports both the look and the everyday function of your bathroom.",
+          "If you are planning a bathroom renovation, Finelines Glass can help you assess the glass enclosure options for your space and coordinate the next steps with your project team. Discuss your layout, design preferences and site requirements before ordering so the finished enclosure supports both the look and the everyday function of your bathroom.",
         ],
       },
     ],
-    ctaNote: 'Finelines Glass Installations provides custom glass solutions and professional installation for homeowners, designers and contractors across Vancouver, the Lower Mainland and the Fraser Valley.',
+    ctaNote: 'Finelines Glass provides custom glass solutions and professional installation for homeowners, designers and contractors across Vancouver, the Lower Mainland and the Fraser Valley.',
     tagline: 'Final design, hardware selection and installation requirements depend on site conditions, measurements and product specifications.',
   },
   {
@@ -3218,9 +3218,9 @@ export const ARTICLES = [
         ],
       },
       {
-        heading: 'Why Work With Finelines Glass Installations?',
+        heading: 'Why Work With Finelines Glass?',
         paragraphs: [
-          "Glass partitions are both a design feature and a functional part of a commercial interior. Finelines Glass Installations works with business owners, interior designers, architects and contractors to coordinate glass layouts, hardware details, site measurements and installation requirements. From meeting-room enclosures to black-framed office partitions and privacy-glass applications, our focus is on helping each project achieve a clean, professional finish.",
+          "Glass partitions are both a design feature and a functional part of a commercial interior. Finelines Glass works with business owners, interior designers, architects and contractors to coordinate glass layouts, hardware details, site measurements and installation requirements. From meeting-room enclosures to black-framed office partitions and privacy-glass applications, our focus is on helping each project achieve a clean, professional finish.",
         ],
       },
       {
@@ -3230,7 +3230,7 @@ export const ARTICLES = [
         ],
       },
     ],
-    ctaNote: 'Planning a commercial renovation? Contact Finelines Glass Installations to discuss glass office partitions, meeting-room enclosures and privacy-glass options for your project.',
+    ctaNote: 'Planning a commercial renovation? Contact Finelines Glass to discuss glass office partitions, meeting-room enclosures and privacy-glass options for your project.',
     tagline: 'Serving Vancouver, the Lower Mainland and the Fraser Valley. Final system selection depends on project requirements, site conditions and product specifications.',
   },
   {
@@ -3300,9 +3300,9 @@ export const ARTICLES = [
         ],
       },
       {
-        heading: 'Why Work With Finelines Glass Installations?',
+        heading: 'Why Work With Finelines Glass?',
         paragraphs: [
-          "A glass stair railing needs to look right, fit the structure and be installed as part of a coordinated system. Finelines Glass Installations works with homeowners, designers and contractors to review layouts, coordinate hardware and mounting details, and plan installation around the project conditions, with the goal of a clean, professional finish that complements the home.",
+          "A glass stair railing needs to look right, fit the structure and be installed as part of a coordinated system. Finelines Glass works with homeowners, designers and contractors to review layouts, coordinate hardware and mounting details, and plan installation around the project conditions, with the goal of a clean, professional finish that complements the home.",
         ],
       },
       {
@@ -3312,7 +3312,7 @@ export const ARTICLES = [
         ],
       },
     ],
-    ctaNote: 'Ready to discuss your staircase? Contact Finelines Glass Installations to talk through glass stair railing options for your home or renovation.',
+    ctaNote: 'Ready to discuss your staircase? Contact Finelines Glass to talk through glass stair railing options for your home or renovation.',
     tagline: 'Serving Vancouver, the Lower Mainland and the Fraser Valley. Final design and installation requirements depend on site conditions, product specifications and applicable codes.',
   },
   {
@@ -3387,9 +3387,9 @@ export const ARTICLES = [
         ],
       },
       {
-        heading: 'Why Work With Finelines Glass Installations?',
+        heading: 'Why Work With Finelines Glass?',
         paragraphs: [
-          "A well-designed exterior glass railing should complement the property while being planned around the real conditions of the building. Finelines Glass Installations works with homeowners, designers and contractors to coordinate railing layouts, mounting details, glass and hardware selections, and installation requirements. Our focus is on clear communication, careful planning and a professional finish that fits the project.",
+          "A well-designed exterior glass railing should complement the property while being planned around the real conditions of the building. Finelines Glass works with homeowners, designers and contractors to coordinate railing layouts, mounting details, glass and hardware selections, and installation requirements. Our focus is on clear communication, careful planning and a professional finish that fits the project.",
         ],
       },
       {
@@ -3399,7 +3399,7 @@ export const ARTICLES = [
         ],
       },
     ],
-    ctaNote: 'Ready to discuss your project? Contact Finelines Glass Installations to explore exterior glass railing options for your balcony, deck or residential renovation.',
+    ctaNote: 'Ready to discuss your project? Contact Finelines Glass to explore exterior glass railing options for your balcony, deck or residential renovation.',
     tagline: 'Serving Vancouver, the Lower Mainland and the Fraser Valley. Final system selection and installation requirements depend on site conditions, product specifications, applicable codes and any required engineering.',
   },
   {
@@ -3445,7 +3445,7 @@ export const ARTICLES = [
       {
         heading: '5. Check Availability by Hardware Series',
         paragraphs: [
-          "Not every finish is available for every hinge, handle or accessory. Availability may differ by product series, hardware function and supplier. Before specifying a finish, confirm that it is offered for the exact components required and that the pieces are compatible with one another. Finelines Glass Installations can help coordinate the glass enclosure and discuss hardware options available for the selected system.",
+          "Not every finish is available for every hinge, handle or accessory. Availability may differ by product series, hardware function and supplier. Before specifying a finish, confirm that it is offered for the exact components required and that the pieces are compatible with one another. Finelines Glass can help coordinate the glass enclosure and discuss hardware options available for the selected system.",
         ],
       },
       {
@@ -3473,9 +3473,9 @@ export const ARTICLES = [
         ],
       },
       {
-        heading: 'Why Work With Finelines Glass Installations?',
+        heading: 'Why Work With Finelines Glass?',
         paragraphs: [
-          "A well-finished shower enclosure depends on the relationship between glass, hardware, site conditions and installation. Finelines Glass Installations works with homeowners, designers and contractors to coordinate custom shower glass, hinge and handle choices, finish details and installation requirements. Our goal is to help each enclosure look cohesive, operate smoothly and suit the needs of the space.",
+          "A well-finished shower enclosure depends on the relationship between glass, hardware, site conditions and installation. Finelines Glass works with homeowners, designers and contractors to coordinate custom shower glass, hinge and handle choices, finish details and installation requirements. Our goal is to help each enclosure look cohesive, operate smoothly and suit the needs of the space.",
         ],
       },
       {
@@ -3485,7 +3485,7 @@ export const ARTICLES = [
         ],
       },
     ],
-    ctaNote: 'Ready to plan your shower enclosure? Contact Finelines Glass Installations to discuss custom shower glass, hardware options and finish coordination for your project.',
+    ctaNote: 'Ready to plan your shower enclosure? Contact Finelines Glass to discuss custom shower glass, hardware options and finish coordination for your project.',
     tagline: 'Serving Vancouver, the Lower Mainland and the Fraser Valley. Final hardware availability and installation requirements depend on the selected product series, site conditions and project specifications.',
   },
   {
@@ -3553,9 +3553,9 @@ export const ARTICLES = [
         ],
       },
       {
-        heading: 'How Finelines Glass Installations Can Help',
+        heading: 'How Finelines Glass Can Help',
         paragraphs: [
-          "A successful glass backsplash starts with choosing a suitable product and coordinating the details before fabrication. Finelines Glass Installations works with homeowners, designers and contractors to review the intended look, site measurements, cut-outs, mounting details and installation sequence. Whether you are considering a mirror backsplash or another glass finish, we can discuss the practical considerations for your project and coordinate the installation requirements.",
+          "A successful glass backsplash starts with choosing a suitable product and coordinating the details before fabrication. Finelines Glass works with homeowners, designers and contractors to review the intended look, site measurements, cut-outs, mounting details and installation sequence. Whether you are considering a mirror backsplash or another glass finish, we can discuss the practical considerations for your project and coordinate the installation requirements.",
         ],
       },
       {
@@ -3565,7 +3565,7 @@ export const ARTICLES = [
         ],
       },
     ],
-    ctaNote: 'Ready to explore a glass backsplash? Contact Finelines Glass Installations to discuss glass selection, mirror backsplash ideas and installation planning for your kitchen.',
+    ctaNote: 'Ready to explore a glass backsplash? Contact Finelines Glass to discuss glass selection, mirror backsplash ideas and installation planning for your kitchen.',
     tagline: 'Serving Vancouver, the Lower Mainland and the Fraser Valley. Final glass selection and installation requirements depend on the product, heat exposure, site conditions and manufacturer specifications.',
   },
   {
@@ -3646,9 +3646,9 @@ export const ARTICLES = [
         ],
       },
       {
-        heading: 'Why Work With Finelines Glass Installations?',
+        heading: 'Why Work With Finelines Glass?',
         paragraphs: [
-          "The right shower enclosure combines the desired appearance with careful measurement, compatible hardware and a layout suited to the room. Finelines Glass Installations works with homeowners, designers and contractors to review framed and frameless options, coordinate finishes and plan the installation details. Our goal is to help each custom glass enclosure complement the bathroom and function well in everyday use.",
+          "The right shower enclosure combines the desired appearance with careful measurement, compatible hardware and a layout suited to the room. Finelines Glass works with homeowners, designers and contractors to review framed and frameless options, coordinate finishes and plan the installation details. Our goal is to help each custom glass enclosure complement the bathroom and function well in everyday use.",
         ],
       },
       {
@@ -3658,7 +3658,7 @@ export const ARTICLES = [
         ],
       },
     ],
-    ctaNote: 'Ready to discuss your shower enclosure? Contact Finelines Glass Installations to explore framed and frameless glass options for your bathroom renovation or new build.',
+    ctaNote: 'Ready to discuss your shower enclosure? Contact Finelines Glass to explore framed and frameless glass options for your bathroom renovation or new build.',
     tagline: 'Serving Vancouver, the Lower Mainland and the Fraser Valley. Final product selection and installation requirements depend on the chosen system, site conditions and manufacturer specifications.',
   },
   {
@@ -3741,9 +3741,9 @@ export const ARTICLES = [
         ],
       },
       {
-        heading: 'How Finelines Glass Installations Supports Renovation Projects',
+        heading: 'How Finelines Glass Supports Renovation Projects',
         paragraphs: [
-          "Finelines Glass Installations works with homeowners, designers, builders and contractors to coordinate glass requirements with the wider renovation schedule. Early discussions can help clarify measurements, hardware and finish choices, mounting conditions, site readiness and installation timing. Whether the project includes a shower enclosure, custom mirror, glass backsplash, railing or interior partition, our focus is on clear communication and a well-coordinated installation.",
+          "Finelines Glass works with homeowners, designers, builders and contractors to coordinate glass requirements with the wider renovation schedule. Early discussions can help clarify measurements, hardware and finish choices, mounting conditions, site readiness and installation timing. Whether the project includes a shower enclosure, custom mirror, glass backsplash, railing or interior partition, our focus is on clear communication and a well-coordinated installation.",
         ],
       },
       {
@@ -3753,7 +3753,7 @@ export const ARTICLES = [
         ],
       },
     ],
-    ctaNote: 'Planning a renovation or new build? Contact Finelines Glass Installations early to discuss your glass scope, site conditions and installation schedule.',
+    ctaNote: 'Planning a renovation or new build? Contact Finelines Glass early to discuss your glass scope, site conditions and installation schedule.',
     tagline: 'Serving Vancouver, the Lower Mainland and the Fraser Valley. Final measurements, product selection and installation timing depend on the project scope, site conditions and product specifications.',
   },
   {
@@ -3833,19 +3833,19 @@ export const ARTICLES = [
         ],
       },
       {
-        heading: 'Plan With Finelines Glass Installations',
+        heading: 'Plan With Finelines Glass',
         paragraphs: [
-          "Finelines Glass Installations works with homeowners, designers, builders and contractors on custom glass projects for residential and commercial spaces. From shower enclosures and mirrors to glass railings, interior partitions and specialty glass, our team can discuss the intended design, review site conditions and coordinate installation requirements with your project team.",
+          "Finelines Glass works with homeowners, designers, builders and contractors on custom glass projects for residential and commercial spaces. From shower enclosures and mirrors to glass railings, interior partitions and specialty glass, our team can discuss the intended design, review site conditions and coordinate installation requirements with your project team.",
         ],
       },
       {
         heading: 'Make Your 2027 Glass Project a Priority',
         paragraphs: [
-          "Starting the conversation early helps you explore options, coordinate measurements and finishes, and build realistic timing into your renovation plan. Prepare your ideas and project details, then contact Finelines Glass Installations to discuss the next steps.",
+          "Starting the conversation early helps you explore options, coordinate measurements and finishes, and build realistic timing into your renovation plan. Prepare your ideas and project details, then contact Finelines Glass to discuss the next steps.",
         ],
       },
     ],
-    ctaNote: 'Planning a home or commercial upgrade for 2027? Contact Finelines Glass Installations to discuss your project and arrange the next steps.',
+    ctaNote: 'Planning a home or commercial upgrade for 2027? Contact Finelines Glass to discuss your project and arrange the next steps.',
     tagline: 'Serving Vancouver, the Lower Mainland and the Fraser Valley. Final product selection, measurements and installation requirements depend on the application, site conditions and manufacturer specifications.',
   },
 ];
