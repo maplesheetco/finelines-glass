@@ -283,6 +283,9 @@ export const SERVICES = [
     slug: 'frameless-shower-enclosures',
     blurb: 'Turn a bathroom into a spa-like retreat with a custom frameless glass shower, cut and installed to fit your space exactly.',
     icon: 'shower',
+    // Service card background: 800px copy of project-9 (West 34th Vancouver shower enclosures).
+    cardImage: 'service-card-frameless-shower-enclosures',
+    cardImagePosition: 'center 55%',
     detail: "Frameless glass doesn't just look cleaner — it makes a small bathroom feel bigger and is far easier to keep clean than a framed unit with metal tracks and corners. We template every enclosure on site, so panels are cut to fit your exact walls, tile, and drain slope, then install with hinges and hardware sized for your shower's height and layout.",
     highlights: [
       'On-site measuring and templating for a precise fit',
@@ -296,6 +299,9 @@ export const SERVICES = [
     slug: 'glass-railings',
     blurb: 'Modern, code-compliant railings for decks, balconies, and staircases that keep your view open instead of blocked.',
     icon: 'railing',
+    // Service card background: 800px copy of project-2 (Bellevue Dr. exterior glass railing).
+    cardImage: 'service-card-glass-railings',
+    cardImagePosition: 'center 50%',
     detail: 'Glass railings keep a deck, balcony, or staircase feeling open instead of walling off the view, while still meeting BC Building Code requirements. We install both post-and-panel and frameless (glass-only) systems, with base-shoe or standoff mounting depending on the structure.',
     highlights: [
       'Post-and-panel and frameless (glass-only) systems',
@@ -309,6 +315,9 @@ export const SERVICES = [
     slug: 'wine-cellars',
     blurb: 'Custom glass-enclosed wine cellars and display rooms built to show off a collection, not hide it.',
     icon: 'wine',
+    // Service card background: 800px copy of project-37 (glass wine wall, lounge).
+    cardImage: 'service-card-wine-cellars',
+    cardImagePosition: 'center 50%',
     detail: 'A glass-enclosed wine cellar turns a collection into a feature of the room instead of something tucked away in a closet. We build both fully custom enclosures and glass-front display walls, sized to fit under stairs, in a dedicated room, or as a built-in cabinet, with racking and lighting coordinated around the glasswork.',
     highlights: [
       'Fully custom enclosures or glass-front display walls',
@@ -322,6 +331,9 @@ export const SERVICES = [
     slug: 'commercial-glazing-office-partitions',
     blurb: 'Framed and frameless glass partitions and commercial storefront glazing that keep offices bright and open while still defining separate spaces.',
     icon: 'partition',
+    // Service card background: 800px copy of project-136 (Langley storefront, frameless hydraulic doors).
+    cardImage: 'service-card-commercial-glazing-office-partitions',
+    cardImagePosition: 'center 45%',
     detail: 'Glass partitions let natural light travel through an office instead of stopping at the first wall, while still creating meeting rooms, private offices, and defined work areas. We also handle commercial storefront and entry glazing — the glass frontages, display windows, and entry systems that give a business its street-facing presence. Panels are measured and installed to fit your exact layout, with framed or frameless options depending on the look and acoustic separation you need.',
     highlights: [
       'Framed and frameless office partition systems',
@@ -335,6 +347,9 @@ export const SERVICES = [
     slug: 'mirrors',
     blurb: 'Custom-cut mirrors for bathrooms, gyms, dance studios, and feature walls, precisely fitted on site.',
     icon: 'mirror',
+    // Service card background: 800px copy of project-23 (backlit vanity mirror).
+    cardImage: 'service-card-mirrors',
+    cardImagePosition: 'center 40%',
     detail: 'Custom-cut mirrors are measured and installed on site, whether that’s a single vanity mirror, a full feature wall, or a dance studio or gym wall system. We work with beveled, frameless, and LED-backlit options, and can cut around outlets, sconces, or trim as needed.',
     highlights: [
       'Vanity, feature-wall, and full studio/gym installations',
@@ -348,6 +363,9 @@ export const SERVICES = [
     slug: 'window-replacement-film',
     blurb: 'Replacing damaged, fogged, or aging windows, or applying solar-control window film to your existing glass — two different ways to solve two different window problems.',
     icon: 'film',
+    // Service card background: 800px copy of project-32 (Coquitlam window installation).
+    cardImage: 'service-card-window-replacement-film',
+    cardImagePosition: 'center 55%',
     detail: "Whether your window itself has failed — broken glass, a fogged sealed unit, an old frame — or the glass is fine but the sun, glare, or privacy isn't, we have a solution that fits the actual problem. Window replacement swaps out the window system entirely; window film changes how existing glass performs without touching the window assembly.",
     highlights: [
       'Window replacement for broken, fogged, or deteriorated windows',
@@ -361,6 +379,9 @@ export const SERVICES = [
     slug: 'skylights',
     blurb: 'New skylight installations or replacements for aging, leaking, or cloudy units — bringing natural light into kitchens, stairwells, and living spaces.',
     icon: 'skylight',
+    // Service card background: 800px copy of project-27 (Lions Bay skylight replacement).
+    cardImage: 'service-card-skylights',
+    cardImagePosition: 'center 50%',
     detail: 'An aging or leaking skylight is often more of a maintenance headache than the natural light is worth. We replace failed units and also install new skylights where a kitchen, stairwell, or living space could use more daylight, with flashing and sealing done as part of the install, not treated as an afterthought.',
     highlights: [
       'New skylight installation or replacement of failed units',
@@ -374,6 +395,9 @@ export const SERVICES = [
     slug: 'custom-glass-solutions',
     blurb: "Have something specific in mind? If it's glass, there's a good chance we've already built something like it.",
     icon: 'custom',
+    // Service card background: 800px copy of project-84 (textured art glass panel, ocean view).
+    cardImage: 'service-card-custom-glass-solutions',
+    cardImagePosition: 'center 40%',
     detail: "Not every job fits neatly into a category — tabletops, cabinet inserts, room dividers, glass shelving, and one-off architectural pieces all come through as custom requests. If you have something specific in mind, the best next step is usually just to describe it and we'll tell you if (and how) it's doable.",
     highlights: [
       'Tabletops, shelving, and cabinet glass inserts',
