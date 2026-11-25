@@ -540,8 +540,9 @@ export const ARTICLES = [
     keywords: ['glass shower cost Vancouver', 'glass railing cost Vancouver', 'frameless shower price', 'custom glass quote', 'glass installation estimate', 'what affects glass installation cost'],
     publishDate: 'November 2, 2026',
     publishAt: '2026-11-02T06:00:00-08:00', // PST: daylight saving ends Nov 1
-    heroImage: '/images/project-1.webp',
-    heroImageAlt: 'A finished frameless glass shower enclosure in a West Vancouver bathroom',
+    heroImage: '/images/articles/what-affects-the-cost-of-a-glass-project.webp',
+    heroImageAlt: 'A frameless glass shower enclosure, a glass stair railing and an exterior glass deck railing, with the factors that shape a glass project cost: material selection, design and complexity, and installation requirements',
+    heroImagePosition: 'left center', // banner text sits on the left, keep it in the card crop
     excerpt: "\"How much does it cost?\" is the first question almost everyone asks. The honest answer is that it depends on the site and the job, and here's what actually moves the number.",
     intro: [
       '"How much will it cost?" is usually the first question people ask about a glass shower, a railing, or a custom glass piece, and it is a fair one. The honest answer is that it depends on what we find on site and how involved the job is.',
